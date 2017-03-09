@@ -1,0 +1,138 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+
+</head>
+<style type="text/css">
+
+body{padding:0; margin:0;background-color:whitesmoke;}
+#container{	height:auto; width:768px; 	margin:60px auto 0;background-color: white;padding-bottom:2px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);}
+#head-top{position: fixed;top:0;
+	-webkit-box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+	color:white; font-size:32px;font-weight:bold; height:40px;	width: 100%;	
+	background-color: background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );;text-align:center;}
+.info-box{width:720px; height:200px; margin: 5px auto 20px;background-color: orange;}
+.img-left{height:180px;width:180px;float:left;margin:10px 40px 10px 10px;background-color: white;border-radius: 50%;}
+.img-right{height:180px;width:180px;float:right;margin:10px 10px 10px 40px;background-color: white;border-radius: 50%;}
+.title-right{height:34px;width:480px;float:left; color: white;margin:5px 5px 0px 0px;font-size:28px;text-align: center;font-weight:bolder;}
+.title-left{height:34px;width:480px;float:right; color: white;margin:5px 0px 0px 5px;font-size:28px;text-align: center;font-weight:bolder;}
+.description-left{width:469px;height:155px;float:left; color: white;font-size:14px;margin: 10px 0px 0px 21px;}
+.description-right{width:475px;height:155px;float:right; color: white;font-size:14px;margin:10px 15px 0px 0px;}
+a:hover{color:yellow;}
+</style>
+
+<body>
+<div id="head-top">Body Building Nutrition</div>
+<div id="container">
+<br>
+<!--Start Left -->
+<a href="rice.html" ><div class="info-box"style="background-color: #ea9801;">
+<div class=""><img src="rice_bowl-512.png" class="img-left"alt="image"></div>
+<div class="title-right">Rice</div>
+<div class="description-right"><b>summary:&nbsp</b>  The health benefits of rice include its ability to provide fast and instant energy, regulate and improve bowel movements, stabilize blood levels, and slow down the aging process, while also providing an essential source of to the human body. </div>
+</div></a>
+<!--End Left -->
+
+<!--Start Right -->
+<a href="Potato.html" ><div class="info-box" style="background-color: #009598;">
+<div class=""><img src="icon_potato.png" class="img-right"alt="image"></div>
+<div class="title-left">Potatoes</div>
+<div class="description-left"><b>summary:&nbsp</b>Potatoes as a very good source of vitamin B6 and a good source of potassium, copper, vitamin C, manganese, phosphorus, niacin, dietary fiber, and pantothenic acid.</div>
+</div></a>
+<!--End Right -->
+
+<!--Start Left -->
+<a href="oatmeal.html" ><div class="info-box"style="background-color: #8427b3;">
+<div class=""><img src="oatmeal1.png" class="img-left"alt="image"></div>
+<div class="title-right">Oatmeal</div>
+<div class="description-right"><b>summary:&nbsp</b>Nutritional breakdown of oats. Dietary fiber - oats are rich in a specific type of fiber called beta-glucan. This particular type of fiber is known to help lower levels of bad cholesterol. One cup (81g) of dry oats contains 8.2 grams of fiber1, the recommended daily intake of fiber is 25g for women and 38g for men. [Click for full info]</div>
+</div></a>
+<!--End Left -->
+
+<!--Start Right -->
+<a href="yams.html" ><div class="info-box" style="background-color: #5b8ea4;">
+<div class=""><img src="yams.png" class="img-right"alt="image"></div>
+<div class="title-left">Yams</div>
+<div class="description-left"><b>summary:&nbsp</b>Yams are made up of complex carbohydrates and dietary fiber allowing for slow uptake to keep blood sugar levels even, giving it the nod as a low glycemic index food. </div>
+</div></a>
+<!--End Right -->
+<!--Start Left -->
+<a href="Banana.html" ><div class="info-box"style="background-color: #cc8400;">
+<div class=""><img src="banana.png" class="img-left"alt="image"></div>
+<div class="title-right">Banana</div>
+<div class="description-right"><b>summary:&nbsp</b>Bananas contain a number of vitamins and minerals in decent amounts. These include potassium, vitamin B6, and vitamin C.</div>
+</div>
+<!--End Left -->
+
+<!--Start Right -->
+<a href="watermelon.html" ><div class="info-box" style="background-color: darkgreen;">
+<div class=""><img src="Watermelon_icon-icons.com_68672.png" class="img-right"alt="image"></div>
+<div class="title-left">Watermelon</div>
+<div class="description-left"><b>summary:&nbsp</b>One of the natural chemicals in watermelons is citrulline, which converts in the kidneys to arginine, an amino acid that works hard for heart health and maintaining a good immune system. The more this conversion takes place, the less fat is apt to accumulate in the cells, helping to keep obesity and type 2 diabetes from becoming issues. Arginine also removes ammonia and other toxicities from your body.</div>
+</div></a>
+<!--End Right -->
+<!--Start Left -->
+<a href="spinach.html" ><div class="info-box"style="background-color: #103310;">
+<div class=""><img src="vegetable-icon-png-23.png" class="img-left"alt="image"></div>
+<div class="title-right">Kale</div>
+<div class="description-right"><b>summary:&nbsp</b>If vitamins could be packaged and labeled as such, they would look very much like kale. That’s because the vitamins offered by just one cup of this relatively little-known veggie can trump a whole week’s worth of other foods: 684% of the daily value of vitamin K, 206% of the suggested daily amount of vitamin A, and 134% of vitamin C (and even more vitamin C in the Scottish curly-leaf variety).</div>
+</div>
+<!--End Left -->
+
+<!--Start Right -->
+<a href="coconut.html" ><div class="info-box" style="background-color:darkgoldenrod;">
+<div class=""><img src="coconut1.png" class="img-right"alt="image"></div>
+<div class="title-left">Coconut</div>
+<div class="description-left"><b>summary:&nbsp</b> They're loaded with naturally sterile electrolytes, which feed your pH and muscle function</div>
+</div></a>
+<!--End Right -->
+
+<!--Start Left -->
+<a href="Almonds.html" ><div class="info-box" style="background-color: #AB4242;">
+<div class=""><img src="almond-png-31.jpg" class="img-left"alt="image"></div>
+<div class="title-right">Almonds</div>
+<div class="description-right"><b>summary:&nbsp</b> They are an excellent source of magnesium, vitamin E, fiber, unsaturated fats and many other nutrients. Almonds may also promote weight loss and help reduce belly fat. Additionally, they have been shown to strengthen the immune system and help improve heart and digestive health.</div>
+</div></a>
+<!--End Left -->
+
+<a href="fish.html" ><div class="info-box" style="background-color:#cc8400;">
+<div class=""><img src="Red Fish.png" class="img-right"alt="image"></div>
+<div class="title-left">Fish</div>
+<div class="description-left"><b>summary:&nbsp</b>all types of fish are good for you. They are high in many nutrients that most people aren’t getting enough of. This includes high-quality protein, iodine and various vitamins and minerals. However, some fish are better than others, and the fatty types of fish are considered the healthiest. That’s because fatty fish (like salmon, trout, sardines, tuna and mackerel) are higher in fat-based nutrients.</div>
+</div></a>
+<!--End Right -->
+<!--Start Left -->
+<a href="chicken.html" ><div class="info-box"style="background-color: #568ca4">
+<div class=""><img src="grilled-chicken-icon-65997.png" class="img-left"alt="image"></div>
+<div class="title-right">Chicken</div>
+<div class="description-right"><b>summary:&nbsp</b>Protein</div>
+</div></a>
+<!--End Left -->
+
+<a href="proteinPowder.html" ><div class="info-box" style="background-color:#a48a67;">
+<div class=""><img src="scoop-protein-powder-kitchen-measuring-measure-cup-512.png" class="img-right"alt="image"></div>
+<div class="title-left">Protein Powder</div>
+<div class="description-left"><b>summary:&nbsp</b>whey is a complete protein with a very high BV and this means it contains all the essential and nonessential amino acids and boasts the highest branched-chain amino acid content found in nature.</div>
+</div></a>
+<!--End Right -->
+<!--Start Left -->
+<a href="vitamins.html" ><div class="info-box"style="background-color: #4c9ed9;">
+<div class=""><img src="vitamin-icon-17.png" class="img-left"alt="image"></div>
+<div class="title-right">Multi-vitamin</div>
+<div class="description-right"><b>summary:&nbsp</b>For the human body to complete all the tasks it has in a normal day, it must be given a wide and complex variety of vital nutrients. Becoming deficient in any one of these essential vitamins or minerals causes breakdown of the metabolic pathway that produces optimum efficiency and performance goes down quick. </div></a>
+</div>
+</div>
+</div>
+
+</body>
+</html>

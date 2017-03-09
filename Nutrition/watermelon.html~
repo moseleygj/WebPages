@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+
+</head>
+<style type="text/css">
+
+body{padding:0; margin:0;background-color:whitesmoke;}
+#container{	height:1024px; width:768px; 	margin:60px auto 0;background-color: white;padding:3px 0px 2px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);}
+#head-top{position: fixed;top:0;	-webkit-box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);	color:white; font-size:32px;font-weight:bold; height:40px;	width: 100%;	background-color: #866086;text-align:center;}
+.info-box{width:720px; height:200px; margin: 5px auto 20px;background-color: orange;}
+.img-left{height:180px;width:180px;float:left;margin:10px 40px 10px 10px;background-color: white;border-radius: 50%;}
+.img-right{height:180px;width:180px;float:right;margin:10px 10px 10px 40px;background-color: white;border-radius: 50%;}
+.title-right{height:34px;width:480px;float:left; color: white;margin:5px 5px 0px 0px;font-size:28px;text-align: center;font-weight:bolder;}
+.title-left{height:34px;width:480px;float:right; color: white;margin:5px 0px 0px 5px;font-size:28px;text-align: center;font-weight:bolder;}
+.description-left{width:480px;height:155px;float:left; color: white;font-size:14px;margin: 0px 0px 0px 10px;}
+.description-right{width:480px;height:155px;float:right; color: white;font-size:14px;margin:0px 10px 0px 0px;}
+.headerSub{width:99.5%;height:200px;background-color: skyblue;margin:0 auto 0;box-shadow:0px 0px 2px  grey; }
+.headerSubIcon{width:150px;height:150px;margin:21px 0px 0px 42px;background-color: white;border-radius: 50%;border:5px solid white;float:left}
+.headerSubTopic{width:554px;height:100px;float:left;font-weight:bold;color:white;font-size:70px;text-align: center;margin-top:50px;}
+.parag{width:746px;height:auto;color:#898989;margin-left: 20px;padding-top: 20px;font-size: 16px;clear: both;}
+.back-main{left:4px;height: 30px;width:30px;margin-top: 4px;position: absolute;}
+.whatsinit{width:580px;height:auto;color:#898989;margin-left: 53px;margin-top: 22px;font-size: 20px;font-weight: bold;float:left;}
+.whatsinitH{width:100px;height:auto;color:#434343;margin-left: 20px;margin-top: 20px;font-size: 22px;font-weight: bold;float:left;}
+</style>
+
+<body>
+<div id="head-top"><a href="Main.html" ><img src="left-round-xxl.png" class="back-main"></a>Body Building Nutrition</div>
+<div id="container">
+
+<div class="headerSub" style="background-color: darkgreen;"><img src="Watermelon_icon-icons.com_68672.png" class="headerSubIcon"alt="image">
+<div class="headerSubTopic">Watermelon</div></div>
+
+<div class="whatsinitH">CONTAINS:&nbsp</div><div class="whatsinit">DESCRIPTION</div>
+<br>
+<div class="parag" >&nbsp&nbsp&nbsp&nbsp Not surprisingly, watermelon contains a hefty amount of vitamin C – 21% of the daily recommended value – that helps your immune system produce antibodies to fight disease. There's also a 17% daily value of vitamin A, boosting eye health and preventing such diseases as macular degeneration and cataracts. The vitamin B6 content helps form red blood cells and assures your nerves will function as they should. Your body uses vitamin B6 to help break down proteins, so the more protein is consumed, the more vitamin B6 is needed. Potassium, although a relatively small amount is in watermelon, helps balance fluids in your cells. (Low potassium levels sometimes cause muscle cramps.)
+
+<p>One of the natural chemicals in watermelons is citrulline, which converts in the kidneys to arginine, an amino acid that works hard for heart health and maintaining a good immune system. The more this conversion takes place, the less fat is apt to accumulate in the cells, helping to keep obesity and type 2 diabetes from becoming issues. Arginine also removes ammonia and other toxicities from your body.</p>
+
+<p>The antioxidant lycopene is the star player in watermelon, a compound now known to pack even more of a punch than tomatoes, pink grapefruit, and guavas. While most of these fruits get their reddish color from anthocyanin flavonoids, it's the lycopene content that does it for watermelon.</p>
+
+<p>What does this do for the body? While nearly 92% of watermelon is water, the 8% left over is rich in this compound, protecting and nourishing the heart, prostate, and skin. Lycopene discourages inflammation and may also be important for maintaining strong healthy bones, not to mention its ability to neutralize harmful free radicals. Research indicates that lycopene has greater potency when ripe. In fact, while it's still white inside, well before maturity, the vitamin and mineral content and just about every other nutritional benefit is close to zero.</p>
+
+<p>Another anti-inflammatory phytonutrient in watermelon is cucurbitacin E, or tripterpenoid, which blocks the activity of pain-, fever- and inflammation-causing enzyme cyclooxygenase. Cucurbitacin E also neutralizes nitrogen-containing molecules in the body.</p>
+
+<p>The nutrients are very similar throughout the entire watermelon and not concentrated in the darker red center as some people believe. In fact, the white rind, which isn't normally eaten, has some of the highest nutrient concentrations.</p>
+
+<p>However, consume watermelon in moderation because it contains fructose, which may be harmful to your health in excessive amounts.</p></div>
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>

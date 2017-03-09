@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+
+</head>
+<style type="text/css">
+
+body{padding:0; margin:0;background-color:whitesmoke;}
+#container{	height:1024px; width:768px; 	margin:60px auto 0;background-color: white;padding:3px 0px 2px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);}
+#head-top{position: fixed;top:0;	-webkit-box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);	color:white; font-size:32px;font-weight:bold; height:40px;	width: 100%;	background-color: #866086;text-align:center;}
+.info-box{width:720px; height:200px; margin: 5px auto 20px;background-color: orange;}
+.img-left{height:180px;width:180px;float:left;margin:10px 40px 10px 10px;background-color: white;border-radius: 50%;}
+.img-right{height:180px;width:180px;float:right;margin:10px 10px 10px 40px;background-color: white;border-radius: 50%;}
+.title-right{height:34px;width:480px;float:left; color: white;margin:5px 5px 0px 0px;font-size:28px;text-align: center;font-weight:bolder;}
+.title-left{height:34px;width:480px;float:right; color: white;margin:5px 0px 0px 5px;font-size:28px;text-align: center;font-weight:bolder;}
+.description-left{width:480px;height:155px;float:left; color: white;font-size:14px;margin: 0px 0px 0px 10px;}
+.description-right{width:480px;height:155px;float:right; color: white;font-size:14px;margin:0px 10px 0px 0px;}
+.headerSub{width:99.5%;height:200px;background-color: skyblue;margin:0 auto 0;box-shadow:0px 0px 2px  grey; }
+.headerSubIcon{width:150px;height:150px;margin:21px 0px 0px 42px;background-color: white;border-radius: 50%;border:5px solid white;float:left}
+.headerSubTopic{width:554px;height:100px;float:left;font-weight:bold;color:white;font-size:70px;text-align: center;margin-top:50px;}
+.parag{width:746px;height:auto;color:#898989;margin-left: 20px;padding-top: 20px;font-size: 16px;clear: both;}
+.back-main{left:4px;height: 30px;width:30px;margin-top: 4px;position: absolute;}
+.whatsinit{width:580px;height:auto;color:#898989;margin-left: 53px;margin-top: 22px;font-size: 20px;font-weight: bold;float:left;}
+.whatsinitH{width:100px;height:auto;color:#434343;margin-left: 20px;margin-top: 20px;font-size: 22px;font-weight: bold;float:left;}
+</style>
+
+<body>
+<div id="head-top"><a href="Main.html" ><img src="left-round-xxl.png" class="back-main"></a>Body Building Nutrition</div>
+<div id="container">
+
+<div class="headerSub"><img src="coconut1.png" class="headerSubIcon"alt="image">
+<div class="headerSubTopic">Coconut</div></div>
+
+<div class="whatsinitH">CONTAINS:&nbsp</div><div class="whatsinit">DESCRIPTION</div>
+<br>
+<div class="parag" >&nbsp&nbsp&nbsp&nbspFor centuries, the coconut has been claimed as a potent cure for nausea, rash, fever, earache, sore throat, bronchitis, kidney stones, ulcers, asthma, syphilis, dropsy, toothache, bruises, and lice. And that's just the short list. While coconut milk is a wonderful base for all kinds of Thai dishes, coconut oil is becoming increasingly used in the U.S. for its nutritional benefits
+
+   <p> They're loaded with naturally sterile electrolytes, which feed your pH and muscle function</p>
+
+    <p>They have a high fiber content, which makes you feel full longer and helps regulate elimination</p>
+
+    <p>They're rich in lauric acid, which converts to monolaurin. Monolaurin is the compound found in breast milk that strengthens a baby’s immunity, and a great deal of research has been done to establish the ability of lauric acid to enhance immunity. This medium-chain fatty acid (MCFA) actually disrupts the lipid membranes of offending organisms.</p>
+
+    <p>They offer high levels of manganese, potassium, and phosphorus.</p>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>

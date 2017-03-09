@@ -1,0 +1,57 @@
+<html>
+<head>
+
+
+
+</head>
+<style type="text/css">
+
+body{padding:0; margin:0;background-color:whitesmoke;}
+#container{	height:1024px; width:768px; 	margin:60px auto 0;background-color: white;padding:3px 0px 2px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);}
+#head-top{position: fixed;top:0;	-webkit-box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);
+box-shadow: 2px 10px 31px -11px rgba(0,0,0,0.75);	color:white; font-size:32px;font-weight:bold; height:40px;	width: 100%;	background-color: #866086;text-align:center;}
+.info-box{width:720px; height:200px; margin: 5px auto 20px;background-color: orange;}
+.img-left{height:180px;width:180px;float:left;margin:10px 40px 10px 10px;background-color: white;border-radius: 50%;}
+.img-right{height:180px;width:180px;float:right;margin:10px 10px 10px 40px;background-color: white;border-radius: 50%;}
+.title-right{height:34px;width:480px;float:left; color: white;margin:5px 5px 0px 0px;font-size:28px;text-align: center;font-weight:bolder;}
+.title-left{height:34px;width:480px;float:right; color: white;margin:5px 0px 0px 5px;font-size:28px;text-align: center;font-weight:bolder;}
+.description-left{width:480px;height:155px;float:left; color: white;font-size:14px;margin: 0px 0px 0px 10px;}
+.description-right{width:480px;height:155px;float:right; color: white;font-size:14px;margin:0px 10px 0px 0px;}
+.headerSub{width:99.5%;height:200px;background-color: skyblue;margin:0 auto 0;box-shadow:0px 0px 2px  grey; }
+.headerSubIcon{width:150px;height:150px;margin:21px 0px 0px 42px;background-color: white;border-radius: 50%;border:5px solid white;float:left}
+.headerSubTopic{width:554px;height:100px;float:left;font-weight:bold;color:white;font-size:70px;text-align: center;margin-top:50px;}
+.parag{width:746px;height:auto;color:#898989;margin-left: 20px;padding-top: 20px;font-size: 16px;clear: both;}
+.back-main{left:4px;height: 30px;width:30px;margin-top: 4px;position: absolute;}
+.whatsinit{width:580px;height:auto;color:#898989;margin-left: 53px;margin-top: 22px;font-size: 20px;font-weight: bold;float:left;}
+.whatsinitH{width:100px;height:auto;color:#434343;margin-left: 20px;margin-top: 20px;font-size: 22px;font-weight: bold;float:left;}
+</style>
+
+<body>
+<div id="head-top"><a href="Main.html" ><img src="left-round-xxl.png" class="back-main"></a>Body Building Nutrition</div>
+<div id="container">
+
+<div class="headerSub"style="background-color: #103310;"><img src="vegetable-icon-png-23.png" class="headerSubIcon"alt="image">
+<div class="headerSubTopic">Kale</div></div>
+
+<div class="whatsinitH">CONTAINS:&nbsp</div><div class="whatsinit">Vitamin A, B2, B6, C, E, K,manganese, Folate, Copper, Calcium, Potassium, Fiber, Phosphorus, Protein, Choline, Omedga-3 fats, Selenium and Pantothenic acid. </div>
+<br>
+<div class="parag" >&nbsp&nbsp&nbsp&nbsp If vitamins could be packaged and labeled as such, they would look very much like kale. That’s because the vitamins offered by just one cup of this relatively little-known veggie can trump a whole week’s worth of other foods: 684% of the daily value of vitamin K, 206% of the suggested daily amount of vitamin A, and 134% of vitamin C (and even more vitamin C in the Scottish curly-leaf variety).</p>
+
+<p>Kale can legitimately be called a superfood, if only after one particular study, which reported the high antioxidant activity in this vegetable. The phytonutrient indole-3-carbinol aids in DNA cell repair, while at the same time slowing the growth of cancer cells. With its sulforaphane content, kale protects against prostate and colon cancers. It also has properties that studies show ca ease lung congestion, and is beneficial to your stomach, liver, and immune system. It contains lutein and zeaxanthin, which help protect your eyes from macular degeneration.</p>
+
+<p>Kale has been compared to beef, which is known as a “go-to” food for iron, protein, and calcium. Kale’s anti-inflammatory capabilities are unrivaled among leafy greens, especially relating to the prevention and even reversal of arthritis, heart disease, and several autoimmune diseases.</p>
+
+<p>Omega-fatty acids are called essential because your body needs them to remain healthy, but they need to come from sources outside the body; kale is an excellent source of these healthy fats. Benefits of these often-talked about but little understood compounds include their ability to help regulate blood clotting, build cell membranes in your brain, and protect you against heart disease and stroke. They may also help combat autoimmune diseases, such as lupus and rheumatoid arthritis.</p>
+
+<p>One serving of kale contains 121 milligrams of omega-3 fatty acids and 92.4 milligrams of omega-6 fatty acids.</p>
+
+<p>Kale is one of the best vegetables for your health.</p> </div>
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>
