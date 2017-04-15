@@ -6,34 +6,65 @@
 body{background-color:pink;padding:0;margin:0;}
 .container{height:1024px;width:768px;background-color:red;margin: 0 auto 0;}
 .header{height:20px;width:100%;background-color:blue;clear:both;}
-.left-side{height:95%;width:384;background-color:yellow;float:left;}
-.right-side{height:95%;width:384;background-color:green;float:right;}
-.main-img{height:300px ;width:350px;border: 1px solid black;margin: 15 auto 0; clear:both;}
+.left-side{height:95%;width:384px;background-color:yellow;float:left;}
+.right-side{height:95%;width:384px;background-color:green;float:right;}
+.main-img{height:300px ;width:350px;border: 1px solid black;margin: 15px 
+	auto 0; clear:both;}
+	.mainimgsize{height:300px ;width:350px;}
 .img-sub-1{height:75px;width:80px;margin:5px;border:1px black solid;background-color:;float:left;}
-.img-sub-2{}
-.img-sub-3{}
-.img-sub-4{}
-.img-sub-5{}
+.img-sub-1:hover{height:75px;width:80px;margin:5px;border:1px red solid;background-color:;float:left;}
+
+.imgsub{height:75px;width:80px;}
+.very-big-img{height:360px ;width:384px;border: 1px solid black;margin: 15px auto 0;  visibility: hidden;}
 
 </style>
 <body>
 <div class="header"></div>
 <div class="container">
 <!-- left side -->
-	<div class="left-side"><div class="main-img"></div><br>
-	<div class="img-sub-1"></div>
-		<div class="img-sub-1"></div>
-		<div class="img-sub-1"></div>
-		<div class="img-sub-1"></div>
-		<div class="img-sub-1"></div>
+	<div class="left-side">
+		<div class="main-img"><img src="bert.jpg" class="mainimgsize" id="mainimg" onmouseover="bigger()" onmouseout="normal()"></div><br>
+		<div class="img-sub-1"><img src="ernie.png" id="img1" class="imgsub" onmouseover="VBI(this.id)"></div>
+		<div class="img-sub-1"><img src="bert.jpg" id="img2" class="imgsub" onmouseover="showbig(this.id)"></div>
+		<div class="img-sub-1"><img src="count.jpg" id="img3" class="imgsub" onmouseover="showbig(this.id)"></div>
+
 		<div class="img-sub-1"></div>
 		<div class="img-sub-1"></div>
 		<div class="img-sub-1"></div>
 	</div>
 	<!-- right side -->
-<div class="right-side"></div> 
+<div class="right-side">
+	
+<div class="very-big-img"><a href="" class="very-big-img" id="vbi"</div>
+
+</div> 
 
 </div>
+<script type="text/javascript">
+function VBI(b){
+		document.getElementById("vbi").src = document.getElementById(b).src;
+		document.getElementById("vbi").style.visibility="visible";
 
+
+}
+	function showbig(a)
+	{
+		document.getElementById("mainimg").src = document.getElementById(a).src;
+	}
+
+function bigger(){
+
+	document.getElementById("mainimg").style.width=500;
+	document.getElementById("mainimg").style.height=500;
+	document.getElementById("mainimg").style.position="absolute";
+		document.getElementById("mainimg").style.border.width=1;
+
+}
+function normal(){
+
+	document.getElementById("mainimg").style.width=350;
+	document.getElementById("mainimg").style.height=300;
+}
+</script>
 </body>
 </html>
