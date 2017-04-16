@@ -8,14 +8,14 @@ body{background-color:pink;padding:0;margin:0;}
 .header{height:20px;width:100%;background-color:blue;clear:both;}
 .left-side{height:95%;width:384px;background-color:yellow;float:left;}
 .right-side{height:95%;width:384px;background-color:green;float:right;}
-.main-img{height:300px ;width:350px;border: 1px solid black;margin: 15px 
-	auto 0; clear:both;}
+.main-img{height:300px ;width:350px;border: 1px solid black;margin: 15px auto 0; clear:both;}
 	.mainimgsize{height:300px ;width:350px;}
 .img-sub-1{height:75px;width:80px;margin:5px;border:1px black solid;background-color:;float:left;}
 .img-sub-1:hover{height:75px;width:80px;margin:5px;border:1px red solid;background-color:;float:left;}
 
 .imgsub{height:75px;width:80px;}
 .very-big-img{height:360px ;width:384px;border: 1px solid black;margin: 15px auto 0;  visibility: hidden;}
+.header-title{height:40px;width:100%;margin:10px auto ;}
 
 </style>
 <body>
@@ -23,48 +23,50 @@ body{background-color:pink;padding:0;margin:0;}
 <div class="container">
 <!-- left side -->
 	<div class="left-side">
-		<div class="main-img"><img src="bert.jpg" class="mainimgsize" id="mainimg" onmouseover="bigger()" onmouseout="normal()"></div><br>
-		<div class="img-sub-1"><img src="ernie.png" id="img1" class="imgsub" onmouseover="VBI(this.id)"></div>
-		<div class="img-sub-1"><img src="bert.jpg" id="img2" class="imgsub" onmouseover="showbig(this.id)"></div>
+		<div class="main-img"><img src="bert.jpg" class="mainimgsize" id="mainimg" onmouseover="VBI(this.id)" onmouseout="normal()"></div><br>
+	<!-- Sub images row 1 -->
+		<div class="img-sub-1"><img src="ernie.png" id="img1" class="imgsub" onmouseover="showbig(this.id)"></div>
+		<div class="img-sub-1"><img src="bert.jpg" id="img2" class="imgsub"  onmouseover="showbig(this.id)"></div>
 		<div class="img-sub-1"><img src="count.jpg" id="img3" class="imgsub" onmouseover="showbig(this.id)"></div>
-
-		<div class="img-sub-1"></div>
-		<div class="img-sub-1"></div>
-		<div class="img-sub-1"></div>
+		<div class="img-sub-1"><img src="Abelardo_and_Big_Bird.png" id="img4" class="imgsub" onmouseover="showbig(this.id)"></div>
+	<!-- Sub images row 2 -->
+		<div class="img-sub-1"><img src="Elmo.png" id="img5" class="imgsub" onmouseover="showbig(this.id)"></div>
+		<div class="img-sub-1"><img src="oscar.png" id="img6" class="imgsub" onmouseover="showbig(this.id)"></div>
+		<div class="img-sub-1"><img src="Mr._Snuffleupagus.jpg" id="img7" class="imgsub" onmouseover="showbig(this.id)"></div>
+		<div class="img-sub-1"><img src="46b2d9cf4a26e1b6cf9a866b637fd603.jpg" id="img8" class="imgsub" onmouseover="showbig(this.id)"></div>
 	</div>
 	<!-- right side -->
-<div class="right-side">
-	
-<div class="very-big-img"><a href="" class="very-big-img" id="vbi"</div>
-
-</div> 
-
+<div class="right-side">	
+<div class="very-big-img"><img src="" class="very-big-img" id="vbi"</div>
+<div class="header-title">123</div>
 </div>
+</div>
+
 <script type="text/javascript">
-function VBI(b){
+
+function #VBI(b){
 		document.getElementById("vbi").src = document.getElementById(b).src;
 		document.getElementById("vbi").style.visibility="visible";
-
-
 }
-	function showbig(a)
+
+function showbig(a)
 	{
-		document.getElementById("mainimg").src = document.getElementById(a).src;
+	document.getElementById("mainimg").src = document.getElementById(a).src;
 	}
 
 function bigger(){
-
 	document.getElementById("mainimg").style.width=500;
 	document.getElementById("mainimg").style.height=500;
 	document.getElementById("mainimg").style.position="absolute";
-		document.getElementById("mainimg").style.border.width=1;
-
+	document.getElementById("mainimg").style.border.width=1;
 }
-function normal(){
 
+function normal(){
 	document.getElementById("mainimg").style.width=350;
 	document.getElementById("mainimg").style.height=300;
+	document.getElementById("vbi").style.visibility="hidden";
 }
+
 </script>
 </body>
 </html>
