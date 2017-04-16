@@ -4,18 +4,21 @@
 </head>
 <style type="text/css">
 body{background-color:pink;padding:0;margin:0;}
-.container{height:1024px;width:768px;background-color:red;margin: 0 auto 0;}
+.container{height:1024px;width:768px;background-color:red;margin: 0 auto 0; }
 .header{height:20px;width:100%;background-color:blue;clear:both;}
 .left-side{height:95%;width:384px;background-color:yellow;float:left;}
 .right-side{height:95%;width:384px;background-color:green;float:right;}
 .main-img{height:300px ;width:350px;border: 1px solid black;margin: 15px auto 0; clear:both;}
-	.mainimgsize{height:300px ;width:350px;}
+.mainimgsize{height:300px ;width:350px;}
 .img-sub-1{height:75px;width:80px;margin:5px;border:1px black solid;background-color:;float:left;}
 .img-sub-1:hover{height:75px;width:80px;margin:5px;border:1px red solid;background-color:;float:left;}
 
 .imgsub{height:75px;width:80px;}
-.very-big-img{height:360px ;width:384px;border: 1px solid black;margin: 15px auto 0;  visibility: hidden;}
-.header-title{height:40px;width:100%;margin:10px auto ;}
+.very-big-img{height:360px ;width:384px;border: 1px solid black;margin: 15px auto 0;  visibility: ;}
+.header-title{height:40px;width:100%;margin:10px auto ;text-align:center;font-weight:bold; font-size:30px;}
+.spec{height:36px;width:100%;visibility:;clear:;}
+.spec-title{font-size:14px;font-weight:bold;color:#434;text-align:left;width:28%;float:left;height:36px;}
+.spec-result{font-size:11px;font-weight:normal;color:grey;text-align:left;width:auto;clear:;color:#333;}
 
 </style>
 <body>
@@ -23,7 +26,7 @@ body{background-color:pink;padding:0;margin:0;}
 <div class="container">
 <!-- left side -->
 	<div class="left-side">
-		<div class="main-img"><img src="bert.jpg" class="mainimgsize" id="mainimg" onmouseover="VBI(this.id)" onmouseout="normal()"></div><br>
+		<div class="main-img"><img src="bert.jpg" class="mainimgsize" id="mainimg" onmouseover="" onmouseout="normal()"></div><br>
 	<!-- Sub images row 1 -->
 		<div class="img-sub-1"><img src="ernie.png" id="img1" class="imgsub" onmouseover="showbig(this.id)"></div>
 		<div class="img-sub-1"><img src="bert.jpg" id="img2" class="imgsub"  onmouseover="showbig(this.id)"></div>
@@ -37,17 +40,34 @@ body{background-color:pink;padding:0;margin:0;}
 	</div>
 	<!-- right side -->
 <div class="right-side">	
-<div class="very-big-img"><img src="" class="very-big-img" id="vbi"</div>
-<div class="header-title">123</div>
-</div>
+<!--<div class="very-big-img"><img src="" class="very-big-img" id="vbi"</div> -->
+<div class="info-container" style="margin: 0 0 0 6px;"">
+<div class="header-title">IBM T420</div><br>
+<div class="spec"><div class="spec-title">Model</div><div class="spec-result">T420</div></div>
+<div class="spec"><div class="spec-title">Brand</div><div class="spec-result">IBM/Lenovo</div></div>
+<div class="spec"><div class="spec-title">Screen</div><div class="spec-result">14.0-inch HD (1366 x 768) </div></div>
+<div class="spec"><div class="spec-title">Drive</div><div class="spec-result">250 GB, 5,400 rpm, 7mm high, SATA hard disk drive </div></div>
+<div class="spec"><div class="spec-title">Processor</div><div class="spec-result">Intel Core i5/i7 processor i5/i7-2540M with dual-core </div></div>
+<div class="spec"><div class="spec-title">Networking</div><div class="spec-result">Intel Centrino Wireless-N 1000</div></div>
+<div class="spec"><div class="spec-title">Weight</div><div class="spec-result">4.9lbs</div></div>
+<div class="spec"><div class="spec-title">Ports</div><div class="spec-result">3xUSB2.0, LAN,DisplayPort,VGA,expressCard,MediaCard</div></div>
+<div class="spec"><div class="spec-title">Memory</div><div class="spec-result">4GB Max:16GB</div></div>
+
 </div>
 
+</div>
+
+
+</div>
+
+</body>
 <script type="text/javascript">
 
-function #VBI(b){
+
+function VBI(b){
 		document.getElementById("vbi").src = document.getElementById(b).src;
 		document.getElementById("vbi").style.visibility="visible";
-}
+} 
 
 function showbig(a)
 	{
