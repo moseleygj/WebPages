@@ -4,15 +4,18 @@
 <meta charset="UTF-8">
 </head>
 <style type="text/css">
-body{background-color:white;padding:0;margin:0;}
-.container{height:1024px;width:768px;background-color:red;margin: 0 auto 0; }
-.header{height:20px;width:100%;background-color:blue;clear:both;}
-.left-side{height:95%;width:384px;background-color:white;float:left;}
-.right-side{height:95%;width:384px;background-color:white;float:right;}
-.main-img{height:300px ;width:350px;border: 1px solid black;margin: 15px auto 0; clear:both;}
+body{background-color:#f0EEEC;padding:0;margin:0;font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif}
+.container{height:1024px;width:768px;background-color:red;margin: 15 auto 0; }
+.header{height:20px;width:100%;background-color:blue;clear:both;background: -webkit-linear-gradient(white, grey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, grey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, grey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, grey); /* Standard syntax */}
+.left-side{height:98%;width:383px;background-color:white;float:left;border-top:1px #ccc solid;border-left:1px #ccc solid;}
+.right-side{height:98%;width:383px;background-color:white;float:right;border-top:1px #ccc solid;border-right:1px #ccc solid;}
+.main-img{height:300px ;width:350px;border: 1px solid #ccc;margin: 15px auto 0; clear:both;}
 .mainimgsize{height:300px ;width:350px;}
-.img-sub-1{height:75px;width:80px;margin:5px;border:1px black solid;background-color:;float:left;}
-.img-sub-1:hover{height:75px;width:80px;margin:5px;border:1px red solid;background-color:;float:left;}
+.img-sub-1{height:75px;width:80px;margin:5px;border:1px #ccc solid;background-color:;float:left;}
+.img-sub-1:hover{height:75px;width:80px;margin:5px;border:1px #434343 solid;background-color:;float:left;}
 
 .imgsub{height:75px;width:80px;}
 .very-big-img{height:360px ;width:384px;border: 1px solid black;margin: 15px auto 0;  visibility: ;}
@@ -56,9 +59,9 @@ body{background-color:white;padding:0;margin:0;}
 
 
 <div class="info-container" style="margin: 0 0 0 6px;"">
-<div class="header-title">Why we love them</div><br>
+<div class="header-title" style="font-size:20px">Why we love them...</div><br>
 <div class="spec"><div class="spec-title">RAM</div><div class="spec-result">upto 16GB DDR3</div></div>
-<div class="spec"><div class="spec-title">Optical Drive</div><div class="spec-result">optional second hardrive /battery</div></div>
+<div class="spec"><div class="spec-title">Drive</div><div class="spec-result">optional second hardrive / second battery</div></div>
 <div class="spec"><div class="spec-title">Battery</div><div class="spec-result">9-cell battery + slice </div></div>
 <div class="spec"><div class="spec-title">Drive</div><div class="spec-result">SSD and mSATA support</div></div>
 <div class="spec"><div class="spec-title">Processor</div><div class="spec-result">Intel Core i5/i7 processor i5/i7-2540M with dual-core </div></div>
