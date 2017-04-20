@@ -8,6 +8,12 @@
 	
 body{background-color:#f4f4f4;margin:0;padding:0;}
 .banner{height:30px;width:100%;padding:0;margin:0 0 24 0;background-color:#434343; color:white;text-align:center;
+ background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(grey, #434343); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(grey, #434343); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(grey, #434343); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(grey, #434343); /* Standard syntax */
+
 -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
  -moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
  box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);}
@@ -20,11 +26,20 @@ box-shadow: 10px 11px 19px -14px rgba(0,0,0,0.75);}
 .box:link{text-decoration: none;}
 .main-title{text-align: center;width: 100%;
     font-family: 'Norican', cursive;
-font-size :28px;}
+font-size :28px;text-shadow:1px 1px 1px skyblue}
 .h2{text-align: center;width: 100%}
+.main-ico{text-align: center;height:32px;width:32px;line-height:;float:left;padding-right: 10px;}
+.banner-txt{text-align: :;line-height:1.8 ;float:left;}
+.test{text-align:center;margin:0 auto 0;width:200px;height:20px;}
 </style>
 <body>
-<div class="banner"><img style="height:20px;width:20px;"src="laptop-icon.png">Plain and Simple...</div>
+
+<div class="banner">
+<div class="test">
+<img class="main-ico" src="laptop-xxl.png">
+<div class="banner-txt">Plain and Simple...</div>
+</div>
+</div>
 
 <div class="main-title"><h2>What laptops do programmers/developers use most?</h2></div>
 
