@@ -6,6 +6,8 @@
 	<style type="text/css">
 
 body{
+	font-family:"Roboto Mono",Roboto,sans-serif;
+	letter-spacing: .25px;
 	padding:0;margin:0;
 	background:url("carbon_texture1879.jpg");
 	background-repeat:repeat;}
@@ -17,9 +19,9 @@ body{
 .main-img{
 	height:490px;width:768px;
 	position;absolute;
-	margin:30px auto 0;
+	margin:75px auto 0;
 	overflow:auto;
-	background-color: blue;
+	background-color: white;
 	background-repeat: no-repeat;
 }
 
@@ -27,7 +29,7 @@ body{
 	height:375px;
 	width:720px;
 	position:relative;
-	margin: 50px auto 0;
+	margin: 37px auto 0;
 	background-color:white;
 	overflow-wrap:break-word;}
 
@@ -38,15 +40,16 @@ body{
 	font-size:35px;
 	font-weight:bold;
 	color:white;
+	margin-top:10px
 }
 .exercise-holder{
 	width:100%;
 	height:30px;
-	border-bottom:1px #f0efefef solid;
+	border-bottom:1px #f0efef solid;
 	text-align: center;
 	line-height: 2;
 }
-.exercise-holder:hover{background-color:#fafafa;}
+.exercise-holder:hover{background-color:#f6f6f6;}
 .exerciseHeader:hover{background-color: pink;}
 
 .sets{
@@ -84,18 +87,23 @@ body{
 	float:left;
 	text-align: center;
 }
+
 .datecreated{
 	height:14px;
 	width:auto;
-	margin:5px 30px 0 0;
-	float:right;}
+	color:#ff5252;
+	margin:10px 30px 0 0;
+	float:right;
+	font-size:10px;}
+
+	input[type="checkbox"]{color:#ff5252;}
 </style>
 	<body>
-		
+		<!--blue #4285f4;-->
 <div class="container">
 <div class="title">Workout Of the Day (W.O.D.)</div> 
 	<div class="main-img">
-	<div class="title">some-workout</div>
+	<div class="title" style="color:#ff5252;"">Sample workout</div> 
 <!--begining of text area -->
 	<div class="main-img-txt">
 
@@ -113,64 +121,90 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox"></div>
+<div class="check">	<input type="checkbox" name="cb1"></div>
 </div>
 
-<!--End of Line -->
-<!--start of line -->
-<div class="exercise-holder" style="font-size:12px">
+<div class="exercise-holder" style="font-size:12px;">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox"></div>
+<div class="check">	<input type="checkbox" name="cb2"></div>
 </div>
-<!--End of Line -->
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px">
+<div class="exercise-holder" style="font-size:12px;border">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox"></div>
+<div class="check">	<input type="checkbox" name="cb1"></div>
 </div>
-<!--End of Line -->
-<!--start of line -->
-<div class="exercise-holder" style="font-size:12px">
+
+<div class="exercise-holder" style="font-size:12px;">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox"></div>
+<div class="check">	<input type="checkbox" name="cb2"></div>
 </div>
-<!--End of Line -->
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px">
+<div class="exercise-holder" style="font-size:12px;border">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox"></div>
+<div class="check">	<input type="checkbox" name="cb1"></div>
 </div>
-<!--End of Line -->
-<!--start of line -->
-<div class="exercise-holder" style="font-size:12px">
+
+<div class="exercise-holder" style="font-size:12px;">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox"></div>
+<div class="check">	<input type="checkbox" name="cb2"></div>
 </div>
-<!--End of Line -->
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px">
+<div class="exercise-holder" style="font-size:12px;border">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox"></div>
+<div class="check">	<input type="checkbox" name="cb1"></div>
 </div>
-<!--End of Line -->
+
+<div class="exercise-holder" style="font-size:12px;">
+<div class="sets">10</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">	<input type="checkbox" name="cb2"></div>
+</div>
+<!--start of line -->
+<div class="exercise-holder" style="font-size:12px;border">
+<div class="sets">10</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">	<input type="checkbox" name="cb1"></div>
+</div>
+
+<div class="exercise-holder" style="font-size:12px;">
+<div class="sets">10</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">	<input type="checkbox" name="cb2"></div>
+</div>
+<!--start of line -->
+<div class="exercise-holder" style="font-size:12px;border">
+<div class="sets">10</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">	<input type="checkbox" name="cb1"></div>
+</div>
+
+
 
 		</div><!--End of Text area-->
 <div class="datecreated"><b>Created:&nbsp</b>May 1st 5:50AM</div>
