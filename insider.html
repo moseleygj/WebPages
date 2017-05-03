@@ -21,6 +21,8 @@ body{
 	position;absolute;
 	margin:75px auto 0;
 	overflow:auto;
+	box-shadow:0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+	border-radius: 3px;
 	background-color: white;
 	background-repeat: no-repeat;
 }
@@ -40,7 +42,8 @@ body{
 	font-size:35px;
 	font-weight:bold;
 	color:white;
-	margin-top:10px
+	margin-top:10px;
+	text-shadow:1px 1px 1px grey;
 }
 .exercise-holder{
 	width:100%;
@@ -96,9 +99,10 @@ body{
 	float:right;
 	font-size:10px;}
 
-	input[type="checkbox"]{color:#ff5252;}
 </style>
+
 	<body>
+
 		<!--blue #4285f4;-->
 <div class="container">
 <div class="title">Workout Of the Day (W.O.D.)</div> 
@@ -137,7 +141,7 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb1"></div>
+<div class="check">	<input type="checkbox" name="cb3"></div>
 </div>
 
 <div class="exercise-holder" style="font-size:12px;">
@@ -145,7 +149,7 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb2"></div>
+<div class="check">	<input type="checkbox" name="cb4"></div>
 </div>
 <!--start of line -->
 <div class="exercise-holder" style="font-size:12px;border">
@@ -153,7 +157,7 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb1"></div>
+<div class="check">	<input type="checkbox" name="cb5"></div>
 </div>
 
 <div class="exercise-holder" style="font-size:12px;">
@@ -161,7 +165,7 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb2"></div>
+<div class="check">	<input type="checkbox" name="cb6"></div>
 </div>
 <!--start of line -->
 <div class="exercise-holder" style="font-size:12px;border">
@@ -169,7 +173,7 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb1"></div>
+<div class="check">	<input type="checkbox" name="cb7"></div>
 </div>
 
 <div class="exercise-holder" style="font-size:12px;">
@@ -177,7 +181,7 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb2"></div>
+<div class="check">	<input type="checkbox" name="cb8"></div>
 </div>
 <!--start of line -->
 <div class="exercise-holder" style="font-size:12px;border">
@@ -185,7 +189,7 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb1"></div>
+<div class="check">	<input type="checkbox" name="cb9"></div>
 </div>
 
 <div class="exercise-holder" style="font-size:12px;">
@@ -193,24 +197,40 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb2"></div>
+<div class="check">	<input type="checkbox" name="cb10"></div>
 </div>
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px;border">
+<div class="exercise-holder" id="h11" style="font-size:12px;border">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb1"></div>
-</div>
+<div class="check">	<input type="checkbox" onClick=chk(h11); name="cb11"></div></div>
 
+</div><!--End of Text area-->
 
-
-		</div><!--End of Text area-->
 <div class="datecreated"><b>Created:&nbsp</b>May 1st 5:50AM</div>
 	</div>
 
 </div>
+
+
 	</body>
 
-</html>
+<script type="text/javascript">
+tog = 0;
+function chk(d)
+{
+if (tog == 1 ){
+document.getElementById('d').style.backgroundColor = "white";
+tog=0;
+}
+else if ( tog == 0 ){
+document.getElementById('d').style.backgroundColor = "red";
+tog=1;
+}
+
+}
+</script>
+
+</html> 
