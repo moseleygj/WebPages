@@ -1,0 +1,85 @@
+<html>
+
+<head>
+<style type="text/css">
+body{background-color: #373737;}
+*{border:1px red solid;}
+#container{background-color:white;height:1000px;width:650px;box-shadow: 0 5px 35px rgba(0,0,0,.65);margin:0 auto 0;margin-top:24px;}
+#title{font-size:18px;font-weight:bolder;margin-bottom:5px;margin-top:5px;}
+
+.titleAll{font-size:16px;font-weight:bolder;}
+.titleStats{margin-right: 10px;}
+
+.nL1{margin-top:12px;clear: left;}
+.nL2{margin-top:20px;clear: left;}
+
+.HzLine{width:100%;background-color:skyblue;height:1px;}
+
+
+.generalFont{font-size: 12px;color:;}
+#top{width:637px;height:120px;}
+#logo{width:100px;height:100px;margin-left:12px;margin-top: 12px;margin-bottom:5px;}
+
+#middle{width:637px; height:40px;}
+#jobTitle{font-size:24px; font-weight:bolder;margin-left:12px;vertical-align:middle;}
+#middleA{width:637px; height:26px;}
+
+#right{width:318px; height:auto; float:left;}
+#left{width:318px; height:auto;float:left;margin-left:5px;margin-right:5px}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+<div id="top">
+<div id="logo"></div>
+</div>
+
+<div id="middle">
+
+<div id="jobTitle">Some Job Title Here</div>
+</div>
+
+<div id="middleA">
+
+</div>
+<div id="left">
+Our Approach
+<div class="nl1"></div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate turpis nec leo porttitor commodo. Praesent faucibus venenatis convallis. Maecenas id feugiat elit, id dignissim leo. Nam vitae elit sit amet nibh sollicitudin vehicula nec nec urna. Vivamus imperdiet lectus imperdiet ligula rhoncus facilisis. Aliquam pellentesque tristique luctus. Ut porttitor lorem ac eleifend bibendum. Maecenas ac iaculis est. Curabitur id ante et nibh rutrum lobortis. Curabitur semper mattis lorem sed elementum. Nullam et nulla vitae risus feugiat elementum. Vestibulum nec augue ac neque luctus lobortis nec ut massa. Pellentesque eget sollicitudin leo. Aenean ultrices suscipit est at pretium. Donec lobortis scelerisque elit, a ullamcorper purus mattis a. 
+<div class="nl2"></div>
+<div class="titleAll">Who we need</div>
+<div class="nl1"></div>
+
+Nulla posuere tincidunt nibh, maximus porttitor arcu faucibus at. Nunc non lobortis sapien. Duis ut augue in ligula mollis consectetur. Ut faucibus dignissim nunc ac euismod. Aliquam accumsan gravida nulla, vitae cursus ipsum faucibus eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed tempor velit, non semper dolor. Mauris feugiat ipsum at pulvinar maximus. In hac habitasse platea dictumst. Phasellus aliquam turpis vel sem congue, id luctus enim ultrices. Mauris imperdiet lorem et quam tempus venenatis.
+<div class="nl2"></div>
+<div class="titleAll">A day in the life</div>
+<div class="nl1"></div>
+Nulla rhoncus fringilla magna vel ultricies. Proin consequat mattis nisi, iaculis facilisis arcu bibendum blandit. Curabitur quis rutrum nibh, non pharetra diam. Phasellus volutpat eget quam et accumsan. 
+</div>
+
+
+<div id="right">
+Apply for this Position<div class="nl2"></div>
+*Required fields
+<div class="nl1"></div>
+<div id="btn"><input type="button" value="Apply with LinkedIn"></div>
+<div class="nl1"></div>
+<div class="titleAll">First name*<br><input type="textbox"></div>
+<div class="nl1"></div>
+<div class="titleAll">Last name*<br><input type="textbox"></div>
+<div class="nl1"></div>
+<div class="titleAll">Email address*<br><input type="textbox"></div>
+<div class="nl1"></div>
+<div class="titleAll">Location<br><input type="textbox"><br><input type="textbox"size="12"> <input type="textbox" size="2"> <input type="textbox" size="5"></div>
+<div class="nl1"></div>
+<div class="titleAll">Phone number*<br><input type="textbox"></div>
+<div class="nl1"></div>
+<div class="titleAll">Resume*<br></div>Attach resume as .pdf, .doc, or docx(limit 2MB)<input type="button" onClick="" value="Browse..."><div class="nl1"></div>
+<div class="titleAll">Cover Letter<br><center><textarea width="100%"></textarea></center></div>
+</div></div>
+</div>
+</body>
+
+</html>
