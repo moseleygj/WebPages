@@ -5,15 +5,40 @@
 <title>Simplistic Design-1 GordonMoseley</title>
 <link rel="icon" href="eye2.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+$("#alpha").mouseover(function(){
+	$(".left-col-content").load("a.html")
+		});
+$("#bravo").mouseover(function(){
+	$(".left-col-content").load("b.html")
+		});
+$("#charley").mouseover(function(){
+	$(".left-col-content").load("c.html")
+		});
+$("#delta").mouseover(function(){
+	$(".left-col-content").load("d.html")
+		});
+$("#echo").mouseover(function(){
+	$(".left-col-content").load("e.html")
+		});
+$("#foxtrot").mouseover(function(){
+	$(".left-col-content").load("f.html")
+		});
+$("#golf").mouseover(function(){
+	$(".left-col-content").load("g.html")
+		});
+	});
+</script>
 </head>
 
 <style type="text/css">
 
 body{margin:0;
-	padding:0;}
+	padding:0;min-height:755px}
 
 .container{height:100%; min-width:799px;
-	width:100%;
+	width:100%;min-height:755px; 
 	background-color:;
 	color:;font:;font-weight:;font-family:;
 	margin:; box-shadow:;text-shadow;font-size:;}
@@ -50,37 +75,37 @@ background: linear-gradient(#373737, #434343);
 </div>
 <div class="right-col">
 
-<div class="option">	
+<div class="option" id="alpha">	
 	<div class="option-title" style="margin-top:200px;">This is Just a test</div>
 	<div class="option-subtitle">This is Just a sub-test</div>
 </div>
 
-<div class="option">	
+<div class="option" id="bravo">	
 	<div class="option-title">Browse</div>
 	<div class="option-subtitle">This is Just a sub-test</div>
 </div>
 
-<div class="option">	
+<div class="option" id="charley">	
 	<div class="option-title">Search</div>
 	<div class="option-subtitle">This is Just a sub-test</div>
 </div>
 
-<div class="option">	
+<div class="option" id="delta">	
 	<div class="option-title">Details</div>
 	<div class="option-subtitle">This is Just a sub-test</div>
 </div>
 
-<div class="option">	
+<div class="option" id="echo">	
 	<div class="option-title">Playback</div>
 	<div class="option-subtitle">This is Just a sub-test</div>
 </div>
 
-<div class="option">	
+<div class="option" id="foxtrot">	
 	<div class="option-title">Horizontal Grid</div>
 	<div class="option-subtitle">This is Just a sub-test</div>
 </div>
 
-<div class="option">	
+<div class="option" id="golf">	
 	<div class="option-title">Vertical Grid</div>
 	<div class="option-subtitle">This is Just a sub-test</div>
 </div>
