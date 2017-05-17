@@ -40,51 +40,51 @@ input[type="textbox"]:hover{background-color:skyblue;width:210px;height:;}
 <div class="left">
 <img class="proPic" src="profile-placeholder.png"></div>	
 <div class="mid">
-<div class="idnum">123 456 789</div>
-<div class="name">DOE</div>
-<div class="name" style="margin-bottom:7px;">JOHN</div>
-<div class="address">123 Seaseme Street, Brooklyn, NY,11232</div>
-<div class="cat">sex :</div>
-<div class="ans">MALE</div>
-<div class="cat">DOB :</div>
-<div class="ans">8/30/1978</div>
-<div class="cat">Expires:</div>
-<div class="ans">1/31/2023</div>
+<div class="idnum" id="idnum">123 456 789</div>
+<div class="name" id="fname">DOE</div>
+<div class="name" id="lname"style="margin-bottom:7px;">JOHN</div>
+<div class="address" id="address">123 Seaseme Street, Brooklyn, NY,11232</div>
+<div class="cat" id="">sex :</div>
+<div class="ans" id="sex">MALE</div>
+<div class="cat" id="">DOB :</div>
+<div class="ans" id="dob">8/30/1978</div>
+<div class="cat" id="">Expires:</div>
+<div class="ans" id="expire">1/31/2023</div>
 
 </div>
 <div class="right">
-<div class="cat">Dept:</div>
-<div class="ans">IT</div>
+<div class="cat" id="">Dept:</div>
+<div class="ans" id="dept">IT</div>
 <img class="barcode" src="QR.png">
 
 </div>
 
 <div class="bottom">
 
-<div class="holder" style="font-size:10px">Issue date: <b>08/11/2011</b>
+<div class="holder" style="font-size:10px" id="issue">Issue date: <b>08/11/2011</b>
 </div>
 </div>
 </div>
 <div class="infogrid">
 <div class="infocell" >
 <div class="infoTitle" >ID number: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="textbox" id="idnumT" placeholder="poop" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >First Name: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="textbox" id="fnameT" placeholder="poop"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Last Name: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="textbox" id="lnameT" placeholder="poop"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Address: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="textbox" id="addressT" placeholder="poop"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Address: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="textbox" id="addressT2" placeholder="poop"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Sex: </div>
@@ -92,30 +92,87 @@ input[type="textbox"]:hover{background-color:skyblue;width:210px;height:;}
 
 <div class="infocell" >
 <div class="infoTitle" >DOB: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="textbox" id="dobT" placeholder="poop"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Expiration: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="textbox" id="expireT" placeholder="poop"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >issue date: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="textbox" id="issueT" placeholder="poop"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Department: </div>
-<input type="textbox" id="dept" placeholder="poop"></input></div><br>
+<input type="textbox" id="deptT" placeholder="" 
+oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
-<button onclick="test()">Sumbit</button><button>Clear</button>
+<button onclick="test()">Sumbit</button><button onClick="clear()">Clear</button>
 </div>
 </div>
 
 
 </div>
 <script>
-	test(){
-document.getElementById("dept").value="test";}
+function liveTxtChange(){
+document.getElementById("idnum").innerHTML=
+document.getElementById("idnumT").value;
+
+document.getElementById("dept").innerHTML=
+document.getElementById("deptT").value;
+
+}
+
+function test(){
+document.getElementById("idnumT").value=
+document.getElementById("idnum").innerHTML;
+
+document.getElementById("fnameT").value=
+document.getElementById("fname").innerHTML;
+
+document.getElementById("lnameT").value=
+document.getElementById("lname").innerHTML;
+
+document.getElementById("addressT").value=
+document.getElementById("address").innerHTML;
+
+document.getElementById("dobT").value=
+document.getElementById("dob").innerHTML;
+
+document.getElementById("expireT").value=
+document.getElementById("expire").innerHTML;
+
+document.getElementById("deptT").value=
+document.getElementById("dept").innerHTML;
+document.getElementById("issueT").value=
+document.getElementById("issue").innerHTML;
+
+}
+
+function clear(){		
+document.getElementById("idnumT").value="";
+document.getElementById("idnum").innerHTML="";
+
+document.getElementById("fnameT").value="";
+document.getElementById("fname").innerHTML="";
+
+document.getElementById("lnameT").value="";
+document.getElementById("lname").innerHTML="";
+
+document.getElementById("addressT").value="";
+document.getElementById("address").innerHTML="";
+
+document.getElementById("dobT").value=""
+document.getElementById("dob").innerHTML="";
+
+document.getElementById("expireT").value=""
+document.getElementById("expire").innerHTML="";
+
+document.getElementById("deptT").value="";
+document.getElementById("dept").innerHTML="";
+
+}
 </script>
 </body>
 </html>
