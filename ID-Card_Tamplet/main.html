@@ -6,19 +6,28 @@
 </head>
 <style type="text/css">
 html{margin:0;padding:0;}
-body{margin:0;padding:0;background-color:grey;}
-.container{height:100%;width:100%;margin:0;padding:;background-color:black;}
-.card{height:225px;width:375px;box-shadow:;margin:15px auto 15px;background-color:white;border-radius:5px }
-.left{width:50%;height:80%;float:left;}
-.right{width:50%;height:80%;float:right;}
-.top{width:100%;height:20%;}
-img.profilePic{height:140px;width:125px;margin:10px auto 10px; display: block;text-align: center;}
+body{margin:0;padding:0;background-color:#444;}
+.container{height:100%;width:100%;margin:0;padding:;background-color:#444;}
+.card{height:225px;width:375px;box-shadow:;margin:15px auto 15px;background-color:white;border-radius:5px ;overflow:hidden;}
+.left{width:40%;height:70%;float:left;}
+.mid{width:40%;height:70%;float:left;}
+.right{width:20%;height:70%;float:right;}
+.bottom{height:10%;width:100%;clear:both;}
 
-.sex{height:;width:;font-weight:;font-size: ;color:;text-align:; float:;margin:;}
-.address{height:;width:;font-weight:;font-size: ;color:;text-align:; float:;margin:;}
-.expiration{height:;width:;font-weight:;font-size: ;color:;text-align:; float:;margin:;}
-.idnum{height:;width:;font-weight:;font-size: ;color:;text-align:; float:;margin:;}
-.name{height:;width:;font-weight:;font-size: ;color:;text-align:; float:;margin:;}
+.top{width:100%;height:20%;}
+
+img.proPic{height:120px;
+			width:80%;
+			margin:5px auto 5px; 
+			display: block;
+			text-align: center;}
+
+.address{height:12px;width:auto;font-weight:normal;font-size:10px ;color:black;text-align:left; float:;margin:10px 5px 12px 0px;}
+.idnum{height:12px;width:auto;font-weight:bold;font-size:12px ;color:black;text-align:left; float:;margin:5px 5px 8px 0px;}
+.name{height:12px;width:auto;font-weight:normal;font-size:12px ;color:black;text-align:left; float:;margin:5px 5px 3px 0px;}
+.cat{height:11px;width:auto;font-weight:normal;font-size:12px ;clear:both;color:black;text-align:left; float:left;margin:5px 5px 2px 0px;}
+.ans{height:12px;width:auto;font-weight:bold;font-size:10px ;color:black;text-align:left; float:left;margin:5px 5px 2px 2px;}
+.barcode{height:60px;width:60px;margin:70px auto 5px;clear: both;}
 </style>
 
 <body>
@@ -26,14 +35,31 @@ img.profilePic{height:140px;width:125px;margin:10px auto 10px; display: block;te
 
 <div class="card">
 <div class="top"></div>	
-<div class="left"><img class="profilePic" src="profile-placeholder.png"></div>	
-<div class="right"></div>
+<div class="left">
+<img class="proPic" src="profile-placeholder.png"></div>	
+<div class="mid">
+<div class="idnum">123 456 789</div>
+<div class="name">DOE</div>
+<div class="name" style="margin-bottom:7px;">JOHN</div>
+<div class="address">123 Seaseme Street, Brooklyn, NY,11232</div>
+<div class="cat">sex :</div>
+<div class="ans">MALE</div>
+<div class="cat">DOB :</div>
+<div class="ans">8/30/1978</div>
+<div class="cat">Expires:</div>
+<div class="ans">1/31/2013</div>
+
+</div>
+<div class="right">
+<div class="cat">Dept:</div>
+<div class="ans">IT</div>
+<img class="barcode" src="1D-barcode.jpg">
+
 </div>
 
-<div class=""></div>
+<div class="bottom">
 </div>
-
-
+</div>
 
 
 </body>
