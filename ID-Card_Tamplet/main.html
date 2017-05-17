@@ -1,22 +1,19 @@
 <html>
 <head>
-
-
-
 </head>
 <style type="text/css">
 html{margin:0;padding:0;}
 body{margin:0;padding:0;background-color:#444;}
 .container{height:100%;width:100%;margin:0;padding:;background-color:#444;}
-.card{height:225px;width:375px;box-shadow:;margin:15px auto 15px;background-color:white;border-radius:5px ;overflow:hidden;}
+.card{height:225px;width:375px;box-shadow:;margin:15px auto 15px;background-color:white;border-radius:5px ;overflow:hidden; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
 .left{width:40%;height:70%;float:left;}
 .mid{width:40%;height:70%;float:left;}
 .right{width:20%;height:70%;float:right;}
-.bottom{height:10%;width:100%;clear:both;}
+.bottom{height:10%;width:100%;clear:both;text-align: center;}
 
-.top{width:100%;height:20%;}
+.top{width:100%;height:20%;border-bottom:2px; border-left:0px;border-top:0px; border-style:solid; border-color:skyblue;}
 
-img.proPic{height:120px;
+img.proPic{height:80%;
 			width:80%;
 			margin:5px auto 5px; 
 			display: block;
@@ -28,6 +25,11 @@ img.proPic{height:120px;
 .cat{height:11px;width:auto;font-weight:normal;font-size:12px ;clear:both;color:black;text-align:left; float:left;margin:5px 5px 2px 0px;}
 .ans{height:12px;width:auto;font-weight:bold;font-size:10px ;color:black;text-align:left; float:left;margin:5px 5px 2px 2px;}
 .barcode{height:60px;width:60px;margin:70px auto 5px;clear: both;}
+.infogrid{width:375px;height:auto;margin: 15px auto 0}
+.infoTitle{width:120px;height:;color:white;font-size;float:left;margin-right:5px;line-height: 2;}
+input[type="textbox"]{color:#434343;width:210px;height:;padding:0; font-size:18px;}
+input[type="textbox"]:hover{background-color:skyblue;width:210px;height:;}
+.infocell{width:100%;margin: 0.1px 0 0px 0px;}
 </style>
 
 <body>
@@ -47,20 +49,73 @@ img.proPic{height:120px;
 <div class="cat">DOB :</div>
 <div class="ans">8/30/1978</div>
 <div class="cat">Expires:</div>
-<div class="ans">1/31/2013</div>
+<div class="ans">1/31/2023</div>
 
 </div>
 <div class="right">
 <div class="cat">Dept:</div>
 <div class="ans">IT</div>
-<img class="barcode" src="1D-barcode.jpg">
+<img class="barcode" src="QR.png">
 
 </div>
 
 <div class="bottom">
+
+<div class="holder" style="font-size:10px">Issue date: <b>08/11/2011</b>
+</div>
+</div>
+</div>
+<div class="infogrid">
+<div class="infocell" >
+<div class="infoTitle" >ID number: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >First Name: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >Last Name: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >Address: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >Address: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >Sex: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >DOB: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >Expiration: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >issue date: </div>
+<input type="textbox" id="" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<div class="infoTitle" >Department: </div>
+<input type="textbox" id="dept" placeholder="poop"></input></div><br>
+
+<div class="infocell" >
+<button onclick="test()">Sumbit</button><button>Clear</button>
 </div>
 </div>
 
 
+</div>
+<script>
+	test(){
+document.getElementById("dept").value="test";}
+</script>
 </body>
 </html>
