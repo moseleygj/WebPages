@@ -68,47 +68,48 @@ input[type="textbox"]:hover{background-color:skyblue;width:210px;height:;}
 <div class="infogrid">
 <div class="infocell" >
 <div class="infoTitle" >ID number: </div>
-<input type="textbox" id="idnumT" placeholder="poop" oninput="liveTxtChange()"></input></div><br>
+<input type="textbox" id="idnumT" placeholder="fill me in" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >First Name: </div>
-<input type="textbox" id="fnameT" placeholder="poop"></input></div><br>
+<input type="textbox" id="fnameT" placeholder="fill me in"oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Last Name: </div>
-<input type="textbox" id="lnameT" placeholder="poop"></input></div><br>
+<input type="textbox" id="lnameT" placeholder="fill me in"oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Address: </div>
-<input type="textbox" id="addressT" placeholder="poop"></input></div><br>
+<input type="textbox" id="addressT" placeholder="fill me in" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Address: </div>
-<input type="textbox" id="addressT2" placeholder="poop"></input></div><br>
+<input type="textbox" id="addressT2" placeholder="fill me in" oninput="liveTxtChange()" style="height:28px"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Sex: </div>
-<input type="textbox" id="" placeholder="poop"></input></div><br>
+<input type="radio" name="sex" id="male" oninput="liveTxtChange()" style="color:white" checked>Male</input>
+<input type="radio" name="sex" id="female" oninput="liveTxtChange()" >Female</input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >DOB: </div>
-<input type="textbox" id="dobT" placeholder="poop"></input></div><br>
+<input type="textbox" id="dobT" placeholder="fill me in" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Expiration: </div>
-<input type="textbox" id="expireT" placeholder="poop"></input></div><br>
+<input type="textbox" id="expireT" placeholder="fill me in"oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >issue date: </div>
-<input type="textbox" id="issueT" placeholder="poop"></input></div><br>
+<input type="textbox" id="issueT" placeholder="fill me in" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Department: </div>
 <input type="textbox" id="deptT" placeholder="" 
 oninput="liveTxtChange()"></input></div><br>
 
-<div class="infocell" >
-<button onclick="test()">Sumbit</button><button onClick="clear()">Clear</button>
+<div class="infocell" style="margin:0 auto 0;" ><label><button onclick="test()" style="margin-right:10px;">Sumbit</button></label>
+<label><button onClick="clearTxt()">Clear</button></label>
 </div>
 </div>
 
@@ -122,6 +123,28 @@ document.getElementById("idnumT").value;
 document.getElementById("dept").innerHTML=
 document.getElementById("deptT").value;
 
+document.getElementById("fname").innerHTML=
+document.getElementById("fnameT").value;
+
+document.getElementById("lname").innerHTML=
+document.getElementById("lnameT").value;
+
+document.getElementById("address").innerHTML=
+document.getElementById("addressT").value;
+
+document.getElementById("dob").innerHTML=
+document.getElementById("dobT").value;
+
+document.getElementById("expire").innerHTML=
+document.getElementById("expireT").value;
+
+document.getElementById("dept").innerHTML=
+document.getElementById("deptT").value;
+
+document.getElementById("issue").innerHTML=
+
+document.getElementById("issueT").value;
+alert(document.getElementById("sex").ivalue)
 }
 
 function test(){
@@ -150,7 +173,7 @@ document.getElementById("issue").innerHTML;
 
 }
 
-function clear(){		
+function clearTxt(){		
 document.getElementById("idnumT").value="";
 document.getElementById("idnum").innerHTML="";
 
@@ -172,6 +195,8 @@ document.getElementById("expire").innerHTML="";
 document.getElementById("deptT").value="";
 document.getElementById("dept").innerHTML="";
 
+document.getElementById("issueT").value="";
+document.getElementById("issue").innerHTML="";
 }
 </script>
 </body>
