@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="UTF-8">
 </head>
 <style type="text/css">
 html{margin:0;padding:0;}
@@ -10,15 +11,12 @@ body{margin:0;padding:0;background-color:#444;}
 .mid{width:40%;height:70%;float:left;}
 .right{width:20%;height:70%;float:right;}
 .bottom{height:10%;width:100%;clear:both;text-align: center;}
-
 .top{width:100%;height:20%;border-bottom:2px; border-left:0px;border-top:0px; border-style:solid; border-color:skyblue;}
-
 img.proPic{height:80%;
 			width:80%;
 			margin:5px auto 5px; 
 			display: block;
 			text-align: center;}
-
 .address{height:12px;width:auto;font-weight:normal;font-size:10px ;color:black;text-align:left; float:;margin:10px 5px 12px 0px;}
 .idnum{height:12px;width:auto;font-weight:bold;font-size:12px ;color:black;text-align:left; float:;margin:5px 5px 8px 0px;}
 .name{height:12px;width:auto;font-weight:normal;font-size:12px ;color:black;text-align:left; float:;margin:5px 5px 3px 0px;}
@@ -68,48 +66,48 @@ input[type="textbox"]:hover{background-color:skyblue;width:210px;height:;}
 <div class="infogrid">
 <div class="infocell" >
 <div class="infoTitle" >ID number: </div>
-<input type="textbox" id="idnumT" placeholder="fill me in" oninput="liveTxtChange()"></input></div><br>
+<input type="textbox" id="idnumT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >First Name: </div>
-<input type="textbox" id="fnameT" placeholder="fill me in"oninput="liveTxtChange()"></input></div><br>
+<input type="textbox" id="fnameT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Last Name: </div>
-<input type="textbox" id="lnameT" placeholder="fill me in"oninput="liveTxtChange()"></input></div><br>
+<input type="textbox" id="lnameT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Address: </div>
-<input type="textbox" id="addressT" placeholder="fill me in" oninput="liveTxtChange()"></input></div><br>
+<input type="textbox" id="addressT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Address: </div>
-<input type="textbox" id="addressT2" placeholder="fill me in" oninput="liveTxtChange()" style="height:28px"></input></div><br>
+<input type="textbox" id="addressT2" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Sex: </div>
-<input type="radio" name="sex" id="male" oninput="liveTxtChange()" style="color:white" checked>Male</input>
-<input type="radio" name="sex" id="female" oninput="liveTxtChange()" >Female</input></div><br>
+<input type="textbox" id="" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >DOB: </div>
-<input type="textbox" id="dobT" placeholder="fill me in" oninput="liveTxtChange()"></input></div><br>
+<input type="textbox" id="dobT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Expiration: </div>
-<input type="textbox" id="expireT" placeholder="fill me in"oninput="liveTxtChange()"></input></div><br>
+<input type="textbox" id="expireT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
-<div class="infoTitle" >issue date: </div>
-<input type="textbox" id="issueT" placeholder="fill me in" oninput="liveTxtChange()"></input></div><br>
+<div class="infoTitle" >Issue date: </div>
+<input type="textbox" id="issueT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >Department: </div>
-<input type="textbox" id="deptT" placeholder="" 
+<input type="textbox" id="deptT" placeholder="Fill Me In" 
 oninput="liveTxtChange()"></input></div><br>
 
-<div class="infocell" style="margin:0 auto 0;" ><label><button onclick="test()" style="margin-right:10px;">Sumbit</button></label>
-<label><button onClick="clearTxt()">Clear</button></label>
+<div class="infocell" >
+<label><button onclick="test()">Sumbit</button></label>
+</label><button onClick="clearBoxes()">Clear</button></label>
 </div>
 </div>
 
@@ -117,86 +115,24 @@ oninput="liveTxtChange()"></input></div><br>
 </div>
 <script>
 function liveTxtChange(){
-document.getElementById("idnum").innerHTML=
-document.getElementById("idnumT").value;
-
-document.getElementById("dept").innerHTML=
-document.getElementById("deptT").value;
-
-document.getElementById("fname").innerHTML=
-document.getElementById("fnameT").value;
-
-document.getElementById("lname").innerHTML=
-document.getElementById("lnameT").value;
-
-document.getElementById("address").innerHTML=
-document.getElementById("addressT").value;
-
-document.getElementById("dob").innerHTML=
-document.getElementById("dobT").value;
-
-document.getElementById("expire").innerHTML=
-document.getElementById("expireT").value;
-
-document.getElementById("dept").innerHTML=
-document.getElementById("deptT").value;
-
-document.getElementById("issue").innerHTML=
-
-document.getElementById("issueT").value;
-alert(document.getElementById("sex").ivalue)
+document.getElementById("idnum").innerHTML=document.getElementById("idnumT").value;
+document.getElementById("dept").innerHTML=document.getElementById("deptT").value;
 }
-
 function test(){
-document.getElementById("idnumT").value=
-document.getElementById("idnum").innerHTML;
-
-document.getElementById("fnameT").value=
-document.getElementById("fname").innerHTML;
-
-document.getElementById("lnameT").value=
-document.getElementById("lname").innerHTML;
-
-document.getElementById("addressT").value=
-document.getElementById("address").innerHTML;
-
-document.getElementById("dobT").value=
-document.getElementById("dob").innerHTML;
-
-document.getElementById("expireT").value=
-document.getElementById("expire").innerHTML;
-
-document.getElementById("deptT").value=
-document.getElementById("dept").innerHTML;
-document.getElementById("issueT").value=
-document.getElementById("issue").innerHTML;
-
+document.getElementById("idnumT").value=document.getElementById("idnum").innerHTML;
+document.getElementById("fnameT").value=document.getElementById("fname").innerHTML;
+document.getElementById("lnameT").value=document.getElementById("lname").innerHTML;
+document.getElementById("addressT").value=document.getElementById("address").innerHTML;
+document.getElementById("dobT").value=document.getElementById("dob").innerHTML;
+document.getElementById("expireT").value=document.getElementById("expire").innerHTML;
+document.getElementById("deptT").value=document.getElementById("dept").innerHTML;
+document.getElementById("issueT").value=document.getElementById("issue").innerHTML;
 }
+function clearBoxes(){		
 
-function clearTxt(){		
-document.getElementById("idnumT").value="";
-document.getElementById("idnum").innerHTML="";
 
-document.getElementById("fnameT").value="";
-document.getElementById("fname").innerHTML="";
-
-document.getElementById("lnameT").value="";
-document.getElementById("lname").innerHTML="";
-
-document.getElementById("addressT").value="";
-document.getElementById("address").innerHTML="";
-
-document.getElementById("dobT").value=""
-document.getElementById("dob").innerHTML="";
-
-document.getElementById("expireT").value=""
-document.getElementById("expire").innerHTML="";
 
 document.getElementById("deptT").value="";
-document.getElementById("dept").innerHTML="";
-
-document.getElementById("issueT").value="";
-document.getElementById("issue").innerHTML="";
 }
 </script>
 </body>
