@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>DogWalk - Log in</title>
+<link rel="icon"href="12638.png">
+<meta charset="UTF-8">
+<style>
+body{ margin:0;}
+#container:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  
+  display: block;
+  background-image: url('wp1877267.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+min-height: 100%;  
+  
+  -webkit-filter: blur(3px);
+  -moz-filter:    blur(3px);
+  -o-filter:      blur(3px);
+  -ms-filter:     blur(3px);
+  filter:         blur(3px);
+}
+
+
+
+
+
+#container{
+position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+
+
+width:100%;height:100%;top:0;
+position:; 
+/*min-height:427px;height:768px;
+min-width:320px;max-width:1024px;*/
+/* background:url('9b7458071610da95fde064bb4e0c4a82.jpg');*//*Always put background in HTML and not the body*/
+
+ }
+
+a:hover{text-decoration: underline;}
+#footer{text-align:left;position:absolute;bottom:0;width:100%;float:left;height:20px; background-color:#252525;color:white;clear:both; font-weight: bold;padding:0;margin:0;
+line-height: 1.4;     font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+#header{font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+
+position:absolute;top:0;margin-bottom:5px;font-weight:bold;float:left;
+width:100%;
+height:24px;
+line-height: 1.5;
+background-color:#434343;color:white;opacity:0.9;
+ text-align:center;box-shadow:0 0 20px 0 black;}
+#mnuIco{position:absolute;top:0;right:0;margin-right:15px;width:30px;float:right;height:24px; background-color:#434343;}
+#Logo{margin-top:100px; height:85px; min-width:229px; max-width:1024px; bottom:0; position: absolute; clear:both}
+#logIn{;height:280px;width:378px ; position: fixed;
+  top: 50%;
+position: relative;
+transform: translateY(-50%);
+margin: 0 auto 0;
+  }
+.textB{height:30px; width:200px;clear:both;margin:5px auto 5px; }
+ 
+#LogInB{text-align:center;background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+height:280px;
+background-color:rgba(255, 255, 255, 0.8);/*keep transparancy only in parent.*/
+border-radius:3px;box-shadow: 0 5px 35px rgba(0,0,0,.65); }
+
+#btns{clear:both;margin: 7px auto 0px;width:auto;text-align: center;}
+
+.btn{ background-image: -moz-linear-gradient(top,#4d90fe,#357ae8); 
+ background-image:-o-linear-gradient(top,#4d90fe,#357ae8); 
+  background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8); 
+   background:linear-gradient(top,#4d90fe,#357ae8); 
+    border: 1px solid #2f5bb7;
+    border-radius:3px;
+    color: white;
+    height:36px;width:200px;
+    font-weight:bold;
+    text-shadow:1px 1px 3px navy;}
+.btn:hover{ background-image: -moz-linear-gradient(top,#4d90fe,#357ae8); 
+ background-image:-o-linear-gradient(top,#4d90fe,#357ae8); 
+background-image:-moz-linear-gradient(top,#4787f2,#0b5de3);
+   background:linear-gradient(top,#4d90fe,#357ae8); 
+    border: 1px solid #2f5bb7;
+    border-radius:3px;
+    color: white;
+    height:36px;width:200px;box-shadow:0 2px rgba(0,0,0,0.3);}    
+input:hover[type="textbox"]{}
+</style>
+</head>
+<body>
+<div id="container">
+
+
+<div id="header">Log-In<div ><img src="hamburger.png" id="mnuIco"></div></div>
+
+<div id="logIn">
+<div id="LoginB">
+
+<img style="height:100px;width:100px;margin: 12 auto 5;" src="c589199b232461921c479b2fcb32d7a2.jpg.png"><br>
+<input class="textB" type="textbox"  id="un" style="margin-top:10px;" placeholder="Email address" maxlength="16" required /><br>
+<input class="textB" type="password" id="pw" placeholder="Password"maxlength="20" required /><br>
+
+<div id="btns">
+
+<input type="button" class="btn" value="Sign-In"  onclick="verify()"/>&nbsp
+
+</div><div style="color:grey;font-size:10px;margin-top:6px"> Not A member?&nbsp<a href="" style="font-size:10px;text-decoration:none;color:#427fed;float:;margin-right:40px;margin-top:8px;">Join now</a></div>
+</div>
+</div>
+</div><div id="footer">&nbsp &nbsp©2017 Some Company </div>
+<script type="text/javascript" >
+function  verify()
+{
+var un = document.getElementById("un").value;
+var pw = document.getElementById("pw").value;
+ if (un == "")
+{
+alert("Enter a username!");
+}
+else if (un.length <8)
+{alert("Enter a longer user name!");}
+
+else if (pw== "" )
+{alert("Enter a Password!");}
+
+else if (pw.length <8)
+{alert("Enter a password at least 8-characters long!");}
+
+
+
+}
+</script>
+</body>
+
+</html>
