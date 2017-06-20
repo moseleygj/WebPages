@@ -2,25 +2,24 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>WOD</title>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	  	
-	  </script>
-	  <script >
-$(document).ready(function () {
-    $("#ckbCheckAll").click(function () {
-        $(".checkBoxClass").prop('checked', $(this).prop('checked'));
-    });
-    
-    $(".checkBoxClass").change(function(){
-        if (!$(this).prop("checked")){
-            $("#ckbCheckAll").prop("checked",false);
-        }
-    });
-});
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+	  <script >
+		$(document).ready(function () {
+		    $("#ckbCheckAll").click(function () {
+		        $(".checkBoxClass").prop('checked', $(this).prop('checked'));
+		    });
+		    
+		    $(".checkBoxClass").change(function(){
+		        if (!$(this).prop("checked")){
+		            $("#ckbCheckAll").prop("checked",false);
+		        }
+		    });
+		});
 	  </script>
 
 	</head>
+	
 	<style type="text/css">
 
 body{
@@ -31,7 +30,7 @@ body{
 	background-repeat:repeat;}
 
 .container{
-	height:1024;width:768;
+	height:1024;width:768;min-width: 768px;min-height:610px;
 	margin:0 auto 0;}
 
 .main-img{
@@ -70,8 +69,13 @@ body{
 	text-align: center;
 	line-height: 2;
 }
-.exercise-holder:hover{background-color:#f6f6f6;}
-.exerciseHeader:hover{background-color: pink;}
+.exercise-holder:hover{
+	background-color:#f6f6f6;
+}
+
+.exerciseHeader:hover{
+background-color: pink;
+}
 
 .sets{
 	width:59.6px;
@@ -151,8 +155,8 @@ body{
 <div class="reps">20*,10-12,8,6,6</div>
 <div class="exercise">Tricep Pushdown</div>
 <div class="notes">3sec down,1sec up</div>
-<div class="check">	<input type="checkbox" id="c2" class="checkBoxClass" name="cb" onclick="cb('c2','h2')"></div>
-</div>
+<div class="check">	
+<input type="checkbox" id="c2" class="checkBoxClass" name="cb" onclick="cb('c2','h2')"></div></div>
 <!--start of line -->
 <div class="exercise-holder" id="h3" style="font-size:12px;border">
 <div class="sets">4</div>
@@ -215,64 +219,61 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" id="c10" class="checkBoxClass" name="cb"  onclick="cb('c10','h10')"></div>
-</div>
+<div class="check">
+<input type="checkbox" id="c10" class="checkBoxClass" name="cb" onclick="cb('c10','h10')">
+</div></div>
 <!--start of line -->
 <div class="exercise-holder" id="h11" style="font-size:12px;border">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check" ><input type="checkbox" id="c11" class="checkBoxClass" onchange="cb('c11','h11')"></div></div>
+<div class="check">
+<input type="checkbox" id="c11" class="checkBoxClass" onchange="cb('c11','h11')">
+</div></div>
 
 
 </div><!--End of Text area-->
 
-<div class="datecreated"><b>Created:&nbsp</b>May 1st 5:50AM</div>
-	</div>
+<div class="datecreated"><b>Created:&nbsp</b>May 1st 5:50AM</div></div>
 
 </div>
 
-	</body>
+</body>
 
 <script type="text/javascript">
 
 function cb(n, x)
 {
-if (document.getElementById(n).checked == false){
+
+if (document.getElementById(n).checked == false)
+{
 document.getElementById(x).style.backgroundColor = "white";
 document.getElementById(x).style.color = "black";
 }
-else if (document.getElementById(n).checked == true){
-document.getElementById(x).style.backgroundColor = "red";
+
+else if (document.getElementById(n).checked == true)
+{
+document.getElementById(x).style.backgroundColor = "#619930";
 document.getElementById(x).style.color = "white";
 }
-else{alert("error!");}
-}
 
-
-
-/*tog = 0;
-function chk(d)
-{
-if (tog == 1 ){
-document.getElementById('d').style.backgroundColor = "white";
-tog=0;
+else{
+	alert("error!");
+	}
 }
-else if ( tog == 0 ){
-document.getElementById('d').style.backgroundColor = "red";
-tog=1;
-}
-
-}
-*/
 
 function toggle() {
   checkboxes = document.getElementsByName('cb');
   n=checkboxes.length;
   for(var i=0;i<n;i++)
    {
-    checkboxes[i].checked = true;
+if( checkboxes[i].checked == true)
+    alert(true);
+    else if (checkboxes[i].checked == false){
+        alert(false);
+    }
+
   }
 }
 </script>
