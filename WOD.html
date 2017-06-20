@@ -2,6 +2,24 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>WOD</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	  	
+	  </script>
+	  <script >
+$(document).ready(function () {
+    $("#ckbCheckAll").click(function () {
+        $(".checkBoxClass").prop('checked', $(this).prop('checked'));
+    });
+    
+    $(".checkBoxClass").change(function(){
+        if (!$(this).prop("checked")){
+            $("#ckbCheckAll").prop("checked",false);
+        }
+    });
+});
+
+	  </script>
+
 	</head>
 	<style type="text/css">
 
@@ -116,88 +134,88 @@ body{
 <div class="reps">REPS</div>
 <div class="exercise">EXERCISE</div>
 <div class="notes">NOTES</div>
-<div class="check"><a href ="" style="text-decoration:none;color:#ff5252">	&#10003;</a></div>
+<div class="check"><a href ="" style="text-decoration:none;color:#ff5252" id=""> <input type="checkbox" id="ckbCheckAll">	</a></div>
 </div>
 <!--end of Line -->
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px;border">
-<div class="sets">10</div>
+<div class="exercise-holder" id="h1" style="font-size:12px;border">
+<div class="sets">4</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
-<div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb1"></div>
+<div class="notes">Full range of motion</div>
+<div class="check">	<input class="checkBoxClass" type="checkbox"  class="checkBoxClass" name="cb" onclick="cb('h1')"></div>
 </div>
 
-<div class="exercise-holder" style="font-size:12px;">
-<div class="sets">10</div>
-<div class="reps">10-12,15,20,6</div>
-<div class="exercise">skull crusher</div>
-<div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb2"></div>
+<div class="exercise-holder" id="h2" style="font-size:12px;">
+<div class="sets">5</div>
+<div class="reps">20*,10-12,8,6,6</div>
+<div class="exercise">Tricep Pushdown</div>
+<div class="notes">3sec down,1sec up</div>
+<div class="check">	<input type="checkbox" class="checkBoxClass" name="cb" onclick="cb('h2')"></div>
 </div>
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px;border">
-<div class="sets">10</div>
+<div class="exercise-holder" id="h3" style="font-size:12px;border">
+<div class="sets">4</div>
 <div class="reps">10-12,15,20,6</div>
-<div class="exercise">skull crusher</div>
-<div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb3"></div>
+<div class="exercise">close-grip bench press</div>
+<div class="notes">slow</div>
+<div class="check">	<input type="checkbox" class="checkBoxClass" name="cb" onclick="cb('h3')"></div>
 </div>
 
-<div class="exercise-holder" style="font-size:12px;">
-<div class="sets">10</div>
+<div class="exercise-holder" id="h4" style="font-size:12px;">
+<div class="sets">4</div>
 <div class="reps">10-12,15,20,6</div>
-<div class="exercise">skull crusher</div>
+<div class="exercise">one-arm tricep extension</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb4"></div>
+<div class="check">	<input type="checkbox"  class="checkBoxClass" name="cb" onclick="cb('h4')"></div>
 </div>
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px;border">
-<div class="sets">10</div>
+<div class="exercise-holder" id="h5"style="font-size:12px;border">
+<div class="sets">5</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb5"></div>
+<div class="check">	<input type="checkbox" class="checkBoxClass" name="cb" onclick="cb('h5')"></div>
 </div>
 
-<div class="exercise-holder" style="font-size:12px;">
+<div class="exercise-holder" id="h6" style="font-size:12px;">
 <div class="sets">10</div>
-<div class="reps">10-12,15,20,6</div>
-<div class="exercise">skull crusher</div>
-<div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb6"></div>
+<div class="reps">12-20</div>
+<div class="exercise">Tricep dips</div>
+<div class="notes">Full range of motion</div>
+<div class="check">	<input type="checkbox" class="checkBoxClass" name="cb" onclick="cb('h6')"></div>
 </div>
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px;border">
+<div class="exercise-holder" id="h7" style="font-size:12px;border">
 <div class="sets">10</div>
-<div class="reps">10-12,15,20,6</div>
-<div class="exercise">skull crusher</div>
-<div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb7"></div>
+<div class="reps">35-50</div>
+<div class="exercise">Close-grip push up</div>
+<div class="notes">Lockout</div>
+<div class="check">	<input type="checkbox" class="checkBoxClass" name="cb" onclick="cb('h7')"></div>
 </div>
 
-<div class="exercise-holder" style="font-size:12px;">
+<div class="exercise-holder"  id= "h8" style="font-size:12px;">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb8"></div>
+<div class="check">	<input type="checkbox" class="checkBoxClass" name="cb"  onclick="cb('h8')"></div>
 </div>
 <!--start of line -->
-<div class="exercise-holder" style="font-size:12px;border">
+<div class="exercise-holder"  id= "h9" style="font-size:12px;border">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb9"></div>
+<div class="check">	<input type="checkbox"  class="checkBoxClass" name="cb"  onclick="cb('h9')"></div>
 </div>
 
-<div class="exercise-holder" style="font-size:12px;">
+<div class="exercise-holder"  id= "h10" style="font-size:12px;">
 <div class="sets">10</div>
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" name="cb10"></div>
+<div class="check">	<input type="checkbox"  class="checkBoxClass" name="cb"  onclick="cb('h10')"></div>
 </div>
 <!--start of line -->
 <div class="exercise-holder" id="h11" style="font-size:12px;border">
@@ -205,7 +223,8 @@ body{
 <div class="reps">10-12,15,20,6</div>
 <div class="exercise">skull crusher</div>
 <div class="notes">use proper form</div>
-<div class="check">	<input type="checkbox" onClick=chk(h11); name="cb11"></div></div>
+<div class="check" >	<input type="checkbox" id="last" class="checkBoxClass" onchange="cb('h11')"></div></div>
+
 
 </div><!--End of Text area-->
 
@@ -214,11 +233,30 @@ body{
 
 </div>
 
-
 	</body>
 
 <script type="text/javascript">
+
 tog = 0;
+
+function cb(n)
+{
+if (tog == 1 ){
+document.getElementById(n).style.backgroundColor = "white";
+document.getElementById(n).style.color = "black";
+
+tog=0;
+}
+else if ( tog == 0 ){
+document.getElementById(n).style.backgroundColor = "red";
+document.getElementById(n).style.color = "white";
+
+tog=1;
+}
+
+}
+
+/*tog = 0;
 function chk(d)
 {
 if (tog == 1 ){
@@ -229,7 +267,17 @@ else if ( tog == 0 ){
 document.getElementById('d').style.backgroundColor = "red";
 tog=1;
 }
-<!--fix here-->
+
+}
+*/
+
+function toggle() {
+  checkboxes = document.getElementsByName('cb');
+  n=checkboxes.length;
+  for(var i=0;i<n;i++)
+   {
+    checkboxes[i].checked = true;
+  }
 }
 </script>
 
