@@ -1,0 +1,145 @@
+<html>
+<title>Mp3Site - Free Mp3 Download </title>
+<style>
+#searchButton{
+  
+  } 
+
+#Dl {
+}
+#DlL {
+color:00c0FF;
+}
+#Play, #FastDL {
+color:DBDBDB;
+}
+
+#mainImg {
+background-image: url("");
+background-repeat: no-repeat;
+background-position: left top;
+margin-right: 100px;
+}
+#FileStat{
+}
+.myButton:hover {
+    background-color: #f6f6f6;
+}
+a:hover {
+    color: red;
+}
+a:link {
+    color: black;
+}
+.myButton {
+    background-color: #282725;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    border: 1px solid white;
+    display: inline-block;
+    cursor: pointer;
+    color: skyblue;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    font-weight: bold;
+}
+#SearchBar{
+  -moz-border-radius-topright: 30px; 
+    -webkit-border-top-right-radius: 30px; 
+    border-top-right-radius: 30px; 
+    -moz-border-radius-bottomright: 30px; 
+    -webkit-border-bottom-right-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+    border: 1px solid #DBDBDB; 
+        box-shadow: 0 0 5px 3px #7ACAEF; 
+    outline:0; 
+    height:30px; 
+    width: 300px; 
+    padding-right:10px; 
+    background-color:FFFFFF;
+    margin-top:65px
+}
+#SongTitle{
+color:white;
+font-weight:bold;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+#OrderBy{
+}
+#TopMusic{
+}
+#Video{
+}
+#Banner {
+width: 726px;
+height: 88px;
+border: 1px solid #ddd;
+display: flex;
+align-items: center;
+background: #ffffff;
+}
+#TopBar{
+}
+#Song{
+text-align:left;
+font-weight:bold;
+width:829px;
+
+}
+#left{
+float:left;
+width:53px;
+text-align:right;
+padding-right:6px;
+border-right:1px solid #ccc;
+font-size:11px;
+margin-right:15px;
+height:46px;
+line-height: 14px;
+}
+body{
+background-color:#333333;
+background-image:url("");
+color:DBDBDB;
+}
+#mp3Icon{
+margin-right: 5px;height:64px;width:64px;; 
+}
+#content{float:left;}
+#data{height:90px ;width:10%;}
+</style>
+
+<body>
+<div id="TopBar">
+<img src="ipod-video-black-apple.png" align ="left" style="width:125px;height:125px;float:left;margin-top:15px
+">
+<!-- Check the line above-->
+<input id="SearchBar" type="text" placeholder="Search" name="SongSearch" > <input class ="myButton" type="submit" value="submit"></br>
+<!--<img id="banner" src ="">Invisible banner goes here</img><br/>-->
+</div>
+<br><br><br><br>
+<hr>
+<div id="data">
+
+<img id="mp3Icon" src="mp3-5121.png"></div>
+<div id="content">
+<p id="SongTitle">Artist - Some Random Song Name.Mp3</p><br>
+<a id="DlL" href="#">Download</a>
+<a id="Play" href="#">Play</a>
+<a id="FastDl"href="#">Fast Download</a></div>
+<!--<hr>
+<div class="left">
+000 kbps
+<br></br>
+0:00
+<br></br>
+00.00 mb -->
+
+</div>
+</div>
+</body>
+</html>
