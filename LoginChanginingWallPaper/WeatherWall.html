@@ -1,0 +1,67 @@
+<html>
+
+<head><title></title></head>
+<meta charset="utf-8">
+<style type="text/css">
+body{
+	background-image: url("");
+	background-size: auto auto ;
+	background-repeat: no-repeat;
+	margin:0;padding:0;}
+
+# overlay{padding:0;height: 100%; width: 100%; 
+		opacity: .5;
+		background-color:black; margin:-8;
+		margin-right:-15;
+		padding-right: 16px;
+}
+body:after{
+ position:fixed;
+
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;   z-index:-1;}
+    .mySlides{height:100%;width:100%;}
+#slideshow{padding:0;height: 100%; width: 100%; 
+		opacity: .7;
+		background-color: black
+	opacity: .6; 
+	position: absolute;
+}
+
+</style>
+<body>
+
+<div id="slideshow">
+<img class="mySlides" src="4k-hd-wallpapers_065228558_309.jpg" title="">
+<img class="mySlides" src="4k-wallpaper-4.jpg" title="" >
+<img class="mySlides" src="a34018ccbebfc1f5bf6364316001848d.jpg" title="">
+<img class="mySlides" src="boat-high-mountain-lake.jpg" title="">
+<img class="mySlides" src="HOT Balloon Trip_Ultra HD.jpg" title="">
+<img class="mySlides" src="marine-life-tropical-island_106.jpeg" title="">
+<img class="mySlides" src="Sunset_at_Tiergarten_UHD.jpg" title="">
+<img class="mySlides" src="usa_texas_austin_nature_sky_summer_69277_3840x2160.jpg" title="">
+<img class="mySlides" src="winter-3840x2160-007.jpg" title="">
+<img class="mySlides" src="ZhGEqAP.jpg" title="">
+ </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 15000); // Change image every 15 seconds
+}
+</script>
+</body>
+
+</html>

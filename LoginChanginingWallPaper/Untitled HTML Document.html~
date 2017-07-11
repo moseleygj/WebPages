@@ -1,0 +1,52 @@
+<html>
+
+<head><title></title></head>
+<meta charset="utf-8">
+<style type="text/css">
+body{background-size: 100% 100%;background-repeat: no-repeat;}
+
+##overlay{padding:0;height: 100%; width: 100%; opacity: .7;background-color:    background:rgba(0,0,255,0.5);; margin:-8px;
+margin-right:-15px; padding-right: 16px;}
+
+.mySlides{margin:0px;padding:0px; top:0;background-size:cover; min-width:100%;width:100%; height:100%;padding-right: 16px;}
+
+</style>
+<body>
+<div id="overlay">
+
+<img class="mySlides" src="1-191.jpg" title="">
+<img class="mySlides" src="artsfon.com-22641.jpg" title="">
+<img class="mySlides" src="desert-13.jpg" title="">
+<img class="mySlides" src="Drizzling-Weather-Wallpapers-HD-Pictures.jpg" title="">
+<img class="mySlides" src="fall-nature-yellow-leaves-seasons-weather-trees.jpg" title="">
+<img class="mySlides" src="fall-weather-wallpaper.jpg" title="">
+<img class="mySlides" src="leaves.jpg" title="">
+<img class="mySlides" src="mimuroto-ji-temple-kyoto-japan-kyoto-japan-temple-weather-winter-snow-tree-branches.jpg
+" title="">
+<img class="mySlides" src="people-park-walk-bike-river-summer-night-tree-sun-sky-nice-weather.jpg" title="">
+
+<img class="mySlides" src="snow-drifting-desktop-weather-wallpaper-drifts-30243.jpg
+" title="">
+<img class="mySlides" src="Weather-Background-Free-Download.jpg" title="">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+
+</html>
