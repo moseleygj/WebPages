@@ -1,0 +1,288 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>WOD</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	  <script >
+		$(document).ready(function () {
+		 	$("#ckbCheckAll").click(function () {
+		      $(".checkBoxClass").prop('checked', $(this).prop('checked'));
+       	         $("[id^=h").css({"background-color":"#619930","color":"white"});
+
+		    });
+		 	
+		 	 $("#ckbCheckAll").change(function(){
+		        if (!$(this).prop("checked")){
+		           $("#ckbCheckAll").prop('checked',false);
+		           $(".exercise-holder").css("background-color","white");//all id starting with h
+		           $("[id^=h]").css("color","#000");
+		       }
+		    });
+
+
+		});
+	  </script>
+
+	</head>
+	
+	<style type="text/css">
+
+body{
+	font-family:"Roboto Mono",Roboto,sans-serif;
+	letter-spacing: .25px;
+	padding:0;margin:0;
+	background:url("carbon_texture1879.jpg");
+	background-repeat:repeat;}
+
+.container{
+	height:1024px;width:768px;min-width: 768px;min-height:610px;
+	margin:0 auto 0;}
+
+.main-img{
+	height:490px;width:768px;
+	position:absolute;
+	margin:75px auto 0;
+	overflow:auto;
+	box-shadow:0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+	border-radius: 3px;
+	background-color: white;
+	background-repeat: no-repeat;
+}
+
+.main-img-txt{
+	height:375px;
+	width:720px;
+	position:relative;
+	margin: 37px auto 0;
+	background-color:white;
+	overflow-wrap:break-word;}
+
+.title{
+	height:30px;
+	width:100%;
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+	color:white;
+	margin-top:10px;
+	text-shadow:1px 1px 1px grey;
+}
+.exercise-holder{
+	width:100%;
+	height:30px;
+	border-bottom:1px #f0efef solid;
+	text-align: center;
+	line-height: 2.5;
+}
+.exercise-holder:hover{
+	background-color:#f6f6f6;
+}
+
+.exerciseHeader:hover{
+background-color: pink;
+}
+
+.sets{
+	width:59.6px;
+	height:30px;
+	float:left;
+	text-align: center;
+}
+
+.reps{
+	width:117.2px;
+	height:auto;
+	float:left;
+	text-align: center;
+}
+
+.exercise{
+	width:254px;
+	height:30px;
+	float:left;
+	text-align: center;
+}
+
+.notes{
+	width:254px;
+	height:30px;
+	float:left;
+	text-align: center;
+}
+
+
+.check{
+	width:25px;
+	height:30px;
+	float:left;
+	text-align: center;
+	line-height:1.5;
+}
+
+.datecreated{
+	height:14px;
+	width:auto;
+	color:#ff5252;
+	margin:10px 30px 0 0;
+	float:right;
+	font-size:10px;}
+
+</style>
+
+	<body>
+
+		<!--blue #4285f4;-->
+<div class="container">
+<div class="title">Workout Of the Day (W.O.D.)</div> 
+	<div class="main-img">
+	<div class="title" style="color:#ff5252;"">Sample workout</div> 
+<!--begining of text area -->
+	<div class="main-img-txt">
+
+<div class="exerciseHeader" style="line-height:1.5;font-weight:bolder;font-size:20px;height:32px;background-color:#eaeaea;">
+<div class="sets">SETS</div>
+<div class="reps">REPS</div>
+<div class="exercise">EXERCISE</div>
+<div class="notes">NOTES</div>
+<div class="check"><a href ="" style="text-decoration:none;color:#ff5252" id=""> <input type="checkbox" id="ckbCheckAll" style="line-height:1.5">	</a></div>
+</div>
+<!--end of Line -->
+<!--start of line -->
+<div class="exercise-holder" id="h1" style="font-size:12px;border">
+<div class="sets">4</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">Full range of motion</div>
+<div class="check">	<input class="checkBoxClass" id="c1" type="checkbox"  name="cb" onclick="cb('c1','h1')"></div>
+</div>
+
+<div class="exercise-holder" id="h2" style="font-size:12px;">
+<div class="sets">5</div>
+<div class="reps">20*,10-12,8,6,6</div>
+<div class="exercise">Tricep Pushdown</div>
+<div class="notes">3sec down,1sec up</div>
+<div class="check">	
+<input type="checkbox" id="c2" class="checkBoxClass" name="cb" onclick="cb('c2','h2')"></div></div>
+<!--start of line -->
+<div class="exercise-holder" id="h3" style="font-size:12px;border">
+<div class="sets">4</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">close-grip bench press</div>
+<div class="notes">slow</div>
+<div class="check">	<input type="checkbox" id="c3" class="checkBoxClass" name="cb" onclick="cb('c3','h3')"></div>
+</div>
+
+<div class="exercise-holder" id="h4" style="font-size:12px;">
+<div class="sets">4</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">one-arm tricep extension</div>
+<div class="notes">use proper form</div>
+<div class="check">	<input type="checkbox" id="c4" class="checkBoxClass" name="cb" onclick="cb('c4','h4')"></div>
+</div>
+<!--start of line -->
+<div class="exercise-holder" id="h5" style="font-size:12px;border">
+<div class="sets">5</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">	<input type="checkbox" id="c5" class="checkBoxClass" name="cb" onclick="cb('c5','h5')"></div>
+</div>
+
+<div class="exercise-holder" id="h6" style="font-size:12px;">
+<div class="sets">10</div>
+<div class="reps">12-20</div>
+<div class="exercise">Tricep dips</div>
+<div class="notes">Full range of motion</div>
+<div class="check">	<input type="checkbox"  id="c6"class="checkBoxClass" name="cb" onclick="cb('c6','h6')"></div>
+</div>
+<!--start of line -->
+<div class="exercise-holder" id="h7" style="font-size:12px;border">
+<div class="sets">10</div>
+<div class="reps">35-50</div>
+<div class="exercise">Close-grip push up</div>
+<div class="notes">Lockout</div>
+<div class="check">	<input type="checkbox" id="c7" class="checkBoxClass" name="cb" onclick="cb('c7','h7')"></div>
+</div>
+
+<div class="exercise-holder"  id= "h8" style="font-size:12px;">
+<div class="sets">10</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">	<input type="checkbox" id="c8" class="checkBoxClass" name="cb"  onclick="cb('c8','h8')"></div>
+</div>
+<!--start of line -->
+<div class="exercise-holder"  id= "h9" style="font-size:12px;border">
+<div class="sets">10</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">	<input type="checkbox" id="c9" class="checkBoxClass" name="cb"  onclick="cb('c9','h9')"></div>
+</div>
+
+<div class="exercise-holder"  id= "h10" style="font-size:12px;">
+<div class="sets">10</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">
+<input type="checkbox" id="c10" class="checkBoxClass" name="cb" onclick="cb('c10','h10')">
+</div></div>
+<!--start of line -->
+<div class="exercise-holder" id="h11" style="font-size:12px;border">
+<div class="sets">10</div>
+<div class="reps">10-12,15,20,6</div>
+<div class="exercise">skull crusher</div>
+<div class="notes">use proper form</div>
+<div class="check">
+<input type="checkbox" id="c11" class="checkBoxClass" onchange="cb('c11','h11')">
+</div></div>
+
+
+</div><!--End of Text area-->
+
+<div class="datecreated"><b>Created:&nbsp</b>May 1st 5:50AM</div></div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+function cb(n, x)
+{
+
+if (document.getElementById(n).checked == false)
+{
+document.getElementById(x).style.backgroundColor = "white";
+document.getElementById(x).style.color = "black";
+}
+
+else if (document.getElementById(n).checked == true)
+{
+document.getElementById(x).style.backgroundColor = "#619930";//green
+document.getElementById(x).style.color = "white";
+}
+
+else{
+	alert("error!");
+	}
+}
+
+function toggle() {
+  checkboxes = document.getElementsByName('cb');
+  n=checkboxes.length;
+  for(var i=0;i<n;i++)
+   {
+if( checkboxes[i].checked == true)
+    alert(true);
+    else if (checkboxes[i].checked == false){
+        alert(false);
+    }
+
+  }
+}
+</script>
+
+</html> 
