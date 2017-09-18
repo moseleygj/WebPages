@@ -21,8 +21,9 @@ html{margin:0;padding:0;}
 	width:100%;
 	height:250px;
 	margin:8px auto 15px;
-	background-color:#17B17D;
+	/*background-color:#17B17D;*/
 	clear:left;
+	/*opacity:0.0;*/
 }
 
 .mainThird
@@ -30,16 +31,23 @@ html{margin:0;padding:0;}
 	width:100%;
 	height:250px;
 	margin:8px auto 8px;
-	background-color:yellow;
+	/*background-color:yellow;*/
 	clear:left;
 }
+/*box1*/
+.helloIAm{width:150px;height:20px;font-weight:;font-size:16px;color:#9d9996;text-align:;margin:50px 0 0 50px;position: absolute; ;display: block;}
+.bigName{width:150px;height:80px;font-weight:;font-size:36px;color:#F9F8F4;text-align:;margin:72px 0 0 50px;display: block;clear:left;position:absolute;}
+.title{width:205px;height:29px;font-weight:bold;font-size:11px;color:#A4A09D;text-align:;margin:165px 0 0 50px;display: block;clear:left;position:absolute;}
+/*box2*/
+.everythingAbout{}
 
-.everythingAbout{height:250px; width:275px;float:left;}
-.yearsExperience{height:250px; width:275px;float:right;background-color:lightgrey;}
+.everythingAbout{height:250px; width:275px;float:left;background-color:#17B17D;}
+.yearsExperience{height:250px; width:275px;float:right;background-color:black;opacity:0.5;}
+
 .mainThirdHeightMenu{height:45px;width:550px;border-bottom: 5px #17B17D solid;}
-.mainThirdcontent{height:200px;width:550px;}
-.mainThirdMeuItem{height:100%;width:136.5px;float:left;border-right:0.2px solid white;}
-.mainSecondInfo{width:225px;margin:15px auto;top:50px;}
+.mainThirdcontent{height:200px;width:550px;background-color:black;opacity:0.5;}
+.mainThirdMeuItem{height:100%;width:136.5px;float:left;border-right:0.2px solid white;background-color:black;opacity:0.5;}
+.mainSecondInfo{width:225px;margin:15px auto;top:50px;display: block;}
 </style>
 
 <body>
@@ -47,7 +55,13 @@ html{margin:0;padding:0;}
 	
 <div class="mainIntro">
 	<img class="profilePhoto" src="index-03.png">
-	<div class="leftGreetIntro"></div>
+	<div class="leftGreetIntro">
+			<div class="helloIAm">Hello, I am</div>
+			<div class="bigName">John Doe</div>
+			<div class="title">Computer Desktop support and frontend Development</div>
+
+
+	</div>
 </div>
 
 <div class="mainSecond">
@@ -63,7 +77,7 @@ html{margin:0;padding:0;}
 
 <div class="mainThird">
 <div class="mainThirdHeightMenu">
-	<div class="mainThirdMeuItem" style="background-color:#17B17D"></div>	
+	<div class="mainThirdMeuItem" style="background-color:#17B17D;opacity:0.9"></div>	
 	<div class="mainThirdMeuItem"></div>
 	<div class="mainThirdMeuItem"></div>
 	<div class="mainThirdMeuItem"></div>
