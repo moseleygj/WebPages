@@ -52,7 +52,8 @@ display:block;
     width: 300px; 
     padding-left:15px; 
     background-color:FFFFFF;
-    margin-top:65pxdisplay:block;
+    margin-top:65px;
+    
    
 }
 #SearchBar:hover{
@@ -118,7 +119,11 @@ hr{padding:0;margin:0;clear:both;}
 
 @media screen and (max-width:320px){
 .row{background-color: red;height:200px;}
-img[src="updated_files/ipod-video-black-apple.png"]{width:50px;height:50px;float:left;margin-top:15px
+img[src="updated_files/ipod-video-black-apple.png"]
+{width:50px;
+height:50px;
+float:left;
+margin-top:15px;
 }
 input[type="textbox"]{width: 10px;}
 #mainImg{margin:0 auto 0;}
