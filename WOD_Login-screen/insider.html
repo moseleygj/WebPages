@@ -5,22 +5,21 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	  <script >
-		$(document).ready(function () {
-		 	$("#ckbCheckAll").click(function () {
-		      $(".checkBoxClass").prop('checked', $(this).prop('checked'));
-       	         $("[id^=h").css({"background-color":"#619930","color":"white"});
-
-		    });
-		 	
-		 	 $("#ckbCheckAll").change(function(){
-		        if (!$(this).prop("checked")){
-		           $("#ckbCheckAll").prop('checked',false);
-		           $(".exercise-holder").css("background-color","white");//all id starting with h
-		           $("[id^=h]").css("color","#000");
-		       }
-		    });
-
-
+		$(document).ready(function() {
+			$("#ckbCheckAll").click(function() {
+			if  ($("#ckbCheckAll").is(':checked')){
+				 $(".checkBoxClass").prop('checked', true);
+		       	 $("[id^=h").css({"background-color":"#619930","color":"white"});
+			}
+			else
+			{
+				$(".checkBoxClass").prop('checked', false);
+			 	// $("#ckbCheckAll").change(function(){
+			     //$("#ckbCheckAll").prop('checked',false);
+			     $(".exercise-holder").css("background-color","white");//all id starting with h
+			     $("[id^=h]").css("color","#000");
+			   }
+		});
 		});
 	  </script>
 
@@ -145,7 +144,8 @@ background-color: pink;
 <div class="reps">REPS</div>
 <div class="exercise">EXERCISE</div>
 <div class="notes">NOTES</div>
-<div class="check"><a href ="" style="text-decoration:none;color:#ff5252" id=""> <input type="checkbox" id="ckbCheckAll" style="line-height:1.5">	</a></div>
+<div class="check"><a href ="" style="text-decoration:none;color:#ff5252" id=""> 
+<input type="checkbox" id="ckbCheckAll" style="line-height:1.5">	</a></div>
 </div>
 <!--end of Line -->
 <!--start of line -->
@@ -252,7 +252,7 @@ background-color: pink;
 
 function cb(n, x)
 {
-
+/*
 if (document.getElementById(n).checked == false)
 {
 document.getElementById(x).style.backgroundColor = "white";
@@ -282,6 +282,7 @@ if( checkboxes[i].checked == true)
     }
 
   }
+  */return 0;
 }
 </script>
 
