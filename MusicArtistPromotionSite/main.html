@@ -1,14 +1,16 @@
 <html>
 <head>
-<title></title>
+<title>SomeArtistName Here</title>
 <style>
 html{margin:0;padding:0;}
-body{margin:0;padding:0;background-color:grey}
+body{margin:0;padding:0;background-color:#434343}
 	.container{height:100%;
 	width:1366px;
 	min-width:768px;
-	margin:0 auto 0;
+	margin:12.5% auto 0;
+
 	}
+
 	.leftImgsection{height:100%;
 	width:50%;
 	float:left;
@@ -16,6 +18,25 @@ body{margin:0;padding:0;background-color:grey}
 	background-repeat:no-repeat;
 	background-size:768px 100%;
 	background-position:fixed center;
+	max-height:1072px;
+	}
+	.leftNameTitle{
+	font-size:40px;
+	color:white;
+	font-weight:bolder;
+	top:50%;
+	position:relative;
+	text-align:center;
+	font-family:proxima-nova, sans-serif;text-shadow:1px 3px 3px black;
+	}
+		.leftNameSubTitle{
+	font-size:12px;
+	color:white;
+	font-weight:bold;
+	top:51%;
+	position:relative;
+	text-align:center;
+	font-family:proxima-nova, sans-serif;text-shadow:0.5px 1.5px 1.5px black;
 	}
 	
 	.rightImgSection{
@@ -23,6 +44,8 @@ body{margin:0;padding:0;background-color:grey}
 	width:50%;
 	float:left;
 	background-color:black;
+		max-height:1072px;
+
 	}
 
 </style>
@@ -31,7 +54,8 @@ body{margin:0;padding:0;background-color:grey}
 
 <body>
 <div class="container">
-	<div class="leftImgsection"></div>
+	<div class="leftImgsection">	<div class="leftNameTitle">Artist Name</div><div class="leftNameSubTitle">Some SubTitle Here</div>
+</div>
 	<div class="rightImgSection"></div>
 </div>
 
