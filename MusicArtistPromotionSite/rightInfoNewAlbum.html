@@ -88,9 +88,48 @@
         color:white;
         text-rendering: optimizeLegibility;
         border:none;
-       
+           }
+    
+    .divide{
+    height:1px;
+    width:100%;
+    background-color:lightgrey;
+    margin-top:20px;
+    position:relative;
     }
-
+    
+      .divide1{
+    height:1px;
+    width:90%;
+    background-color:lightgrey;
+    margin:20px auto 0px;
+    position:relative;
+    text-align:center;
+    display:block;
+    }
+    
+    .hitSong{
+    height:120px;
+    width:100%;
+    }
+    
+    .sectionTitle{
+    font-weight:bolder;
+    font-size:14px;
+    font-family:;
+    padding:35px 0px 25px 20px;
+    color:#434343;
+    }
+    
+    .sectionResponse{
+    font-weight:normal;
+    font-size:10px;
+    font-family:;
+    padding:15px 0px 0px 35px;
+    color:#434343;
+    }
+video{margin:  0 auto 0;text-align:center;width:100%;}    
+audio{width:90%;margin-top:25px;text-align:center;margin:25px auto 0;display:block;}
 </style>
 </head>
 
@@ -101,6 +140,36 @@
     	<div class="newAlbumSong">New Album  AlbumName  Featuring Hit Song "untitled" Now available!</div>
 	<button class="newAlbumButton" onclick="">Listen Now</button>
 	</div>
+</div>
+
+<div class="mainInfo1">
+<div class="divide">
+<div class="hitSong"> 
+<audio controls>
+  <source src="SampleAudio_0.4mb.mp3" type="audio/mpeg">
+</audio>
+<div class="divide1"></div>
+<div class="divide1"></div>
+</div>
+<div class="divide"></div>
+<div class="sectionTitle">FEATURED VIDEO</div>
+ <video width="540" height="310" controls>
+  <source src="SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<div class="divide"></div>
+<div class="sectionTitle">RECENT NEWS</div>
+<div class="sectionResponse">New Track</div>
+
+<div class="divide1"></div>
+<div class="sectionResponse">New Track</div>
+<div class="divide1"></div>
+<div class="sectionResponse">New Track</div>
+<div class="divide1"></div>
+<div class="sectionResponse">New Track</div>
+<div class="divide1"></div>
+
+</div>
 </div>
 <div class="mainInfo1"></div>
 
