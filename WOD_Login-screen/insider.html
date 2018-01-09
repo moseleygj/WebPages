@@ -8,16 +8,16 @@
 		$(document).ready(function() {
 			$("#ckbCheckAll").click(function() {
 			if  ($("#ckbCheckAll").is(':checked')){
-				 $(".checkBoxClass").prop('checked', true);
+				 $(".checkBoxClass").attr('checked', true);
 		       	 $("[id^=h").css({"background-color":"#619930","color":"white"});
 			}
 			else
 			{
-				$(".checkBoxClass").prop('checked', false);
+				$(".checkBoxClass").attr('checked', false);
 			 	// $("#ckbCheckAll").change(function(){
 			     //$("#ckbCheckAll").prop('checked',false);
-			     $(".exercise-holder").css("background-color","white");//all id starting with h
-			     $("[id^=h]").css("color","#000");
+			       $(".exercise-holder").css("background-color","white");//all id starting with h
+			       $("[id^=h]").css("color","#000");
 			   }
 		});
 		});
