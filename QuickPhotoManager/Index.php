@@ -142,10 +142,10 @@ display:block;
 <div class="ButtonSection"><img src="trash-bin-icon.png" class="buttonIcon" id="delete"></div>
 <div class="ButtonSection"></div>
 <?php
-$allImages = get_multiple_image($post_id);
-foreach($allImages as $img)
-{
-echo '<img src="'.$img.'" alt=""><br/>';
+
+$imageBundle = array();
+foreach(glob(*.jpg) as $filename){
+$imageBundle[]=$filename;
 }
 ?>
 </div></div>
