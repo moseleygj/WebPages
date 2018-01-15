@@ -19,8 +19,6 @@ padding:0;
 background:url('placeholder.png') no-repeat center fixed;
 background-size:cover;
 color:;
-font-family:;
-font-size:;
 box-shadow:;
  top: 50%;
 transform: translateY(-50%);
@@ -58,8 +56,7 @@ position:absolute;
 top:0;
 right:0;
 background:;
-color:;
-margin:;
+
 padding:;
 background:;
 color:;
@@ -112,8 +109,6 @@ text-shadow:1px 3px 3px white;
 }
 
 .buttonSection{
-min-height:;
-max-height:;
 height:100%;
 width:33.3%;
 position:;
@@ -146,6 +141,11 @@ display:block;
 $imageBundle = array();
 foreach(glob(*.jpg) as $filename){
 $imageBundle[]=$filename;
+}
+
+function deleteImg()
+{
+unlink();
 }
 ?>
 </div></div>
