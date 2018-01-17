@@ -143,7 +143,7 @@ display:block;
 <img src="Custom-Icon-Design-Flatastic-9-Undo.ico" class="buttonSingleTop"><div class="undoSectionText">UNDO</div></div></div>
 <div class="ButtonsRowBottom">
 <div class="ButtonSection"></div>
-<div class="ButtonSection"><img src="trash-bin-icon.png" class="buttonIcon" id="delete"></div>
+<div class="ButtonSection"><img src="trash-bin-icon.png" class="buttonIcon" id="delete" onClick="deleteImg()"></div>
 <div class="ButtonSection"></div>
 
 <?php
@@ -152,15 +152,27 @@ $imageBundle = array();
 foreach(glob("*.jpg") as $filename)
 {
 $imageBundle[]=$filename;
+echo count($imageBundle);
+echo $imageBundle[0];
+//alert(count($imageBundle));
 }
 
-function deleteImg()
-{
-unlink();
-}
 ?>
 </div></div>
 </div>
 </body>
-<script type="text/javascript"></script>
+<script type="text/javascript">
+function deleteImg()
+{
+if(confirm("Are you sure you want to delete this image?")==true){
+unlink();
+}
+
+else
+{
+return 0;
+}
+
+}
+</script>
 </html>
