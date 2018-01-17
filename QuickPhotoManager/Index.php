@@ -148,15 +148,13 @@ display:block;
 
 <?php
 $imageBundle = array();
-
-foreach(glob("*.jpg") as $filename)
+//Place all images into an array.
+// when using GLOB_BRACE regarding spaces around the comma: {jpg,png,gif} works as expected, but {jpg, png, gif} with a leading space, will only match the former as expected but not the latter. 
+foreach(glob("*.{jpg,png,gif,jpeg}",GLOB_BRACE) as $filename)
 {
 $imageBundle[]=$filename;
-echo count($imageBundle);
-echo $imageBundle[0];
-//alert(count($imageBundle));
 }
-
+echo count($imageBundle);
 ?>
 </div></div>
 </div>
