@@ -2,7 +2,14 @@
 <head>
 <title></title>
 <meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+<script>
+$(document).ready(function(){
+$(".undoSection").fadeIn(700).fadeOut(2000).fadeIn(1000).fadeTo(2000,0.1);
+$(".ButtonSection").fadeIn(2000);
+});
+</script>
 <style type="text/css">
 html{}
 body{padding:0;margin:0;}
@@ -88,7 +95,7 @@ background:;
 color:;
 float:left;
 font-family:;
-
+display:none;
 }
 
 .undoSectionText{
@@ -115,6 +122,7 @@ position:;
 margin:0 auto 0;
 padding:0;
 float:left;
+display:none;
 }
 
 .buttonIcon{
@@ -131,15 +139,18 @@ display:block;
 
 <div class="container">
 <div class="pictureFrame">
-<div class="ButtonsRowTop"><div class="undoSection"><img src="Custom-Icon-Design-Flatastic-9-Undo.ico" class="buttonSingleTop"><div class="undoSectionText">UNDO</div></div></div>
+<div class="ButtonsRowTop"><div class="undoSection">
+<img src="Custom-Icon-Design-Flatastic-9-Undo.ico" class="buttonSingleTop"><div class="undoSectionText">UNDO</div></div></div>
 <div class="ButtonsRowBottom">
 <div class="ButtonSection"></div>
 <div class="ButtonSection"><img src="trash-bin-icon.png" class="buttonIcon" id="delete"></div>
 <div class="ButtonSection"></div>
-<?php
 
+<?php
 $imageBundle = array();
-foreach(glob(*.jpg) as $filename){
+
+foreach(glob("*.jpg") as $filename)
+{
 $imageBundle[]=$filename;
 }
 
@@ -149,12 +160,7 @@ unlink();
 }
 ?>
 </div></div>
-
-
 </div>
-
-
 </body>
-
 <script type="text/javascript"></script>
 </html>
