@@ -6,14 +6,20 @@
 </script>
 <script>
 $(document).ready(function(){
+$(".card").slideDown(959).fadeIn(90000);
 
-$(".card").children().slideDown("slow").fadeIn(9000);
+ $(".card").click(function(){
+                             //  alert("Welcome, $nameHere!");
+                               $(".card").fadeOut(800);
+								   	}
 
+);
 
 });</script>
 <meta charset="UTF-8">
 </head>
 <style type="text/css">
+
 body{
 	font-family:"Roboto Mono",Roboto,sans-serif;
 	letter-spacing: .25px;
