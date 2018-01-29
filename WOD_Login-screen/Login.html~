@@ -10,7 +10,7 @@ $(".card").slideDown(959).fadeIn(90000);
 
  $(".card").click(function(){
                              //  alert("Welcome, $nameHere!");
-                               $(this.card).fadeOut(800);
+                               $(this).fadeOut(800);
 								   	}
 
 );
