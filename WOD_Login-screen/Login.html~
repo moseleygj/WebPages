@@ -8,9 +8,10 @@
 $(document).ready(function(){
 $(".card").slideDown(959).fadeIn(90000);
 
+
  $(".card").click(function(){
                              //  alert("Welcome, $nameHere!");
-                               $(this).fadeOut(800);
+                               $(this).fadeOut(800,alert("hi"));
 								   	}
 
 );
