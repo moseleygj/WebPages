@@ -121,18 +121,25 @@ background-color: pink;
     display:block;
     width:80%;
     max-width:700px;
+     position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
     
 
     #caption {
-    margin: auto;
+    margin: 0 auto 0;
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
+    height: 60px;
+    
+    position: relative;
+font-size: 48px;
+font-weight: bolder;
 }
 
 /* The Close Button */
