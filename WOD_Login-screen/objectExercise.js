@@ -74,64 +74,64 @@ title:"Concentration Curls"
 };
 
 var tricepPushDown={
-image:"image.gif",
-title:"Exercise title:"
+image:"tricepPushdown.gif",
+title:"Tricep Push Down"
 };
 
 var tricepPushDownRope={
-image:"image.gif",
-title:"Exercise title:"
+image:"triceppulldown.gif",
+title:"Tricep Rope Push down"
 };
 
 var tricepPushDownReverse={
-image:"image.gif",
-title:"Exercise title:"
+image:"tricepPushDownReverse.gif",
+title:"Reverse Tricep pushdown"
 };
 
 var tricepPushDownVBar={
-image:"image.gif",
-title:"Exercise title:"
+image:"vBarTricepPushDown.gif",
+title:"V-Bar Push Downs"
 };
 
 var diamondPushUp={
-image:"image.gif",
-title:"Exercise title:"
+image:"diamondPushup.gif",
+title:"Diamond Push Up"
 };
 
 var benchDips={
-image:"image.gif",
-title:"Exercise title:"
+image:"Benchdips.gif",
+title:"Bench Dip"
 };
 
 var dipsWeighted={
-image:"image.gif",
-title:"Exercise title:"
+image:"weightedDips.gif",
+title:"Weighted Dip"
 };
 
 var DBExtensionOneArm={
-image:"image.gif",
-title:"Exercise title:"
+image:"standing-one-arm-dumbbell-triceps-extension.gif",
+title:"On-Arm Dumbbell Tricep extension"
 };
 
 var skullCrusher={
-image:"image.gif",
-title:"Exercise title:"
+image:"skullCrusher.gif",
+title:"Skull Crusher"
 };
 
 
 var benchPressIncline={
-image:"image.gif",
-title:"Exercise title:"
+image:"incline-bench-press.gif",
+title:"Incline Bench Press"
 };
 
 var benchPressDecline={
-image:"image.gif",
-title:"Exercise title:"
+image:"DeclineBenchPress.gif",
+title:"Decline Bench Press"
 };
 
 var benchPressFlat={
-image:"image.gif",
-title:"Exercise title:"
+image:"bench-press.gif",
+title:"Bench Press"
 };
 
 
@@ -145,9 +145,9 @@ image:"image.gif",
 title:"Exercise title:"
 };
 
-var flyesDB={
-image:"image.gif",
-title:"Exercise title:"
+var flyesDBIncline={
+image:"InclineDBFlyes.gif",
+title:"Incline Dumbbell Flyes"
 };
 
 var flyesMachine={
@@ -161,28 +161,28 @@ title:"Exercise title:"
 };
 
 var shoudlderPressDB={
-image:"image.gif",
-title:"Exercise title:"
+image:"dbShoulderPress.gif",
+title:"Dumbbell Shoulder Press"
 };
 
 var shoudlderPressBB={
-image:"image.gif",
-title:"Exercise title:"
+image:"how-to-do-the-military-press.gif",
+title:"Barbell Shoulder Press"
 };
 
 var shoulderSideLateral={
-image:"image.gif",
-title:"Exercise title:"
+image:"lateralraise.gif",
+title:"Lateral Raise"
 };
 
 var shoulderFrontLateral={
-image:"image.gif",
-title:"Exercise title:"
+image:"frontraiseLAterial.gif",
+title:"Front Lateral Raises"
 };
 
 var shoulderRearLateral={
-image:"image.gif",
-title:"Exercise title:"
+image:"dumbbellreverseflyRearLAteral.gif",
+title:"Rear Lateral Raise"
 };
 
 var shrugs={
@@ -191,8 +191,8 @@ title:"Exercise title:"
 };
 
 var shoulderUprightRows={
-image:"image.gif",
-title:"Exercise title:"
+image:"uprightrow.gif",
+title:"Upright Rows"
 };
 
 var pullupsWide={
@@ -206,8 +206,8 @@ title:"Exercise title:"
 };
 
 var pullupReverseGrip={
-image:"image.gif",
-title:"Exercise title:"
+image:"PULL-UPS_CLASSIC-PULL-UP.gif",
+title:"Reverse Grip Pullup"
 };
 
 var backMachineRowsVert={
@@ -222,27 +222,27 @@ title:"Exercise title:"
 
 var backMachinePulldownsV={
 image:"image.gif",
-title:"Exercise title:"
+title:"vbarPullDown.jpg"
 };
 
 
 var backOneArmRows={
-image:"image.gif",
-title:"Exercise title:"
+image:"oneArmRow.gif",
+title:"One-arm Row"
 };
 
 var backTBarRows={
-image:"image.gif",
-title:"Exercise title:"
+image:"t-Bar Row.gif",
+title:"T-Bar Row"
 };
 
 var hyperExtensions={
-image:"image.gif",
-title:"Exercise title:"
+image:"hyperextention.gif",
+title:"Hyper Extensions"
 };
 
 
 var burpees={
-image:"image.gif",
-title:"Exercise title:"
+image:"burpee.gif",
+title:"Burpees"
 };
