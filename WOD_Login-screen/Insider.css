@@ -1,0 +1,104 @@
+body{
+	font-family:"Roboto Mono",Roboto,sans-serif;
+	letter-spacing: .25px;
+	padding:0;margin:0;
+	background:url("carbon_texture1879.jpg");
+	background-repeat:repeat;
+    }
+
+.container{
+	height:1024px;width:768px;min-width: 768px;min-height:610px;
+	margin:0 auto 0;
+		}
+
+.main-img{
+	height:490px;width:768px;
+	position:absolute;
+	margin:75px auto 0;
+	overflow:auto;
+	box-shadow:0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+	border-radius: 3px;
+	background-color: white;
+	background-repeat: no-repeat;
+}
+
+.main-img-txt{
+	height:375px;
+	width:720px;
+	position:relative;
+	margin: 37px auto 0;
+	background-color:white;
+	overflow-wrap:break-word;
+    
+}
+
+.title{
+	height:30px;
+	width:100%;
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+	color:white;
+	margin-top:10px;
+	text-shadow:1px 1px 1px grey;
+}
+.exercise-holder{
+	width:100%;
+	height:30px;
+	border-bottom:1px #f0efef solid;
+	text-align: center;
+	line-height: 2.5;
+}
+.exercise-holder:hover{
+	background-color:#f6f6f6;
+}
+
+.exerciseHeader:hover{
+background-color: pink;
+}
+
+.sets{
+	width:59.6px;
+	height:30px;
+	float:left;
+	text-align: center;
+}
+
+.reps{
+	width:117.2px;
+	height:auto;
+	float:left;
+	text-align: center;
+}
+
+.exercise{
+	width:254px;
+	height:30px;
+	float:left;
+	text-align: center;
+}
+
+.notes{
+	width:254px;
+	height:30px;
+	float:left;
+	text-align: center;
+}
+
+
+.check{
+	width:25px;
+	height:30px;
+	float:left;
+	text-align: center;
+	line-height:1.5;
+}
+
+.datecreated{
+	height:14px;
+	width:auto;
+	color:#ff5252;
+	margin:10px 30px 0 0;
+	float:right;
+	font-size:10px;
+    }
