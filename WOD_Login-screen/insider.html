@@ -1,10 +1,11 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>WOD</title>
+	<title>W.O.D. </title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="Insider.css">
-	  <script >
+        <link rel="stylesheet" href="Insider.css">
+        <link rel="icon" href="dumbbell.png">
+	  <script>
 		$(document).ready(function() {
 			$("#ckbCheckAll").click(function() {
 			if  ($("#ckbCheckAll").is(':checked')){
@@ -19,7 +20,7 @@
 			       $(".exercise-holder").css("background-color","white");//all id starting with h
 			       $("[id^=h]").css("color","#000");
 			   }
-		});
+                                                            });
 		});
 	  </script>
 
@@ -27,13 +28,19 @@
 	
 
 	<body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<span class="close" onClick="hidePic()">&times;</span>
+  <div id="caption"></div>
 
+<img class="modal-content" id="img01">
+</div>
 		<!--blue #4285f4;-->
 <div class="container">
 <div class="title">Workout Of the Day (W.O.D.)</div> 
 	<div class="main-img">
-	<div class="title" style="color:#ff5252;"">Sample workout</div> 
-<!--begining of text area -->
+	<div class="title" style="color:#ff5252;">Sample workout</div> 
+<!--beginning of text area -->
 	<div class="main-img-txt">
 
 <div class="exerciseHeader" style="line-height:1.5;font-weight:bolder;font-size:20px;height:32px;background-color:#eaeaea;">
@@ -49,7 +56,7 @@
 <div class="exercise-holder" id="h1" style="font-size:12px;border">
 <div class="sets">4</div>
 <div class="reps">10-12,15,20,6</div>
-<div class="exercise">skull crusher</div>
+<div class="exercise"><a onclick="showPic('skullCrusher.gif','Skull Crusher');">skull crusher</a></div>
 <div class="notes">Full range of motion</div>
 <div class="check">	<input class="checkBoxClass" id="c1" type="checkbox"  name="cb" onclick="cb('c1','h1')"></div>
 </div>
@@ -57,7 +64,7 @@
 <div class="exercise-holder" id="h2" style="font-size:12px;">
 <div class="sets">5</div>
 <div class="reps">20*,10-12,8,6,6</div>
-<div class="exercise">Tricep Pushdown</div>
+<div class="exercise"><a onClick="showPic('tricepPushdown.gif','Tricep Pushdown');">Tricep Push-down</a></div>
 <div class="notes">3sec down,1sec up</div>
 <div class="check">	
 <input type="checkbox" id="c2" class="checkBoxClass" name="cb" onclick="cb('c2','h2')"></div></div>
@@ -144,42 +151,23 @@
 </div>
 
 </body>
+<script>
+//modal
+var modal = document.getElementById('myModal');
+//image and caption
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
 
-<script type="text/javascript">
-
-function cb(n, x)
-{
-/*
-if (document.getElementById(n).checked == false)
-{
-document.getElementById(x).style.backgroundColor = "white";
-document.getElementById(x).style.color = "black";
+showPic = function(pic,picName){
+    modal.style.display = "block";
+    modalImg.src = "Exercises/"+pic;
+    captionText.innerHTML = picName;
 }
 
-else if (document.getElementById(n).checked == true)
-{
-document.getElementById(x).style.backgroundColor = "#619930";//green
-document.getElementById(x).style.color = "white";
-}
-
-else{
-	alert("error!");
-	}
-}
-
-function toggle() {
-  checkboxes = document.getElementsByName('cb');
-  n=checkboxes.length;
-  for(var i=0;i<n;i++)
-   {
-if( checkboxes[i].checked == true)
-    alert(true);
-    else if (checkboxes[i].checked == false){
-        alert(false);
-    }
-
-  }
-  */return 0;
+function hidePic(){
+modal.style.display = "none";
+    modalImg.src = "";
+    captionText.innerHTML = "NONE";
 }
 </script>
 
