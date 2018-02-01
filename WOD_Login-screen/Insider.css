@@ -42,6 +42,7 @@ body{
 	color:white;
 	margin-top:10px;
 	text-shadow:1px 1px 1px grey;
+        display:none;
 }
 .exercise-holder{
 	width:100%;
