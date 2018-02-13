@@ -1,0 +1,45 @@
+<html style="background-color:#434343">
+  <head>
+<meta charset="UTF-8">  
+  </head>
+  
+  <style type="text/css">
+  
+img{
+    border-radius:50%;
+  margin-top:65px;
+}
+body{
+max-width: 1024px;
+min-width:831px
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+  </style>
+  <title>The wonderful world of Jack</title>
+  
+  <body style="background-color:white;width:60%;margin: 15px auto 0;min-height:100%;height:1000px;color:#434343;border-radius:15px;">
+  <center>
+      <br/>
+  <img src="http://cdn.akc.org/content/hero/RussellTerriersheroimage.jpg" style="width:250px;height:250px;padding-bottom:0px;border:solid 1px #434343">
+      <h1><font color="black">The Wondeful World of Jack!</font></h1>
+      <h4><font color="#414141">A little biography on Jack Russell Terriers (JRT)</font></h4><br/>
+     <p style="width:85%;padding-bottom:35px"> The <b>Jack Russell Terrier</b> is a small terrier that has its origins in fox hunting. It is principally white-bodied and smooth, rough or broken-coated but can be any colour.
+      <br/>
+      <ul style="text-align:left;margin-left:90px">
+        <li><b>Lifespan:&nbsp</b>13 – 16 years</li>
+        <li><b>Origin:&nbsp</b>England</li>
+        <li><b>height:&nbsp</b>9.8 – 15 in. (Adult, At the withers)</li>
+        <li><b>Mass:&nbsp</b>14 – 18 lbs (Adult)</li>
+        <li><b>Temperment:&nbsp</b>Stubborn, Intelligent, Fearless, Energetic, Vocal, Athletic</li>
+        <li><b>Colors:&nbsp</b>Black & White, White & Tan</li>
+
+        
+      </ul >
+    <br/>
+    <br/>
+      <p style="padding-top:80px;width:85%;">Find out more about Jack Russell Terriers by visiting this wikipedia page: <a href="http://cdn.akc.org/content/hero/RussellTerriersheroimage.jpg"  target="_blank">Jack Russel Terrier</a></p>
+    </center>
+    <br/>
+  </body>
+  </>
+</html>
