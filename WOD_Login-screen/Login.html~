@@ -11,7 +11,7 @@ $(".card").slideDown(959).fadeIn(90000);
 
  $(".card").click(function(){
                              //  alert("Welcome, $nameHere!");
-                               $(this).fadeOut(800,alert("hi"));
+                               $(this).fadeOut(800);
 								   	}
 
 );
@@ -33,7 +33,7 @@ body{
 height:420px;
 width:400px;
 margin:70px auto 0;
-background-color:white;
+background-color:#faf5f1;
 display:none
 }
 
@@ -66,10 +66,10 @@ font-size:50px;
 
 <body>
 
-<div class="card"><img src="profile-placeholder.png" class="mugshot"><div class="credentials">John Doe</div></div></div>
+<div class="card"><img src="testM.jpg" class="mugshot"><div class="credentials">John Doe</div></div></div>
 
-<div class="card"><img src="profile-placeholder.png" class="mugshot"><div class="credentials">John Doe</div></div></div>
 
+<div class="card"><img src="janeDoe1.png" class="mugshot"><div class="credentials">Janet Doe</div></div></div>
 </body>
 
 <script type="text/javascript"></script>
