@@ -67,10 +67,10 @@ font-size:50px;
 
 <body>
 
-<div class="card"><img src="testM.jpg" class="mugshot"><div class="credentials">John Doe</div></div></div>
+<div class="card" onclick="alert('I just got my swagger back!')"><img src="testM.jpg" class="mugshot"><div class="credentials">John Doe</div></div></div>
 
 
-<div class="card"><img src="janeDoe1.png" class="mugshot"><div class="credentials">Jane Doe</div></div></div>
+<div class="card" onclick="alert('Lions and tiger and bears... oh my!')"><img src="janeDoe1.png" class="mugshot"><div class="credentials">Jane Doe</div></div></div>
 </body>
 
 <script type="text/javascript"></script>
