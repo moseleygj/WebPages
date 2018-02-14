@@ -14,9 +14,13 @@
 
 <div class="loginBox"><div class="sectionHeader">
 </div>
-<div class="sectionLeft"></div>
+<div class="sectionLeft">
+<img src="Lock.png" class="icon">
+</div>
 <div class="sectionRight"></div>
-
+<div class="textSection"></div>
+<div class="userNamePassSection"></div>
+<div class="buttonsSection"></div>
 </div>
 <div class=""></div>
 

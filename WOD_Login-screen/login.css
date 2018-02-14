@@ -1,15 +1,19 @@
 .loginBox{
 height:220px;
 width:450px;
-background: linear-gradient(#ededed, #f9f9f9);
+background-color:#ebebeb;
 border:1px solid #434343;
 border-radius:5px;
 margin: 0 auto 0;
 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .icon{
-height:100px;
-width:100px;
+height:75px;
+width:75px;
+display:block;
+margin-top:20px;
+text-align:center;
+margin: 20 auto 0
 }
 
 .header{
@@ -58,5 +62,9 @@ height:195px;
 width:350px;
 float:left;
 height:195px;
-float:left;}
-.sectionInfo{}
+float:left;
+}
+
+.buttonsSection{height:33.3%;width:100%;}
+.userNamePassSection{height:33.3%;width:100%;}
+.textSection{height:33.3%;width:100%;}
