@@ -15,12 +15,26 @@
 <div class="loginBox"><div class="sectionHeader">
 </div>
 <div class="sectionLeft">
-<img src="Lock.png" class="icon">
+<img src="vault_by_sircrow.png" class="icon">
 </div>
-<div class="sectionRight"></div>
-<div class="textSection"></div>
-<div class="userNamePassSection"></div>
-<div class="buttonsSection"></div>
+<div class="sectionRight">
+
+<div class="textSection">
+<div class="titleText">SomeApp wants you to enter your Information.</div>
+
+<div class="subTitleText">subtitle Text</div>
+
+</div>
+<div class="userNamePassSection">
+
+<div class="cellHolder"><div class="usernameTitle">Username:&nbsp</div><input type="textbox"/></div>
+
+<div class="cellHolder"><div class="passwordTitle">Password:&nbsp</div><input type="password"/></div>
+
+</div>
+<div class="buttonsSection"><button onclick="#">OK</button><input onclick="#" type="submit" class="btnCancel" value="Cancel"></div>
+</div>
+
 </div>
 <div class=""></div>
 
