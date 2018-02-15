@@ -15,7 +15,7 @@
 <div class="loginBox"><div class="sectionHeader">
 </div>
 <div class="sectionLeft">
-<img src="vault_by_sircrow.png" class="icon">
+<img src="lock3.ico" class="icon">
 </div>
 <div class="sectionRight">
 
@@ -27,7 +27,7 @@
 </div>
 <div class="userNamePassSection">
 
-<div class="cellHolder"><div class="usernameTitle">Username:&nbsp</div><input type="textbox"/></div>
+<div class="cellHolder"><div class="usernameTitle">Username:&nbsp</div><input type="textbox" autofocus /></div>
 
 <div class="cellHolder"><div class="passwordTitle">Password:&nbsp</div><input type="password"/></div>
 
