@@ -1,13 +1,26 @@
 <html>
 <head>
- <link rel="stylesheet" type="text/css" href="resume.css">
+<link rel="stylesheet" type="text/css" href="resume.css">
+<link rel="icon" type="icon" href="17459164.png">
 <meta charset="utf-8">
 <title>Gordon Moseley</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+
+  $("p").fadeIn(2000);
+
+});
+</script>
 <style>
 body{
 	margin:0;
 	padding:0;}
 
+p{display:none;}
 .container{
 		width:100%;
 		height:100%;
@@ -85,23 +98,19 @@ box-sizing: border-box;
 <p>I develop Linux Bash scripts, Web UIs and Web pages.</p>
 <p> At the moment, I currently use the LAMP stack(Linux, Apache, MySQL and PHP), HTML and CSS .</p>
 
-<p>In addition to software development, I enjoy Illustration, tinkering with gadgets to maximize it's capabilities, and learning new things.</p> </div>
+<p>In addition to software development, I enjoy Illustration, tinkering with gadgets to maximize it's capabilities and learning new things.</p> </div>
 </div>
 
 <div class="pane">
 <div class="subtitle"><h1>Stalk me</h1></div>
-<div class="content"> I have a number of public online accounts. Here they are:
+<p class="content"> I have a number of public online accounts. Here they are:
 <br/>
 
 <div class="accounts">
 <div class="account-holder">
 <a href="https://github.com/moseleygj/" target="_blank"><img src="github-6-xxl.png" id="git" class="account-pic" onmouseover="changeIcnHoverG()" onmouseout="changeIcnNoHoverG()"></a>
 <div class="account-name" id="gh-name">Github</div></div>
-<!--
-<div class="account-holder">
-<a href="github.com/"><img src="github-6-xxl.png" class="account-pic" id="photos" onmouseover="changeIcnHoverP()" onmouseout="changeIcnNoHoverP()"></a>
-<div class="account-name" id="photo-name">Photos</div></div>
--->
+
 <div class="account-holder">
 <a href="resume.html" target="_top"><img src="038-doc1.png" class="account-pic" id="resume" onmouseover="changeIcnHoverR()" onmouseout="changeIcnNoHoverR()"></a>
 <div class="account-name" id=resume-name>Resume</div></div>
@@ -164,8 +173,7 @@ function changeIcnNoHoverE()
 document.getElementById("email").src="008-letter-0.png";
 document.getElementById("email-name").style.color="#777";
 }
- 
+
 </script>
 </body>
 </html>
-
