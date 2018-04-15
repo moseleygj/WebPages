@@ -32,7 +32,7 @@ body{background-color:#222;font-family: "Helvetica Neue";height:100%}
 #workExprHead{width:100%;height:50px;font-size:16px;font-weight:bolder;margin-left:10px}
 #workExprB{width:100%;height: auto;}
 ul{padding:0;margin-top:-5px;}
-#toon{position: absolute;height:200px;width:100px;top:-20px;right:-10%;clear:both;float:right;}
+#toon{position: absolute;height:200px;width:100px;top:-20px;right:-10%;clear:both;float:right;display:none;}
 #tape{position: absolute;height:120px;width:50px;top:8px;left:197px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
