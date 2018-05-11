@@ -1,1 +1,2 @@
-![Screenshot](https://github.com/moseleygj/JavaScript/blob/master/JackRussell/Screenshot.png)
+Miniamalistic trubute page
+![Screenshot](https://github.com/moseleygj/WebPages/blob/master/JackRussell/Screenshot.png)

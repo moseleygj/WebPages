@@ -14,10 +14,10 @@ body{margin:0;padding:0;background-color:#444;}
 .top{width:100%;height:20%;border-bottom:2px; border-left:0px;border-top:0px; border-style:solid; border-color:skyblue;}
 img.proPic{height:80%;
 			width:80%;
-			margin:5px auto 5px; 
+			margin:5px auto 5px;
 			display: block;
 			text-align: center;}
-.address{height:12px;width:auto;font-weight:normal;font-size:10px ;color:black;text-align:left; float:;margin:10px 5px 12px 0px;}
+.address{height:12px;width:auto;font-weight:normal;font-size:10px ;color:black;text-align:left; float:left;margin:0px 5px 4px 0px;}
 .idnum{height:12px;width:auto;font-weight:bold;font-size:12px ;color:black;text-align:left; float:;margin:5px 5px 8px 0px;}
 .name{height:12px;width:auto;font-weight:normal;font-size:12px ;color:black;text-align:left; float:;margin:5px 5px 3px 0px;}
 .cat{height:11px;width:auto;font-weight:normal;font-size:12px ;clear:both;color:black;text-align:left; float:left;margin:5px 5px 2px 0px;}
@@ -34,14 +34,18 @@ input[type="textbox"]:hover{background-color:skyblue;width:210px;height:;}
 <div class="container">
 
 <div class="card">
-<div class="top"></div>	
+<div class="top"></div>
 <div class="left">
-<img class="proPic" src="profile-placeholder.png"></div>	
+<img class="proPic" src="profile-placeholder.png"></div>
 <div class="mid">
 <div class="idnum" id="idnum">123 456 789</div>
 <div class="name" id="fname">DOE</div>
 <div class="name" id="lname"style="margin-bottom:7px;">JOHN</div>
-<div class="address" id="address">123 Seaseme Street, Brooklyn, NY,11232</div>
+<div class="address" id="address">123 Seaseme Street</div>
+<div class="address" id="city" style="clear:left;"> Brooklyn</div>
+<div class="address" style="float:left;" id="state">NY</div>
+<div class="address" style="float:left;" id="zip">11212</div>
+
 <div class="cat" id="">sex :</div>
 <div class="ans" id="sex">MALE</div>
 <div class="cat" id="">DOB :</div>
@@ -81,12 +85,16 @@ input[type="textbox"]:hover{background-color:skyblue;width:210px;height:;}
 <input type="textbox" id="addressT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
-<div class="infoTitle" >Address: </div>
-<input type="textbox" id="addressT2" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
+<div class="infoTitle" >City: </div>
+<input type="textbox" id="cityT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
-<div class="infoTitle" >Sex: </div>
-<input type="textbox" id="" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
+<div class="infoTitle" >state: </div>
+<input type="textbox" id="stateT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
+
+<div class="infocell">
+<div class="infoTitle">Zip: </div>
+<input type="textbox" id="zipT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <div class="infoTitle" >DOB: </div>
@@ -102,12 +110,11 @@ input[type="textbox"]:hover{background-color:skyblue;width:210px;height:;}
 
 <div class="infocell" >
 <div class="infoTitle" >Department: </div>
-<input type="textbox" id="deptT" placeholder="Fill Me In" 
-oninput="liveTxtChange()"></input></div><br>
+<input type="textbox" id="deptT" placeholder="Fill Me In" oninput="liveTxtChange()"></input></div><br>
 
 <div class="infocell" >
 <label><button onclick="test()">Sumbit</button></label>
-</label><button onClick="clearBoxes()">Clear</button></label>
+<label><button onClick="clearBoxes()">Clear</button></label>
 </div>
 </div>
 <!--shorten links and pass values through ID-->
@@ -116,6 +123,16 @@ oninput="liveTxtChange()"></input></div><br>
 function liveTxtChange(){
 document.getElementById("idnum").innerHTML=document.getElementById("idnumT").value;
 document.getElementById("dept").innerHTML=document.getElementById("deptT").value;
+document.getElementById("fname").innerHTML=document.getElementById("fnameT").value;
+document.getElementById("lname").innerHTML=document.getElementById("lnameT").value;
+document.getElementById("address").innerHTML=document.getElementById("addressT").value;
+document.getElementById("dob").innerHTML=document.getElementById("dobT").value;
+document.getElementById("expire").innerHTML=document.getElementById("expireT").value;
+document.getElementById("issue").innerHTML=document.getElementById("issueT").value;
+document.getElementById("dob").innerHTML=document.getElementById("dobT").value;
+document.getElementById("city").innerHTML=document.getElementById("cityT").value;
+document.getElementById("state").innerHTML=document.getElementById("stateT").value;
+document.getElementById("zip").innerHTML=document.getElementById("zipT").value;
 }
 function test(){
 document.getElementById("idnumT").value=document.getElementById("idnum").innerHTML;
@@ -126,12 +143,27 @@ document.getElementById("dobT").value=document.getElementById("dob").innerHTML;
 document.getElementById("expireT").value=document.getElementById("expire").innerHTML;
 document.getElementById("deptT").value=document.getElementById("dept").innerHTML;
 document.getElementById("issueT").value=document.getElementById("issue").innerHTML;
+
+document.getElementById("dobT").value=document.getElementById("dob").innerHTML;
+document.getElementById("cityT").value=document.getElementById("city").innerHTML;
+document.getElementById("stateT").value=document.getElementById("state").innerHTML;
+document.getElementById("zipT").value=document.getElementById("zip").innerHTML;
+
 }
-function clearBoxes(){		
-
-//add more
-
-document.getElementById("deptT").value="";
+function clearBoxes(){
+	document.getElementById("idnumT").value="";
+	document.getElementById("fnameT").value="";
+	document.getElementById("lnameT").value="";
+	document.getElementById("addressT").value="";
+	document.getElementById("dobT").value="";
+	document.getElementById("expireT").value="";
+	document.getElementById("deptT").value="";
+	document.getElementById("issueT").value="";
+	document.getElementById("dobT").value="";
+	document.getElementById("cityT").value="";
+	document.getElementById("stateT").value="";
+	document.getElementById("zipT").value="";
+	document.getElementById("deptT").value="";
 }
 </script>
 </body>
