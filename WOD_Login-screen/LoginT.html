@@ -1,25 +1,16 @@
 <html>
 
 <head>
+    <link href="loginT.css" type="text/css" rel="stylesheet">
+
     <title>Authorization</title>
     <meta charset="UTF-8">
-    <link href="login.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="Insider.css">
 </head>
 <style type="text/css">
 
 </style>
 
 <body>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close" onClick="hidePic()" id="closeModal">&times;</span>
-
-
-        <img class="modal-content" id="img01">
-    </div>
-    <!--blue #4285f4;-->
-
 
     <div class="loginBox" id="loginBox">
         <div class="sectionHeader">
@@ -48,26 +39,9 @@
         </div>
 
     </div>
-    <div class=""></div>
+
 
 </body>
 
-<script type="text/javascript">
-    //modal
-    var modal = document.getElementById('myModal');
-    var msgBox = document.getElementById("loginBox");
-    var closeBtn = document.getElementById("closeModal");
-
-    showPic = function() {
-        modal.style.display = "block";
-        msgBox.style.zIndex = "2";
-        closeBtn.style.display = "none";
-    }
-
-    function hidePic() {
-        modal.style.display = "none";
-        msgBox.style.display = "none";
-    }
-</script>
 
 </html>
