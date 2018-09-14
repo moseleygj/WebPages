@@ -1,0 +1,21 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: yellow;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(43, 179, 43);
+    color: white;
+    text-align: center;
+}
+
+
+/**/
