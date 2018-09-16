@@ -2,20 +2,20 @@ html,
 body {
     padding: 0;
     margin: 0;
-    background-color: yellow;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
+    transition: all ease-in-out 0.7s;
 }
 
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
+    background-color: #222222;
 }
 
 footer {
     height: 50px;
-    background-color: rgb(43, 179, 43);
+    background-color: #121212;
     color: white;
     text-align: center;
 }
-
-
-/**/
