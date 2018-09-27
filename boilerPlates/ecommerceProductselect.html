@@ -1,5 +1,11 @@
 <style>
+body{
+  background-color:lightgrey;
+  transition: all ease 2s;
+}
 .itemHolder{
+  min-width:;
+  max-width:;
   height:400px;
   width:650px;
   background-color:lightgrey;
@@ -8,14 +14,14 @@
 .imgSelectHolder{
   height:100%;
   width:12%;
-  background-color:skyblue; 
+  background-color:white; 
   float:left;
 }
 
 .mainImageAndDescription{
    height:100%;
   width:42%;
-  background-color:grey;
+  background-color:white;
   float:left;
 }
 .details{
@@ -44,6 +50,8 @@
   margin:10px auto 5px;
   background-color:white;
 }
+
+.imageOptionPic:hover{border:3px solid skyblue;}
 .imageOptionPic{
   height:70px;
   width:100%;
@@ -66,6 +74,20 @@
   height:15%;
   width:92%;
   margin-top:5px;
+  color:#434343;
+}
+
+.priceHolder{
+  margin-left:15px;
+  width:92%;
+  background-color:white;
+  height:38px;
+  margin-top:15px;
+  margin-bottom:15px;
+
+  color:black;
+  font-size:34px;
+  font-weight:bolder;
 }
 .colorTitle{
     margin-left:15px;
@@ -93,11 +115,58 @@ width:92%;
 .textDescriptionBottom{
   background-color:white;
   width:93%;
-  height:90px;
+  height:97px;
   background-color:white;
-  margin: 15px auto 0;
+  margin: 8px auto 0;
+  border:1px solid lightgrey;
   }
+.textDescriptionBottomTitle{
+  height:15px;width:100%;
+border-bottom:1px solid grey;
+background:linear-gradient(white,lightgrey);
+font-size:12px;
+font-weight:bold;
+}
 
+.textdesc{
+  font-size:14px;
+  color:#434343;
+  overflow:hidden;
+  text-indent:15px;
+  line-height:18px;
+   padding:3px;
+}
+
+.sizeTitle{
+  margin-left:15px;
+  width:92%;
+  background-color:white;
+  height:20px;
+  margin-top:10px;
+  color:grey
+}
+.sizeHolder{
+  margin-left:15px;
+  width:92%;
+  background-color:white;
+  height:26px;
+  margin-top:5px;
+}
+
+.buyingSection{
+  height:30px;width:100%;
+  background-color:white;
+  margin-top:10px;
+text-align:center;
+}
+.buybtn{
+  height:30px;
+  width:110px;
+  padding:0;
+  color:white;
+  font-weight:bold;
+  background-color:black;
+}
 </style>
 <div class="itemHolder">
   
@@ -111,15 +180,18 @@ width:92%;
   </div>
   
   <div class="mainImageAndDescription">
-   <div class="mainImage">       <img class="mainImagePic" src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest/scale-to-width-down/480?cb=20170330235552">
+   <div class="mainImage">      <a href="#"> <img class="mainImagePic" src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest/scale-to-width-down/480?cb=20170330235552"></a>
     </div>
-      <div class="textDescriptionBottom"></div>
+      <div class="textDescriptionBottom">
+        <div class="textDescriptionBottomTitle">Product details</div><div class="textdesc">the wheels on the bus go round and round, round and round, round and round. the wheels on the bus go</div>
+    </div>
 
   </div>
 
   <div class="details">
     <div class="itemName">item Name</div>
     <div class="productDescription">Description... 100% cotton  blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, </div>
+    <div class="priceHolder">$0.00</div>
     <div class="colorTitle">color
     </div>
     <div class="colorHolder">
@@ -127,11 +199,10 @@ width:92%;
 
     </div>
 
-    <div></div>
-    <div></div>
+    <div class="sizeTitle">size</div>
+    <div class="sizeHolder"></div>
+    
+    <div class="buyingSection"><button class="buybtn">ADD TO CART</button></div>
     <div></div>
   </div>
 
-  
-  
-</div>
