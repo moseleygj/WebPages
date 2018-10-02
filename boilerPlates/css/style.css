@@ -5,6 +5,7 @@ body {
     height: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
     transition: all ease-in-out 0.7s;
+    background-color: white;
 }
 
 .wrapper {
@@ -16,7 +17,7 @@ body {
 #blank {
     height: 500px;
     width: 100%;
-    background-color: pink;
+    background-color: grey;
 }
 
 footer {
@@ -92,25 +93,29 @@ ul li a {
 /*scroll to top */
 
 #myBtn {
-    display: none;
+    /*display: none;*/
     position: fixed;
     bottom: 20px;
     right: 0px;
     z-index: 99;
     font-size: 24px;
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
+    border-top: 1px solid rgb(68, 68, 68);
+    border-left: 1px solid rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(68, 68, 68);
     outline: none;
-    background: rgba(255, 0, 0, 0.7);
+    background-position: center;
     color: white;
+    background: rgba(255, 255, 255, 0.685);
     cursor: pointer;
     padding: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    transition: opacity 3s ease-in-out linear;
+    opacity: 1;
 }
 
-#myBtn:hover {
+#myBtn:active {
     background-color: #555;
+    opacity: 1;
 }
