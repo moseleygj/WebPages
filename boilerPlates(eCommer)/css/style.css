@@ -1,0 +1,121 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
+    transition: all ease-in-out 0.7s;
+    background-color: white;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+    background-color: #222222;
+}
+
+#blank {
+    height: 500px;
+    width: 100%;
+    background-color: grey;
+}
+
+footer {
+    height: 50px;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+
+/*top menu bar*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: rbga(225, 0, 0, 0.5);
+    width: 100%;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px grey solid;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+    /*parent*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 8.5px 17px;
+}
+
+nav ul li a:hover {
+    color: red;
+    background-color: white;
+}
+
+nav ul li ul {
+    position: absolute;
+    /*child*/
+    min-width: 160px;
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.616);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    display: block;
+    padding: 15px 20px;
+    width: 160px;
+}
+
+ul li a {
+    transition: all ease-in-out 0.7s;
+}
+
+
+/*scroll to top */
+
+#myBtn {
+    /*display: none;*/
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    z-index: 99;
+    font-size: 24px;
+    border-top: 1px solid rgb(68, 68, 68);
+    border-left: 1px solid rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(68, 68, 68);
+    outline: none;
+    background-position: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: opacity 3s ease-in-out linear;
+    opacity: 1;
+}
+
+#myBtn:active {
+    background-color: #555;
+    opacity: 1;
+}
