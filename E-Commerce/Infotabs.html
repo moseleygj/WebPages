@@ -29,10 +29,11 @@ body{
   border-top:1px solid rgb(204,204,204);
   border-right:1px solid rgb(204,204,204);
   border-left:1px solid rgb(204,204,204);
-  top: -1px;
+  top: -2px;
   position:relative;
   margin-left:10px;
-  border-bottom:1px solid rgb(204,204,204);
+  border-bottom:1px solid white;
+
 
 }
 .tabB{
@@ -40,14 +41,16 @@ body{
   height:30px;
   width:220px;
   background-color:white;
+  background:linear-gradient(white,white,white,rgb(230,230,230));
   float:left;
   border-radius:15px 15px 0px 0px;
   border-top:1px solid rgb(204,204,204);
   border-right:1px solid rgb(204,204,204);
   border-left:1px solid rgb(204,204,204);
-  border-bottom:1px solid white;
-  top: -1px;
+  border-bottom:1px solid rgb(204, 204, 204);
+  top: -2px;
   position:relative;
+
 }
 
 .tabALabel{
@@ -57,6 +60,7 @@ body{
   line-height:2;
   font-weight:bolder;
   color:#0654ba;
+  text-shadow:1px 1px 0.8px white;
 }
 
 .tabBLabel{
@@ -67,6 +71,7 @@ body{
   font-weight:bolder;
   color:#0654ba;
   line-height:2;
+  
 }
 
 .productDetailsHeader{
@@ -111,15 +116,15 @@ body{
   font-size:16px;
   width:100%;
 }
+
 </style>
-<body>
-</style>
+
 <body>
 <div class="descriptionSection">
-  <div class="descriptionSection" style="position:absolute;background-color:yellow;opacity:0.8; height:470px;margin-top:30px; z-index:;
-" id="a">
+  <div class="descriptionSection" style="position:absolute; height:470px;margin-top:30px;display:none
+" id="a"  >
     <div class="shippingDetailsHeader" onClick="HideShowShipping()" >Shipping<div style="display:inline-block;text-decoration:none;float:right;font-size:20px;margin-right:15px;" id="shipInfo" > - </div></div>
-      <div class="descriptionInfo" id="shippingInfo">
+      <div class="descriptionInfo" id="shippingInfo"  >
 
    
     <ul>
@@ -139,11 +144,11 @@ body{
     </div>
   </div>
   <div class="tabs">
-    <div class="tabA"><div class="tabALabel" onClick="shipAndPayTab()" style="cursor:pointer">Description</div>
+    <div class="tabA" id="tabA"><div class="tabALabel" onClick="descriptionTab()" style="cursor:pointer">Description</div>
 </div>
-<div class="tabB"><div class="tabBLabel" onClick="descriptionTab()" style="cursor:pointer">Shipping & Payments</div></div>
+<div class="tabB" id="tabB"><div class="tabBLabel" onClick="shipAndPayTab()" style="cursor:pointer">Shipping & Payments</div></div>
     
-<!-- change z-index to corresond with tabs, add truncation to shipping and returns -->
+<!-- change z-index to corresond with tabs-->
   </div>
   <div class="productDetailsHeader" style="cursor:pointer" onClick="hideDescriptionInfo()">Product Details <div style="display:inline-block;text-decoration:none;float:right;font-size:20px;margin-right:15px;" id="productDetailShow">-</div></div>
   
@@ -160,7 +165,7 @@ body{
   
   <div class="divider" style=""></div>
   <div class="productMaterialAndCareHeader" style="cursor:pointer" onClick="hideMaterialandCareInfo()">Material and Care<div style="display:inline-block;text-decoration:none;float:right;font-size:20px;margin-right:15px;" id="matCare" > -</div></div>
-<div class="discriptionInfo" id="discriptionInfoMaterial">
+<div class="descriptionInfo" id="descriptionInfoMaterial">
   <p style="margin-left:12px">Some long detailed description here</p>
   <ul style="list-style-type:circle">
     <li>Machine wash, tumble dry low</li>
@@ -168,20 +173,20 @@ body{
     <li>Imported</li>
   </ul>
   </div>
-
-  [pre-order] [back-order] [out of stock]
 </div>
+  
+<!--  make indicator for  [pre-order] [back-order] [out of stock] -->
 </body>
 <script>
 function hideDescriptionInfo()
 {
-  if          (document.getElementById("descriptionInfo").style.display=="block"){
+  if          (document.getElementById("productDescriptionInfo").style.display=="block"){
     productDetailShow.innerHTML="+";
 document.getElementById("productDetailShow").style.color="#0654ba";
-    document.getElementById("descriptionInfo").style.display="none";
+    document.getElementById("productDescriptionInfo").style.display="none";
   }
   else {
-    document.getElementById("descriptionInfo").style.display="block";
+    document.getElementById("productDescriptionInfo").style.display="block";
         productDetailShow.innerHTML="-";
 document.getElementById("productDetailShow").style.color="#434343";
 
@@ -237,15 +242,31 @@ if(HSReturns.style.display=="block"){
 }
 
 function shipAndPayTab(){
+  let tabA = document.getElementById("tabA");
+  let tabB = document.getElementById("tabB");
   document.getElementById("productDescriptionInfo").style.display="none";
   document.getElementById("a").style.display="block";
-
+  
+ tabB.style.borderBottom="1px solid white";
+ tabA.style.borderBottom="1px solid rgb(204,204, 204)";
+  
+  tabB.style.background="white";
+  tabA.style.background="linear-gradient(white,white,white,rgb(230,230,230))";
 }
 
 function descriptionTab(){
+  let tabA = document.getElementById("tabA");
+  let tabB = document.getElementById("tabB");
+
   document.getElementById("a").style.display="none";
   document.getElementById("productDescriptionInfo").style.display="block";
 
+  tabB.style.borderBottom="1px solid rgb(204, 204, 204)";
+  tabA.style.borderBottom="1px solid white";
+
+  tabA.style.background="white";
+  tabB.style.background="linear-gradient(white,white,white,rgb(230,230,230))";
 }
+
 </script>
 </html>
