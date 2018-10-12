@@ -1,0 +1,114 @@
+
+.descriptionSection{
+  background-color:white;  
+  height:500px;
+  width:650px;
+  border-radius:2px;
+}
+
+
+.tabs{
+  height:30px;
+  width:100%;
+  background-color:lightgrey;
+  border-bottom:1px solid rgb(204,204,204);
+  position:relative;
+}
+
+.tabA{
+  height:30px;
+  width:220px;
+  background-color:white;
+  float:left;
+  border-radius:15px 15px 0px 0px;
+  border-top:1px solid rgb(204,204,204);
+  border-right:1px solid rgb(204,204,204);
+  border-left:1px solid rgb(204,204,204);
+  top: -2px;
+  position:relative;
+  margin-left:10px;
+  border-bottom:1px solid white;
+
+
+}
+.tabB{
+  margin-left:5px;
+  height:30px;
+  width:220px;
+  background-color:white;
+  background:linear-gradient(white,white,white,rgb(230,230,230));
+  float:left;
+  border-radius:15px 15px 0px 0px;
+  border-top:1px solid rgb(204,204,204);
+  border-right:1px solid rgb(204,204,204);
+  border-left:1px solid rgb(204,204,204);
+  border-bottom:1px solid rgb(204, 204, 204);
+  top: -2px;
+  position:relative;
+
+}
+
+.tabALabel{
+  height:100%;
+  width:100%;
+  text-align:center;
+  line-height:2;
+  font-weight:bolder;
+  color:#0654ba;
+  text-shadow:1px 1px 0.8px white;
+}
+
+.tabBLabel{
+  height:100%;
+  width:100%;
+  text-align:center;
+  line-height:;
+  font-weight:bolder;
+  color:#0654ba;
+  line-height:2;
+  
+}
+
+.productDetailsHeader{
+  font-weight:bolder;
+  text-indent:12px;
+  margin-top:10px;
+  color:#434343;
+  font-size:16px;
+  width:100%;  
+}
+
+.shippingDetailsHeader{
+  font-weight:bolder;
+  text-indent:12px;
+  margin-top:10px;
+  color:#434343;
+  font-size:16px;
+  width:100%;  
+  height:20px;
+  background-color:;
+}
+
+.divider{
+  width:95%;
+  height:2px;
+  background:rgb(204,204,204);
+  display:block;
+  margin:20px auto 20px;
+}
+
+.descriptionInfo{
+  width:100%;
+  color:#666;
+  height:auto;
+}
+
+.productMaterialAndCareHeader{
+  font-weight:bolder;
+  text-indent:12px;
+  margin-top:15px;
+  color:#434343;
+  font-size:16px;
+  width:100%;
+}
+

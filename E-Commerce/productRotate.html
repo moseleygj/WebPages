@@ -1,0 +1,60 @@
+<html>
+
+
+<head>
+<title>project rotate</title>
+<style>
+.productRecContainer
+{
+  height:150px;
+  width:500px;
+  background-color:lightgrey;
+  position:relative;
+}
+.productRec{
+  height:147px;
+  width:110px;
+  border:1px solid yellow;
+  float:left;
+  margin-left:10px;
+
+}
+.scrollLeft{
+  height:30px;
+  width:30px;
+  position:absolute;
+  border-radius:50%;
+  border:2px solid green;
+  background-color:pink;
+  top:50%;
+  transform:translateY(-50%);
+  text-align:center;
+
+}
+.scrollRight{
+  height:30px;
+  width:30px;
+  position:absolute;
+  border-radius:50%;
+  border:2px solid green;
+  background-color:pink;
+  top:50%;
+  transform:translateY(-50%);
+  right:0;
+  text-align:center;
+}
+
+</style>
+</head>
+<body>
+<div class="productRecContainer">
+  <div class="scrollLeft"><</div>
+    <div class="scrollRight">></div>
+
+<div class="productRec"></div>
+<div class="productRec"></div>
+<div class="productRec"></div>
+<div class="productRec"></div>
+</div>
+</body>
+</html>
