@@ -1,476 +1,507 @@
+<html>
 <style>
-
-
-body{
-  background-color:lightgrey;
-  transition: all ease 2s;
-}
-.itemHolder{
-  min-width:;
-  max-width:;
-  height:500px;
-  width:650px;
-  background-color:lightgrey;
-  
-}
-.imgSelectHolder{
-  height:100%;
-  width:12%;
-  background-color:white; 
-  float:left;
-}
-
-.mainImageAndDescription{
-   height:100%;
-  width:42%;
-  background-color:white;
-  float:left;
-}
-.details{
-   height:100%;
-  width:46%;
-  background-color:#edecec;
-  background-color:white;
-
-  float:left;
-}
-
-.mainImage{
-  width:93%;
-  height:275px;
-  background-color:white;
-  margin: 10px auto 0;
-}
-.mainImagePic{
-  width:100%;
-    height:275px;
-  background-color:white;
-  margin: 0 auto 0;
-}
-
-.imageOption{
-  height:70px;
-  width:85%;
-  margin:10px auto 5px;
-  background-color:white;
-}
-
-.imageOptionPic:hover{border:1px solid skyblue;}
-.imageOptionPic{
-  height:70px;
-  width:99%;
-  background-color:white;
-}
-
-.itemName{
-  height:20px;
-  width:100%;
-  background-color:white;
-  margin:9px auto 0px;
-  text-indent:15px;
-  font-weight:bold;
-  text-transform:uppercase;
-}
-
-.productDescription{
-  margin-left:15px;
-  background-color:white;
-  height:15%;
-  width:92%;
-  margin-top:5px;
-  color:#434343;
-}
-
-.priceHolder{
-  margin-left:15px;
-  width:92%;
-  background-color:white;
-  height:38px;
-  margin-top:15px;
-  margin-bottom:15px;
-
-  color:black;
-  font-size:34px;
-  font-weight:bolder;
-}
-.colorTitle{
-    margin-left:15px;
-width:92%;
-  background-color:white;
-  height:20px;
-  margin-top:10px;
-  color:grey
-}
-.colorHolder{
-  margin-left:15px;
-  width:92%;
-  background-color:white;
-  height:66px;
-  margin-top:5px;
-}
-.colorsArray{
-  height:5px;
-  width:25px;
-  border:1px solid grey;
-  background-color:black;
-  padding-right:10px;
-}
-
-.textDescriptionBottom{
-  background-color:white;
-  width:93%;
-  height:97px;
-  background-color:white;
-  margin: 8px auto 0;
-  border:1px solid lightgrey;
-  }
-.textDescriptionBottomTitle{
-  text-indent:5px;
-  height:15px;width:100%;
-border-bottom:1px solid grey;
-background:linear-gradient(white,lightgrey);
-font-size:12px;
-font-weight:bold;
-}
-
-.textdesc{
-  font-size:14px;
-  color:#434343;
-  overflow:hidden;
-  text-indent:15px;
-  line-height:18px;
-   padding:3px;
-}
-
-.sizeTitle{
-  margin-left:15px;
-  width:92%;
-  background-color:white;
-  height:20px;
-  margin-top:10px;
-  color:grey
-}
-.sizeHolder{
-  margin-left:15px;
-  width:92%;
-  background-color:white;
-  height:36px;
-  margin-top:5px;
-  position: relative;
-}
-
-.buyingSection{
-  height:40px;width:100%;
-  background-color:white;
-  margin-top:10px;
-text-align:center;
-}
-.buybtn{
-  height:40px;
-  width:140px;
-  padding:0;
-  margin-top:3px;
-  color:white;
-  font-weight:bold;
-  background:linear-gradient(#42a1ec,#0070c9);
-  border-color:#07c;
-  border:1px solid;
-  border-radius:4px;
-  color:white;
-  white-space:nowrap;
-}
-.buybtn:hover{
-  background-color:#147bcd;
-  background:linear-gradient(#51a9ee,#1478cd);
-  text-decoration:none;
-}
-/*buttons*/
-.container {
-    display:inline;
-    position: relative;
-    padding-left: 28px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color:#fef2fa;
-    margin-right:2px;
-    text-align:center;
-}
-
-/* Hide the browser's default radio button */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-/* Create a custom radio button */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 35px;
-    background-color: #eee;
-    border-radius: 3px;
-    border:2px solid #929292;
-    font-size:18px;
-	line-height:1.5;
+    body {
+        background-color: lightgrey;
+        transition: all ease 2s;
     }
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-    background-color: #ccc;
-    border:2px solid black;
-
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-    display: block;
-}
-
-/* Style the indicator (dolt/circle) */
-.container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-  background: ;}
-  /*color select*/
-  
-  .colorChart {
-    display:inline-block;
-    position: relative;
-    padding-left: 18px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color:#fef2fa;
-    margin-right:2px;
-    text-align:center;
     
-    
-}
-
-/* Hide the browser's default radio button */
-.colorChart input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-/* Create a custom radio button */
-.checkmark1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 22px;
-    width: 22px;
-    background-color: #eee;
-    border-radius: 3px;
-    border:1.5px solid #929292;
-    font-size:18px;
-    line-height:2;
+    .itemHolder {
+        min-width: ;
+        max-width: ;
+        height: 500px;
+        width: 650px;
+        background-color: lightgrey;
     }
-
-/* On mouse-over, add a grey background color */
-.colorChart:hover input ~ .checkmark1 {
-    background-color: #ccc;
-    border:1px solid grey;
-    box-shadow: 1px 1px 4px grey;
-    transition: all 0.4s ease;
-}
-
-/* When the radio button is checked, add a blue background */
-.colorChart input:checked ~ .checkmark1 {
-   border-radius:50%;
-   box-shadow: 1px 1px 4px black;
-
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark1:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.colorChart input:checked ~ .checkmark1:after {
-    display: block;
-}
-
-/* Style the indicator (dolt/circle) */
-.colorChart .checkmark1:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: ;
-}
-
-.divider{
-  width:95%;
-  height:1px;
-  background:rgb(204,204,204);
-  display:block;
-  margin:0 auto 0;
-}
-
-.Quality{
-  height:20px;
-  width:100%;
-  background-color:white;
-  margin:9px auto 30px;
-  text-indent:20px;
-  color:rgb(102,102,102)
-}
-
-.QualityBox{
-  margin-left:15px;
-  background-color:white;
-  height:15%;
-  width:92%;
-  margin-top:5px;
-  color:#434343;
-}
-
-input[type="number"]{
-  font-weight:bolder;
-}
+    
+    .imgSelectHolder {
+        height: 100%;
+        width: 12%;
+        background-color: white;
+        float: left;
+    }
+    
+    .mainImageAndDescription {
+        height: 100%;
+        width: 42%;
+        background-color: white;
+        float: left;
+    }
+    
+    .details {
+        height: 100%;
+        width: 46%;
+        background-color: #edecec;
+        background-color: white;
+        float: left;
+    }
+    
+    .mainImage {
+        width: 93%;
+        height: 275px;
+        background-color: white;
+        margin: 10px auto 0;
+    }
+    
+    .mainImagePic {
+        width: 100%;
+        height: 275px;
+        background-color: white;
+        margin: 0 auto 0;
+        border: 1px solid rgb(204, 204, 204);
+    }
+    
+    .imageOption {
+        height: 70px;
+        width: 85%;
+        margin: 10px auto 5px;
+        background-color: white;
+    }
+    
+    .imageOptionPic:hover {
+        border: 1px solid skyblue;
+    }
+    
+    .imageOptionPic {
+        height: 70px;
+        width: 99%;
+        background-color: white;
+        border: 1px solid rgb(204, 204, 204);
+    }
+    
+    .itemName {
+        height: 20px;
+        width: 100%;
+        background-color: white;
+        margin: 9px auto 0px;
+        text-indent: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .productDescription {
+        margin-left: 15px;
+        background-color: white;
+        height: 15%;
+        width: 92%;
+        margin-top: 5px;
+        color: #434343;
+    }
+    
+    .priceHolder {
+        margin-left: 15px;
+        width: 92%;
+        background-color: white;
+        height: 38px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: black;
+        font-size: 34px;
+        font-weight: bolder;
+    }
+    
+    .colorTitle {
+        margin-left: 15px;
+        width: 92%;
+        background-color: white;
+        height: 20px;
+        margin-top: 10px;
+        color: grey
+    }
+    
+    .colorHolder {
+        margin-left: 15px;
+        width: 92%;
+        background-color: white;
+        height: 66px;
+        margin-top: 5px;
+    }
+    
+    .colorsArray {
+        height: 5px;
+        width: 25px;
+        border: 1px solid grey;
+        background-color: black;
+        padding-right: 10px;
+    }
+    
+    .textDescriptionBottom {
+        background-color: white;
+        width: 93%;
+        height: 97px;
+        background-color: white;
+        margin: 8px auto 0;
+        border: 1px solid lightgrey;
+    }
+    
+    .textDescriptionBottomTitle {
+        text-indent: 5px;
+        height: 15px;
+        width: 100%;
+        border-bottom: 1px solid grey;
+        background: linear-gradient(white, lightgrey);
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .textdesc {
+        font-size: 14px;
+        color: #434343;
+        overflow: hidden;
+        text-indent: 15px;
+        line-height: 18px;
+        padding: 3px;
+    }
+    
+    .sizeTitle {
+        margin-left: 15px;
+        width: 92%;
+        background-color: white;
+        height: 20px;
+        margin-top: 10px;
+        color: grey
+    }
+    
+    .sizeHolder {
+        margin-left: 15px;
+        width: 92%;
+        background-color: white;
+        height: 36px;
+        margin-top: 5px;
+        position: relative;
+    }
+    
+    .buyingSection {
+        height: 40px;
+        width: 100%;
+        background-color: white;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .buybtn {
+        height: 40px;
+        width: 140px;
+        padding: 0;
+        margin-top: 3px;
+        color: white;
+        font-weight: bold;
+        background: linear-gradient(#42a1ec, #0070c9);
+        border-color: #07c;
+        border: 1px solid;
+        border-radius: 4px;
+        color: white;
+        white-space: nowrap;
+    }
+    
+    .buybtn:hover {
+        background-color: #147bcd;
+        background: linear-gradient(#51a9ee, #1478cd);
+        text-decoration: none;
+    }
+    /*buttons*/
+    
+    .container {
+        display: inline;
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #fef2fa;
+        margin-right: 2px;
+        text-align: center;
+    }
+    /* Hide the browser's default radio button */
+    
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    /* Create a custom radio button */
+    
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 35px;
+        background-color: #eee;
+        border-radius: 3px;
+        border: 2px solid #929292;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    /* On mouse-over, add a grey background color */
+    
+    .container:hover input~.checkmark {
+        background-color: #ccc;
+        border: 2px solid black;
+    }
+    /* When the radio button is checked, add a blue background */
+    
+    .container input:checked~.checkmark {
+        background-color: #2196F3;
+    }
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the indicator (dot/circle) when checked */
+    
+    .container input:checked~.checkmark:after {
+        display: block;
+    }
+    /* Style the indicator (dolt/circle) */
+    
+    .container .checkmark:after {
+        top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: ;
+    }
+    /*color select*/
+    
+    .colorChart {
+        display: inline-block;
+        position: relative;
+        padding-left: 18px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #fef2fa;
+        margin-right: 2px;
+        text-align: center;
+    }
+    /* Hide the browser's default radio button */
+    
+    .colorChart input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    /* Create a custom radio button */
+    
+    .checkmark1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+        border-radius: 3px;
+        border: 1.5px solid #929292;
+        font-size: 18px;
+        line-height: 2;
+    }
+    /* On mouse-over, add a grey background color */
+    
+    .colorChart:hover input~.checkmark1 {
+        background-color: #ccc;
+        border: 1px solid grey;
+        box-shadow: 1px 1px 4px grey;
+        transition: all 0.4s ease;
+    }
+    /* When the radio button is checked, add a blue background */
+    
+    .colorChart input:checked~.checkmark1 {
+        border-radius: 50%;
+        box-shadow: 1px 1px 4px black;
+    }
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    
+    .checkmark1:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the indicator (dot/circle) when checked */
+    
+    .colorChart input:checked~.checkmark1:after {
+        display: block;
+    }
+    /* Style the indicator (dolt/circle) */
+    
+    .colorChart .checkmark1:after {
+        top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: ;
+    }
+    
+    .divider {
+        width: 95%;
+        height: 1px;
+        background: rgb(204, 204, 204);
+        display: block;
+        margin: 0 auto 0;
+    }
+    
+    .Quality {
+        height: 20px;
+        width: 100%;
+        background-color: white;
+        margin: 9px auto 30px;
+        text-indent: 20px;
+        color: rgb(102, 102, 102)
+    }
+    
+    .QualityBox {
+        margin-left: 15px;
+        background-color: white;
+        height: 15%;
+        width: 92%;
+        margin-top: 5px;
+        color: #434343;
+    }
+    
+    input[type="number"] {
+        font-weight: bolder;
+    }
 </style>
-<div class="itemHolder">
-  
-  <div class="imgSelectHolder">
-    <div class="imageOption">
-    <a href="#" ><img class="imageOptionPic" src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png">  </a></div>
-    
-    <div class="imageOption"><img class="imageOptionPic" src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png"></div>
-    <div class="imageOption"><img class="imageOptionPic" src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png"></div>
 
-  </div>
-  
-  <div class="mainImageAndDescription">
-   <div class="mainImage">      <a href="#"> <img class="mainImagePic" src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest/scale-to-width-down/480?cb=20170330235552"></a>
-    </div>
-      <div class="textDescriptionBottom">
-        <div class="textDescriptionBottomTitle">Product details</div><div class="textdesc">The wheels on the bus go round and round, round and round, round and round. the wheels on the bus go</div>
-    </div>
+<body>
 
-  </div>
+    <div class="itemHolder">
 
-  <div class="details">
-    <div class="itemName">item Name</div>
-    <div class="productDescription">Description... 100% cotton  blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, </div>
-    <div class="priceHolder">$0.00</div>
-    <div class="colorTitle">Color
-    </div>
-    <div class="colorHolder">
-            
-            <label class="colorChart">&nbsp
-  <input type="radio" checked="checked" name="radio1" id="red">
-  <span class="checkmark1" style="background-color:red"></span>
-</label>
-<label class="colorChart"> &nbsp
-  <input type="radio" name="radio1" id="orange">
-  <span class="checkmark1" style="background-color:orange"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="yellow">
-  <span class="checkmark1" style="background-color:yellow"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="green">
-  <span class="checkmark1" style="background-color:green"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="blue">
-  <span class="checkmark1"  style="background-color:blue"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="indigo">
-  <span class="checkmark1" style="background-color:indigo"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="violet">
-  <span class="checkmark1" style="background-color:violet"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="green">
-  <span class="checkmark1" style="background-color:green"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="brown">
-  <span class="checkmark1" style="background-color:brown"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="grey">
-  <span class="checkmark1" style="background-color:grey"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="darkGrey">
-  <span class="checkmark1" style="background-color:#434343"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="black">
-  <span class="checkmark1" style="background-color:black"></span>
-</label>
-<label class="colorChart">&nbsp
-  <input type="radio" name="radio1" id="white">
-  <span class="checkmark1" style="background-color:white"></span>
-</label>
+        <div class="imgSelectHolder">
+            <div class="imageOption" ">
+            <a href="# "><img class="imageOptionPic " id="imgs1 " onClick="showBigImage1() " src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png "> </a>
+        </div>
+
+        <div class="imageOption "><img class="imageOptionPic " id="imgs2 " onClick="showBigImage2() " src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png "></div>
+        <div class="imageOption "><img class="imageOptionPic " id="imgs3 " onClick="showBigImage3() " src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png "></div>
 
     </div>
 
-    <div class="sizeTitle">Size</div>
-    <div class="sizeHolder">
-<label class="container">&nbsp
-  <input type="radio" checked="checked" name="radio" id="small">
-  <span class="checkmark">S</span>
+    <div class="mainImageAndDescription ">
+        <div class="mainImage ">
+            <a href="# "> <img class="mainImagePic " id="mainImagePic " src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest/scale-to-width-down/480?cb=20170330235552 "></a>
+        </div>
+        
+
+    </div>
+
+    <div class="details ">
+        <div class="itemName ">item Name</div>
+        <div class="productDescription ">Description... 100% cotton blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, </div>
+        <div class="priceHolder ">$0.00</div>
+        <div class="colorTitle ">Color
+        </div>
+        <div class="colorHolder ">
+
+            <label class="colorChart ">&nbsp
+  <input type="radio " checked="checked " name="radio1 " id="red ">
+  <span class="checkmark1 " style="background-color:red "></span>
 </label>
-<label class="container"> &nbsp
-  <input type="radio" name="radio" id="medium">
-  <span class="checkmark">M</span>
+            <label class="colorChart "> &nbsp
+  <input type="radio " name="radio1 " id="orange ">
+  <span class="checkmark1 " style="background-color:orange "></span>
 </label>
-<label class="container">&nbsp
-  <input type="radio" name="radio" id="large">
-  <span class="checkmark">L</span>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="yellow ">
+  <span class="checkmark1 " style="background-color:yellow "></span>
 </label>
-<label class="container">&nbsp
-  <input type="radio" name="radio" id="xlarge">
-  <span class="checkmark">XL</span>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="green ">
+  <span class="checkmark1 " style="background-color:green "></span>
 </label>
-<label class="container">&nbsp
-  <input type="radio" name="radio" id="xx-large">
-  <span class="checkmark"  style="width:48px">XXL</span>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="blue ">
+  <span class="checkmark1 "  style="background-color:blue "></span>
+</label>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="indigo ">
+  <span class="checkmark1 " style="background-color:indigo "></span>
+</label>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="violet ">
+  <span class="checkmark1 " style="background-color:violet "></span>
+</label>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="green ">
+  <span class="checkmark1 " style="background-color:green "></span>
+</label>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="brown ">
+  <span class="checkmark1 " style="background-color:brown "></span>
+</label>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="grey ">
+  <span class="checkmark1 " style="background-color:grey "></span>
+</label>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="darkGrey ">
+  <span class="checkmark1 " style="background-color:#434343 "></span>
+</label>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="black ">
+  <span class="checkmark1 " style="background-color:black "></span>
+</label>
+            <label class="colorChart ">&nbsp
+  <input type="radio " name="radio1 " id="white ">
+  <span class="checkmark1 " style="background-color:white "></span>
+</label>
+
+        </div>
+
+        <div class="sizeTitle ">Size</div>
+        <div class="sizeHolder ">
+            <label class="container ">&nbsp
+  <input type="radio " checked="checked " name="radio " id="small ">
+  <span class="checkmark ">S</span>
+</label>
+            <label class="container "> &nbsp
+  <input type="radio " name="radio " id="medium ">
+  <span class="checkmark ">M</span>
+</label>
+            <label class="container ">&nbsp
+  <input type="radio " name="radio " id="large ">
+  <span class="checkmark ">L</span>
+</label>
+            <label class="container ">&nbsp
+  <input type="radio " name="radio " id="xlarge ">
+  <span class="checkmark ">XL</span>
+</label>
+            <label class="container ">&nbsp
+  <input type="radio " name="radio " id="xx-large ">
+  <span class="checkmark "  style="width:48px ">XXL</span>
 </label></div>
-    <div class="divider"></div>
-    <div class="Quality">Quality:&nbsp&nbsp<input type="number" style="width:55px;height:1px;"value="1" min="1" max="50" style="margin-left:20px"></input></div>
-    <div class="divider"></div>
-    <div class="buyingSection"><button class="buybtn" >ADD TO CART<img src="img/shoppingCart/toolW.png" style ="height:20px;width:20px; padding-left:2px;"></button></div>
-    <div></div>
-  </div>
+        <div class="divider "></div>
+        <div class="Quality ">Quality:&nbsp&nbsp<input type="number " style="width:55px;height:1px; " value="1 " min="1 " max="50 " style="margin-left:20px "></input>
+        </div>
+        <div class="divider "></div>
+        <div class="buyingSection "><button class="buybtn ">ADD TO CART<img src="img/shoppingCart/toolW.png " style ="height:20px;width:20px; padding-left:2px; "></button></div>
+        <div></div>
+    </div>
+    <script>
+        function showBigImage1() {
 
+            document.getElementById("mainImagePic ").src = document.getElementById("imgs1 ").src;
+        }
+
+        function showBigImage2() {
+            document.getElementById("mainImagePic ").src = document.getElementById("imgs2 ").src;
+        }
+
+        function showBigImage3() {
+            document.getElementById("mainImagePic ").src = document.getElementById("imgs3 ").src;
+        }
+        </script>
+</body>
+</html>
