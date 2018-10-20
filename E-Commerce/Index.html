@@ -3,13 +3,16 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/productSelect.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
     <link rel="icon" type="image/icon" href="img/favIcons/bee.png">
+
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>Main Title</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, shrink-to-fit=yes">
 
 </head>
 <style type="text/css">
@@ -17,32 +20,149 @@
 </style>
 
 <body>
-
-    <div class="wrapper" id="">
+    <!--begining of menu section-->
+    <div class="wrapper" id="mainMenu">
         <nav>
             <ul>
-                <li><a href="">item-1</a></li>
-                <li><a href="">item-2</a></li>
-                <li><a href="">item-3<img src="img/arrow.png" style="height:13px;width:15px;margin-left:5px"></a>
+                <li><a href="" id="">item-1</a></li>
+                <li><a href="" id="">item-2</a></li>
+                <li><a href="" id="">item-3<img src="img/arrow.png" style="height:13px;width:15px;margin-left:5px"></a>
                     <ul>
-                        <li><a href="">item-3.1</a></li>
-                        <li><a href="">item-3.2</a></li>
-                        <li><a href="">item-3.3</a></li>
+                        <!--sub menu-->
+                        <li><a href="" id="">item-3.1</a></li>
+                        <li><a href="" id="">item-3.2</a></li>
+                        <li><a href="" id="">item-3.3</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <div id="blank"></div>
-        <div id="blank"></div>
+        <div id="infoContainer">
+            <div class="itemHolder">
 
-        <div class="push " id=" "></div>
-        <div onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/img_118804.png" height="20px" width="25px"></div>
-    </div>
+                <div class="imgSelectHolder">
+                    <div class="imageOption">
+                        <a href="#"><img class="imageOptionPic" src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png"> </a>
+                    </div>
 
-    <footer>I'm not an incher, but a footer!</footer>
+                    <div class="imageOption"><img class="imageOptionPic" src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png"></div>
+                    <div class="imageOption"><img class="imageOptionPic" src="http://meeconline.com/wp-content/uploads/2014/08/placeholder.png"></div>
+
+                </div>
+
+                <div class="mainImageAndDescription">
+                    <div class="mainImage">
+                        <a href="#"> <img class="mainImagePic" src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest/scale-to-width-down/480?cb=20170330235552"></a>
+                    </div>
+                    <div class="textDescriptionBottom">
+                        <div class="textDescriptionBottomTitle">Product details</div>
+                        <div class="textdesc">The wheels on the bus go round and round, round and round, round and round. the wheels on the bus go</div>
+                    </div>
+
+                </div>
+
+                <div class="details">
+                    <div class="itemName">item Name</div>
+                    <div class="productDescription">Description... 100% cotton blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, </div>
+                    <div class="priceHolder">$0.00</div>
+                    <div class="colorTitle">Color
+                    </div>
+                    <div class="colorHolder">
+
+                        <label class="colorChart">&nbsp
+                <input type="radio" checked="checked" name="radio1" id="red">
+                <span class="checkmark1" style="background-color:red"></span>
+              </label>
+                        <label class="colorChart"> &nbsp
+                <input type="radio" name="radio1" id="orange">
+                <span class="checkmark1" style="background-color:orange"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="yellow">
+                <span class="checkmark1" style="background-color:yellow"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="green">
+                <span class="checkmark1" style="background-color:green"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="blue">
+                <span class="checkmark1"  style="background-color:blue"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="indigo">
+                <span class="checkmark1" style="background-color:indigo"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="violet">
+                <span class="checkmark1" style="background-color:violet"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="green">
+                <span class="checkmark1" style="background-color:green"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="brown">
+                <span class="checkmark1" style="background-color:brown"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="grey">
+                <span class="checkmark1" style="background-color:grey"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="darkGrey">
+                <span class="checkmark1" style="background-color:#434343"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="black">
+                <span class="checkmark1" style="background-color:black"></span>
+              </label>
+                        <label class="colorChart">&nbsp
+                <input type="radio" name="radio1" id="white">
+                <span class="checkmark1" style="background-color:white"></span>
+              </label>
+
+                    </div>
+
+                    <div class="sizeTitle">Size</div>
+                    <div class="sizeHolder">
+                        <label class="container">&nbsp
+                <input type="radio" checked="checked" name="radio" id="small">
+                <span class="checkmark">S</span>
+              </label>
+                        <label class="container"> &nbsp
+                <input type="radio" name="radio" id="medium">
+                <span class="checkmark">M</span>
+              </label>
+                        <label class="container">&nbsp
+                <input type="radio" name="radio" id="large">
+                <span class="checkmark">L</span>
+              </label>
+                        <label class="container">&nbsp
+                <input type="radio" name="radio" id="xlarge">
+                <span class="checkmark">XL</span>
+              </label>
+                        <label class="container">&nbsp
+                <input type="radio" name="radio" id="xx-large">
+                <span class="checkmark"  style="width:48px">XXL</span>
+              </label></div>
+                    <div class="divider"></div>
+                    <div class="Quality">Quality:&nbsp&nbsp<input type="number" style="width:55px;height:1px;" value="1" min="1" max="50" style="margin-left:20px"></input>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="buyingSection"><button class="buybtn">ADD TO CART<img src="img/shoppingCart/toolW.png" style ="height:20px;width:20px; padding-left:2px;"></button></div>
+                    <div></div>
+                </div>
+
+            </div>
+            <!--end of menu section-->
+
+            <div class="push " id=" "></div>
+            <div onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/img_118804.png" height="20px" width="25px"></div>
+        </div>
+
+        <footer>I'm not an incher, but a footer!</footer>
 </body>
 
-<script type="text/javascript ">
-</script>
+<script type="text/javascript "></script>
 
 </html>
