@@ -1,0 +1,123 @@
+{
+    "menu1": [{
+        "title": { "mainCategory": "" },
+        "item1": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item2": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item3": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item4": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item5": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item6": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item7": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        }
+
+
+
+    }],
+
+    "menu2": [{
+        "title": { "mainCategory": "" },
+
+        "item1": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item2": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item3": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item4": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item5": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item6": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item7": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        }
+    }],
+    "menu3": [{
+        "title": { "mainCategory": "" },
+
+        "item1": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item2": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item3": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item4": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item5": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item6": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        },
+        "item7": {
+            "foodName": "",
+            "price": "",
+            "description": ""
+        }
+
+    }]
+}
