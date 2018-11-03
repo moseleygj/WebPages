@@ -1,404 +1,258 @@
 <html>
 
-<head></head>
-<style>
-    body,
-    html {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        background: url(0009-blackboard-texture-seamless.jpg) repeat;
-    }
-    
-    .container {
-        height: 100%;
-        width: 100%;
-        border: solid 1px red;
-    }
-    
-    .foodList1 {
-        height: 100%;
-        width: 31%;
-        border-right: 1px dashed white;
-        float: left;
-        padding: 1%;
-    }
-    
-    .foodList2 {
-        height: 100%;
-        width: 31%;
-        border-right: 1px dashed white;
-        float: left;
-        padding: 1%;
-    }
-    
-    .foodList3 {
-        height: 100%;
-        width: 31%;
-        border-right: 1px dashed white;
-        float: left;
-        padding: 1%;
-    }
-    
-    .foodCategory {
-        width: 100%;
-        height: auto;
-        border: 1px solid red;
-        margin-bottom: 20px;
-    }
-    
-    .foodItemHolder {
-        width: 100%;
-        height: 7%;
-        display: block;
-        border: 1px dotted orange
-    }
-    
-    .Categorytitle {
-        display: block;
-        text-align: center;
-        color: white;
-        font-size: 40px;
-        height: auto;
-        font-family: ;
-        border: 1px solid orange;
-        margin-bottom: 5%;
-    }
-    
-    .foodItemNumber {
-        height: 60%;
-        width: 6%;
-        float: left;
-        font-size: 23px;
-        color: #dac05b;
-        font-weight: bold;
-        color: skyblue
-    }
-    
-    .foodItemName {
-        height: 60%;
-        width: 78%;
-        float: left;
-        text-indent: 2%;
-        color: #dac05b;
-        font-size: 23px;
-        font-weight: bold;
-        text-shadow: 1px 1px 3px black;
-    }
-    
-    .foodItemSpacer {
-        height: 60%;
-        width: 40%;
-        float: left;
-        background-color: red;
-    }
-    
-    .foodItemPrice {
-        height: 60%;
-        width: 16%;
-        float: left;
-        color: #f1d152;
-    }
-    
-    .foodItemSize {
-        height: 60%;
-        width: 7.5%;
-        float: left;
-    }
-    
-    .foodDescript {
-        height: 40%;
-        width: 100%;
-        color: #DBE0E1;
-        clear: left;
-        text-indent: 7%;
-        margin-bottom: 20px;
-        text-shadow: 1px 1px 3px black;
-        font-weight: bold;
-    }
-    
-    .special {
-        background-color: #830023;
-        color: white;
-        padding: 2px;
-        font-weight: bolder;
-        font-size: 8px;
-        border-radius: 3px;
-        top: -6px;
-        display: inline;
-        position: relative;
-        animation-name: fadeInOut;
-        animation-duration: 1s, 1s;
-    }
-    
-    .placeholder {
-        height: 20%;
-        width: 100%;
-    }
-    
-    .container_fruit {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        border: 1px solid pink;
-    }
-    
-    #bgImageTopLeft {
-        height: 27%;
-        width: 27%;
-        position: absolute;
-        top: -5%;
-        left: -5%;
-        z-index: -1;
-    }
-    
-    #bgImageTopRight {
-        height: 25%;
-        width: 20%;
-        position: absolute;
-        top: -3%;
-        right: -3%;
-        z-index: -1;
-    }
-    
-    #bgImageBottomLeft {
-        height: 25%;
-        width: 15%;
-        position: absolute;
-        bottom: -5%;
-        left: -7px;
-        z-index: -1;
-    }
-    
-    #bgImageBottomRight {
-        height: 25%;
-        width: 15%;
-        position: absolute;
-        bottom: 0;
-        right: -6%;
-        z-index: -1;
-    }
-    
-    #bgImageBottomMiddle {
-        height: 25%;
-        width: 20%;
-        position: absolute;
-        bottom: -4%;
-        right: 39%;
-        z-index: -1;
-    }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" </head>
+    <title>Food Menu v1.0</title>
 
-<body>
-    <div class="container_fruit">
-        <img src="imgs/falafel.png" id="bgImageTopLeft" class="">
-        <img src="imgs/blueberries-11528327382j1jl46jeen.png" id="bgImageTopRight" class="">
+    <body>
+        <div class="container_fruit">
+            <img src="imgs/falafel.png" id="bgImageTopLeft" class="">
+            <img src="imgs/blueberries-11528327382j1jl46jeen.png" id="bgImageTopRight" class="">
 
-        <img src="imgs/cali-burger.png" id="bgImageBottomLeft" class="">
-        <img src="imgs/greensmoothie.png" id="bgImageBottomRight" class="">
-        <img src="imgs/tacosalad01.png" id="bgImageBottomMiddle" class="">
+            <img src="imgs/cali-burger.png" id="bgImageBottomLeft" class="">
+            <img src="imgs/greensmoothie.png" id="bgImageBottomRight" class="">
+            <img src="imgs/tacosalad01.png" id="bgImageBottomMiddle" class="">
 
 
 
-        <div class="container">
-            <div class="foodlist1">
-                <div class="placeholder"></div>
-                <div class="foodCategory">
-                    <div class="Categorytitle" style="border: 1px dashed purple">Section I</div>
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">1.</div>
-                        <div class="foodItemName">Item Name here
-                            <div class="special">SPECIAL</div>
+            <div class="container">
+                <div class="foodlist1">
+                    <div class="placeholder"></div>
+                    <div class="foodCategory">
+                        <div class="Categorytitle" style="border: 1px dashed purple" id="menu1">Section I</div>
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">1.</div>
+                            <div class="foodItemName" id="menu1_foodItemName1">Item Name here
+                                <div class="special">SPECIAL</div>
+                            </div>
+                            <div class="foodItemPrice" id="menu1_foodItemPrice1">$29.99</div>
+                            <div class="foodDescript" id="menu1_foodItemDescription1">description of food item</div>
                         </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">2.</div>
+                            <div class="foodItemName" id="menu1_foodItemName2">Item Name here
+                                <div class="special">SPECIAL</div>
+                            </div>
+                            <div class="foodItemPrice" id="menu1_foodItemPrice2">$29.99</div>
+                            <div class="foodDescript" id="menu1_foodItemDescription2">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">3.</div>
+                            <div class="foodItemName" id="menu1_foodItemName3">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu1_foodItemPrice3">$29.99</div>
+                            <div class="foodDescript" id="menu1_foodItemDescription3">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">4.</div>
+                            <div class="foodItemName" id="menu1_foodItemName4">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu1_foodItemPrice4">$29.99</div>
+                            <div class="foodDescript" id="menu1_foodItemDescription4">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">5.</div>
+                            <div class="foodItemName" id="menu1_foodItemName5">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu1_foodItemPrice5">$29.99</div>
+                            <div class="foodDescript" id="menu1_foodItemDescription5">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">6.</div>
+                            <div class="foodItemName" id="menu1_foodItemName6">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu1_foodItemPrice6">$29.99</div>
+                            <div class="foodDescript" id="menu1_foodItemDescription6">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">7.</div>
+                            <div class="foodItemName" id="menu1_foodItemName7">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu1_foodItemPrice7">$29.99</div>
+                            <div class="foodDescript" id="menu1_foodItemDescription7">description of food item</div>
+                        </div>
+                        <!--end of next item-->
                     </div>
 
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">2.</div>
-                        <div class="foodItemName">Item Name here
-                            <div class="special">SPECIAL</div>
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">3.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">4.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">5.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">6.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">7.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
                 </div>
+                <div class="foodlist2">
+                    <div class="placeholder">
+                        <img src="imgs/kaleYeah.png" style="height:100%;width:100%;"> </div>
+                    <div class="foodCategory">
+                        <div class="Categorytitle" style="border: 1px dashed purple" id="menu2">Section II</div>
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">1.</div>
+                            <div class="foodItemName" id="menu2_foodItemName1">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu2_foodItemPrice1">$29.99</div>
+                            <div class="foodDescript" id="menu2_foodItemDescription1">description of food item</div>
+                        </div>
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">2.</div>
+                            <div class="foodItemName" id="menu2_foodItemName2">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu2_foodItemPrice2">$29.99</div>
+                            <div class="foodDescript" id="menu2_foodItemDescription2">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">3.</div>
+                            <div class="foodItemName" id="menu2_foodItemName3">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu2_foodItemPrice3">$29.99</div>
+                            <div class="foodDescript" id="menu2_foodItemDescription3">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">4.</div>
+                            <div class="foodItemName" id="menu2_foodItemName4">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu2_foodItemPrice4">$29.99</div>
+                            <div class="foodDescript" id="menu2_foodItemDescription4">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">5.</div>
+                            <div class="foodItemName" id="menu2_foodItemName5">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu2_foodItemPrice5">$29.99</div>
+                            <div class="foodDescript" id="menu2_foodItemDescription5">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">6.</div>
+                            <div class="foodItemName" id="menu2_foodItemName6">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu2_foodItemPrice6">$29.99</div>
+                            <div class="foodDescript" id="menu2_foodItemDescription6">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">7.</div>
+                            <div class="foodItemName" id="menu12_foodItemName7">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu2_foodItemPrice7">$29.99</div>
+                            <div class="foodDescript" id="menu2_foodItemDescription7">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+                    </div>
+
+                </div>
+                <div class="foodlist3" style="margin-right:0">
+                    <div class="placeholder">
+
+
+                    </div>
+                    <div class="foodCategory">
+                        <div class="Categorytitle" style="border: 1px dashed purple" id="menu3">Section III</div>
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">1.</div>
+                            <div class="foodItemName" id="menu3_foodItemName1">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu3_foodItemPrice1">$29.99</div>
+                            <div class="foodDescript" id="menu3_foodItemDescription1">description of food item</div>
+                        </div>
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">2.</div>
+                            <div class="foodItemName" id="menu3_foodItemName2">Item Name here
+                                <div class="special">SPECIAL</div>
+                            </div>
+                            <div class="foodItemPrice" id="menu3_foodItemPrice2">$29.99</div>
+                            <div class="foodDescript" id="menu3_foodItemDescription2">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">3.</div>
+                            <div class="foodItemName" id="menu3_foodItemName3">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu3_foodItemPrice3">$29.99</div>
+                            <div class="foodDescript" id="menu3_foodItemDescription3">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">4.</div>
+                            <div class="foodItemName" id="menu3_foodItemName4">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu3_foodItemPrice4">$29.99</div>
+                            <div class="foodDescript" id="menu3_foodItemDescription4">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">5.</div>
+                            <div class="foodItemName" id="menu3_foodItemName5">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu3_foodItemPrice5">$29.99</div>
+                            <div class="foodDescript" id="menu3_foodItemDescription5">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">6.</div>
+                            <div class="foodItemName" id="menu3_foodItemName6">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu3_foodItemPrice6">$29.99</div>
+                            <div class="foodDescript" id="menu3_foodItemDescription6">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+                        <!--next item-->
+                        <div class="foodItemHolder">
+                            <div class="foodItemNumber">7.</div>
+                            <div class="foodItemName" id="menu3_foodItemName7">Item Name here
+                            </div>
+                            <div class="foodItemPrice" id="menu3_foodItemPrice7">$29.99</div>
+                            <div class="foodDescript" id="menu3_foodItemDescription7">description of food item</div>
+                        </div>
+                        <!--end of next item-->
+                    </div>
+
+                </div>
+
 
             </div>
-            <div class="foodlist2">
-                <div class="placeholder">
-                    <img src="imgs/kaleYeah.png" style="height:100%;width:100%;"> </div>
-                <div class="foodCategory">
-                    <div class="Categorytitle" style="border: 1px dashed purple">Section II</div>
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">1.</div>
-                        <div class="foodItemName">Item Name here
-                            <div class="special">SPECIAL</div>
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">2.</div>
-                        <div class="foodItemName">Item Name here
-                            <div class="special">SPECIAL</div>
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">3.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">4.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">5.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-                </div>
-
-            </div>
-            <div class="foodlist3" style="margin-right:0">
-                <div class="placeholder">
-
-
-                </div>
-                <div class="foodCategory">
-                    <div class="Categorytitle" style="border: 1px dashed purple">Section III</div>
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">1.</div>
-                        <div class="foodItemName">Item Name here
-                            <div class="special">SPECIAL</div>
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">2.</div>
-                        <div class="foodItemName">Item Name here
-                            <div class="special">SPECIAL</div>
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">3.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">4.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-
-                    <!--next item-->
-                    <div class="foodItemHolder">
-                        <div class="foodItemNumber">5.</div>
-                        <div class="foodItemName">Item Name here
-                        </div>
-                        <div class="foodItemPrice">$29.99</div>
-                        <div class="foodDescript">description of food item</div>
-                    </div>
-                    <!--end of next item-->
-                </div>
-
-            </div>
-
-
         </div>
-    </div>
-</body>
+    </body>
+    <script>
+        //document.getElementById("").innerHTML= json.object
+
+        //Access objects via menu#.item#.[foodName, price, description]]
+        //menu#_foodItemDescription#
+        //menu#_menu3_foodItemPrice#
+        //menu#_foodItemDescription#
+        //menu#.title
+    </script>
 
 </html>
