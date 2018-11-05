@@ -1,8 +1,10 @@
 {
     "menu1": [{
-        "title": { "mainCategory": "" },
+        "title": "Changed",
+        "foodName": "poop",
+
         "item1": {
-            "foodName": "",
+            "foodName": "poop",
             "price": "",
             "description": ""
         },
@@ -36,13 +38,10 @@
             "price": "",
             "description": ""
         }
-
-
-
     }],
 
     "menu2": [{
-        "title": { "mainCategory": "" },
+        "title": "",
 
         "item1": {
             "foodName": "",
@@ -81,7 +80,7 @@
         }
     }],
     "menu3": [{
-        "title": { "mainCategory": "" },
+        "title": "",
 
         "item1": {
             "foodName": "",
