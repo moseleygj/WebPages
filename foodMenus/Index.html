@@ -250,24 +250,21 @@
 <script>
     function loadDoc() {
         var xhttp = new XMLHttpRequest();
+        var myObj;
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // document.getElementById("menu1").innerHTML = menu1.title;
-                document.getElementById("menu1_foodItemName1").innerHTML = menu1.title;
-
+                myObj = JSON.parse(xhttp.responseText);
+                document.getElementById("menu1_foodItemName1").innerHTML = menu1.item1["foodName"];
             }
         };
         xhttp.open("GET", "menuData.json", true);
         xhttp.send();
     }
     //document.getElementById("").innerHTML= json.object
-
     //Access objects via menu#.item#.[foodName, price, description]]
-
     //menu#_foodItemDescription#
     //menu#_menu3_foodItemPrice#
     //menu#_foodItemName#
     //menu#.title
 </script>
-
-</html>
