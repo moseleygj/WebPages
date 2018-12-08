@@ -41,14 +41,14 @@ nav {
     height: 100%;
     padding: 0;
     margin: 0;
-    border-bottom: 1px grey solid;
 }
-
+nav ul li ul {    border-bottom: 1px black solid;
+    box-shadow:1px 1px 3px grey;
+}
 nav ul li {
     list-style: none;
     float: left;
     position: relative;
-    
     /*parent*/
 }
 
@@ -72,7 +72,7 @@ nav ul li a:hover {
 nav ul li ul {
     position: absolute;
     /*child*/
-    min-width: 75px;
+    min-width: 160px;
     padding: 0;
     background-color: lightgrey;
     border-bottom-right-radius: 5px;
@@ -84,14 +84,17 @@ nav ul li ul {
 nav ul li:hover ul {
     display: block;
     
+    
 }
 
 nav ul li ul li a {
     display: block;
     padding: 5px 20px;
-    width: 75px;
+    width: 160px;
+    text-align: left;
+
 }
 
 ul li a {
-   /* transition: all ease-in-out 0.7s;*/
+    transition: all ease-in-out 0.2s;
 }

@@ -19,6 +19,7 @@
         background: linear-gradient(#e96443, #904e95);
         background-repeat: no-repeat;
         background-attachment: fixed;
+        font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
     }
     
     #chatbox {
@@ -26,6 +27,7 @@
         width: 470px;
         background: lightgrey;
         box-shadow: 1px 3px 12px grey;
+        resize: both;
        /* border: 1px solid lightgrey;*/
     }
     
@@ -125,7 +127,10 @@
         width: 460px;
         margin: 0 auto 0;
         background-color: white;
+        padding:0;
+        word-wrap: break-word;
     }
+   input{padding:0;}
     
     #sectionWarnBlock {
         height: 100%;
@@ -209,6 +214,10 @@
        height:100%;
        border-right:1px solid grey;
     }
+    .mnuIco{
+        height:20px;
+        width:20px;margin-right:5px;
+    }
 </style>
 
 <body>
@@ -217,26 +226,34 @@
             <div id="usrName">testUser - Instant Message</div>
             <div id="minMaxClose">--x</div>
         </div>
-        <div id="mnuDropDown">
+        <div id="mnuDropDown" >
                 <nav>
                         <ul>
                             <li><a href="">File</a>
                                 <ul>
-                                        <li><a href="">item-3.1</a></li>
-                                        <li><a href="">item-3.2</a></li>
-                                        <li><a href="">item-3.3</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/business-card-of-a-man-with-contact-info.png" class="mnuIco">Change Info</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/010-photo-camera.png" class="mnuIco">Take Picture</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/004-theme.png" class="mnuIco">Themes</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/005-padlock.png" class="mnuIco">Privacy</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/002-settings.png" class="mnuIco">Settings</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/006-sign-out-option.png" class="mnuIco">Sign-out</a></li>
+
                                     </ul></li>
                             <li><a href="">Insert</a>
                                 <ul>
-                                        <li><a href="">item-3.1</a></li>
-                                        <li><a href="">item-3.2</a></li>
-                                        <li><a href="">item-3.3</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/009-video-camera.png" class="mnuIco">Video</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/011-picture.png" class="mnuIco">Photo</a></li>
+                                        <li><a href=""><img src="img/mnuIcons/001-contract.png" class="mnuIco">Document</a></li>
                                     </ul></li>
-                            <li><a href="">People<img src="img/arrow.png" style="height:13px;width:15px;margin-left:5px"></a>
+                            <li ><a href="">People</a>
                                 <ul>
-                                    <li><a href="">item-3.1</a></li>
-                                    <li><a href="">item-3.2</a></li>
-                                    <li><a href="">item-3.3</a></li>
+                                    <li><a href=""><img src="img/mnuIcons/013-group-1.png" class="mnuIco">Invite</a></li>
+                                    <li><a href=""><img src="img/mnuIcons/018-microphone.png" class="mnuIco">Start a Voice Chat</a></li>
+                                    <li><a href=""><img src="img/mnuIcons/012-group.png" class="mnuIco">Start Group Chat</a></li>
+                                    <li><a href=""><img src="img/mnuIcons/business-card-of-a-man-with-contact-info.png" class="mnuIco">Show Info</a></li>
+                                    <li><a href=""><img src="img/mnuIcons/015-rounded-block-sign.png" class="mnuIco">Block</a></li>
+                                    <li><a href=""><img src="img/mnuIcons/" class="mnuIco">Un-Block</a></li>
+                               
                                 </ul>
                             </li>
                         </ul>
@@ -268,8 +285,8 @@
                 <div class="btnAddVoiceInfo"><img class="btnLogoIco" src="img/mnuIcons/resume(2).png"><div class="btnTitle">Get Info</div></div>
 
             </div>
-            <div id="sectionSend" style="margin-top:5px">
-                    <img class="btnLogoIco" src="img/mnuIcons/paper-plane.png"><div class="btnTitle">Send</div>
+            <div id="sectionSend" onClick="sendToChatBox()" style="margin-top:5px">
+                    <img class="btnLogoIco" id="send" src="img/mnuIcons/paper-plane.png"><div class="btnTitle">Send</div>
             </div>
 
 
@@ -278,6 +295,10 @@
 </body>
 
 <script type="text/javascript">
+function sendToChatBox(){
+    document.getElementById("msgBox").value += document.getElementById("usrInputBox").value+"\n";
+    document.getElementById("usrInputBox").value=""
+}
 </script>
 
 </html>
