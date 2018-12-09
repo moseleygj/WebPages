@@ -218,6 +218,8 @@
         height:20px;
         width:20px;margin-right:5px;
     }
+    /*chat bubble*/
+    .speech-bubble { position: relative; background: #00aabb; border-radius: .4em; } .speech-bubble:after { content: ''; position: absolute; left: 0; top: 50%; width: 0; height: 0; border: 12px solid transparent; border-right-color: #00aabb; border-left: 0; border-bottom: 0; margin-top: -6px; margin-left: -12px; }
 </style>
 
 <body>
@@ -260,7 +262,7 @@
                     </nav>
         </div>
         <div id="msgContent">
-            <textarea cols="54" rows="7" id='msgBox' readonly>The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.</textarea>
+            <textarea cols="54" rows="7" id='msgBox' readonly></textarea>
         </div>
         <div id="txtFormating">
                 <div class="txtFormatSections"></div>
