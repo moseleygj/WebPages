@@ -1,6 +1,6 @@
 
-# :large_orange_diamond:ProjectName
-[Description of my project]
+# :large_orange_diamond:RetroSocial
+[Retro social Aim Clone UI]
 
 
 
