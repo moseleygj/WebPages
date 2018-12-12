@@ -6,7 +6,7 @@
             color: #00c0FF;
             margin-right: 4px;
         }
-        
+        *{transition:0.5s;}
         #Play,
         #FastDL {
             color: #DBDBDB;
@@ -23,11 +23,12 @@
         
         .songStats {
             font-size: 13px;
-            width: 80px;
+            width: 20%;
             height: 60px;
             float: left;
             margin-left: 20px;
             margin-top: 14px;
+            text-align: right;
         }
         
         #mainImg {
@@ -67,6 +68,7 @@
             font-weight: bold;
             font-family: Tahoma, Arial, Helvetica, sans-serif;
             float: left;
+            width:100%;
         }
         
         #OrderBy {}
@@ -86,6 +88,7 @@
         
         #TopBar {
             height: 150px;
+            width:100%;
         }
         
         #Song {
@@ -126,20 +129,21 @@
         }
         
         #mp3Icon {
-            margin-right: 5px;
-            height: 72px;
-            width: 72px;
+            margin: 6px 5px 10px 10px;
+            height: 60px;
+            width: 60px;
             display: block;
         }
         
         #content {
             float: left;
             text-align: center;
+            width:50%;
         }
         
         #data {
             height: 70px;
-            width: 85px;
+            width: 25%;
             float: left;
         }
         
@@ -160,10 +164,7 @@
         }
         
         @media screen and (max-width:320px) {
-            .row {
-                background-color: red;
-                height: 200px;
-            }
+           
             img[src="updated_files/ipod-video-black-apple.png"] {
                 width: 50px;
                 height: 50px;
@@ -177,23 +178,191 @@
                 margin: 0 auto 0;
             }
             #SongTitle {
-                font-size: 12px;
+                font-size: 11px;
                 float: left;
             }
             #topBar {
                 height: 200px;
             }
-            .songStats {}
+            .songStats {font-size:10px;
+            width:15%;}
+            #data{width:20%}
             #searchBar {
                 margin: 0;
             }
+            #content{font-size:10px;width:57%}
+            #mp3Icon{height:45px;width:45px;}
         }
-        
-        @media screen and (max-width:452px) {
-            #searchBar {
-                margin: 10px 0px 10px 10px;
+        /*add more media queires*/
+
+        @media screen and (min-width:321px) and (max-width:360px) {
+            img[src="updated_files/ipod-video-black-apple.png"] {
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-top: 15px;
+            }
+            input[type="textbox"] {
+                width: 10px;
+            }
+            #mainImg {
+                margin: 0 auto 0;
             }
             #SongTitle {
-                margin-left: 10px;
+                font-size: 11px;
+                float: left;
             }
+            #topBar {
+                height: 200px;
+            }
+            .songStats {font-size:10px;
+            width:15%;}
+            #data{width:20%}
+            #searchBar {
+                margin: 0;
+            }
+            #content{font-size:10px;width:57%}
+        }
+
+        @media screen and (min-width:361px) and (max-width:379px) {
+            img[src="updated_files/ipod-video-black-apple.png"] {
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-top: 15px;
+            }
+            input[type="textbox"] {
+                width: 10px;
+            }
+            #mainImg {
+                margin: 0 auto 0;
+            }
+            #SongTitle {
+                font-size: 11px;
+                float: left;
+            }
+            #topBar {
+                height: 200px;
+            }
+            .songStats {font-size:12px;
+            width:15%;}
+            #data{width:20%}
+            #searchBar {
+                margin: 0;
+            }
+            #content{font-size:12px;width:58%}
+        }
+        @media screen and (min-width:380px) and (max-width:414px) {
+            img[src="updated_files/ipod-video-black-apple.png"] {
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-top: 15px;
+            }
+            input[type="textbox"] {
+                width: 10px;
+            }
+            #mainImg {
+                margin: 0 auto 0;
+            }
+            #SongTitle {
+                font-size: 11px;
+                float: left;
+            }
+            #topBar {
+                height: 200px;
+            }
+            .songStats {font-size:12px;
+            width:15%;}
+            #data{width:20%}
+            #searchBar {
+                margin: 0;
+            }
+            #content{font-size:10px;width:57%}
+        }
+
+        @media screen and (min-width:415px) and (max-width:768px) {
+            img[src="updated_files/ipod-video-black-apple.png"] {
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-top: 15px;
+            }
+            input[type="textbox"] {
+                width: 10px;
+            }
+            #mainImg {
+                margin: 0 auto 0;
+            }
+            #SongTitle {
+                font-size: 11px;
+                float: left;
+            }
+            #topBar {
+                height: 200px;
+            }
+            .songStats {font-size:14px;
+                width:12%;}
+                #data{width:20%}
+                #searchBar {
+                    margin: 0;
+                }
+                #content{font-size:14px;width:60%;}
+        }
+
+        @media screen and (min-width:769px) and (max-width:800px) {
+            img[src="updated_files/ipod-video-black-apple.png"] {
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-top: 15px;
+            }
+            input[type="textbox"] {
+                width: 10px;
+            }
+            #mainImg {
+                margin: 0 auto 0;
+            }
+            #SongTitle {
+                font-size: 14px;
+                float: left;
+            }
+            #topBar {
+                height: 200px;
+            }
+            .songStats {font-size:12px;
+            width:15%;}
+            #data{width:20%}
+            #searchBar {
+                margin: 0;
+            }
+            #content{font-size:14px;width:60%;}
+        }
+        @media screen and (min-width:801px) and (max-width:1024px) {
+            img[src="updated_files/ipod-video-black-apple.png"] {
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-top: 15px;
+            }
+            input[type="textbox"] {
+                width: 10px;
+            }
+            #mainImg {
+                margin: 0 auto 0;
+            }
+            #SongTitle {
+                font-size: 14px;
+                float: left;
+            }
+            #topBar {
+                height: 200px;
+            }
+            .songStats {font-size:14px;
+            width:18%;}
+            #data{width:20%}
+            #searchBar {
+                margin: 0;
+            }
+            #content{font-size:14px;width:58%}
         }
