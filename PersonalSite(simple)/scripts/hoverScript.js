@@ -37,6 +37,6 @@
      document.getElementById("email").src = "008-letter-0.png";
      document.getElementById("email-name").style.color = "#777";
  }
- document.getElementById("git").style.trasition = "1s";
- document.getElementById("photo").style.trasition = "1s";
- document.getElementById("resume").style.trasition = "1s";
+ document.getElementById("git").style.transition = "1s";
+ document.getElementById("photo").style.transition = "1s";
+ document.getElementById("resume").style.transition = "1s";

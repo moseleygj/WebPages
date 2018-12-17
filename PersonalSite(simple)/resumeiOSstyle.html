@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #efeff4;
+            font-family: "Helvetica Neue";
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            width: 320px;
+            /* background-color:#ffffff;*/
+            height: auto;
+            border: 1px solid red;
+        }
+        
+        .section {
+            border-radius: 5px;
+            margin: 0 auto 0;
+            border: 1px solid green;
+            height: auto;
+            width: 100%;
+            border: 1px solid red;
+            margin-bottom: 25px;
+            background-color: white;
+        }
+        
+        .sectionSub {
+            height: 40px;
+            width: 100%;
+            text-indent: 12px;
+            line-height: 2;
+        }
+        
+        .modified_HR {
+            width: 97%;
+            height: 1px;
+            background-color: grey;
+            float: right;
+        }
+        
+        .blueTextcolor {
+            color: #007aff
+        }
+        
+        .blackTextcolor {
+            color: #111111;
+        }
+        
+        .darkGreyText {
+            color: #565656
+        }
+        
+        .blue {
+            color: #007cfa;
+        }
+        
+        .orange {
+            color: #ff902a;
+        }
+        
+        .red {
+            color: #ff3236
+        }
+        
+        .purple {
+            color: #4f59d0
+        }
+        
+        .grey {
+            color: #8d8d91
+        }
+        
+        .skyBlue {
+            color: #1caad8
+        }
+        
+        .greenToggleBackground-color {
+            background-color: #4bd96e;
+        }
+        
+        .arrow {
+            position: relative;
+            height: 20px;
+            width: 20px;
+            float: right;
+        }
+        
+        .companyName {
+            font-size: 14px;
+            text-align: left;
+            font-weight: bold;
+            clear: both;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .job {
+            width: 100%;
+            clear: both;
+            height: auto;
+        }
+        
+        .jobDescript {
+            color: #000;
+            font-size: 12px;
+            margin-bottom: 5px;
+            margin-left: 40px;
+            margin-right: 15px;
+        }
+        
+        .headings {
+            color: #000;
+            font-size: 16;
+            text-align: left;
+            font-weight: bolder;
+            margin-left: 20px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            clear: both;
+        }
+        
+        @media only screen and (min-width:0px) and (max-width: 320px) {}
+        
+        @media only screen and (min-width:321px) and (max-width: 375px) {}
+        
+        @media only screen and (min-width:376px) and (max-width: 425px) {}
+        
+        @media only screen and (min-width:426px) and (max-width: 768px) {}
+        
+        @media only screen and (min-width:769px) and (max-width: 1024px) {}
+        
+        @media only screen and (min-width:1025px) and (max-width: 1440px) {}
+        
+        @media only screen and (min-width:1441px) and (max-width: 2560px) {}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".container").click(function() {
+                alert("click recieved");
+            });
+        });
+    </script>
+</head>
+
+
+<div class="container">
+    <div class="section blackTextcolor" id="name">
+        <div class="sectionSub">Name</div>
+    </div>
+    <div class="section blackTextcolor" id="skills">
+        <div class="sectionSub">Skills <button class="arrow">></div></div>
+        <div class="section blackTextcolor" id="experience"><div class="sectionSub">Experience</div></div>
+        <div class="section blackTextcolor" id="experience"><div class="sectionSub">JOB 1</div>
+          <div class="modified_HR"></div><div class="sectionSub">JOB 2</div></div>
+      
+      </div>
+
+</html>
