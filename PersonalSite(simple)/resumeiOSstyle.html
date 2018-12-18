@@ -10,10 +10,11 @@
         }
         
         .container {
-            width: 320px;
+            width: 310px;
             /* background-color:#ffffff;*/
             height: auto;
             border: 1px solid red;
+            margin: 40px auto 0;
         }
         
         .section {
@@ -22,9 +23,19 @@
             border: 1px solid green;
             height: auto;
             width: 100%;
-            border: 1px solid red;
             margin-bottom: 25px;
             background-color: white;
+        }
+        
+        .info {
+            height: auto;
+            /*width: 100%;*/
+            font-size: 12px;
+            position: relative;
+            font-weight: 600;
+            overflow: hidden;
+            word-wrap: break-word;
+            padding: 5px;
         }
         
         .sectionSub {
@@ -32,11 +43,17 @@
             width: 100%;
             text-indent: 12px;
             line-height: 2;
+            font-size: 22px;
+            position: relative;
+            font-weight: 600;
         }
+        /* 
+      image menus
+      */
         
         .modified_HR {
             width: 97%;
-            height: 1px;
+            height: 0.5px;
             background-color: grey;
             float: right;
         }
@@ -106,9 +123,7 @@
         .jobDescript {
             color: #000;
             font-size: 12px;
-            margin-bottom: 5px;
-            margin-left: 40px;
-            margin-right: 15px;
+            margin-left: -10px;
         }
         
         .headings {
@@ -120,6 +135,92 @@
             margin-bottom: 5px;
             margin-top: 5px;
             clear: both;
+        }
+        
+        #nameInfo {
+            display: none;
+        }
+        
+        #skillsInfo {
+            display: none;
+        }
+        
+        #CredentialsInfo {
+            display: none;
+        }
+        
+        #jobInfo1,
+        #jobInfo2,
+        #jobInfo3,
+        #jobInfo4,
+        #jobInfo5,
+        #jobInfo6,
+        #jobInfo7,
+        #jobInfo8,
+        #jobInfo9,
+        #jobInfo10 {
+            display: none;
+        }
+        
+        .splitHolder {
+            width: 100%;
+            height: 65px;
+        }
+        
+        .iconAreaLeft {
+            height: 55px;
+            width: 55px;
+            /*border: 1px solid brown;*/
+            float: left;
+            margin-left: 12px;
+            margin-top: 4px;
+        }
+        
+        .Title {
+            height: 50%;
+            width: 200px;
+            font-size: 22px;
+            /*border: 1px solid red;*/
+            text-indent: 16px;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+        
+        .TitleBig {
+            height: 100%;
+            width: 208px;
+            font-size: 20px;
+            /*border: 1px solid red;*/
+            text-indent: 16px;
+            line-height: 3;
+            font-weight: 600;
+        }
+        
+        .subTitle {
+            height: 50%;
+            width: 200px;
+            /*border: 1px solid blue;*/
+            text-indent: 16px;
+            font-size: 16px;
+            line-height: 1.2;
+            color: #565656;
+        }
+        
+        .arrowIcon {
+            height: 100%;
+            width: 27px;
+            line-height: 2.8;
+            color: grey;
+            float: left;
+            /*border: 1px solid red;*/
+            font-size: 22px;
+            font-weight: bolder;
+        }
+        
+        .titleHolders {
+            height: 100%;
+            width: auto;
+            float: left
         }
         
         @media only screen and (min-width:0px) and (max-width: 320px) {}
@@ -139,24 +240,157 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            $(".container").click(function() {
-                alert("click recieved");
+            $("#name").click(function() {
+                $("#nameInfo").toggle(300);
             });
+            $("#skills").click(function() {
+                $("#skillsInfo").toggle(300);
+            });
+            $("#Credentials").click(function() {
+                $("#CredentialsInfo").toggle(300);
+            });
+            $("#job1").click(function() {
+                $("#jobInfo1").toggle(300);
+            });
+            $("#job2").click(function() {
+                $("#jobInfo2").toggle(300);
+            });
+            $("#job3").click(function() {
+                $("#jobInfo3").toggle(300);
+            });
+            $("#job4").click(function() {
+                $("#jobInfo4").toggle(300);
+            });
+            $("#job5").click(function() {
+                $("#jobInfo5").toggle(300);
+            });
+            $("#job6").click(function() {
+                $("#jobInfo6").toggle(300);
+            });
+            $("#job7").click(function() {
+                $("#jobInfo7").toggle(300);
+            });
+            $("#job8").click(function() {
+                $("#jobInfo8").toggle(300);
+            });
+
         });
     </script>
 </head>
 
 
 <div class="container">
-    <div class="section blackTextcolor" id="name">
-        <div class="sectionSub">Name</div>
-    </div>
-    <div class="section blackTextcolor" id="skills">
-        <div class="sectionSub">Skills <button class="arrow">></div></div>
-        <div class="section blackTextcolor" id="experience"><div class="sectionSub">Experience</div></div>
-        <div class="section blackTextcolor" id="experience"><div class="sectionSub">JOB 1</div>
-          <div class="modified_HR"></div><div class="sectionSub">JOB 2</div></div>
-      
-      </div>
 
-</html>
+    <!--test region-->
+    <div class="section blackTextColor" id="name" style="margin-top:35px;">
+        <div class="splitHolder">
+            <img src="https://www.houghtonregis.org.uk/useruploads/images/Logos/information-icon-UAL-blue-HQ-vers-1-062311.png" class="iconAreaLeft">
+            <div class="titleHolders">
+                <div class="TitleBig">Contact Information</div>
+            </div>
+            <div class="arrowIcon">></div>
+        </div>
+        <div class="info" id="nameInfo">Phone: 555-555-5555<br/><br/>Email: moseleygj@gmail.com</div>
+    </div>
+    <!-- new section -->
+    <!--test region-->
+    <div class="section blackTextColor" id="skills">
+        <div class="splitHolder">
+            <img src="https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/wrench-512.png" class="iconAreaLeft">
+            <div class="titleHolders">
+                <div class="TitleBig">Skills</div>
+            </div>
+            <div class="arrowIcon">></div>
+        </div>
+        <div class="info" id="skillsInfo">
+            <div id="objective" style="letter-spacing:0.7px;line-height:1.5">L.A.M.P. Stack(Linux / Apache Web Server / MySQL / PHP) / Web Design / CSS / Adobe Photoshop / Microsoft Office Suite / Basic Java programming / Basic JavaScript / BASH Scripting / Oracle Virtual Box / MacOS / Networking / Active Directory
+                / VOIP</div>
+        </div>
+    </div>
+    <!-- new section -->
+    <!--test region-->
+    <div class="section blackTextColor" id="Credentials">
+        <div class="splitHolder">
+            <img src="https://www.scrgrowthhub.co.uk/wp-content/uploads/skills-bank-icon.png" class="iconAreaLeft">
+            <div class="titleHolders">
+                <div class="TitleBig">Credentials</div>
+            </div>
+            <div class="arrowIcon">></div>
+        </div>
+        <div class="info" id="CredentialsInfo">
+
+            <div class="jobDescript">
+                <ul>
+                    <li>National Center for Construction Education & Research (NCCER): Electrical, University of Florida, 2014</li><br/>
+                    <li>Computer Programming and Information Technology, ASA, Brooklyn, NY, 2007 </li>
+                    <li>Comptia Linux+</li>
+                    <li>Comptia A+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- new section -->
+
+
+
+    <!--<div class="section blackTextColor">
+        <div class="splitHolder"> 
+      <img src="http://purepng.com/public/uploads/large/purepng.com-mail-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596614cijbx.png"class="iconAreaLeft">
+      <div class="titleHolders"> <div class="Title">MainText test</div>
+        <div class="subTitle">subTextTest</div></div><div class="arrowIcon">></div></div>
+   
+</div>-->
+
+
+    <div class="section blackTextcolor">
+        <div class="sectionSub" id="job1">JOB 1</div>
+        <div class="info" id="jobInfo1">1</div>
+        <div class="modified_HR"></div>
+        <div class="sectionSub" id="job2">JOB 2</div>
+        <div class="info" id="jobInfo2">1</div>
+        <div class="modified_HR"></div>
+        <div class="sectionSub" id="job3">JOB 3</div>
+        <div class="info" id="jobInfo3">1</div>
+        <div class="modified_HR"></div>
+        <div class="sectionSub" id="job4">JOB 4</div>
+        <div class="info" id="jobInfo4">1</div>
+        <div class="modified_HR"></div>
+        <div class="sectionSub" id="job5">JOB 5</div>
+        <div class="info" id="jobInfo5">1</div>
+        <div class="modified_HR"></div>
+        <div class="sectionSub" id="job6">JOB 6</div>
+        <div class="info" id="jobInfo6">1</div>
+        <div class="modified_HR"></div>
+        <div class="sectionSub" id="job7">JOB 7</div>
+        <div class="info" id="jobInfo7">1</div>
+        <div class="modified_HR"></div>
+
+        <div class="sectionSub" style="height:auto;" id="job8">JOB 8</div>
+        <div class="info" id="jobInfo8">1</div>
+        <div class="modified_HR"></div>
+
+
+
+
+    </div>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<!-- section for double rows one Icon
+
+
+<div class="section blackTextColor">
+        <div class="splitHolder"> 
+      <img src="http://purepng.com/public/uploads/large/purepng.com-mail-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596614cijbx.png"class="iconAreaLeft">
+      <div class="titleHolders"> <div class="Title">MainText test</div>
+        <div class="subTitle">subTextTest</div></div><div class="arrowIcon">></div></div>
+  
+</div>
+
+-->
