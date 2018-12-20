@@ -150,6 +150,10 @@
             display: none;
         }
         
+        #downloadInfo {
+            display: none;
+        }
+        
         #jobInfo1,
         #jobInfo2,
         #jobInfo3,
@@ -237,6 +241,52 @@
             margin: 3px 0px;
         }
         
+        .calmLink {
+            text-decoration: none;
+            color: #007aff;
+        }
+        
+        .calmLink:hover {
+            color: #007aff;
+            font-weight: bolder;
+        }
+        
+        .iconAreaLeft:hover {
+            transform: rotateX(360deg);
+        }
+        
+        #select_imc {
+            /*border-radius*/
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            color: #FFF;
+            font-weight: bold;
+            font-size: 16px;
+            text-shadow: -1px -1px 3px #666;
+            border: 1px solid #CCC;
+            padding: 15px 20px;
+            background: rgb(98, 186, 236);
+            background: -moz-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(98, 186, 236, 1)), color-stop(100%, rgba(18, 128, 211, 1)));
+            background: -webkit-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+            background: -o-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+            background: linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#62baec', endColorstr='#1280d3', GradientType=0);
+        }
+        
+        #select_imc:hover {
+            background: rgb(55, 148, 216);
+            background: -moz-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(55, 148, 216, 1)), color-stop(100%, rgba(3, 81, 184, 1)));
+            background: -webkit-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+            background: -o-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+            background: linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3794d8', endColorstr='#0351b8', GradientType=0);
+        }
+        
         @media only screen and (min-width:0px) and (max-width: 320px) {}
         
         @media only screen and (min-width:321px) and (max-width: 375px) {}
@@ -256,7 +306,6 @@
         $(document).ready(function() {
             $("#name").click(function() {
                 $("#nameInfo").toggle(300);
-                $(this).css("color", "pink");
             });
             $("#skills").click(function() {
                 $("#skillsInfo").toggle(300);
@@ -287,9 +336,14 @@
             });
             $("#job8").click(function() {
                 $("#jobInfo8").toggle(300);
-                $().css('transform')
 
             });
+            $("#downloadInfoSection").click(function() {
+                $("#downloadInfo").toggle(300);
+
+
+            });
+
 
         });
     </script>
@@ -307,8 +361,8 @@
             </div>
             <div class="arrowIcon">></div>
         </div>
-        <div class="info darkGreyText" id="nameInfo">
-            <p style="text-indent:12px"><b>Phone: </b>555-555-5555<br/></p><br/>
+        <div class="info, darkGreyText" id="nameInfo">
+            <p style="text-indent:12px"><b>Phone: </b>646-377-5325<br/></p>
             <p style="text-indent:12px"><b>Email: </b>moseleygj@gmail.com</p>
         </div>
     </div>
@@ -325,7 +379,7 @@
                 <div class="arrowIcon">></div>
             </div>
             <div class="info" id="skillsInfo">
-                <div id="objective" style="letter-spacing:0.2px;line-height:1.5">L.A.M.P. Stack(Linux / Apache Web Server / MySQL / PHP) / Web Design / CSS / Adobe Photoshop / Microsoft Office Suite / Basic Java programming / Basic JavaScript / BASH Scripting / Oracle Virtual Box / MacOS / Networking / Active Directory
+                <div id="objective" class="darkGreyText" style="letter-spacing:0.2px;line-height:1.5">L.A.M.P. Stack(Linux / Apache Web Server / MySQL / PHP) / Web Design / CSS / Adobe Photoshop / Microsoft Office Suite / Basic Java programming / Basic JavaScript / BASH Scripting / Oracle Virtual Box / MacOS / Networking / Active Directory
                     / VOIP</div>
             </div>
         </div>
@@ -342,7 +396,7 @@
             <div class="info" id="CredentialsInfo">
 
                 <div class="jobDescript">
-                    <ul>
+                    <ul class="darkGreyText">
                         <li style="margin-top: 7.5px;text-indent:0px;">National Center for Construction Education & Research (NCCER): Electrical, University of Florida, 2014</li>
                         <li style="margin-top: 7.5px;text-indent:0px;">A.O.S. Computer Programming and Information Technology, ASA, Brooklyn, NY, 2007 </li>
                         <li style="margin-top: 7.5px;text-indent:0px;">Comptia Linux+</li>
@@ -368,9 +422,9 @@
         <div class="section blackTextcolor">
             <div class="sectionSub" id="job1">Independent Contractor</div>
             <div class="info" id="jobInfo1">
-                Computer Technician 2014-current
+                <P> Computer Technician 2014-current</P>
                 <div class="jobDescript" style="text-indent:0px">
-                    <ul>
+                    <ul class="darkGreyText">
                         <li>
                             Web Design, Computer Repair (Laptop & Desktop), Hardware setup; </li>
                         <li>iPhone, Android and Blackberry knowledge; HDD Backups/Restore/Imaging(Clone-Disk,Clonezilla, Linux 'DD' command, PartImage, Macrium Reflect, Active@Disk Image); </li>
@@ -387,7 +441,7 @@
             <div class="info" id="jobInfo2">
                 Desktop Technician, September 2014 - present
                 <div class="jobDescript">
-                    <ul>
+                    <ul class="darkGreyText">
                         <li>Rough-in wiring, Remodel wiring, lighting and fixtures servicing.</li>
                         <li> Special circuits, Service Entry, Electric Heating, conduit installation and wiring</li>
                         <li> Reading and designing blueprints, Estimating, low voltage wiring, ohms law.</li>
@@ -400,7 +454,7 @@
 
                 Residential Electrical, Mar 2010 - Sep 2014
                 <div class="jobDescript">
-                    <ul>
+                    <ul class="darkGreyText">
                         <li>Rough-in wiring, Remodel wiring, lighting and fixtures servicing.</li>
                         <li> Special circuits, Service Entry, Electric Heating, conduit installation and wiring</li>
                         <li> Reading and designing blueprints, Estimating, low voltage wiring, ohms law.</li>
@@ -410,9 +464,9 @@
             <div class="modified_HR"></div>
             <div class="sectionSub" id="job4">National Grid </div>
             <div class="info" id="jobInfo4">
-
+                Help Desk, Jan 2009 - Dec 2009
                 <div class="jobDescript">
-                    <ul>
+                    <ul class="darkGreyText">
                         <li>Provided remote desktop assistance for LAN and VPN users
                             <li>Provided​ ​ remote​ ​ desktop​ ​ assistance​ ​ for​ ​ LAN​ ​ and​ ​ VPN​ ​ users.​ ​ Utilized​ ​ Active​ ​ Directory(AD)</li>
                             <li>Supported in “Netscape-to-Microsoft Outlook mail migration” project</li>
@@ -425,9 +479,9 @@
             <div class="modified_HR"></div>
             <div class="sectionSub" id="job5">Data Velocity</div>
             <div class="info" id="jobInfo5">
-                Apple Mac OS X Technician/Remote Desktop Administrator, Oct 2008 - Dec 2008
+                Mac Technician/Remote Desktop Admin., Oct 2008 - Dec 2008
                 <div class="jobDescript">
-                    <ul>
+                    <ul class="darkGreyText">
                         <li>
                             Provided solutions for Microsoft Windows Users converting to Mac OS X
                             <li>Maintained small business server (SBS) for contracted companies(Law firms); Setup secure VPN</li>
@@ -451,14 +505,14 @@
             <div class="info" id="jobInfo8">
                 Information Systems Tech., June 2006 - Sep 2008
                 <div class="jobDescript">
-                    <ul>
+                    <ul class="darkGreyText">
                         <li>Provided disaster recovery for servers (Back up and Safeguard data regularly)</li>
                         <li>Performed “Ghosting” and “Data recovery” using various tools on Hiren’s Boot CD</li>
                         <li>Troubleshoot network issues </li>
                         <li>Recognized, Identified and removed all current security threats </li>
                         <li>Setup, upgraded, disassembled, and reassembled Desktop/Notebook PC’s</li>
                         <li>Used “Active@KilDisk” software to ensure the safety of sensitive data not being sacrificed </li>
-                        <li>Provided data-migration to/from the MS Windows to Linux, and the Mac OS X Platform</ul>
+                        <li>Provided data-migration to/from the Microsoft Windows to Linux, and the Mac OS X Platform</ul>
                     </li>
                 </div>
             </div>
@@ -470,6 +524,36 @@
 
 
         </div>
+
+        <!--test region-->
+        <div class="section blackTextColor" id="downloadInfoSection">
+            <div class="splitHolder">
+                <img src="https://freeiconshop.com/wp-content/uploads/edd/download-cloud-flat.png" class="iconAreaLeft">
+                <div class="titleHolders">
+                    <div class="TitleBig">Download</div>
+                </div>
+                <div class="arrowIcon">></div>
+            </div>
+            <div class="info" id="downloadInfo">
+
+                <div class="jobDescript">
+                    <ul class="darkGreyText">
+                        <li style="margin-top: 7.5px;text-indent:0px;"><a href="Resume_GordonMoseley2018.pdf" class="calmLink">Resume (.pdf )</a></li>
+                        <li style="margin-top: 7.5px;text-indent:0px;"><a href="Resume_GordonMoseley2018.docx" class="calmLink">Resume (.docx)</a></li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">
+                            <a href=NCCER.pdf " class="calmLink ">Residential Electrical Transcript (.pdf)</a></li>
+                        <li style="margin-top: 7.5px;text-indent:0px; "><a href=" " class="calmLink ">Residential Electrical Transcript (.docx)</a></li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- new section -->
+
+
+
     </div>
 
 
@@ -482,11 +566,11 @@
 <!-- section for double rows one Icon
 
 
-<div class="section blackTextColor">
-        <div class="splitHolder"> 
-      <img src="http://purepng.com/public/uploads/large/purepng.com-mail-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596614cijbx.png"class="iconAreaLeft">
-      <div class="titleHolders"> <div class="Title">MainText test</div>
-        <div class="subTitle">subTextTest</div></div><div class="arrowIcon">></div></div>
+<div class="section blackTextColor ">
+        <div class="splitHolder "> 
+      <img src="http://purepng.com/public/uploads/large/purepng.com-mail-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596614cijbx.png "class="iconAreaLeft ">
+      <div class="titleHolders "> <div class="Title ">MainText test</div>
+        <div class="subTitle ">subTextTest</div></div><div class="arrowIcon ">></div></div>
   
 </div>
 
