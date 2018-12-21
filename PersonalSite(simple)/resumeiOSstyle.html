@@ -1,4 +1,5 @@
 <html>
+<meta charset="UTF-8">
 
 <head>
     <style>
@@ -172,6 +173,8 @@
             height: 65px;
         }
         
+        .splitHolder {}
+        
         .iconAreaLeft {
             height: 55px;
             width: 55px;
@@ -194,11 +197,12 @@
         .TitleBig {
             height: 100%;
             width: 208px;
-            font-size: 20px;
+            font-size: 18px;
             /*border: 1px solid red;*/
             text-indent: 16px;
-            line-height: 3;
+            line-height: 3.5;
             font-weight: 600;
+            font-family: Helvetica Neue, Roboto, Arial, Helvetica, sans-serif;
         }
         
         .subTitle {
@@ -378,22 +382,33 @@
                 font-size: ;
             }
         }
+        
+        .down {
+            transform: rotate(90deg);
+        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
             $("#name").click(function() {
                 $("#nameInfo").toggle(300);
+                $("#arr1").toggleClass("down");
+
             });
             $("#skills").click(function() {
                 $("#skillsInfo").toggle(300);
-                $(".arrowIcon").css("transform", "rotateX(180deg")
+                $("#arr2").toggleClass("down");
+
+                /* $("#arr3").css({
+                     transform: 'rotate(90deg)'
+                 })*/
             });
 
 
 
             $("#Credentials").click(function() {
                 $("#CredentialsInfo").toggle(300);
+                $("#arr3").toggleClass("down");
             });
             $("#job1").click(function() {
                 $("#jobInfo1").toggle(300);
@@ -422,6 +437,8 @@
             });
             $("#downloadInfoSection").click(function() {
                 $("#downloadInfo").toggle(300);
+                $("#arr4").toggleClass("down");
+
 
 
             });
@@ -441,7 +458,7 @@
             <div class="titleHolders">
                 <div class="TitleBig">Contact Information</div>
             </div>
-            <div class="arrowIcon">></div>
+            <div class="arrowIcon" id="arr1">></div>
         </div>
         <div class="info, darkGreyText" id="nameInfo">
             <p style="text-indent:12px"><b>Phone: </b>646-377-5325<br/></p>
@@ -458,7 +475,7 @@
                 <div class="titleHolders">
                     <div class="TitleBig">Skills</div>
                 </div>
-                <div class="arrowIcon">></div>
+                <div class="arrowIcon" id="arr2">></div>
             </div>
             <div class="info" id="skillsInfo">
                 <div id="objective" class="darkGreyText" style="letter-spacing:0.2px;line-height:1.5">L.A.M.P. Stack(Linux / Apache Web Server / MySQL / PHP) / Web Design / CSS / Adobe Photoshop / Microsoft Office Suite / Basic Java programming / Basic JavaScript / BASH Scripting / Oracle Virtual Box / MacOS / Networking / Active Directory
@@ -473,7 +490,9 @@
                 <div class="titleHolders">
                     <div class="TitleBig">Credentials</div>
                 </div>
-                <div class="arrowIcon">></div>
+                <div class="arrowIcon" id="arr3">
+                    >
+                </div>
             </div>
             <div class="info" id="CredentialsInfo">
 
@@ -614,7 +633,7 @@
                 <div class="titleHolders">
                     <div class="TitleBig">Download</div>
                 </div>
-                <div class="arrowIcon">></div>
+                <div class="arrowIcon" id="arr4">></div>
             </div>
             <div class="info" id="downloadInfo">
 
