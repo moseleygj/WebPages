@@ -3,7 +3,7 @@
 
 <head>
     <style>
-        body {
+    body {
             background-color: #efeff4;
             font-family: "Helvetica Neue";
             padding: 0;
@@ -55,7 +55,7 @@
         
         .modified_HR {
             width: 97%;
-            height: 0.5px;
+            height: 1px;
             background-color: grey;
             float: right;
         }
@@ -219,7 +219,7 @@
             height: 100%;
             width: 27px;
             line-height: 2.8;
-            color: grey;
+            color: #8d8d91;
             float: left;
             /*border: 1px solid red;*/
             font-size: 22px;
@@ -291,7 +291,19 @@
             filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3794d8', endColorstr='#0351b8', GradientType=0);
         }
         
-        @media only screen and (min-width:0px) and (max-width: 320px) {}
+        @media only screen and (min-width:0px) and (max-width: 320px) {
+            li {
+                font-size: 10px;
+                font-weight: normal;
+            }
+            #objective {
+                font-size: 10px;
+                font-weight: normal;
+            }
+            #nameInfo {
+                font-size: 14px;
+            }
+        }
         
         @media only screen and (min-width:321px) and (max-width: 375px) {
             .container {
@@ -304,7 +316,13 @@
                 font-size: ;
             }
             li {
-                font-size: ;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #objective {
+                font-size: 12px;
+                font-weight: normal;
+                padding: 9px;
             }
         }
         
@@ -314,78 +332,181 @@
             }
             .TitleBig {
                 font-size: ;
+                width: 208px;
+                line-height: ;
             }
             .arrowIcon {
                 font-size: ;
             }
             li {
-                font-size: ;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #objective {
+                font-size: 12px;
+                font-weight: normal;
+                padding: 9px;
+            }
+            .splitHolder {
+                height: ;
+            }
+            .sectionSub {
+                height: ;
+            }
+            .arraowIcon {
+                line-height: ;
             }
         }
         
-        @media only screen and (min-width:426px) and (max-width: 768px) {
+        @media only screen and (min-width:426px) and (max-width:600px) {
             .container {
-                width: ;
+                width: 365px;
             }
             .TitleBig {
                 font-size: ;
+                width: 264px;
             }
             .arrowIcon {
                 font-size: ;
             }
             li {
-                font-size: ;
+                font-size: 14px;
+                font-weight: normal;
+            }
+            #objective {
+                font-size: 14px;
+                font-weight: normal;
+                padding: 9px;
+            }
+            .splitHolder {
+                height: ;
+            }
+            .sectionSub {
+                height: ;
+            }
+            .arraowIcon {
+                line-height: ;
+            }
+        }
+        
+        @media only screen and (min-width:601px) and (max-width: 768px) {
+            .container {
+                width: 455px;
+            }
+            .TitleBig {
+                font-size: 18px;
+                width: 350px;
+            }
+            .arrowIcon {
+                font-size: 18px;
+            }
+            li {
+                font-size: 14px;
+                font-weight: normal;
+            }
+            #objective {
+                font-size: 14px;
+                font-weight: normal;
+                padding: 9px;
+            }
+            .splitHolder {
+                height: ;
+            }
+            .sectionSub {
+                height: ;
+            }
+            .arraowIcon {
+                line-height: 3.3;
             }
         }
         
         @media only screen and (min-width:769px) and (max-width: 1024px) {
             .container {
-                width: ;
+                width: 512px;
             }
             .TitleBig {
-                font-size: ;
+                font-size: 18px;
+                width: 395px;
             }
             .arrowIcon {
                 font-size: ;
             }
             li {
-                font-size: ;
+                font-size: 14px;
+                font-weight: normal;
+            }
+            #objective {
+                font-size: 14px;
+                font-weight: normal;
+                padding: 9px;
+            }
+            #info {
+                padding: 9px;
+            }
+            .splitHolder {
+                height: ;
+            }
+            .sectionSub {
+                height: ;
+            }
+            .arraowIcon {
+                line-height: ;
             }
         }
         
         @media only screen and (min-width:1025px) and (max-width: 1440px) {
             .container {
-                width: ;
+                width: 768px;
             }
             .TitleBig {
-                font-size: ;
+                font-size: 18px;
+                width: 655px;
             }
             .arrowIcon {
                 font-size: ;
+                line-height: 3;
             }
             li {
-                font-size: ;
+                font-size: 14px;
+                font-weight: normal;
             }
+            #objective {
+                font-size: 14px;
+                font-weight: normal;
+                padding: 9px
+            }
+            #camlink {
+                font-size: 16px;
+            }
+        }
+    }
+    @media only screen and (min-width:1441px) and (max-width: 2560px) {
+        .container {
+            width: 768px;
         }
         
-        @media only screen and (min-width:1441px) and (max-width: 2560px) {
-            .container {
-                width: ;
-            }
-            .TitleBig {
-                font-size: ;
-            }
-            .arrowIcon {
-                font-size: ;
-            }
-            li {
-                font-size: ;
-            }
+        .TitleBig {
+            font-size: 18px;
+            width: 655px;
         }
         
-        .down {
-            transform: rotate(90deg);
+        .arrowIcon {
+            font-size: ;
         }
+        
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+    .down {
+        transform: rotate(90deg);
+    }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -593,7 +714,6 @@
                     </li>
                 </div>
             </div>
-            <div class="modified_HR"></div>
             <!--
             <div class="sectionSub" id="job6">JOB 6</div>
             <div class="info" id="jobInfo6">1</div>
