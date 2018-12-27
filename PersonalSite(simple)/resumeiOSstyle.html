@@ -1,569 +1,651 @@
 <html>
 <meta charset="UTF-8">
 
-    <style>
-   
+<style>
     body {
-            background-color: #f0f0f0;
-            font-family: "Helvetica Neue";
-            padding: 0;
-            margin: 0;
-        }
-        
-        .container {
-            width: 310px;
-            height: auto;
-            /*border: 1px solid red;*/
-            margin: 40px auto 0;
-        }
-        
-        .section {
-            border-radius: 5px;
-            margin: 0 auto 0;
-            /*border: 1px solid green;*/
-            height: auto;
-            width: 100%;
-            margin-bottom: 25px;
-            background-color: white;
-        }
-        
-        .info {
-            height: auto;
-            font-size: 12px;
-            position: relative;
-            font-weight: 600;
-            overflow: hidden;
-            word-wrap: break-word;
-            padding: 5px;
-            text-indent: 5px;
-        }
-        
-        .sectionSub {
-            height: 40px;
-            width: 100%;
-            text-indent: 12px;
-            line-height: 2.5;
-            font-size: 16.5px;
-            position: relative;
-            font-weight: 600;
-        }
-        
-        .modified_HR {
-            width: 97%;
-            height: 1px;
-            background-color: grey;
-            float: right;
-        }
-        
-        .blueTextcolor {
-            color: #007aff
-        }
-        
-        .blackTextcolor {
-            color: #111111;
-        }
-        
-        .darkGreyText {
-            color: #565656
-        }
-        
-        .blue {
-            color: #007cfa;
-        }
-        
-        .orange {
-            color: #ff902a;
-        }
-        
-        .red {
-            color: #ff3236
-        }
-        
-        .purple {
-            color: #4f59d0
-        }
-        
-        .grey {
-            color: #8d8d91
-        }
-        
-        .skyBlue {
-            color: #1caad8
-        }
-        
-        .greenToggleBackground-color {
-            background-color: #4bd96e;
-        }
-        
-        .arrow {
-            position: relative;
-            height: 20px;
-            width: 20px;
-            float: right;
-        }
-        
-        .companyName {
-            font-size: 14px;
-            text-align: left;
-            font-weight: bold;
-            clear: both;
-            margin-left: 20px;
-            margin-bottom: 5px;
-        }
-        
-        .job {
-            width: 100%;
-            clear: both;
-            height: auto;
-        }
-        
-        .jobDescript {
-            color: #000;
-            font-size: 12px;
-            margin-left: -10px;
-        }
-        
-        .headings {
-            color: #000;
-            font-size: 16;
-            text-align: left;
-            font-weight: bolder;
-            margin-left: 20px;
-            margin-bottom: 5px;
-            margin-top: 5px;
-            clear: both;
-        }
-        
-        #nameInfo {
-            display: none;
-        }
-        
-        #skillsInfo {
-            display: none;
-        }
-        
-        #CredentialsInfo {
-            display: none;
-        }
-        
-        #downloadInfo {
-            display: none;
-        }
-        #name{padding:5px;}
-        #back {
-            height: 40px;
-            width: 40px;
-            float: left;
-            padding-top: 15px;
-            padding-left: 5px;
-            position: absolute;
-        }
-        #jobInfo1,
-        #jobInfo2,
-        #jobInfo3,
-        #jobInfo4,
-        #jobInfo5,
-        #jobInfo6,
-        #jobInfo7,
-        #jobInfo8,
-        #jobInfo9,
-        #jobInfo10 {
-            display: none;
-        }
-        
-        .splitHolder {
-            width: 100%;
-            height: 65px;
-        }
-        
-        .iconAreaLeft {
-            height: 55px;
-            width: 55px;
-            /*border: 1px solid brown;*/
-            float: left;
-            margin-left: 12px;
-            margin-top: 4px;
-        }
-        
-        .Title {
-            height: 50%;
-            width: 200px;
-            font-size: 22px;
-            /*border: 1px solid red;*/
-            text-indent: 16px;
-            line-height: 1.4;
-            font-weight: 600;
-        }
-        
-        .TitleBig {
-            height: 100%;
-            width: 208px;
-            font-size: 18px;
-            /*border: 1px solid red;*/
-            text-indent: 16px;
-            line-height: 3.5;
-            font-weight: 600;
-            font-family: Helvetica Neue, Roboto, Arial, Helvetica, sans-serif;
-        }
-        
-        .subTitle {
-            height: 50%;
-            width: 200px;
-            /*border: 1px solid blue;*/
-            text-indent: 16px;
-            font-size: 16px;
-            line-height: 1.2;
-            color: #565656;
-        }
-        
-        .arrowIcon {
-            height: 100%;
-            width: 27px;
-            line-height: 2.8;
-            color: #8d8d91;
-            float: left;
-            /*border: 1px solid red;*/
-            font-size: 22px;
-            font-weight: bolder;
-        }
-        
-        .titleHolders {
-            height: 100%;
-            width: auto;
-            float: left
-        }
-        
-        .sectionHeader {
-            color: #565656;
-            font-size: 16px;
-            text-indent: 13px;
-            padding: 5px 0px;
-            font-weight: bold;
-        }
-        
+        background-color: #f0f0f0;
+        font-family: "Helvetica Neue";
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mainTitle {
+        height: 80px;
+        background-color: white;
+        border-bottom: 1px solid lightgrey;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    #whatsMyName {
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        color: #777;
+        line-height: 1.4;
+    }
+    
+    #WhatIDo {
+        clear: both;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        color: grey;
+    }
+    
+    .container {
+        width: 310px;
+        height: auto;
+        /*border: 1px solid red;*/
+        margin: 40px auto 0;
+    }
+    
+    .section {
+        border-radius: 5px;
+        margin: 0 auto 0;
+        /*border: 1px solid green;*/
+        height: auto;
+        width: 100%;
+        margin-bottom: 25px;
+        background-color: white;
+    }
+    
+    .info {
+        height: auto;
+        font-size: 12px;
+        position: relative;
+        font-weight: 600;
+        overflow: hidden;
+        word-wrap: break-word;
+        padding: 5px;
+        text-indent: 5px;
+    }
+    
+    .sectionSub {
+        height: 40px;
+        width: 100%;
+        text-indent: 12px;
+        line-height: 2.5;
+        font-size: 16.5px;
+        position: relative;
+        font-weight: 600;
+    }
+    
+    .modified_HR {
+        width: 97%;
+        height: 1px;
+        background-color: grey;
+        float: right;
+    }
+    
+    .blueTextcolor {
+        color: #007aff
+    }
+    
+    .blackTextcolor {
+        color: #111111;
+    }
+    
+    .darkGreyText {
+        color: #565656
+    }
+    
+    .blue {
+        color: #007cfa;
+    }
+    
+    .orange {
+        color: #ff902a;
+    }
+    
+    .red {
+        color: #ff3236
+    }
+    
+    .purple {
+        color: #4f59d0
+    }
+    
+    .grey {
+        color: #8d8d91
+    }
+    
+    .skyBlue {
+        color: #1caad8
+    }
+    
+    .greenToggleBackground-color {
+        background-color: #4bd96e;
+    }
+    
+    .arrow {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        float: right;
+    }
+    
+    .companyName {
+        font-size: 14px;
+        text-align: left;
+        font-weight: bold;
+        clear: both;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .job {
+        width: 100%;
+        clear: both;
+        height: auto;
+    }
+    
+    .jobDescript {
+        color: #000;
+        font-size: 12px;
+        margin-left: -10px;
+    }
+    
+    .headings {
+        color: #000;
+        font-size: 16;
+        text-align: left;
+        font-weight: bolder;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        clear: both;
+    }
+    
+    #nameInfo {
+        display: none;
+    }
+    
+    #skillsInfo {
+        display: none;
+    }
+    
+    #CredentialsInfo {
+        display: none;
+    }
+    
+    #downloadInfo {
+        display: none;
+    }
+    
+    #name {
+        padding: 0px;
+    }
+    
+    #back {
+        height: 40px;
+        width: 40px;
+        float: left;
+        padding-top: 15px;
+        padding-left: 5px;
+        position: absolute;
+    }
+    
+    #jobInfo1,
+    #jobInfo2,
+    #jobInfo3,
+    #jobInfo4,
+    #jobInfo5,
+    #jobInfo6,
+    #jobInfo7,
+    #jobInfo8,
+    #jobInfo9,
+    #jobInfo10 {
+        display: none;
+    }
+    
+    .splitHolder {
+        width: 100%;
+        height: 65px;
+    }
+    
+    .iconAreaLeft {
+        height: 55px;
+        width: 55px;
+        /*border: 1px solid brown;*/
+        float: left;
+        margin-left: 12px;
+        margin-top: 4px;
+    }
+    
+    .Title {
+        height: 50%;
+        width: 200px;
+        font-size: 22px;
+        /*border: 1px solid red;*/
+        text-indent: 16px;
+        line-height: 1.4;
+        font-weight: 600;
+    }
+    
+    .TitleBig {
+        height: 100%;
+        width: 208px;
+        font-size: 18px;
+        /*border: 1px solid red;*/
+        text-indent: 16px;
+        line-height: 3.5;
+        font-weight: 600;
+        font-family: Helvetica Neue, Roboto, Arial, Helvetica, sans-serif;
+    }
+    
+    .subTitle {
+        height: 50%;
+        width: 200px;
+        /*border: 1px solid blue;*/
+        text-indent: 16px;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #565656;
+    }
+    
+    .arrowIcon {
+        height: 100%;
+        width: 27px;
+        line-height: 2.8;
+        color: #8d8d91;
+        float: left;
+        /*border: 1px solid red;*/
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    
+    .titleHolders {
+        height: 100%;
+        width: auto;
+        float: left
+    }
+    
+    .sectionHeader {
+        color: #565656;
+        font-size: 16px;
+        text-indent: 13px;
+        padding: 5px 0px;
+        font-weight: bold;
+    }
+    
+    li {
+        text-indent: 0;
+        margin: 3px 0px;
+    }
+    
+    .calmLink {
+        text-decoration: none;
+        color: #007aff;
+    }
+    
+    .calmLink:hover {
+        color: #007aff;
+        font-weight: bolder;
+    }
+    
+    .iconAreaLeft:hover {
+        transform: rotateX(360deg);
+        -webkit-transform: rotateX(360deg);
+    }
+    
+    #contactInfoHolder {
+        padding: 5px;
+    }
+    
+    #select_imc {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 16px;
+        text-shadow: -1px -1px 3px #666;
+        border: 1px solid #CCC;
+        padding: 15px 20px;
+        background: rgb(98, 186, 236);
+        background: -moz-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(98, 186, 236, 1)), color-stop(100%, rgba(18, 128, 211, 1)));
+        background: -webkit-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        background: -o-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        background: linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#62baec', endColorstr='#1280d3', GradientType=0);
+    }
+    
+    #select_imc:hover {
+        background: rgb(55, 148, 216);
+        background: -moz-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(55, 148, 216, 1)), color-stop(100%, rgba(3, 81, 184, 1)));
+        background: -webkit-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        background: -o-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        background: linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3794d8', endColorstr='#0351b8', GradientType=0);
+    }
+    
+    @media only screen and (min-width:0px) and (max-width: 320px) {
         li {
-            text-indent: 0;
-            margin: 3px 0px;
+            font-size: 10px;
+            font-weight: normal;
         }
-        
-        .calmLink {
-            text-decoration: none;
-            color: #007aff;
+        #objective {
+            font-size: 10px;
+            font-weight: normal;
         }
-        
-        .calmLink:hover {
-            color: #007aff;
-            font-weight: bolder;
+        #nameInfo {
+            font-size: 14px;
         }
-        
-        .iconAreaLeft:hover {
-            transform: rotateX(360deg);
+    }
+    
+    @media only screen and (min-width:321px) and (max-width: 375px) {
+        .container {
+            width: ;
         }
-
-
-        
-        
-        
-        #select_imc {
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            color: #FFF;
-            font-weight: bold;
+        .TitleBig {
+            font-size: ;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 12px;
+            font-weight: normal;
+            padding: 9px;
+        }
+    }
+    
+    @media only screen and (min-width:376px) and (max-width: 425px) {
+        .container {
+            width: ;
+        }
+        .TitleBig {
+            font-size: ;
+            width: 208px;
+            line-height: ;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 12px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        .splitHolder {}
+        .sectionSub {
+            height: ;
+        }
+        .arraowIcon {
+            line-height: ;
+        }
+    }
+    
+    @media only screen and (min-width:426px) and (max-width:600px) {
+        .container {
+            width: 365px;
+        }
+        .TitleBig {
+            font-size: ;
+            width: 264px;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        .splitHolder {
+            height: ;
+        }
+        .sectionSub {
+            height: ;
+        }
+        .arraowIcon {
+            line-height: ;
+        }
+    }
+    
+    @media only screen and (min-width:601px) and (max-width: 768px) {
+        .container {
+            width: 455px;
+        }
+        .TitleBig {
+            font-size: 18px;
+            width: 350px;
+        }
+        .arrowIcon {
+            font-size: 18px;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        .splitHolder {
+            height: ;
+        }
+        .sectionSub {
+            height: ;
+        }
+        .arraowIcon {
+            line-height: 3.3;
+        }
+    }
+    
+    @media only screen and (min-width:769px) and (max-width: 1024px) {
+        .container {
+            width: 512px;
+        }
+        .TitleBig {
+            font-size: 18px;
+            width: 395px;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        #info {
+            padding: 9px;
+        }
+        .splitHolder {
+            height: ;
+        }
+        .sectionSub {
+            height: ;
+        }
+        .arraowIcon {
+            line-height: ;
+        }
+    }
+    
+    @media only screen and (min-width:1025px) and (max-width: 1440px) {
+        .container {
+            width: 768px;
+        }
+        .TitleBig {
+            font-size: 18px;
+            width: 655px;
+        }
+        .arrowIcon {
+            font-size: ;
+            line-height: 3;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 9px
+        }
+        #camlink {
             font-size: 16px;
-            text-shadow: -1px -1px 3px #666;
-            border: 1px solid #CCC;
-            padding: 15px 20px;
-            background: rgb(98, 186, 236);
-            background: -moz-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(98, 186, 236, 1)), color-stop(100%, rgba(18, 128, 211, 1)));
-            background: -webkit-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
-            background: -o-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
-            background: -ms-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
-            background: linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#62baec', endColorstr='#1280d3', GradientType=0);
         }
-        
-        #select_imc:hover {
-            background: rgb(55, 148, 216);
-            background: -moz-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(55, 148, 216, 1)), color-stop(100%, rgba(3, 81, 184, 1)));
-            background: -webkit-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
-            background: -o-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
-            background: -ms-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
-            background: linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3794d8', endColorstr='#0351b8', GradientType=0);
-        }
-        
-        @media only screen and (min-width:0px) and (max-width: 320px) {
-            li {
-                font-size: 10px;
-                font-weight: normal;
-            }
-            #objective {
-                font-size: 10px;
-                font-weight: normal;
-            }
-            #nameInfo {
-                font-size: 14px;
-            }
-        }
-        
-        @media only screen and (min-width:321px) and (max-width: 375px) {
-            .container {
-                width: ;
-            }
-            .TitleBig {
-                font-size: ;
-            }
-            .arrowIcon {
-                font-size: ;
-            }
-            li {
-                font-size: 12px;
-                font-weight: normal;
-            }
-            #objective {
-                font-size: 12px;
-                font-weight: normal;
-                padding: 9px;
-            }
-        }
-        
-        @media only screen and (min-width:376px) and (max-width: 425px) {
-            .container {
-                width: ;
-            }
-            .TitleBig {
-                font-size: ;
-                width: 208px;
-                line-height: ;
-            }
-            .arrowIcon {
-                font-size: ;
-            }
-            li {
-                font-size: 12px;
-                font-weight: normal;
-            }
-            #objective {
-                font-size: 12px;
-                font-weight: normal;
-                padding: 9px;
-            }
-            .splitHolder {
-                height: ;
-            }
-            .sectionSub {
-                height: ;
-            }
-            .arraowIcon {
-                line-height: ;
-            }
-        }
-        
-        @media only screen and (min-width:426px) and (max-width:600px) {
-            .container {
-                width: 365px;
-            }
-            .TitleBig {
-                font-size: ;
-                width: 264px;
-            }
-            .arrowIcon {
-                font-size: ;
-            }
-            li {
-                font-size: 14px;
-                font-weight: normal;
-            }
-            #objective {
-                font-size: 14px;
-                font-weight: normal;
-                padding: 9px;
-            }
-            .splitHolder {
-                height: ;
-            }
-            .sectionSub {
-                height: ;
-            }
-            .arraowIcon {
-                line-height: ;
-            }
-        }
-        
-        @media only screen and (min-width:601px) and (max-width: 768px) {
-            .container {
-                width: 455px;
-            }
-            .TitleBig {
-                font-size: 18px;
-                width: 350px;
-            }
-            .arrowIcon {
-                font-size: 18px;
-            }
-            li {
-                font-size: 14px;
-                font-weight: normal;
-            }
-            #objective {
-                font-size: 14px;
-                font-weight: normal;
-                padding: 9px;
-            }
-            .splitHolder {
-                height: ;
-            }
-            .sectionSub {
-                height: ;
-            }
-            .arraowIcon {
-                line-height: 3.3;
-            }
-        }
-        
-        @media only screen and (min-width:769px) and (max-width: 1024px) {
-            .container {
-                width: 512px;
-            }
-            .TitleBig {
-                font-size: 18px;
-                width: 395px;
-            }
-            .arrowIcon {
-                font-size: ;
-            }
-            li {
-                font-size: 14px;
-                font-weight: normal;
-            }
-            #objective {
-                font-size: 14px;
-                font-weight: normal;
-                padding: 9px;
-            }
-            #info {
-                padding: 9px;
-            }
-            .splitHolder {
-                height: ;
-            }
-            .sectionSub {
-                height: ;
-            }
-            .arraowIcon {
-                line-height: ;
-            }
-        }
-        
-        @media only screen and (min-width:1025px) and (max-width: 1440px) {
-            .container {
-                width: 768px;
-            }
-            .TitleBig {
-                font-size: 18px;
-                width: 655px;
-            }
-            .arrowIcon {
-                font-size: ;
-                line-height: 3;
-            }
-            li {
-                font-size: 14px;
-                font-weight: normal;
-            }
-            #objective {
-                font-size: 14px;
-                font-weight: normal;
-                padding: 9px
-            }
-            #camlink {
-                font-size: 16px;
-            }
-        }
+    }
     
     @media only screen and (min-width:1441px) and (max-width: 2560px) {
         .container {
             width: 768px;
         }
-        
         .TitleBig {
             font-size: 18px;
             width: 655px;
         }
-        
         .arrowIcon {
             font-size: ;
         }
-        
         li {
             font-size: 14px;
             font-weight: normal;
         }
-        
         #objective {
             font-size: 14px;
             font-weight: normal;
         }
     }
+    
     .down {
         transform: rotate(90deg);
     }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#name").click(function() {
-                $("#nameInfo").toggle(300);
-                $("#arr1").toggleClass("down");
-
-            });
-
-            $("#skills").click(function() {
-                $("#skillsInfo").toggle(300);
-                $("#arr2").toggleClass("down");
-            });
-
-            $("#Credentials").click(function() {
-                $("#CredentialsInfo").toggle(300);
-                $("#arr3").toggleClass("down");
-            });
-            $("#job1").click(function() {
-                $("#jobInfo1").toggle(300);
-            });
-            $("#job2").click(function() {
-                $("#jobInfo2").toggle(300);
-            });
-            $("#job3").click(function() {
-                $("#jobInfo3").toggle(300);
-            });
-            $("#job4").click(function() {
-                $("#jobInfo4").toggle(300);
-            });
-            $("#job5").click(function() {
-                $("#jobInfo5").toggle(300);
-            });
-            $("#job6").click(function() {
-                $("#jobInfo6").toggle(300);
-            });
-            $("#job7").click(function() {
-                $("#jobInfo7").toggle(300);
-            });
-            $("#job8").click(function() {
-                $("#jobInfo8").toggle(300);
-            });
-            $("#downloadInfoSection").click(function() {
-                $("#downloadInfo").toggle(300);
-                $("#arr4").toggleClass("down");
-            });
-
+    
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: white;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 50%;
+        opacity: 0.6;
+        height: 35px;
+        width: 35px;
+        transition: 1s linear;
+        border: 1px solid #434343;
+    }
+    
+    #myBtn:hover {
+        background-color: rgb(107, 255, 107);
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#name").click(function() {
+            $("#nameInfo").toggle(300);
+            $("#arr1").toggleClass("down");
 
         });
-    </script>
-</head>
 
+        $("#skills").click(function() {
+            $("#skillsInfo").toggle(300);
+            $("#arr2").toggleClass("down");
+        });
+
+        $("#Credentials").click(function() {
+            $("#CredentialsInfo").toggle(300);
+            $("#arr3").toggleClass("down");
+        });
+        $("#job1").click(function() {
+            $("#jobInfo1").toggle(300);
+        });
+        $("#job2").click(function() {
+            $("#jobInfo2").toggle(300);
+        });
+        $("#job3").click(function() {
+            $("#jobInfo3").toggle(300);
+        });
+        $("#job4").click(function() {
+            $("#jobInfo4").toggle(300);
+        });
+        $("#job5").click(function() {
+            $("#jobInfo5").toggle(300);
+        });
+        $("#job6").click(function() {
+            $("#jobInfo6").toggle(300);
+        });
+        $("#job7").click(function() {
+            $("#jobInfo7").toggle(300);
+        });
+        $("#job8").click(function() {
+            $("#jobInfo8").toggle(300);
+        });
+        $("#downloadInfoSection").click(function() {
+            $("#downloadInfo").toggle(300);
+            $("#arr4").toggleClass("down");
+        });
+
+
+    });
+
+
+
+    $(function() {
+        window.setInterval("$('#myBtn').css('background-color','lightgrey').toggle().fadeIn();", 900);
+        //$('#myBtn').fadeIn(9000);
+
+    });
+</script>
+<script>
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</head>
+<!--<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>-->
+<img src="arrowUp.png" style="height:35px;width:35px" onclick="topFunction()" id="myBtn">
+<div class="mainTitle">
+    <img id="back" src="back-butto6769.png" onClick="location.assign('main.html');">
+    <div id="whatsMyName" style="margin-top:0px">Gordon Moseley</div>
+    <div id="whatIDo">I code things</div>
+</div>
 <div class="container">
 
     <!--test region-->
@@ -576,8 +658,10 @@
             <div class="arrowIcon" id="arr1">></div>
         </div>
         <div class="info, darkGreyText" id="nameInfo">
-            <p style="text-indent:12px"><b>Phone: </b>646-377-5325<br/></p>
-            <p style="text-indent:12px"><b>Email: </b>moseleygj@gmail.com</p>
+            <div id="contactInfoHolder">
+                <p style="text-indent:12px"><b>Phone: </b>646-377-5325<br/></p>
+                <p style="text-indent:12px"><b>Email: </b>moseleygj@gmail.com</p>
+            </div>
         </div>
     </div>
     <!-- new section -->
@@ -613,17 +697,17 @@
                 <div class="jobDescript">
                     <ul class="darkGreyText">
                         <li style="margin-top: 7.5px;text-indent:0px;">National Center for Construction Education & Research (NCCER): Electrical, University of Florida, 2014</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">A.O.S. Computer Programming and Information Technology, ASA, Brooklyn, NY, 2007 </li>
                         <li style="margin-top: 7.5px;text-indent:0px;">Comptia Linux+</li>
                         <li style="margin-top: 7.5px;text-indent:0px;">Comptia A+</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">FCC ARRL Radio Technician (Call-sign: FC2PWJ)</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">A.O.S. Computer Programming and Information Technology, ASA, Brooklyn, NY, 2007 </li>
+
                     </ul>
                 </div>
             </div>
 
         </div>
         <!-- new section -->
-
-
 
         <!--<div class="section blackTextColor">
         <div class="splitHolder"> 
@@ -769,8 +853,7 @@
         <div class="splitHolder "> 
       <img src="http://purepng.com/public/uploads/large/purepng.com-mail-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596614cijbx.png "class="iconAreaLeft ">
       <div class="titleHolders "> <div class="Title ">MainText test</div>
-        <div class="subTitle ">subTextTest</div></div><div class="arrowIcon ">></div></div>
-  
+        <div class="subTitle ">subTextTest</div></div><div class="arrowIcon ">></div></div> 
 </div>
 
 -->
