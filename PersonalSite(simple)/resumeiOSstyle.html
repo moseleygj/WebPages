@@ -4,7 +4,8 @@
 <style>
     body {
         background-color: #f0f0f0;
-        font-family: "Helvetica Neue";
+        font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        ;
         padding: 0;
         margin: 0;
     }
@@ -114,6 +115,10 @@
         color: #1caad8
     }
     
+    .appleBlue {
+        color: #0070c9;
+    }
+    
     .greenToggleBackground-color {
         background-color: #4bd96e;
     }
@@ -204,10 +209,11 @@
         height: 65px;
     }
     
+    .splitHolder:hover {}
+    
     .iconAreaLeft {
         height: 55px;
         width: 55px;
-        /*border: 1px solid brown;*/
         float: left;
         margin-left: 12px;
         margin-top: 4px;
@@ -217,7 +223,6 @@
         height: 50%;
         width: 200px;
         font-size: 22px;
-        /*border: 1px solid red;*/
         text-indent: 16px;
         line-height: 1.4;
         font-weight: 600;
@@ -227,7 +232,6 @@
         height: 100%;
         width: 208px;
         font-size: 18px;
-        /*border: 1px solid red;*/
         text-indent: 16px;
         line-height: 3.5;
         font-weight: 600;
@@ -237,7 +241,6 @@
     .subTitle {
         height: 50%;
         width: 200px;
-        /*border: 1px solid blue;*/
         text-indent: 16px;
         font-size: 16px;
         line-height: 1.2;
@@ -250,7 +253,6 @@
         line-height: 2.8;
         color: #8d8d91;
         float: left;
-        /*border: 1px solid red;*/
         font-size: 22px;
         font-weight: bolder;
     }
@@ -336,6 +338,15 @@
         #nameInfo {
             font-size: 14px;
         }
+        #back {
+            height: 30px;
+            width: 30px;
+            margin-top: 29px;
+        }
+        #myBtn {
+            height: 10px;
+            width: 10px;
+        }
     }
     
     @media only screen and (min-width:321px) and (max-width: 375px) {
@@ -356,6 +367,15 @@
             font-size: 12px;
             font-weight: normal;
             padding: 9px;
+        }
+        #back {
+            height: 30px;
+            width: 30px;
+            margin-top: 29px;
+        }
+        #myBtn {
+            height: 10px;
+            width: 10px;
         }
     }
     
@@ -558,63 +578,60 @@
     }
     
     #myBtn:hover {
-        background-color: rgb(107, 255, 107);
+        background-color: lightgrey
     }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
         $("#name").click(function() {
-            $("#nameInfo").toggle(300);
+            $("#nameInfo").toggle(650);
             $("#arr1").toggleClass("down");
-
         });
 
         $("#skills").click(function() {
-            $("#skillsInfo").toggle(300);
+            $("#skillsInfo").toggle(650);
             $("#arr2").toggleClass("down");
         });
 
         $("#Credentials").click(function() {
-            $("#CredentialsInfo").toggle(300);
+            $("#CredentialsInfo").toggle(650);
             $("#arr3").toggleClass("down");
         });
         $("#job1").click(function() {
-            $("#jobInfo1").toggle(300);
+            $("#jobInfo1").toggle(650);
         });
         $("#job2").click(function() {
-            $("#jobInfo2").toggle(300);
+            $("#jobInfo2").toggle(650);
         });
         $("#job3").click(function() {
-            $("#jobInfo3").toggle(300);
+            $("#jobInfo3").toggle(650);
         });
         $("#job4").click(function() {
-            $("#jobInfo4").toggle(300);
+            $("#jobInfo4").toggle(650);
         });
         $("#job5").click(function() {
-            $("#jobInfo5").toggle(300);
+            $("#jobInfo5").toggle(650);
         });
         $("#job6").click(function() {
-            $("#jobInfo6").toggle(300);
+            $("#jobInfo6").toggle(650);
         });
         $("#job7").click(function() {
-            $("#jobInfo7").toggle(300);
+            $("#jobInfo7").toggle(650);
         });
         $("#job8").click(function() {
-            $("#jobInfo8").toggle(300);
+            $("#jobInfo8").toggle(650);
         });
         $("#downloadInfoSection").click(function() {
-            $("#downloadInfo").toggle(300);
+            $("#downloadInfo").toggle(650);
             $("#arr4").toggleClass("down");
         });
-
-
     });
 
 
 
     $(function() {
-        window.setInterval("$('#myBtn').css('background-color','lightgrey').toggle().fadeIn();", 900);
+        //  window.setInterval("$('#myBtn').css('background-color','lightgrey').toggle().fadeIn();", 900);
         //$('#myBtn').fadeIn(9000);
 
     });
@@ -625,7 +642,7 @@
     };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             document.getElementById("myBtn").style.display = "block";
         } else {
             document.getElementById("myBtn").style.display = "none";
@@ -640,7 +657,7 @@
 </script>
 </head>
 <!--<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>-->
-<img src="arrowUp.png" style="height:35px;width:35px" onclick="topFunction()" id="myBtn">
+<img src="arrowUp.png" style="" onclick="topFunction()" id="myBtn">
 <div class="mainTitle">
     <img id="back" src="back-butto6769.png" onClick="location.assign('main.html');">
     <div id="whatsMyName" style="margin-top:0px">Gordon Moseley</div>
@@ -648,7 +665,7 @@
 </div>
 <div class="container">
 
-    <!--test region-->
+    <!--start region-->
     <div class="section blackTextColor" id="name" style="margin-top:35px;">
         <div class="splitHolder">
             <img src="https://www.houghtonregis.org.uk/useruploads/images/Logos/information-icon-UAL-blue-HQ-vers-1-062311.png" class="iconAreaLeft">
@@ -664,8 +681,8 @@
             </div>
         </div>
     </div>
-    <!-- new section -->
-    <!--test region-->
+    <!-- end region -->
+    <!--start region-->
 
     <div>
         <div class="section blackTextColor" id="skills">
@@ -677,12 +694,24 @@
                 <div class="arrowIcon" id="arr2">></div>
             </div>
             <div class="info" id="skillsInfo">
-                <div id="objective" class="darkGreyText" style="letter-spacing:0.2px;line-height:1.5">L.A.M.P. Stack(Linux / Apache Web Server / MySQL / PHP) / Web Design / CSS / Adobe Photoshop / Microsoft Office Suite / Basic Java programming / Basic JavaScript / BASH Scripting / Oracle Virtual Box / MacOS / Networking / Active Directory
-                    / VOIP</div>
+                <div id="objective" class="darkGreyText" style="letter-spacing:0.2px;line-height:1.5">
+
+                    <ul class="darkGreyText">
+                        <li style="margin-top: 7.5px;text-indent:0px;">Stack: L.A.M.P.(Linux / Apache / MySQL / PHP) </li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">JavaScript, HTML, CSS, jQuery, JSON, UI</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">Illustration: Adobe Photopshop, Krita, Gimp, free-hand</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">Microsoft Office suite</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">Bash scripting</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">Python</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">OS: Microsoft Windows, MacOS, Linux</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">MS Office suite, Virtual Box, Cloud services, Active Directory</li>
+
+                    </ul>
+                </div>
             </div>
         </div>
-        <!-- new section -->
-        <!--test region-->
+        <!-- end section -->
+        <!-- start region -->
         <div class="section blackTextColor" id="Credentials">
 
             <div class="splitHolder">
@@ -697,17 +726,16 @@
                 <div class="jobDescript">
                     <ul class="darkGreyText">
                         <li style="margin-top: 7.5px;text-indent:0px;">National Center for Construction Education & Research (NCCER): Electrical, University of Florida, 2014</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">Comptia Linux+</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">Comptia A+</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">Comptia Linux+ (ID : COMP001007308786)</li>
+                        <li style="margin-top: 7.5px;text-indent:0px;">Comptia A+ (ID : COMP001007308786)</li>
                         <li style="margin-top: 7.5px;text-indent:0px;">FCC ARRL Radio Technician (Call-sign: FC2PWJ)</li>
                         <li style="margin-top: 7.5px;text-indent:0px;">A.O.S. Computer Programming and Information Technology, ASA, Brooklyn, NY, 2007 </li>
-
                     </ul>
                 </div>
             </div>
 
         </div>
-        <!-- new section -->
+        <!-- end region  -->
 
         <!--<div class="section blackTextColor">
         <div class="splitHolder"> 
@@ -725,8 +753,7 @@
                 <P> Computer Technician, Oct 2014 - current</P>
                 <div class="jobDescript" style="text-indent:0px">
                     <ul class="darkGreyText">
-                        <li>
-                            Web Design, Computer Repair (Laptop & Desktop), Hardware setup; </li>
+                        <li>Web Design, Computer Repair (Laptop & Desktop), Hardware setup; </li>
                         <li>iPhone, Android and Blackberry knowledge; HDD Backups/Restore/Imaging(Clone-Disk,Clonezilla, Linux 'DD' command, PartImage, Macrium Reflect, Active@Disk Image); </li>
                         <li>Data Recovery, Data migration, and Networking diagnostics using Terminal, PUTTY, etc.; Cloud setup; Utilized Active Directory(AD); Setup and maintained Virtual Machines (VMWare/VMWare Fusion)</li>
                         <li>VPN, RealVNC for remote-administration, automated maintenance task</li>
@@ -818,7 +845,7 @@
             </div>
         </div>
 
-        <!--test region-->
+        <!--start region-->
         <div class="section blackTextColor" id="downloadInfoSection">
             <div class="splitHolder">
                 <img src="https://freeiconshop.com/wp-content/uploads/edd/download-cloud-flat.png" class="iconAreaLeft">
@@ -841,7 +868,7 @@
                 </div>
             </div>
         </div>
-        <!-- new section -->
+        <!--  end region  -->
     </div>
 </div>
 
