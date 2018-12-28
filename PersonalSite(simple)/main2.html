@@ -1,10 +1,12 @@
 <html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
     body {
         background-color: #f0f0f0;
         font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        ;
         padding: 0;
         margin: 0;
         min-width: 320px;
@@ -326,6 +328,32 @@
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3794d8', endColorstr='#0351b8', GradientType=0);
     }
     
+    .accounts {
+        height: 71px;
+        max-width: 240px;
+        margin: 12px auto 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .account-holder {
+        height: 71px;
+        width: 50px;
+        float: left;
+        text-align: center;
+        margin-right: 30px;
+    }
+    
+    .account-name {
+        height: 21px;
+        width: 60px
+    }
+    
+    .account-pic {
+        height: 60px;
+        width: 60px;
+    }
+    
     @media only screen and (min-width:0px) and (max-width: 320px) {
         li {
             font-size: 10px;
@@ -585,15 +613,20 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+    imageUrl = "navigator-kids-map-plain.jpg"
     $(document).ready(function() {
         $("#name").click(function() {
             $("#nameInfo").toggle(650);
             $("#arr1").toggleClass("down");
         });
+
         $("#skills").click(function() {
             $("#skillsInfo").toggle(650);
             $("#arr2").toggleClass("down");
+
+            $('body').css('background-image', 'url("' + imageUrl + '")');
         });
+
         $("#Credentials").click(function() {
             $("#CredentialsInfo").toggle(650);
             $("#arr3").toggleClass("down");
@@ -655,9 +688,50 @@
         document.documentElement.scrollTop = 0;
     }
 </script>
+<script type="text/javascript">
+    function changeIcnHoverG() {
+        document.getElementById("git").src = "github-6-xxlB.png";
+        document.getElementById("gh-name").style.color = "skyblue";
+    }
+
+    function changeIcnNoHoverG() {
+        document.getElementById("git").src = "github-6-xxl.png";
+        document.getElementById("gh-name").style.color = "#777";
+    }
+
+    function changeIcnHoverP() {
+        document.getElementById("photo").src = "";
+        document.getElementById("photo-name").style.color = "#777";
+    }
+
+    function changeIcnNoHoverP() {
+        document.getElementById("photo").src = "";
+        document.getElementById("photo-name").style.color = "#777";
+    }
+
+    function changeIcnHoverR() {
+        document.getElementById("resume").src = "038-doc.png";
+        document.getElementById("resume-name").style.color = "skyblue";
+    }
+
+    function changeIcnNoHoverR() {
+        document.getElementById("resume").src = "038-doc1.png";
+        document.getElementById("resume-name").style.color = "#777";
+    }
+
+    function changeIcnHoverE() {
+        document.getElementById("email").src = "008-letter-1.png";
+        document.getElementById("email-name").style.color = "skyblue";
+    }
+
+    function changeIcnNoHoverE() {
+        document.getElementById("email").src = "008-letter-0.png";
+        document.getElementById("email-name").style.color = "#777";
+    }
+</script>
 </head>
 <!--<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>-->
-<img src="arrowUp.png" onclick="topFunction()" id="myBtn">
+<img src="arrowUp.png" style="" onclick="topFunction()" id="myBtn">
 <div class="mainTitle">
     <img id="back" src="back-butto6769.png" onClick="location.assign('main.html');">
     <div id="whatsMyName" style="margin-top:0px">Gordon Moseley</div>
@@ -670,14 +744,20 @@
         <div class="splitHolder">
             <img src="information-icon-UAL-blue-HQ-vers-1-062311.png" class="iconAreaLeft">
             <div class="titleHolders">
-                <div class="TitleBig">Contact Information</div>
+                <div class="TitleBig">A bit about me</div>
             </div>
             <div class="arrowIcon" id="arr1">></div>
         </div>
         <div class="info, darkGreyText" id="nameInfo">
             <div id="contactInfoHolder">
-                <p style="text-indent:12px"><b>Phone: </b>646-377-5325<br/></p>
-                <p style="text-indent:12px"><b>Email: </b>moseleygj@gmail.com</p>
+                <ul class="darkGreyText">
+                    <li style="margin-top: 7.5px;text-indent:0px;"> I'm a computer technician, located in <b>New York City.</b></li>
+                    <li style="margin-top: 7.5px;text-indent:0px;"><b>Using:</b> Linux, Bash scripting, CSS, HTML, jQuery, javaScript, MySQL, GIT</li>
+                    <li style="margin-top: 7.5px;text-indent:0px;"><b>Learning:</b> REACT, Docker, advanced Python, NPM, webpack.</li>
+                    <li style="margin-top: 10px;text-indent:0px;list-style-type:none"> In addition to web development, I also enjoy illustrating, tinkering with electronics and learning.</li>
+
+                </ul>
+
             </div>
         </div>
     </div>
@@ -687,188 +767,38 @@
     <div>
         <div class="section blackTextColor" id="skills">
             <div class="splitHolder">
-                <img src="wrench-512.png" class="iconAreaLeft">
+                <img src="https://freeiconshop.com/wp-content/uploads/edd/location-map-flat.png" class="iconAreaLeft">
                 <div class="titleHolders">
-                    <div class="TitleBig">Skills</div>
+                    <div class="TitleBig">Stalk Me</div>
                 </div>
                 <div class="arrowIcon" id="arr2">></div>
             </div>
             <div class="info" id="skillsInfo">
                 <div id="objective" class="darkGreyText" style="letter-spacing:0.2px;line-height:1.5">
+                    <p class="content"> I have a number of public online accounts. Here they are:
 
-                    <ul class="darkGreyText">
-                        <li style="margin-top: 7.5px;text-indent:0px;">Stack: L.A.M.P.(Linux / Apache / MySQL / PHP) </li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">JavaScript, HTML, CSS, jQuery, JSON, UI</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">Illustration: Adobe Photopshop, Krita, Gimp, free-hand</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">Microsoft Office suite</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">Bash scripting</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">Python</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">OS: Microsoft Windows, MacOS, Linux</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">MS Office suite, Virtual Box, Cloud services, Active Directory</li>
+                        <div class="accounts">
+                            <div class="account-holder">
+                                <a href="https://github.com/moseleygj/" target="_blank"><img src="github-6-xxl.png" id="git" class="account-pic" onmouseover="changeIcnHoverG()" onmouseout="changeIcnNoHoverG()"></a>
+                                <div class="account-name" id="gh-name">Github</div>
+                            </div>
 
-                    </ul>
+                            <div class="account-holder">
+                                <a href="resumeiOSstyle.html" target="_top"><img src="038-doc1.png" class="account-pic" id="resume" onmouseover="changeIcnHoverR()" onmouseout="changeIcnNoHoverR()"></a>
+                                <div class="account-name" id=resume-name>Resume</div>
+                            </div>
+
+                            <div class="account-holder">
+                                <a href="mailto:moseleygj@gmail.com?Subject=Employment" target="_blank"><img src="008-letter-0.png" class="account-pic" id="email" onmouseover="changeIcnHoverE()" onmouseout="changeIcnNoHoverE()"></a>
+                                <div class="account-name" id="email-name">Email</div>
+                            </div>
+                        </div>
+
                 </div>
             </div>
         </div>
         <!-- end section -->
-        <!-- start region -->
-        <div class="section blackTextColor" id="Credentials">
 
-            <div class="splitHolder">
-                <img src="skills-bank-icon.png" class="iconAreaLeft">
-                <div class="titleHolders">
-                    <div class="TitleBig">Credentials</div>
-                </div>
-                <div class="arrowIcon" id="arr3">></div>
-            </div>
-
-            <div class="info" id="CredentialsInfo">
-                <div class="jobDescript">
-                    <ul class="darkGreyText">
-                        <li style="margin-top: 7.5px;text-indent:0px;">National Center for Construction Education & Research (NCCER): Electrical, University of Florida, 2014</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">Comptia Linux+ (ID : COMP001007308786)</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">Comptia A+ (ID : COMP001007308786)</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">FCC ARRL Radio Technician (Call-sign: FC2PWJ)</li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">A.O.S. Computer Programming and Information Technology, ASA, Brooklyn, NY, 2007 </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- end region  -->
-
-        <!--<div class="section blackTextColor">
-        <div class="splitHolder"> 
-      <img src="http://purepng.com/public/uploads/large/purepng.com-mail-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596614cijbx.png"class="iconAreaLeft">
-      <div class="titleHolders"> <div class="Title">MainText test</div>
-        <div class="subTitle">subTextTest</div></div><div class="arrowIcon">></div></div>
-   
-</div>-->
-
-        <div class="sectionHeader">EMPLOYMENT</div>
-
-        <div class="section blackTextcolor">
-            <div class="sectionSub" id="job1">Independent Contractor</div>
-            <div class="info" id="jobInfo1">
-                <P> Computer Technician, Oct 2014 - current</P>
-                <div class="jobDescript" style="text-indent:0px">
-                    <ul class="darkGreyText">
-                        <li>Web Design, Computer Repair (Laptop & Desktop), Hardware setup; </li>
-                        <li>iPhone, Android and Blackberry knowledge; HDD Backups/Restore/Imaging(Clone-Disk,Clonezilla, Linux 'DD' command, PartImage, Macrium Reflect, Active@Disk Image); </li>
-                        <li>Data Recovery, Data migration, and Networking diagnostics using Terminal, PUTTY, etc.; Cloud setup; Utilized Active Directory(AD); Setup and maintained Virtual Machines (VMWare/VMWare Fusion)</li>
-                        <li>VPN, RealVNC for remote-administration, automated maintenance task</li>
-                        <li>MAC OS X troubleshooting.(Reset PRAM, flush .PLIST files of faulty applications, recovery files, reset passwords.)</li>
-                    </ul>
-                    </li>
-                </div>
-
-            </div>
-            <div class="modified_HR"></div>
-            <div class="sectionSub" id="job2">NTT Data/AIG </div>
-            <div class="info" id="jobInfo2">
-                Desktop Technician, Sep 2014 - present
-                <div class="jobDescript">
-                    <ul class="darkGreyText">
-                        <li>Rough-in wiring, Remodel wiring, lighting and fixtures servicing.</li>
-                        <li> Special circuits, Service Entry, Electric Heating, conduit installation and wiring</li>
-                        <li> Reading and designing blueprints, Estimating, low voltage wiring, ohms law.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="modified_HR"></div>
-            <div class="sectionSub" id="job3">Department of Labor </div>
-            <div class="info" id="jobInfo3">
-
-                Residential Electrical, Mar 2010 - Sep 2014
-                <div class="jobDescript">
-                    <ul class="darkGreyText">
-                        <li>Rough-in wiring, Remodel wiring, lighting and fixtures servicing.</li>
-                        <li> Special circuits, Service Entry, Electric Heating, conduit installation and wiring</li>
-                        <li> Reading and designing blueprints, Estimating, low voltage wiring, ohms law.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="modified_HR"></div>
-            <div class="sectionSub" id="job4">National Grid </div>
-            <div class="info" id="jobInfo4">
-                Help Desk, Jan 2009 - Dec 2009
-                <div class="jobDescript">
-                    <ul class="darkGreyText">
-                        <li>Provided remote desktop assistance for LAN and VPN users
-                            <li>Provided​ ​ remote​ ​ desktop​ ​ assistance​ ​ for​ ​ LAN​ ​ and​ ​ VPN​ ​ users.​ ​ Utilized​ ​ Active​ ​ Directory(AD)</li>
-                            <li>Supported in “Netscape-to-Microsoft Outlook mail migration” project</li>
-                            <li>Performed Helpdesk tasks: Password resets, account unlocking and general trouble shooting</li>
-                            <li>Utilized DameWare, Radia and Remedy ticket software to track and record issue</li>
-                    </ul>
-                    </li>
-                </div>
-            </div>
-            <div class="modified_HR"></div>
-            <div class="sectionSub" id="job5">Data Velocity</div>
-            <div class="info" id="jobInfo5">
-                Mac Technician/Remote Desktop Admin., Oct 2008 - Dec 2008
-                <div class="jobDescript">
-                    <ul class="darkGreyText">
-                        <li>
-                            Provided solutions for Microsoft Windows Users converting to Mac OS X
-                            <li>Maintained small business server (SBS) for contracted companies(Law firms); Setup secure VPN</li>
-                            <li>Provided E-Mail troubleshooting with Microsoft Exchange Server/IMAP</li>
-                            <li>Scripted to simplify task for both MS Windows and UNIX/Linux clients
-                            </li>
-                    </ul>
-                    </li>
-                </div>
-            </div>
-            <!--
-            <div class="sectionSub" id="job6">JOB 6</div>
-            <div class="info" id="jobInfo6">1</div>
-            <div class="modified_HR"></div>
-            <div class="sectionSub" id="job7">JOB 7</div>
-            <div class="info" id="jobInfo7">1</div>
-        -->
-            <div class="modified_HR"></div>
-
-            <div class="sectionSub" style="height:auto;" id="job8">U.S. Navy</div>
-            <div class="info" id="jobInfo8">
-                Information Systems Tech., Jun 2006 - Sep 2008
-                <div class="jobDescript">
-                    <ul class="darkGreyText">
-                        <li>Provided disaster recovery for servers (Back up and Safeguard data regularly)</li>
-                        <li>Performed “Ghosting” and “Data recovery” using various tools on Hiren’s Boot CD</li>
-                        <li>Troubleshoot network issues </li>
-                        <li>Recognized, Identified and removed all current security threats </li>
-                        <li>Setup, upgraded, disassembled, and reassembled Desktop/Notebook PC’s</li>
-                        <li>Used “Active@KilDisk” software to ensure the safety of sensitive data not being sacrificed </li>
-                        <li>Provided data-migration to/from the Microsoft Windows to Linux, and the Mac OS X Platform</ul>
-                    </li>
-                </div>
-            </div>
-        </div>
-
-        <!--start region-->
-        <div class="section blackTextColor" id="downloadInfoSection">
-            <div class="splitHolder">
-                <img src="https://freeiconshop.com/wp-content/uploads/edd/download-cloud-flat.png" class="iconAreaLeft">
-                <div class="titleHolders">
-                    <div class="TitleBig">Download</div>
-                </div>
-                <div class="arrowIcon" id="arr4">></div>
-            </div>
-
-            <div class="info" id="downloadInfo">
-
-                <div class="jobDescript">
-                    <ul class="darkGreyText">
-                        <li style="margin-top: 7.5px;text-indent:0px;"><a href="Resume_GordonMoseley2018.pdf" class="calmLink">Resume (.pdf )</a></li>
-                        <li style="margin-top: 7.5px;text-indent:0px;"><a href="Resume_GordonMoseley2018.docx" class="calmLink">Resume (.docx)</a></li>
-                        <li style="margin-top: 7.5px;text-indent:0px;">
-                            <a href=NCCER.pdf " class="calmLink ">Residential Electrical Transcript (.pdf)</a></li>
-                        <li style="margin-top: 7.5px;text-indent:0px; "><a href=" " class="calmLink ">Residential Electrical Transcript (.docx)</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--  end region  -->
     </div>
 </div>
 
