@@ -684,7 +684,12 @@
             }
 
             $("#arr2").toggleClass("down");
+            if ($("#skillsInfo").is(":visible") && $("nameInfo").is(":visible")) {
+                $("body").css("background-color", "green");
+            }
         });
+
+
 
     });
 
