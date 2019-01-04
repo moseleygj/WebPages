@@ -270,6 +270,18 @@
         font-weight: bolder;
     }
     
+    .arrowIcon2 {
+        height: 100%;
+        width: 27px;
+        color: #8d8d91;
+        float: right;
+        font-size: 22px;
+        font-weight: bolder;
+        line-height: 1.7;
+        margin-right: 31px;
+        display: inline-block;
+    }
+    
     .titleHolders {
         height: 100%;
         width: auto;
@@ -789,31 +801,41 @@
         });
         $("#job1").click(function() {
             $("#jobInfo1").toggle(650);
+            $("#arr4").toggleClass("down");
         });
         $("#job2").click(function() {
             $("#jobInfo2").toggle(650);
+            $("#arr5").toggleClass("down");
         });
         $("#job3").click(function() {
             $("#jobInfo3").toggle(650);
+            $("#arr6").toggleClass("down");
         });
         $("#job4").click(function() {
             $("#jobInfo4").toggle(650);
+            $("#arr7").toggleClass("down");
+
         });
         $("#job5").click(function() {
             $("#jobInfo5").toggle(650);
+            $("#arr8").toggleClass("down");
         });
         $("#job6").click(function() {
             $("#jobInfo6").toggle(650);
+            $("#arr9").toggleClass("down");
         });
         $("#job7").click(function() {
             $("#jobInfo7").toggle(650);
+            $("#arr10").toggleClass("down");
         });
         $("#job8").click(function() {
             $("#jobInfo8").toggle(650);
+            $("#arr9").toggleClass("down");
+
         });
         $("#downloadInfoSection").click(function() {
             $("#downloadInfo").toggle(650);
-            $("#arr4").toggleClass("down");
+            $("#arr10").toggleClass("down");
         });
     });
 
@@ -941,7 +963,9 @@
         <div class="sectionHeader">EMPLOYMENT</div>
 
         <div class="section blackTextcolor">
-            <div class="sectionSub" id="job1">Independent Contractor</div>
+            <div class="sectionSub" id="job1">Independent Contractor
+                <div class="arrowIcon2" id="arr4">></div>
+            </div>
             <div class="info" id="jobInfo1">
                 <div class="jobTitle"> Computer Technician, OCT 2014 - CURRENT</div>
                 <div class="jobDescript" style="text-indent:0px">
@@ -957,7 +981,9 @@
 
             </div>
             <div class="modified_HR"></div>
-            <div class="sectionSub" id="job2">NTT Data / AIG </div>
+            <div class="sectionSub" id="job2">NTT Data / AIG
+                <div class="arrowIcon2" id="arr5">></div>
+            </div>
             <div class="info" id="jobInfo2">
                 <div class="jobTitle"> Desktop Technician, Sep 2014 - CURRENT</div>
                 <div class="jobDescript">
@@ -973,7 +999,9 @@
                 </div>
             </div>
             <div class="modified_HR"></div>
-            <div class="sectionSub" id="job3">Department of Labor </div>
+            <div class="sectionSub" id="job3">Department of Labor
+                <div class="arrowIcon2" id="arr6">></div>
+            </div>
             <div class="info" id="jobInfo3">
 
                 <div class="jobTitle">Residential Electrical, MAR 2010 - SEP 2014</div>
@@ -986,7 +1014,9 @@
                 </div>
             </div>
             <div class="modified_HR"></div>
-            <div class="sectionSub" id="job4">National Grid </div>
+            <div class="sectionSub" id="job4">National Grid
+                <div class="arrowIcon2" id="arr7">></div>
+            </div>
             <div class="info" id="jobInfo4">
                 <div class="jobTitle"> Help Desk, JAN 2009 - DEC 2009</div>
                 <div class="jobDescript">
@@ -1001,7 +1031,9 @@
                 </div>
             </div>
             <div class="modified_HR"></div>
-            <div class="sectionSub" id="job5">Data Velocity</div>
+            <div class="sectionSub" id="job5">Data Velocity
+                <div class="arrowIcon2" id="arr8">></div>
+            </div>
             <div class="info" id="jobInfo5">
                 <div class="jobTitle"> Mac Technician/Remote Desktop Admin., OCT 2008 - DEC 2008</div>
                 <div class="jobDescript">
@@ -1025,7 +1057,9 @@
         -->
             <div class="modified_HR"></div>
 
-            <div class="sectionSub" style="height:auto;" id="job8">United States Navy</div>
+            <div class="sectionSub" style="height:auto;" id="job8">United States Navy
+                <div class="arrowIcon2" id="arr9" style="height:40px">></div>
+            </div>
             <div class="info" id="jobInfo8">
                 <div class="jobTitle"> Information Systems Tech., JUN 2006 - SEP 2008</div>
                 <div class="jobDescript">
@@ -1049,11 +1083,10 @@
                 <div class="titleHolders">
                     <div class="TitleBig">Download</div>
                 </div>
-                <div class="arrowIcon" id="arr4">></div>
+                <div class="arrowIcon" id="arr10">></div>
             </div>
 
             <div class="info" id="downloadInfo">
-
                 <div class="jobDescript">
                     <ul class="darkGreyText" style="list-style-type: none;">
                         <li style="margin-top: 7.5px;text-indent:0px;"><a href="Resume_GordonMoseley2018.pdf" class="calmLink">Resume (.pdf )</a></li>
