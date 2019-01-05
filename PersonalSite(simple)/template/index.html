@@ -1,0 +1,843 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        background-color: #f0f0f0;
+        font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+        min-width: 320px;
+        transition: background-color 0.7s ease-in-out;
+    }
+    
+    .mainTitle {
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid lightgrey;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    #whatsMyName {
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        color: #777;
+        line-height: 1.4;
+    }
+    
+    #WhatIDo {
+        clear: both;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        color: grey;
+    }
+    
+    .container {
+        width: 310px;
+        height: auto;
+        /*border: 1px solid red;*/
+        margin: 40px auto 0;
+    }
+    
+    .section {
+        border-radius: 5px;
+        margin: 0 auto 0;
+        /*border: 1px solid green;*/
+        height: auto;
+        width: 100%;
+        margin-bottom: 25px;
+        background-color: white;
+    }
+    
+    .info {
+        height: auto;
+        font-size: 12px;
+        position: relative;
+        font-weight: 600;
+        overflow: hidden;
+        word-wrap: break-word;
+        padding: 5px;
+        text-indent: 5px;
+    }
+    
+    .sectionSub {
+        height: 40px;
+        width: 100%;
+        text-indent: 12px;
+        line-height: 2.5;
+        font-size: 16.5px;
+        position: relative;
+        font-weight: 600;
+    }
+    
+    .modified_HR {
+        width: 97%;
+        height: 1px;
+        background-color: #bdbdbd;
+        float: right;
+    }
+    
+    .blueTextcolor {
+        color: #007aff
+    }
+    
+    .blackTextcolor {
+        color: #111111;
+    }
+    
+    .darkGreyText {
+        color: #565656
+    }
+    
+    .blue {
+        color: #007cfa;
+    }
+    
+    .orange {
+        color: #ff902a;
+    }
+    
+    .red {
+        color: #ff3236
+    }
+    
+    .purple {
+        color: #4f59d0
+    }
+    
+    .grey {
+        color: #8d8d91
+    }
+    
+    .skyBlue {
+        color: #1caad8
+    }
+    
+    .appleBlue {
+        color: #95cfff;
+    }
+    
+    .greenToggleBackground-color {
+        background-color: #4bd96e;
+    }
+    
+    .arrow {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        float: right;
+    }
+    
+    .companyName {
+        font-size: 14px;
+        text-align: left;
+        font-weight: bold;
+        clear: both;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .job {
+        width: 100%;
+        clear: both;
+        height: auto;
+    }
+    
+    .jobDescript {
+        color: #000;
+        font-size: 12px;
+        margin-left: -10px;
+    }
+    
+    .headings {
+        color: #000;
+        font-size: 16;
+        text-align: left;
+        font-weight: bolder;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        clear: both;
+    }
+    
+    #nameInfo {
+        display: none;
+    }
+    
+    #skillsInfo {
+        display: none;
+        padding: 5px 5px 15px 5px
+    }
+    
+    #CredentialsInfo {
+        display: none;
+    }
+    
+    #downloadInfo {
+        display: none;
+    }
+    
+    #name {
+        padding: 0px;
+    }
+    
+    #back {
+        height: 40px;
+        width: 40px;
+        float: left;
+        padding-top: 15px;
+        padding-left: 5px;
+        position: absolute;
+    }
+    
+    #jobInfo1,
+    #jobInfo2,
+    #jobInfo3,
+    #jobInfo4,
+    #jobInfo5,
+    #jobInfo6,
+    #jobInfo7,
+    #jobInfo8,
+    #jobInfo9,
+    #jobInfo10 {
+        display: none;
+    }
+    
+    .splitHolder {
+        width: 100%;
+        height: 65px;
+    }
+    
+    .splitHolder:hover {}
+    
+    .iconAreaLeft {
+        height: 55px;
+        width: 55px;
+        float: left;
+        margin-left: 12px;
+        margin-top: 4px;
+    }
+    
+    .Title {
+        height: 50%;
+        width: 200px;
+        font-size: 22px;
+        text-indent: 16px;
+        line-height: 1.4;
+        font-weight: 600;
+    }
+    
+    .TitleBig {
+        height: 100%;
+        width: 208px;
+        font-size: 18px;
+        text-indent: 16px;
+        line-height: 3.5;
+        font-weight: 500;
+        font-family: Helvetica Neue, Roboto, Arial, Helvetica, sans-serif;
+    }
+    
+    .subTitle {
+        height: 50%;
+        width: 200px;
+        text-indent: 16px;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #565656;
+    }
+    
+    .arrowIcon {
+        height: 100%;
+        width: 27px;
+        line-height: 2.8;
+        color: #8d8d91;
+        float: left;
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    
+    .titleHolders {
+        height: 100%;
+        width: auto;
+        float: left
+    }
+    
+    .sectionHeader {
+        color: #565656;
+        font-size: 16px;
+        text-indent: 13px;
+        padding: 5px 0px;
+        font-weight: bold;
+    }
+    
+    li {
+        text-indent: 0;
+        margin: 3px 0px;
+    }
+    
+    .calmLink {
+        text-decoration: none;
+        color: #007aff;
+    }
+    
+    .calmLink:hover {
+        color: #007aff;
+        font-weight: bolder;
+    }
+    
+    .iconAreaLeft:hover {
+        transform: rotateX(360deg);
+        -webkit-transform: rotateX(360deg);
+    }
+    
+    #contactInfoHolder {
+        padding: 5px;
+    }
+    
+    #select_imc {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 16px;
+        text-shadow: -1px -1px 3px #666;
+        border: 1px solid #CCC;
+        padding: 15px 20px;
+        background: rgb(98, 186, 236);
+        background: -moz-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(98, 186, 236, 1)), color-stop(100%, rgba(18, 128, 211, 1)));
+        background: -webkit-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        background: -o-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        background: linear-gradient(top, rgba(98, 186, 236, 1) 0%, rgba(18, 128, 211, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#62baec', endColorstr='#1280d3', GradientType=0);
+    }
+    
+    #select_imc:hover {
+        background: rgb(55, 148, 216);
+        background: -moz-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(55, 148, 216, 1)), color-stop(100%, rgba(3, 81, 184, 1)));
+        background: -webkit-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        background: -o-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        background: linear-gradient(top, rgba(55, 148, 216, 1) 0%, rgba(3, 81, 184, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3794d8', endColorstr='#0351b8', GradientType=0);
+    }
+    
+    .accounts {
+        height: 71px;
+        max-width: 240px;
+        margin: 12px auto 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .account-holder {
+        height: 71px;
+        width: 50px;
+        float: left;
+        text-align: center;
+        margin-right: 30px;
+    }
+    
+    .account-name {
+        height: 21px;
+        width: 60px
+    }
+    
+    .account-pic {
+        height: 60px;
+        width: 60px;
+    }
+    
+    @media only screen and (min-width:0px) and (max-width: 320px) {
+        li {
+            font-size: 10px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 10px;
+            font-weight: normal;
+        }
+        #nameInfo {
+            font-size: 14px;
+        }
+        #back {
+            height: 30px;
+            width: 30px;
+            margin-top: 29px;
+        }
+        #myBtn {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+    @media only screen and (min-width:321px) and (max-width: 375px) {
+        .container {
+            width: ;
+        }
+        .TitleBig {
+            font-size: ;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 12px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        #back {
+            height: 30px;
+            width: 30px;
+            margin-top: 29px;
+        }
+        #myBtn {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+    @media only screen and (min-width:376px) and (max-width: 425px) {
+        .container {
+            width: ;
+        }
+        .TitleBig {
+            font-size: ;
+            width: 208px;
+            line-height: ;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 12px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        .splitHolder {}
+        .sectionSub {
+            height: ;
+        }
+        .arraowIcon {
+            line-height: ;
+        }
+        #myBtn {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+    @media only screen and (min-width:426px) and (max-width:600px) {
+        .container {
+            width: 365px;
+        }
+        .TitleBig {
+            font-size: ;
+            width: 264px;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        .splitHolder {
+            height: ;
+        }
+        .sectionSub {
+            height: ;
+        }
+        .arraowIcon {
+            line-height: ;
+        }
+        #myBtn {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+    @media only screen and (min-width:601px) and (max-width: 768px) {
+        .container {
+            width: 455px;
+        }
+        .TitleBig {
+            font-size: 18px;
+            width: 350px;
+        }
+        .arrowIcon {
+            font-size: 18px;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        .splitHolder {
+            height: ;
+        }
+        .sectionSub {
+            height: ;
+        }
+        .arraowIcon {
+            line-height: 3.3;
+        }
+        #myBtn {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+    @media only screen and (min-width:769px) and (max-width: 1024px) {
+        .container {
+            width: 600px;
+        }
+        .TitleBig {
+            font-size: 18px;
+            width: 487px;
+            line-height: 3;
+            font-size: 22px;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 9px;
+        }
+        #info {
+            padding: 9px;
+        }
+        .splitHolder {
+            height: ;
+        }
+        .sectionSub {
+            height: ;
+        }
+        .arraowIcon {
+            line-height: ;
+        }
+        #myBtn {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+    @media only screen and (min-width:1025px) and (max-width: 1440px) {
+        .container {
+            width: 768px;
+        }
+        .TitleBig {
+            font-size: 18px;
+            width: 655px;
+        }
+        .arrowIcon {
+            font-size: ;
+            line-height: 3;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 9px
+        }
+        #camlink {
+            font-size: 16px;
+        }
+        #myBtn {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+    @media only screen and (min-width:1441px) and (max-width: 2560px) {
+        .container {
+            width: 768px;
+        }
+        .TitleBig {
+            font-size: 18px;
+            width: 655px;
+        }
+        .arrowIcon {
+            font-size: ;
+        }
+        li {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #objective {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        #myBtn {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+    .down {
+        transform: rotate(90deg);
+    }
+    
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 13px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: lightgrey;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+        opacity: 0.6;
+        transition: 0.5s linear;
+        border: 1px solid rgb(211, 211, 211);
+    }
+    
+    #myBtn:hover {
+        background-color: lightgrey;
+        border: 1px solid #434343;
+    }
+    
+    .stalkMeBG {
+        background-color: rgb(0, 179, 219);
+        /*
+        background-color:rgb(255, 238, 138);
+    /*    background:url("http://www.designbolts.com/wp-content/uploads/2014/03/Marron-Mixed-High-resolution-blurr-background1.jpg");
+        background-repeat:none;
+    background-size:100% 100%;*/
+    }
+    
+    .aboutMeBG {
+        /* background-color:skyblue;*/
+        background-color: #ffb247;
+        /*    background:url("data:image/jpeg;base64,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");
+    background-repeat:none;
+    background-size:100% 100%;*/
+    }
+</style>
+<link rel="icon" type="icon" href="17459164.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $("#name").click(function() {
+            $('body').toggleClass("stalkMeBG");
+            if ($("nameInfo").is(":visible")) {
+                $("#nameInfo").toggle(650);
+            } else {
+                $("#nameInfo").toggle(650);
+            }
+            $("#arr1").toggleClass("down");
+        });
+
+        /*           $("#skills").click(function() {
+            $("#skillsInfo").toggle(650);
+            $("#arr2").toggleClass("down");
+        });
+*/
+
+        $("#skills").click(function() {
+            $('body').toggleClass("aboutMeBG");
+
+            if ($("#skillsInfo").is(":visible")) {
+                $("#skillsInfo").toggle(650);
+            } else {
+                $("#skillsInfo").toggle(650);
+            }
+
+            $("#arr2").toggleClass("down");
+        });
+
+
+
+
+    });
+
+    //    $(function() {
+    //  window.setInterval("$('#myBtn').css('background-color','lightgrey').toggle().fadeIn();", 900);
+    //$('#myBtn').fadeIn(9000);
+
+    //  });
+</script>
+<script>
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<script type="text/javascript">
+    function changeIcnHoverG() {
+        document.getElementById("git").src = "github-6-xxlB.png";
+        document.getElementById("gh-name").style.color = "skyblue";
+    }
+
+    function changeIcnNoHoverG() {
+        document.getElementById("git").src = "github-6-xxl.png";
+        document.getElementById("gh-name").style.color = "#777";
+    }
+
+    function changeIcnHoverP() {
+        document.getElementById("photo").src = "";
+        document.getElementById("photo-name").style.color = "#777";
+    }
+
+    function changeIcnNoHoverP() {
+        document.getElementById("photo").src = "";
+        document.getElementById("photo-name").style.color = "#777";
+    }
+
+    function changeIcnHoverR() {
+        document.getElementById("resume").src = "038-doc.png";
+        document.getElementById("resume-name").style.color = "skyblue";
+    }
+
+    function changeIcnNoHoverR() {
+        document.getElementById("resume").src = "038-doc1.png";
+        document.getElementById("resume-name").style.color = "#777";
+    }
+
+    function changeIcnHoverE() {
+        document.getElementById("email").src = "008-letter-1.png";
+        document.getElementById("email-name").style.color = "skyblue";
+    }
+
+    function changeIcnNoHoverE() {
+        document.getElementById("email").src = "008-letter-0.png";
+        document.getElementById("email-name").style.color = "#777";
+    }
+</script>
+</head>
+<!--<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>-->
+<img src="arrowUp.png" onclick="topFunction()" id="myBtn">
+<div class="mainTitle">
+    <div id="whatsMyName" style="margin-top:0px">Gordon Moseley</div>
+    <div id="whatIDo">I code things</div>
+</div>
+<div class="container">
+
+    <!--start region-->
+    <div class="section blackTextColor" id="name" style="margin-top:35px;">
+        <div class="splitHolder">
+            <img src="information-icon-UAL-blue-HQ-vers-1-062311.png" class="iconAreaLeft">
+            <div class="titleHolders">
+                <div class="TitleBig">A bit about me</div>
+            </div>
+            <div class="arrowIcon" id="arr1">></div>
+        </div>
+        <div class="info, darkGreyText" id="nameInfo">
+            <div id="contactInfoHolder">
+                <ul class="darkGreyText">
+                    <li style="margin-top: 7.5px;text-indent:0px;"> I'm a <b>computer technician</b>, located in <b>New York City.</b></li>
+                    <li style="margin-top: 7.5px;text-indent:0px;"><b>USING:</b> Linux, Bash scripting, CSS, HTML, jQuery, javaScript, MySQL and GIT.</li>
+                    <li style="margin-top: 7.5px;text-indent:0px;"><b>LEARNING:</b> REACT, Docker, advanced Python, NPM and webpack.</li>
+                    <li style="margin-top: 10px;text-indent:6px;list-style-type:none"> In addition to web development, I also enjoy illustrating, tinkering with electronics and learning.</li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- end region -->
+    <!--start region-->
+
+    <div>
+        <div class="section blackTextColor" id="skills">
+            <div class="splitHolder">
+                <img src="https://freeiconshop.com/wp-content/uploads/edd/location-map-flat.png" class="iconAreaLeft">
+                <div class="titleHolders">
+                    <div class="TitleBig">Stalk Me</div>
+                </div>
+                <div class="arrowIcon" id="arr2">></div>
+            </div>
+            <div class="info" id="skillsInfo">
+                <div id="objective" class="darkGreyText" style="letter-spacing:0.2px;line-height:1.5">
+                    <p class="content"> I have a number of public online accounts. Here they are:
+
+                        <div class="accounts">
+                            <div class="account-holder">
+                                <a href="https://github.com/moseleygj/" target="_blank"><img src="github-6-xxl.png" id="git" class="account-pic" onmouseover="changeIcnHoverG()" onmouseout="changeIcnNoHoverG()"></a>
+                                <div class="account-name" id="gh-name">Github</div>
+                            </div>
+
+                            <div class="account-holder">
+                                <a href="resumeiOSstyle.html" target="_top"><img src="038-doc1.png" class="account-pic" id="resume" onmouseover="changeIcnHoverR()" onmouseout="changeIcnNoHoverR()"></a>
+                                <div class="account-name" id=resume-name>Resume</div>
+                            </div>
+
+                            <div class="account-holder">
+                                <a href="mailto:moseleygj@gmail.com?Subject=Employment" target="_blank"><img src="008-letter-0.png" class="account-pic" id="email" onmouseover="changeIcnHoverE()" onmouseout="changeIcnNoHoverE()"></a>
+                                <div class="account-name" id="email-name">Email</div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end section -->
+
+    </div>
+</div>
+
+</div>
+
+<!-- section for double rows one Icon
+
+<div class="section blackTextColor ">
+        <div class="splitHolder "> 
+      <img src="http://purepng.com/public/uploads/large/purepng.com-mail-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596614cijbx.png "class="iconAreaLeft ">
+      <div class="titleHolders "> <div class="Title ">MainText test</div>
+        <div class="subTitle ">subTextTest</div></div><div class="arrowIcon ">></div></div> 
+</div>
+
+-->

@@ -1,0 +1,366 @@
+<html>
+
+<head>
+    <link rel="" type="" href="">
+    <link rel="" type="" href="">
+    <script src=""></script>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style type="text/css">
+
+body, html{
+margin:0;
+padding:0;
+height:100%;
+width:100%;
+position:absolute;
+  font-family: "Helvetica Neue"
+}
+html{min-height:100%;}
+body{  min-height: 100vh;
+
+}
+.containerM{
+  height:100%;
+width:100%;
+background-color:orange;
+  position:absolute;
+}
+.container{padding:0;margin:0;
+		width:100%;
+		height:95%;
+		background-color:white;
+  position:relative;overflow:hidden;
+}
+
+/*header section */
+.mainHeader{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    position: relative;
+    clear: both;
+  position:relative;
+}
+.headerImgHolder{
+    width:5%;
+    float:left;
+    height:80px;
+
+}
+.headerImg{ /*in-case you'd like to add a photo of yourself later*/
+  margin-top:1px;
+  height:78px;
+  border-radius:50%;
+  display:block;
+}
+.nameAndTaskHolder{
+  height:100%;
+  width:95%;
+  float:left;
+}
+.myName{
+ 	font-size: 36px;
+	font-weight:bolder;
+	font-weight:400;
+	text-align: center;
+	color:#777;
+  height:60%;
+line-height:1.5;
+}
+.whatIDo{
+  height:40%;
+  clear:both;
+	font-size: 18px;
+	font-weight:normal;
+	text-align: center;
+	color:grey;
+  line-height:2;
+  }
+footer{
+  height:7%;
+  width:100%;
+  text-align:center;
+  bottom:0;
+  background-color:#222;/*charcoal grey*/
+}
+/* buttons */
+.btn {
+background:linear-gradient(#66b0F9,#288Af9);
+color:white;
+padding: 6px 32px;
+border-radius: 5px;
+border: 1px solid;
+font-weight: bolder;
+border-color: #2567bE;
+width:255px;
+height:40px;
+margin-right:10px;    
+margin-left:5px;
+margin-bottom:10px;
+text-decoration: none;
+top: 50%;
+transform: translateY(-50%);
+position: relative;
+}
+
+.btn:hover {
+background:linear-gradient(#66b0F9,#288Af9);
+color:white;
+
+    padding: 6px 32px;
+    border: 0;
+    border-radius: 5px;
+	 border: 1px solid;
+    font-weight: bolder;
+    border-color: #2567bE;
+	-webkit-box-shadow: 1px 1px 10px 1px #66C8F7;
+	box-shadow: 1px 1px 10px 1px #66C8F7;
+		text-decoration: underline;
+		cursor:pointer;
+}
+.contentArea{
+  padding-top:90px;/* to clear top header*/
+  padding:0;
+  background-color:lightgrey;
+  height:100%;
+  width:100%;overflow:scroll;
+}
+/*media query*//*
+@media only screen and (max-width:834px){
+  .container{
+  
+  }
+  .btn{width:25%;
+    height:36px;
+  font-size:10px;
+  margin-right:5px;    
+}
+}*/
+
+@media only screen and (max-width:320px){
+.resHolder{
+top:42%;
+background-color:red;
+width:100%;
+}
+#myname{
+color:red;
+}
+}
+@media only screen(min-width:321px) and (max-width:375px){
+.myName{color:blue;}}
+@media only screen(min-width:376px) and (max-width:425px){
+.resHolder{}
+}
+/*resume stuff*/
+
+
+.resHolder{
+  height:auto;
+  width:87%;
+  background-color:white;
+  margin: 0 auto 0;
+  transform:translateY(-50%);
+  top:40%;
+  position: relative; 
+  margin-bottom:0;
+  margin-top:90px;
+  clear:left;
+  display:block;
+  box-shadow: 0 5px 35px rgba(0,0,0,.65);
+  position:relative;
+  overflow:hidden;
+  max-width:1100px;
+}
+
+
+
+#date{color:#8f8f8f;font-size:;text-align: ;font-weight: ;}
+.contract{color:#368536; font-size: 14px;text-align: center;}
+#website{color:#2379d2;font-size:12px;text-align:center ;font-weight:bold;text-decoration: none;}
+#webTitle{font-size:14px;text-align: center;margin-top:5px;font-weight: bold;}
+
+.CompanyN{color:#373737;font-size:14px;text-align: left;font-weight:bold ;clear:both;margin-left:20px;margin-bottom:115px;}
+.jobDescript{color:#000;font-size:12px;text-align: ;font-weight: ;margin-bottom:5px;margin-left: 40px;margin-right: 15px;margin-top:10px;}
+.job{width:100%;clear:both; height:auto;margin-bottom:5px;}
+#phone{color:#7b7b7b;font-size:18px;text-align:center; font-weight:bold ;text-align:center;margin-top:5px;}
+
+
+.space{margin-bottom:8px ;margin-top: 5px;}
+.headings{color:#000;font-size:16;text-align:left ;font-weight:bolder;margin-left:20px;margin-bottom:5px ;margin-top: 5px;clear:both; }
+.horzL{height:1px; width:93%;background-color:grey;margin:0 auto 0;margin-bottom:5px ;margin-top: 5px}
+.horzL1{height:2px; width:80%;background-color:black;margin:0 auto 0;}
+.horzL2{height:3px; width:80%;background-color:black;margin:0 auto 0;}
+#summaryB{width:100%;height:auto;clear: both;}
+#summaryC{width:100%;height:auto;clear: both;}
+
+#objective{color:#000;font-size:14px; ;margin-left:40px;margin-bottom:12px ;margin-top: 5px;margin-right:10px}
+#webB{height:70px ;width:20%;float:left;position: relative;margin-left:10px;}
+#NameandNumB{height:70px ;width:67%;float:left;}
+#AddressB{height:70px; width:27%; float:left; text-align:center; font-weight: bold;}
+#address{color:;;font-size:;text-align:center;font-weight:;margin-top:5px}
+#Email{color:#2379d2;font-size:12px;font-weight: bold;text-align:center}
+#workExprHead{width:100%;height:50px;font-size:16px;font-weight:bolder;margin-left:10px}
+#workExprB{width:100%;height: auto;margin-left:20px;}
+ul{padding:0;margin-top:-5px;}
+.allJobs{margin-left:50px;width:550px;}
+</style>
+
+<body>
+
+    <div class="" id=""></div>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="resume.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta charset="utf-8">
+  <title>Gordon Moseley</title>   
+  </head>
+  
+  
+
+  
+  <div  class="container" style="clear:left">
+     <div class="mainHeader"><!--header 90px  height-->
+      <div class="headerImgHolder"><img src="" class="headerImg"></div>
+      <div class="nameAndTaskHolder">
+        <div class="myName">GORDON MOSELEY</div>
+        <div class="whatIDo">resume</div>
+      </div>
+    </div><!--end of header -->
+<!-- start 90px down px clear border -->
+    <div class="contentArea" style="position:absolute"><!-- add info below-->
+  
+      <div class="resHolder">
+      <div id="webB"><div id="webTitle">Web:</div><div id="website"><a id ="website" href="http://moseleyg.byethost4.com/" title="⚓Visit Gordon's website">Visit homepage</a></div></div>
+<div id="NameandNumB"><div id="name1" style="text-align: center;
+font-size: 26px;">Gordon Moseley</div><div id="phone">646.377.5325</div></div>
+<div id="addressB"><div id="address">Brooklyn, NY</div><div id="Email"><a id ="website" href="mailto:moseleygj@gmail.com" title="📧EMAIL: Gordon">moseleygj@gmail.com</a></div></div>
+<div id="summaryB">
+<div class="headings">SKILLS:</div>
+<div class="horzL"></div><div id="objective">L.A.M.P. Linux / Apache Web Server / MySQL / PHP(Basics) /Web Design / CSS / Adobe Photoshop / MS Office Suite / Basic Java programming / Basic JavaScript / BASH Scripting / Oracle Virtual Box / Mac OS X / Networking / Active Directory / VOIP</div></div>
+
+
+<div id="summaryC"><div class="headings">EXPERIENCE:</div><div class="horzL"></div></div>
+<!--start-->
+<div class="allJobs">
+       <div id="WorkExprB">
+<div class="job"><div class="companyN">AIG Services/NTT Data services(Computer Tech, May 2017 - Present)<font color="#2379d2">&nbspcontract</font></div><div class="jobDescript"><ul><li>Large office migration(1,000+ users): Finished customer projects ahead of schedule and under budget.</li>
+<li>Disconnects/Reconnects, Quality Assurance, </li>
+<li> Level 3 Desktop support: Troubleshooting and User support on Windows 7 & 10.</li>
+<li>Setup VOIP Avaya phones, Wireless Headsets, WYSE Terminals, DELL Desktops, Docks and dual-monitors.</li>
+
+</ul></li></div></div></div>
+<!--stop-->
+<!--start-->
+<div id="WorkExprB">
+
+<!--stop-->
+<!--start-->
+<div id="WorkExprB">
+<div class="job"><div class="companyN">
+Computer Consultant(Independent Contractor, September 2014 - present)
+</div><div class="jobDescript"><ul><li>
+Web Design, Computer Repair (Laptop & Desktop), Hardware setup; </li>
+<li>iPhone, Android and Blackberry knowledge; HDD Backups/Restore/Imaging(Clone-Disk,Clonezilla, Linux 'DD' command, PartImage, Macrium Reflect, Active@Disk Image); </li>
+<li>Data Recovery, Data migration, and Networking diagnostics using Terminal, PUTTY, etc.; Cloud setup; Utilized Active Directory(AD); Setup and maintained Virtual Machines (VMWare/VMWare Fusion)</li>
+<li>VPN, RealVNC for remote-administration, automated maintenance task</li>
+<li>MAC OS X troubleshooting.(Reset PRAM, flush .PLIST files of faulty applications, recovery files, reset passwords.)</li>
+</ul></li></div></div></div>
+<!--stop-->
+<!--start-->
+<div id="WorkExprB">
+<div class="job"><div class="companyN">Department of Labor (Residential Electrical, Mar 2010 - Sep 2014)</div><div class="jobDescript"><ul><li>Rough-in wiring, Remodel wiring, lighting and fixtures servicing.</li>
+<li>	Special circuits, Service Entry, Electric Heating, conduit installation and wiring</li>
+<li>	Reading and designing blueprints, Estimating, low voltage wiring, ohms law.</li>
+</ul></div></div></div>
+<!--stop-->
+<!--start-->
+<div id="WorkExprB">
+<div class="job"><div class="companyN">National Grid (Help Desk) (Jan 2009 - Dec 2009) <font color="#2379d2">&nbspcontract</font></div><div class="jobDescript"><ul><li>Provided remote desktop assistance for LAN and VPN users
+<li>Provided​ ​ remote​ ​ desktop​ ​ assistance​ ​ for​ ​ LAN​ ​ and​ ​ VPN​ ​ users.​ ​ Utilized​ ​ Active​ ​ Directory(AD)</li>
+<li>Supported in “Netscape-to-Microsoft Outlook mail migration” project</li>
+<li>Performed Helpdesk tasks: Password resets, account unlocking and general trouble shooting</li>
+<li>Utilized DameWare, Radia and Remedy ticket software to track and record issue</li>
+</ul></li></div></div></div>
+<!--stop-->
+<!--start-->
+<div id="WorkExprB">
+<div class="job"><div class="companyN">Data Velocity (Apple Mac OS X Technician/Remote Desktop Administrator, Oct 2008 - Dec 2008)<font color="#2379d2">&nbspcontract</font></div><div class="jobDescript"><ul><li>
+Provided solutions for Microsoft Windows Users converting to Mac OS X
+<li>Maintained small business server (SBS) for contracted companies(Law firms); Setup secure VPN</li>
+<li>Provided E-Mail troubleshooting with Microsoft Exchange Server/IMAP</li>
+<li>Scripted to simplify task for both MS Windows and UNIX/Linux clients
+</li>
+</ul></li></div></div></div>
+<!--stop-->
+<!--start-->
+<div id="WorkExprB">
+<div class="job"><div class="companyN">Navy [Department of Defense] (Information Systems Tech., June 2006 - Sep 2008)</div><div class="jobDescript"><ul><li>Provided disaster recovery for servers (Back up and Safeguard data regularly)</li>
+<li>Performed “Ghosting” and “Data recovery” using various tools on Hiren’s Boot CD</li>
+<li>Troubleshoot network issues </li>
+<li>Recognized, Identified and removed all current security threats </li>
+<li>Setup, upgraded, disassembled, and reassembled Desktop/Notebook PC’s</li>
+<li>Used “Active@KilDisk” software to ensure the safety of sensitive data not being sacrificed </li>
+<li>Provided data-migration to/from the MS Windows to Linux, and the Mac OS X Platform</ul></li></div></div></div>
+<!--stop-->
+
+<!--start-->
+<div id="WorkExprB">
+<div class="job"><div class="companyN">Education</div><div class="jobDescript"><ul><li>National Center for Construction Education & Research (NCCER):  Electrical, University of Florida, 2014
+<li>Computer Programming and Information Technology, ASA, Brooklyn, NY, 2007	</li>
+<li>Comptia Linux+</li>
+<li>Comptia A+</li>
+
+</ul></li></div></div></div>
+<!--stop-->
+<!--start-->
+<div id="WorkExprB">
+<div class="job"><div class="companyN">Summary</div>
+<div class="jobDescript">
+<ul>
+<li>Extensive experience in the computer field.</li> <br>
+<li>Excellent at juggling multiple tasks and working under pressure.</li>
+</ul></li></div></div>
+</div>
+
+
+</div>
+
+<!--stop-->
+
+</div>
+</div>
+</div>
+      </div>
+     
+    </div><!-- end of the road-->
+ 
+    
+  </div>
+
+     <div style="
+  height:7%;
+  width:100%;
+  text-align:center;
+  bottom:0;
+  background-color:#222;
+                  position:relative">
+    <button onclick="location.href='Resume_GordonMoseley2017.docx'" class= "btn">Printible Resume(.DOC)</button>
+<button onclick="location.href='Resume_GordonMoseley2017'" class= "btn">Printible Resume(.PDF)</button>
+
+<button onclick="location.href='NCCER.pdf'" class= "btn">Electrical Transcript(.PDF)</button>
+
+  </div>
+
+</body>
+
+<script type="text/javascript">
+</script>
+
+</html>
