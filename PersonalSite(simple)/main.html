@@ -1,0 +1,178 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="resume.css">
+<link rel="icon" type="icon" href="17459164.png">
+<meta charset="utf-8">
+<title>Gordon Moseley</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+
+  $("p").fadeIn(2000);
+
+});
+</script>
+<style>
+body{
+	margin:0;
+	padding:0;}
+
+p{display:none;}
+.container{
+		width:100%;
+		height:100%;
+		background-color:#f0f0f0;
+	}
+
+.mainTitle{
+	height:80px;
+	width:100%;
+	background-color:white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	position:relative;
+	margin-bottom: 10px;
+	clear:both;
+}
+#name1{
+	font-size: 36px;
+	font-weight:bolder;
+	font-weight:400;
+	text-align: center;
+	color:#777;
+
+}
+#whatIdo {
+	clear:both;
+	font-size: 18px;
+	font-weight:normal;
+	text-align: center;
+	color:grey;
+}
+h1{font-weight:500;font-size:20px;margin:0px 0px 10px 0px;}
+html body{
+font-family: Roboto, sans-serif;
+color:#777;
+}
+.subtitle{
+font-weight:500;
+}
+
+.content{font-weight:300;}
+
+.pane{
+height:auto;
+padding:10px;
+width:85%;
+background-color:white;
+margin:0 auto 10px;
+clear:both;
+position:relative;
+box-sizing: border-box;
+}
+
+.accounts{height:71px; max-width:240px;margin: 12px auto 0;text-align:center;    margin-top: 30px;}
+.account-holder{height:71px;width:50px;float:left;text-align:center;margin-right:30px;}
+.account-name{height:21px;width:50px}
+.account-pic{height:50px;width:50px;}
+
+</style>
+</head>
+
+
+<body>
+<div class="container">
+
+<div class="mainTitle">
+<div id="name1">Gordon Moseley</div>
+<div id="whatIdo">I code things</div>
+</div>
+
+<div class="pane" style="margin-top: 10%;">
+<div class="subtitle"><h1>A bit about me</h1></div>
+<div class="content">
+<p> I'm a Computer Technician, located in New York City.</p>
+<p>I develop Linux Bash scripts, Web UIs and Web pages.</p>
+<p> At the moment, I currently use the LAMP stack(Linux, Apache, MySQL and PHP), HTML and CSS .</p>
+
+<p>In addition to software development, I enjoy Illustration, tinkering with gadgets to maximize their capabilities and learning new things.</p> </div>
+</div>
+
+<div class="pane">
+<div class="subtitle"><h1>Stalk me</h1></div>
+<p class="content"> I have a number of public online accounts. Here they are:
+<br/>
+
+<div class="accounts">
+<div class="account-holder">
+<a href="https://github.com/moseleygj/" target="_blank"><img src="github-6-xxl.png" id="git" class="account-pic" onmouseover="changeIcnHoverG()" onmouseout="changeIcnNoHoverG()"></a>
+<div class="account-name" id="gh-name">Github</div></div>
+
+<div class="account-holder">
+<a href="resumeiOSstyle.html" target="_top"><img src="038-doc1.png" class="account-pic" id="resume" onmouseover="changeIcnHoverR()" onmouseout="changeIcnNoHoverR()"></a>
+<div class="account-name" id=resume-name>Resume</div></div>
+
+<div class="account-holder">
+<a href="mailto:moseleygj@gmail.com?Subject=Employment" target="_blank"><img src="008-letter-0.png" class="account-pic" id="email" onmouseover="changeIcnHoverE()" onmouseout="changeIcnNoHoverE()"></a>
+<div class="account-name" id="email-name">Email</div></div>
+ </div></div>
+
+</div> <!-- main title end -->
+
+
+</div>
+
+<script type="text/javascript">
+function changeIcnHoverG()
+{
+document.getElementById("git").src="github-6-xxlB.png";
+document.getElementById("gh-name").style.color="skyblue";
+}
+
+function changeIcnNoHoverG()
+{
+document.getElementById("git").src="github-6-xxl.png";
+document.getElementById("gh-name").style.color="#777";
+}
+
+function changeIcnHoverP()
+{
+document.getElementById("photo").src="";
+document.getElementById("photo-name").style.color="#777";
+}
+
+function changeIcnNoHoverP()
+{
+document.getElementById("photo").src="";
+document.getElementById("photo-name").style.color="#777";
+}
+
+function changeIcnHoverR()
+{
+document.getElementById("resume").src="038-doc.png";
+document.getElementById("resume-name").style.color="skyblue";
+}
+
+function changeIcnNoHoverR()
+{
+document.getElementById("resume").src="038-doc1.png";
+document.getElementById("resume-name").style.color="#777";
+}
+
+function changeIcnHoverE()
+{
+document.getElementById("email").src="008-letter-1.png";
+document.getElementById("email-name").style.color="skyblue";
+}
+
+function changeIcnNoHoverE()
+{
+document.getElementById("email").src="008-letter-0.png";
+document.getElementById("email-name").style.color="#777";
+}
+
+</script>
+</body>
+</html>
