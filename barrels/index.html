@@ -5,9 +5,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
-      $("#showBarrelContents").click(
-      function(){
-        $("#barrel1").toggleClass("showBarrel1");
+        alert("started");
+      $("#showBarrelContents").click(function(){
+       // $("#barrel1").toggleClass("showBarrel1");
+        $("#barrel1").slideToggle();
+
       });
     });
       </script>
@@ -114,9 +116,13 @@ background-color:#ff0000;
 .itemBottomContents{
   height:auto;
   min-height:300px;
-  width:100%;
+  width:95%;
   background-color:white;
   display:none;
+  margin: 0 auto 0;
+  transition: all 1s ease;
+  transition:1s display ease;
+
 }
 
 .btn{
@@ -131,7 +137,7 @@ background-color:#ff0000;
   position:relative;
   margin-left:5px;
   margin-top:8px;
-  transition:0.5s background-color ease;
+  transition:0.5s background-color  ease;
 }
 .btn:hover{
   background-color:white;
@@ -144,7 +150,7 @@ background-color:#ff0000;
 }
 
 .showBarrel1{
-  display:none;
+  display:block;
 }
     </style>
  </head>
