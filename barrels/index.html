@@ -5,11 +5,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
-        alert("started");
       $("#showBarrelContents").click(function(){
-       // $("#barrel1").toggleClass("showBarrel1");
         $("#barrel1").slideToggle();
-
+        $("#showBarrelContents").toggleClass("barrel1Active");
       });
     });
       </script>
@@ -86,8 +84,8 @@ box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);}
   padding-top:15px;
   position:relative;
   display:block;
-  height:auto;
-  width:90%;
+  height:200px;
+  width:250px;
   top:50%;
  transform:translateY(-50%);
 }
@@ -119,10 +117,11 @@ background-color:#ff0000;
   width:95%;
   background-color:white;
   display:none;
-  margin: 0 auto 0;
+  margin: 0 auto 20px;
   transition: all 1s ease;
   transition:1s display ease;
-
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
 }
 
 .btn{
@@ -152,6 +151,26 @@ background-color:#ff0000;
 .showBarrel1{
   display:block;
 }
+.barrel1Active{
+  background-color:white;
+  color:red;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
     </style>
  </head>
  <div class="container">
@@ -171,7 +190,141 @@ background-color:#ff0000;
       </div>
     </div>
     
-    <div class="itemBottomContents" id="barrel1"></div>
+    <div class="itemBottomContents" id="barrel1">
+      <table>
+        <tr>
+          <th>Quantitiy</th>
+          <th>Name</th>
+          <th>size</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>product</td>
+          <td>1</td>
+
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>product</td>
+          <td>1</td>
+        </tr>
+        
+      </table>  </div>
 
   
 </div>
