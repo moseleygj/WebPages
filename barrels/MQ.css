@@ -1,0 +1,76 @@
+    @media only screen and (min-width:0px) and (max-width: 320px) {}
+    
+    @media only screen and (min-width:321px) and (max-width: 375px) {
+        .container {
+            width: ;
+        }
+    }
+    
+    @media only screen and (min-width:376px) and (max-width: 425px) {
+        .container {
+            width: ;
+            background-color: pink;
+        }
+        .contentA {
+            width: ;
+            background-color: pink;
+        }
+        .contentb {
+            width: ;
+            background-color: skyblue;
+        }
+        .mainImage {
+            height: ;
+            width: ;
+        }
+        .barrelImg {
+            height: 10px;
+            width: 10px;
+        }
+        .barrelContentHolder {
+            height: ;
+            width: ;
+        }
+        .barrelSpecsHolder {
+            height: ;
+            width: ;
+        }
+        .mainImage {
+            height: ;
+            width: ;
+        }
+        .mainImage {
+            height: ;
+            width: ;
+        }
+    }
+    
+    @media only screen and (min-width:426px) and (max-width:600px) {
+        .container {
+            width: 365px;
+        }
+    }
+    
+    @media only screen and (min-width:601px) and (max-width: 768px) {
+        .container {
+            width: 455px;
+        }
+    }
+    
+    @media only screen and (min-width:769px) and (max-width: 1024px) {
+        .container {
+            width: 600px;
+        }
+    }
+    
+    @media only screen and (min-width:1025px) and (max-width: 1440px) {
+        .container {
+            width: 768px;
+        }
+    }
+    
+    @media only screen and (min-width:1441px) and (max-width: 2560px) {
+        .container {
+            width: 768px;
+        }
+    }

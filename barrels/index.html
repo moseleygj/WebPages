@@ -1,8 +1,9 @@
 <html>
 
 <head>
-    <link rel="shortcut icon" href="" type="image/png">
-    <link rel="stylesheet" type="text/css" href="gallon1.jpg">
+    <title>Onlinefoodbarrel©</title>
+    <link rel="shortcut icon" href="gallon1.jpg" type="image">
+    <link rel="stylesheet" type="text/css" href="MQ.css">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -24,8 +25,6 @@
         .container {
             height: 100%;
             width: 100%;
-            position: ;
-            display: ;
         }
         
         .mainTitleHolder {
@@ -36,7 +35,6 @@
             width: 100%;
             padding: 0;
             margin: 0 auto 0;
-            display: ;
         }
         
         .mainTitle {
@@ -248,7 +246,7 @@
         .mainImage {
             height: 300px;
             width: 300px;
-            padding: 40px 0px 0px 0px;
+            padding: 10px 0px 0px 0px;
             display: block;
             margin: 0 auto 0;
             text-align: center;
@@ -319,30 +317,95 @@
         .shippingLineHeight {
             line-height: 1.5;
         }
-
-        .customerServiceEMail{
-          text-decoration: none;
-          color:#178fce;
+        
+        .customerServiceEMail {
+            text-decoration: none;
+            color: #178fce;
         }
-        .customerServiceEMail:hover{
-text-decoration: underline;
-color:#178fce;
+        
+        .customerServiceEMail:hover {
+            text-decoration: underline;
+            color: #178fce;
         }
-        .shippingImg{
-          padding:0px 0px 0px 0px;
-          padding-bottom:15px;
-          width:275px;
-          height:125px;
-          display:block;
-          margin: 0 auto 0;
+        
+        .shippingImg {
+            padding: 0px 0px 0px 0px;
+            padding-bottom: 15px;
+            width: 275px;
+            height: 125px;
+            display: block;
+            margin: 0 auto 0;
         }
-
-        .freshnessImg{
-          margin:0 auto 0;
-          padding-bottom:15px;
-          width:304px;
-          height:170px;
-          display:block;
+        
+        .freshnessImg {
+            margin: 0 auto 0;
+            padding-bottom: 15px;
+            width: 304px;
+            height: 170px;
+            display: block;
+        }
+        
+        .customerSupportImg {
+            left: 25%;
+            position: absolute;
+            float: left;
+            width: 140px;
+            height: 150px;
+            display: block;
+            bottom: 0;
+        }
+        
+        .barrelImg {
+            float: left;
+            width: 160px;
+            height: 240px;
+            display: block;
+        }
+        
+        .barrelContentHolder {
+            height: 240px;
+            width: 100%;
+            padding-top: 40px;
+        }
+        
+        .barrelSpecsHolder {
+            float: left;
+            height: 240px;
+            width: 160px;
+        }
+        
+        .welcomeTitle {
+            margin-top: 3px;
+            line-height: 1.0625;
+            font-weight: 600;
+            font-size: 44px;
+            text-align: center;
+            margin: 30px auto 0;
+            display: block;
+        }
+        
+        .viewProducts {
+            margin: 0 auto 0;
+            background-color: white;
+            display: block;
+            color: red;
+            padding: 14px;
+            border: 3px solid red;
+            border-radius: 3px;
+            font-weight: bold;
+            transition: 0.8s ease all;
+            font-size: 18px;
+        }
+        
+        .viewProducts:hover {
+            margin: 0 auto 0;
+            background-color: red;
+            display: block;
+            color: white;
+            padding: 14px;
+            border: 3px solid red;
+            border-radius: 3px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -352,29 +415,30 @@ color:#178fce;
 
         <div class="mainTitleHolder">
             <img src="http://cdn.onlinewebfonts.com/svg/img_53616.png" class="backButton">
-            <div class="mainTitle">Some store name</div>
+            <div class="mainTitle">Online Food Barrel</div>
         </div>
 
         <div class="contentA">
-            <h1 style="margin-top:3px;line-height: 1.0625;font-weight:600;font-size:44px;text-align:center;margin:0 auto 0;display:block;">Welcome
-                <span class="subT">SubTitle</span></h1>
+            <h1 class="welcomeTitle">Welcome,
+                <span class="subT">Beloved Guest</span></h1>
             <img src="foodcheck-heart.png" class="mainImage">
             <div style="padding:0px 10px;font-style: italic">
-                <p class="textDescript">"Why settle for less when you can have the best!"</p>
+                <p class="textDescript" style="font-size: 15px;padding-bottom:14px;">"Why settle for less when you can have the best!"</p>
             </div>
+            <button class="viewProducts">View Products</button>
         </div>
 
-        <div class="contentB" style="" ;>
-            <h2 class="headLineTitle ">Barrel Quality</h2>
-            <p class="textDescript " style="padding: 0px 10px; ">We use some of the highest quality barrels to ensure your products are delivered in optimal condition.</p>
-            <div style="height: 240px;width:100%;padding-top: 40px; ">
-                <img src="gallon1.jpg " style="float:left;width:160px;height:240px;display:block; ">
-                <div style="float:left;height:240px;width:160px; ">
-                    <p style="color:#6ba9c3; ">
-                        <ul class="barrelUL ">
-                            <li class="barrelSpecs ">55-Gallon Drum with metal Lever-Lock. </li>
-                            <li class="barrelSpecs ">Constructed of high-density polyethylene with UV inhibitors.
-                                <li class="barrelSpecs ">Durable and lightweight, weather and chemical resistant.</li>
+        <div class="contentB">
+            <h2 class="headLineTitle">Barrel Quality</h2>
+            <p class="textDescript" style="padding: 0px 10px;">We use some of the highest quality barrels to ensure your products are delivered in optimal condition.</p>
+            <div class="barrelContentHolder">
+                <img class="barrelImg" src="gallon1.jpg ">
+                <div class="barrelSpecsHolder">
+                    <p style="color:#6ba9c3;">
+                        <ul class="barrelUL">
+                            <li class="barrelSpecs">55-Gallon Drum with metal Lever-Lock. </li>
+                            <li class="barrelSpecs">Constructed of high-density polyethylene with UV inhibitors.
+                                <li class="barrelSpecs">Durable and lightweight, weather and chemical resistant.</li>
                             </li>
                         </ul>
                     </p>
@@ -382,45 +446,47 @@ color:#178fce;
             </div>
         </div>
 
-        <div class="contentA ">
-            <h2 class="headLineTitle ">Shipping</h2>
-            <p class="textDescript " style="padding: 0px 10px;text-align:left ">We ship using <a href="http://www.laparkan.com/ " style="text-decoration: none;color:#333;font-weight:bold">Laparkan</a>. Laparkan, has over 30-years of service to the Caribbean and is also the #1 worldwide cargo leader.</p>
-            <div style="height: 240px;width:100%; ">
+        <div class="contentA">
+            <h2 class="headLineTitle">Shipping</h2>
+            <p class="textDescript" style="padding: 0px 10px;text-align:left">We ship using <a href="http://www.laparkan.com/ " style="text-decoration: none;color:#333;font-weight:bold">Laparkan</a>. Laparkan, has over 30-years of service to the Caribbean and is also the #1 worldwide cargo leader.</p>
+            <div style="height: 240px;width:100%;">
                 <div style="padding-left:10px "><b style="color:#178fce ">Laparkan offers:</b></div>
-                <ul style="color:#555555 ">
+                <ul style="color:#555555">
                     <li class="shippingLineHeight">All risk insurance coverage.</li>
                     <li class="shippingLineHeight">International Ocean and Air transport.</li>
                     <li class="shippingLineHeight">Global Track & Trace.</li>
                     <li class="shippingLineHeight">Secured storage.</li>
                 </ul>
-                <img class="shippingImg" src="paper_plane_PNG20.png" >
+                <img class="shippingImg" src="Package-Box-PNG-Image-Background-1024x8063.png">
             </div>
         </div>
 
-        <div class="contentB ">
-            <h2 class="headLineTitle ">Freshness</h2>
-            <p class="textDescript " style="padding: 0px 10px; ">
-                __________, is the smarter way to shop for food. We've found the shortest distance from American stores to your table. We have all the irresistible foods you could want, plus popular grocery brands, all for less than you might be paying now. And we bring
-                it right to your door.</p>
-            <div style="height: 181px;width:100%; ">
-                <img src="food4.png " class="freshnessImg">
+        <div class="contentB">
+            <h2 class="headLineTitle">Freshness</h2>
+            <p class="textDescript" style="padding: 0px 10px;">
+                <b>OnlineFoodBarrel</b>, is the smarter way to shop for food. We've found the shortest distance from American stores to your table. We have all the irresistible foods you could want, plus popular grocery brands, all for less than you might
+                be paying now. And we bring it right to your door.</p>
+            <div style="height:181px;width:100%;">
+                <img src="food4.png" class="freshnessImg">
             </div>
-
-            <div class="contentA ">
-                <h2 class="headLineTitle ">Customer Service</h2>
-                <p class="textDescript " style="padding: 0px 10px; ">
-                    The best way to get help is through email. Our dedicated service team generally responds within 1 to 3 hours during our business day. </p>
-                <p style="padding: 0px 10px; "><b> We're here Monday through Sunday, 8:30 AM to 6:30 PM EST. </b></p>
-                <ul>
-                    <li style="line-height: 2;list-style-type: none; "><b>EMAIL: </b><a class="customerServiceEMail" href="mailto:someCompany@host.com ">someCompany@host.com</a></li>
-                    <li style="line-height: 2;list-style-type: none; "><b>PHONE: </b>555-555-5555</li>
-                </ul>
-                <img src="support-512.png " style="left:25%;position:absolute;float:left;width:160px;height:170px;display:block;bottom:0; ">
-            </div>
-            <footer>
-                <div>Copyright © 2019 someCompany Inc. All Rights Reserved. <a href=" " class="footerLink ">User Agreement</a>, <a href=" " class="footerLink ">Privacy</a></div>
-            </footer>
         </div>
+
+        <div class="contentA">
+            <h2 class="headLineTitle">Customer Service</h2>
+            <p class="textDescript" style="padding: 0px 10px;">
+                The best way to get help is through email. Our dedicated service team generally responds within 1 to 3 hours during our business day. </p>
+            <p style="padding: 0px 10px;"><b> We're here Monday through Sunday, 8:30 AM to 6:30 PM EST. </b></p>
+            <ul>
+                <li style="line-height: 2;list-style-type: none;"><b>EMAIL: </b><a class="customerServiceEMail" href="mailto:someCompany@host.com ">someCompany@host.com</a></li>
+                <li style="line-height: 2;list-style-type: none;"><b>PHONE/TEXT: </b> 1-347-512-8499 </li>
+            </ul>
+            <div style="width:100%;height:auto"> <img src="support-512.png " class="customerSupportImg">
+            </div>
+        </div>
+        <footer>
+            <div>Copyright © 2019 Onlinefoodbarrel Inc. All Rights Reserved. <a href=" " class="footerLink ">User Agreement</a>, <a href=" " class="footerLink ">Privacy</a></div>
+        </footer>
+    </div>
 </body>
 
 </html>
