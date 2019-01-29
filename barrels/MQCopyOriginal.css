@@ -17,8 +17,8 @@
             width: ;
         }
         .barrelImg {
-            height: ;
-            width: ;
+            height: 10px;
+            width: 10px;
         }
         .barrelContentHolder {
             height: ;
@@ -62,10 +62,6 @@
         .barrelImg {
             height: 10px;
             width: 10px;
-        }
-        .shippingImg {
-            height:150px ;
-            width: 300px; 
         }
         .barrelContentHolder {
             height: ;
@@ -148,10 +144,6 @@
         .barrelImg {
             height: 10px;
             width: 10px;
-        }
-        .shippingImg{
-            width: 450px;
-height: 300px;
         }
         .barrelContentHolder {
             height: ;
