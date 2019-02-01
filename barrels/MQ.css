@@ -145,6 +145,20 @@
         }
     }
     
+    /*height tester*/
+    @media only screen and (min-height:426px) and (max-height:600px) {
+        .container {}
+        .contentA {
+            width: 400px;
+            width: ;
+            background-color: black;
+        } 
+        .contentB {
+            width: 400px;
+            width: ;
+            background-color: brown;
+        }
+
     @media only screen and (min-width:601px) and (max-width: 768px) {
         .container {}
         .contentA {
@@ -165,7 +179,7 @@
         }
         .shippingImg{
             width: 450px;
-height: 300px;                   
+            height: 300px;                   
         }
         .barrelContentHolder {
             height: ;
