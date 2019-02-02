@@ -145,20 +145,113 @@
         }
     }
     
-    /*height tester*/
-    @media only screen and (min-height:426px) and (max-height:600px) {
-        .container {}
+          /*height tester* iPhone 6/7/8+ 375x667px */
+          @media only screen and (min-height:426px) and (max-height:667px) {
         .contentA {
             width: 400px;
             width: ;
-            background-color: black;
+            background-color: brown;
         } 
         .contentB {
             width: 400px;
             width: ;
             background-color: brown;
         }
+        .shippingImg{
+            height:175px;
+            width:375px;
+        }
+    
+        .freshnessImg{
+            height:260px;
+            width:350px;
+        }
+    }
 
+          /*height tester* iPhone 6/7/8 414x736 */
+    @media only screen and (min-height:668px) and (max-height:736px) {
+        .contentA {
+            width: 400px;
+            width: ;
+            background-color: yellow;
+        } 
+        .contentB {
+            width: 400px;
+            width: ;
+            background-color: brown;
+        }
+        .shippingImg{
+            height:175px;
+            width:375px;
+        }
+    
+        .freshnessImg{
+            height:260px;
+            width:350px;
+        }
+    }
+          /*height tester* iPhoneXS 375x812 */
+     @media only screen and (min-height:737px) and (max-height:812px) {
+
+        .contentA {
+            width: 400px;
+            width: ;
+            background-color: purple;
+        } 
+
+        .contentB {
+            width: 400px;
+            width: ;
+            background-color: green;
+        }
+    
+        .mainImage{
+        height:365px;
+        width:365px;
+    }
+
+    .shippingImg{
+        height:175px;
+        width:325px;
+    }
+
+    .freshnessImg{
+        height:260px;
+        width:320px;
+    }
+
+}
+
+@media only screen and (min-height:813px) and (max-height:1024px) {
+
+    .contentA {
+        width: 400px;
+        width: ;
+        background-color: purple;
+    } 
+
+    .contentB {
+        width: 400px;
+        width: ;
+        background-color: green;
+    }
+
+    .mainImage{
+    height:600px;
+    width:600px;
+    }
+
+    .shippingImg{
+        height:175px;
+        width:325px;
+    }
+
+    .freshnessImg{
+        height:260px;
+        width:320px;
+    }
+
+}
     @media only screen and (min-width:601px) and (max-width: 768px) {
         .container {}
         .contentA {
