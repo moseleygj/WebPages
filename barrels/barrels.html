@@ -1,5 +1,6 @@
 <head>
-    <link rel="shortcut icon" href="gallon0.png" type="image/png">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="package_28748.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -10,6 +11,13 @@
                 $("#showBarrelContents").toggleClass("barrel1Active");
             });
         });
+    </script>
+    <script>
+    function backToIndexPage(){
+        location.assign('index.html');
+        location.replace('index.html');
+
+    }
     </script>
     <style>
         body {
@@ -219,15 +227,15 @@
 </head>
 <div class="container">
 
-    <div class="mainTitleHolder">
-        <img src="http://cdn.onlinewebfonts.com/svg/img_53616.png" class="backButton">
+    <div class="mainTitleHolder" >
+       <div style="display:inline" onclick="backToIndexPage()"> <img   src="http://cdn.onlinewebfonts.com/svg/img_53616.png" class="backButton"></div>
         <div class="mainTitle">Some store name</div>
     </div>
 
 
     <div class="item">
         <div class="itemTop">
-            <img src="kisspng-barrel-oak-wood-bourbon-whiskey-stock-photography-brass-5ad21e05e8b586.7653787715237196859532.png"
+            <img  onClick="location.replace('index.html')" src="kisspng-barrel-oak-wood-bourbon-whiskey-stock-photography-brass-5ad21e05e8b586.7653787715237196859532.png"
                 class="productImage"></div>
         <div class="itemMiddle">
             <div class="textTitle">Barrel: #1</div>
