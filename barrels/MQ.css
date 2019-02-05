@@ -12,10 +12,7 @@
             width: ;
             background-color: skyblue;
         }
-        .mainImage {
-            height: ;
-            width: ;
-        }
+     
         .barrelImg {
             height: ;
             width: ;
@@ -55,10 +52,7 @@
             width: ;
             background-color:;
         }
-        .mainImage {
-            height: ;
-            width: ;
-        }
+      
         .barrelImg {
             height: ;
             width: ;
@@ -95,7 +89,6 @@
     }
     
     @media only screen and (min-width:426px) and (max-width:600px) {
-        .container {}
         .contentA {
             width: 400px;
             width: ;
@@ -105,10 +98,7 @@
             width: ;
             background-color: skyblue;
         }
-        .mainImage {
-            height: ;
-            width: ;
-        }
+     
         .shippingImg{
             height:225px;
             width:325px;
@@ -131,12 +121,8 @@
             width: ;
         }
         .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
+            height:390px ;
+            width:390px ;
         }
         .contentCellSize {
             width: 400px;
@@ -145,115 +131,7 @@
         }
     }
     
-          /*height tester* iPhone 6/7/8+ 375x667px */
-          @media only screen and (min-height:426px) and (max-height:667px) {
-        .contentA {
-            width: 400px;
-            width: ;
-            background-color: brown;
-        } 
-        .contentB {
-            width: 400px;
-            width: ;
-            background-color: brown;
-        }
-        .shippingImg{
-            height:175px;
-            width:375px;
-        }
-    
-        .freshnessImg{
-            height:260px;
-            width:350px;
-        }
-    }
-
-          /*height tester* iPhone 6/7/8 414x736 */
-    @media only screen and (min-height:668px) and (max-height:736px) {
-        .contentA {
-            width: 400px;
-            width: ;
-            background-color: yellow;
-        } 
-        .contentB {
-            width: 400px;
-            width: ;
-            background-color: brown;
-        }
-        .shippingImg{
-            height:175px;
-            width:375px;
-        }
-    
-        .freshnessImg{
-            height:260px;
-            width:350px;
-        }
-    }
-          /*height tester* iPhoneXS 375x812 */
-     @media only screen and (min-height:737px) and (max-height:812px) {
-
-        .contentA {
-            width: 400px;
-            width: ;
-            background-color: purple;
-        } 
-
-        .contentB {
-            width: 400px;
-            width: ;
-            background-color: green;
-        }
-    
-        .mainImage{
-        height:365px;
-        width:365px;
-    }
-
-    .shippingImg{
-        height:175px;
-        width:325px;
-    }
-
-    .freshnessImg{
-        height:260px;
-        width:320px;
-    }
-
-}
-
-@media only screen and (min-height:813px) and (max-height:1024px) {
-
-    .contentA {
-        width: 400px;
-        width: ;
-        background-color: purple;
-    } 
-
-    .contentB {
-        width: 400px;
-        width: ;
-        background-color: green;
-    }
-
-    .mainImage{
-    height:600px;
-    width:600px;
-    }
-
-    .shippingImg{
-        height:175px;
-        width:325px;
-    }
-
-    .freshnessImg{
-        height:260px;
-        width:320px;
-    }
-
-}
     @media only screen and (min-width:601px) and (max-width: 768px) {
-        .container {}
         .contentA {
             width: ;
             background-color: pink;
@@ -262,10 +140,7 @@
             width: ;
             background-color: skyblue;
         }
-        .mainImage {
-            height: ;
-            width: ;
-        }
+     
         .barrelImg {
             height: 10px;
             width: 10px;
@@ -283,12 +158,8 @@
             width: ;
         }
         .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
+            height:390px ;
+            width:390px ;
         }
         .contentCellSize {
             width: 600px;
@@ -298,7 +169,6 @@
     }
     
     @media only screen and (min-width:769px) and (max-width: 1024px) {
-        .container {}
         .contentA {
             width: ;
             background-color: pink;
@@ -307,10 +177,7 @@
             width: ;
             background-color: skyblue;
         }
-        .mainImage {
-            height: ;
-            width: ;
-        }
+     
         .barrelImg {
             height: 10px;
             width: 10px;
@@ -323,13 +190,10 @@
             height: ;
             width: ;
         }
+       
         .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
+            height:390px ;
+            width:390px ;
         }
         .contentCellSize {
             width: 750px;
@@ -339,7 +203,6 @@
     }
     
     @media only screen and (min-width:1025px) and (max-width: 1440px) {
-        .container {}
         .contentA {
             width: ;
             background-color: pink;
@@ -419,3 +282,109 @@
             height: ;
         }
     }
+              /*height tester* iPhone 6/7/8+ 375x667px */
+              @media only screen and (min-height:426px) and (max-height:667px) {
+                .contentA {
+                    width: 400px;
+                    width: ;
+                    background-color: brown;
+                } 
+                .contentB {
+                    width: 400px;
+                    width: ;
+                    background-color: brown;
+                }
+                .shippingImg{
+                    height:175px;
+                    width:375px;
+                }
+            
+                .freshnessImg{
+                    height:260px;
+                    width:350px;
+                }
+            }
+        
+                  /*height tester* iPhone 6/7/8 414x736 */
+            @media only screen and (min-height:668px) and (max-height:736px) {
+                .contentA {
+                    width: 400px;
+                    width: ;
+                    background-color: yellow;
+                } 
+                .contentB {
+                    width: 400px;
+                    width: ;
+                    background-color: brown;
+                }
+                .shippingImg{
+                    height:175px;
+                    width:375px;
+                }
+            
+                .freshnessImg{
+                    height:260px;
+                    width:350px;
+                }
+            }
+                  /*height tester* iPhoneXS 375x812 */
+             @media only screen and (min-height:737px) and (max-height:812px) {
+        
+                .contentA {
+                    width: 400px;
+                    width: ;
+                    background-color: purple;
+                } 
+        
+                .contentB {
+                    width: 400px;
+                    width: ;
+                    background-color: green;
+                }
+            
+                .mainImage{
+                height:365px;
+                width:365px;
+            }
+        
+            .shippingImg{
+                height:175px;
+                width:325px;
+            }
+        
+            .freshnessImg{
+                height:260px;
+                width:320px;
+            }
+        
+        }
+        @media only screen and (min-height:813px) and (max-height:1024px) {
+
+            .contentA {
+                width: 400px;
+                width: ;
+                background-color: purple;
+            } 
+        
+            .contentB {
+                width: 400px;
+                width: ;
+                background-color: green;
+            }
+        
+            .mainImage{
+            height:600px;
+            width:600px;
+            }
+        
+            .shippingImg{
+                height:175px;
+                width:325px;
+            }
+        
+            .freshnessImg{
+                height:260px;
+                width:320px;
+            }
+        
+        }
