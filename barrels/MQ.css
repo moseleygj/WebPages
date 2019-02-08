@@ -34,6 +34,11 @@
         width: ;
         height: ;
     }
+    div.mainTitle{
+        margin:0;
+        text-align: center;
+        /* margin: 0 0 0 41px;text-align:left; */
+    }
 }
 
 @media only screen and (min-width:376px) and (max-width: 425px) {
@@ -82,6 +87,11 @@
     .contentCellSize {
         width: ;
         height: ;
+    }
+    div.mainTitle{
+        margin:0;
+        text-align: center;
+        /* margin: 0 0 0 41px;text-align:left; */
     }
 }
 
@@ -224,13 +234,10 @@
         height: ;
         width: ;
     }
+ 
     img.mainImage {
-        height: ;
-        width: ;
-    }
-    img.mainImage {
-        height: ;
-        width: ;
+        height: 500px;
+        width: 500px;
     }
     .contentCellSize {
         width: 750px;
@@ -266,120 +273,17 @@
         height: ;
         width: ;
     }
+
     img.mainImage {
-        height: ;
-        width: ;
-    }
-    img.mainImage {
-        height: ;
-        width: ;
+        height: 600px;
+        width: 600px;
     }
     .contentCellSize {
         width: 750px;
         height: ;
     }
 }
-          /*height tester* iPhone 6/7/8+ 375x667px */
-          @media only screen and (min-width:426px) and (max-height:667px) {
-            .contentA {
-                width: 400px;
-                width: ;
-                background-color: brown;
-            } 
-            .contentB {
-                width: 400px;
-                width: ;
-                background-color: brown;
-            }
-            .shippingImg{
-                height:175px;
-                width:375px;
-            }
-        
-            img.freshnessImg{
-                height:260px;
-                width:350px;
-            }
-            button.viewProducts{
-                font-size:25px;
-            }
-        }
-        
-      
-    
-              /*height tester* iPhone 6/7/8 414x736 */
-        @media only screen and (min-height:668px) and (max-height:736px) {
-            .contentA {
-                width: 400px;
-                width: ;
-                background-color: yellow;
-            } 
-            .contentB {
-                width: 400px;
-                width: ;
-                background-color: brown;
-            }
-            .shippingImg{
-                height:175px;
-                width:375px;
-            }
-            img.mainImage
-            {
-                    height:320px;
-                    width:313px;
-                }
-            img.freshnessImg{
-                height:260px;
-                width:350px;
-            }
-            button.viewProducts{
-                font-size:24px;
-            }
-            h1.welcomeTitle{
-                font-size:50px;
-            }
-        }
-              /*height tester* iPhoneXS 375x812 */
-         @media only screen and (min-height:737px) and (max-height:812px) {
-    
-            .contentA {
-                width: 400px;
-                width: ;
-                background-color: purple;
-            } 
-    
-            .contentB {
-                width: 400px;
-                width: 420px;
-                background-color: green;
-            }
-        
-            img.mainImage
-    {
-            height:365px;
-            width:365px;
-        }
-    
-        .shippingImg{
-            height:175px;
-            width:325px;
-        }
-    
-        img.freshnessImg{
-            height:260px;
-            width:320px;
-        }
-        .viewProducts{
-            font-size:25px;
-        }
-        h1.welcomeTitle{
-            font-size:60px;
-        }
-        button.viewProducts{
-            font-size:25px;
-        }
-    
-    }
+       
     @media only screen and (min-height:813px) and (max-height:1024px) {
 
         .contentA {
@@ -469,8 +373,7 @@
             background-color: green;
         }
     
-        img.mainImage
-{
+        img.mainImage{
         height:600px;
         width:600px;
         }
@@ -484,6 +387,7 @@
             height:260px;
             width:320px;
         }
+
         h1.welcomeTitle{
             font-size:60px;
         }
@@ -504,24 +408,25 @@
             background-color: green;
         }
     
-        img.mainImage
-{
+        img.mainImage{
         height:1400px;
         width:1200px;
         }
     
-        .shippingImg{
-            height:175px;
-            width:325px;
+        img.shippingImg{
+            height:200px;
+            width:350px;
         }
     
         img.freshnessImg{
             height:260px;
             width:320px;
         }
+
         h1.welcomeTitle{
             font-size:140px;
         }
+
        button.viewProducts{
         font-size:80px;
         border:6px solid red;
