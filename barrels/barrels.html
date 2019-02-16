@@ -1,3 +1,4 @@
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="package_28748.png" type="image/png">
@@ -12,13 +13,7 @@
             });
         });
     </script>
-    <script>
-    function backToIndexPage(){
-        location.assign('index.html');
-        location.replace('index.html');
-
-    }
-    </script>
+ 
     <style>
         body {
             background-color: lightgrey;
@@ -224,17 +219,18 @@
         }
     </style>
 </head>
+<body>
 <div class="container">
 
-    <div class="mainTitleHolder" >
-       <div style="display:inline" onclick="backToIndexPage()"> <img   src="http://cdn.onlinewebfonts.com/svg/img_53616.png" class="backButton"></div>
+    <div class="mainTitleHolder"  onclick="backToIndexPage()" >
+       <div style="display:inline"> <img  onclick="backToIndexPage()"  src="http://cdn.onlinewebfonts.com/svg/img_53616.png" class="backButton"></div>
         <div class="mainTitle">Some store name</div>
     </div>
 
 
     <div class="item">
         <div class="itemTop">
-            <img  onClick="location.replace('index.html')" src="kisspng-barrel-oak-wood-bourbon-whiskey-stock-photography-brass-5ad21e05e8b586.7653787715237196859532.png"
+            <img  src="kisspng-barrel-oak-wood-bourbon-whiskey-stock-photography-brass-5ad21e05e8b586.7653787715237196859532.png"
                 class="productImage"></div>
         <div class="itemMiddle">
             <div class="textTitle">Barrel: #1</div>
@@ -387,3 +383,10 @@
 
 
     </div>
+</body>
+<script>
+    function backToIndexPage(){
+        location.assign('index.html');
+    }
+    </script>
+</html>

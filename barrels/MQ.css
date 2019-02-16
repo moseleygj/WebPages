@@ -1,421 +1,481 @@
-    @media only screen and (min-width:0px) and (max-width: 320px) {}
+@media only screen and (min-width:0px) and (max-width: 320px) {}
     
-    @media only screen and (min-width:321px) and (max-width: 375px) {
-        .container {
-            width: ;
-        }
-        .contentA {
-            width: ;
-            background-color: pink;
-        }
-        .contentb {
-            width: ;
-            background-color: skyblue;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .barrelImg {
-            height: ;
-            width: ;
-        }
-        .barrelContentHolder {
-            height: ;
-            width: ;
-        }
-        .barrelSpecsHolder {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .contentCellSize {
-            width: ;
-            height: ;
-        }
+@media only screen and (min-width:321px) and (max-width: 375px) {
+    .container {
+        width: ;
     }
-    
-    @media only screen and (min-width:376px) and (max-width: 425px) {
-        .container {
-            width: ;
-            background-color: pink;
-        }
-        .contentA {
-            width: ;
-            background-color:;
-        }
-        .contentb {
-            width: ;
-            background-color:;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .barrelImg {
-            height: ;
-            width: ;
-        }
-        .shippingImg{
-            height:225px;
-            width:325px;
-        }
-        .freshnessImg{
-            width: 350px;
-
-            height: 230px;   
-        }
-        .barrelContentHolder {
-            height: ;
-            width: ;
-        }
-        .barrelSpecsHolder {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .contentCellSize {
-            width: ;
-            height: ;
-        }
+    .contentA {
+        width: ;
+        background-color: pink;
     }
-    
-    @media only screen and (min-width:426px) and (max-width:600px) {
-        .container {}
-        .contentA {
-            width: 400px;
-            width: ;
-            background-color: pink;
-        }
-        .contentb {
-            width: ;
-            background-color: skyblue;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .shippingImg{
-            height:225px;
-            width:325px;
-        }
-        .freshnessImg{
-            width: 350px;
-
-            height: 230px;   
-        }
-        .barrelImg {
-            height: 10px;
-            width: 10px;
-        }
-        .barrelContentHolder {
-            height: ;
-            width: ;
-        }
-        .barrelSpecsHolder {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .contentCellSize {
-            width: 400px;
-            height: 100%;
-            background-color: ;
-        }
+    .contentb {
+        width: ;
+        background-color: skyblue;
     }
-    
-          /*height tester* iPhone 6/7/8+ 375x667px */
-          @media only screen and (min-height:426px) and (max-height:667px) {
-        .contentA {
-            width: 400px;
-            width: ;
-            background-color: brown;
-        } 
-        .contentB {
-            width: 400px;
-            width: ;
-            background-color: brown;
-        }
-        .shippingImg{
-            height:175px;
-            width:375px;
-        }
-    
-        .freshnessImg{
-            height:260px;
-            width:350px;
-        }
+ 
+    .barrelImg {
+        height: ;
+        width: ;
+    }
+    .barrelContentHolder {
+        height: ;
+        width: ;
+    }
+    .barrelSpecsHolder {
+        height: ;
+        width: ;
+    }
+   
+    img.mainImage {
+        height: ;
+        width: ;
+    }
+    .contentCellSize {
+        width: ;
+        height: ;
+    }
+    div.mainTitle{
+        margin:0;
+        text-align: center;
+        /* margin: 0 0 0 41px;text-align:left; */
     }
 
-          /*height tester* iPhone 6/7/8 414x736 */
-    @media only screen and (min-height:668px) and (max-height:736px) {
-        .contentA {
-            width: 400px;
-            width: ;
-            background-color: yellow;
-        } 
-        .contentB {
-            width: 400px;
-            width: ;
-            background-color: brown;
-        }
-        .shippingImg{
-            height:175px;
-            width:375px;
-        }
+
+    .rmPadding {
     
-        .freshnessImg{
-            height:260px;
-            width:350px;
-        }
+        padding-top: 23px;
+        margin-top: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+    
     }
-          /*height tester* iPhoneXS 375x812 */
-     @media only screen and (min-height:737px) and (max-height:812px) {
+    h2.headLineTitle{
+        color:#434343;
+    }
+    p.textDescript{
+        color:#555;
+        font-size:;
+    }
+}
+
+@media only screen and (min-width:376px) and (max-width: 425px) {
+    .container {
+        width: ;
+        background-color: pink;
+    }
+    .contentA {
+        width: ;
+        background-color:;
+    }
+    .contentb {
+        width: ;
+        background-color:;
+    }
+  
+    .barrelImg {
+        height: ;
+        width: ;
+    }
+    .shippingImg{
+        height:225px;
+        width:325px;
+    }
+    img.freshnessImg{
+        width: 350px;
+
+        height: 230px;   
+    }
+    .barrelContentHolder {
+        height: ;
+        width: ;
+    }
+    .barrelSpecsHolder {
+        height: ;
+        width: ;
+    }
+    img.mainImage {
+        height: ;
+        width: ;
+    }
+    img.mainImage {
+        height: ;
+        width: ;
+    }
+    .contentCellSize {
+        width: ;
+        height: ;
+    }
+    div.mainTitle{
+        margin:0;
+        text-align: center;
+        /* margin: 0 0 0 41px;text-align:left; */
+    }
+    p.textDescript{
+        color:#555;
+        font-size:;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:600px) {
+    .contentA {
+        width: 400px;
+        width: ;
+        background-color: pink;
+    }
+    .contentb {
+        width: ;
+        background-color: skyblue;
+    }
+ 
+    .shippingImg{
+        height:225px;
+        width:325px;
+    }
+    img.freshnessImg{
+        width: 350px;
+
+        height: 230px;   
+    }
+    .barrelImg {
+        height: 10px;
+        width: 10px;
+    }
+    .barrelContentHolder {
+        height: ;
+        width: ;
+    }
+    .barrelSpecsHolder {
+        height: ;
+        width: ;
+    }
+    img.mainImage {
+        height:390px ;
+        width:390px ;
+    }
+    .contentCellSize {
+        width: 400px;
+        height: 100%;
+        background-color: ;
+    }
+    p.textDescript{
+        color:#555;
+        font-size:;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    .contentA {
+        width: ;
+        background-color: pink;
+    }
+    .contentb {
+        width: ;
+        background-color: skyblue;
+    }
+ 
+    .barrelImg {
+        height: 10px;
+        width: 10px;
+    }
+    .shippingImg{
+        width: 450px;
+        height: 300px;                   
+    }
+    .barrelContentHolder {
+        height: ;
+        width: ;
+    }
+    .barrelSpecsHolder {
+        height: ;
+        width: ;
+    }
+    img.mainImage {
+        height:390px ;
+        width:390px ;
+    }
+    .contentCellSize {
+        width: 600px;
+        height: ;
+        background-color: skyblue;
+    }
+    p.textDescript{
+        color:#555;
+        font-size:;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    .contentA {
+        width: ;
+        background-color: pink;
+    }
+    .contentb {
+        width: ;
+        background-color: skyblue;
+    }
+ 
+    .barrelImg {
+        height: 10px;
+        width: 10px;
+    }
+    .barrelContentHolder {
+        height: ;
+        width: ;
+    }
+    .barrelSpecsHolder {
+        height: ;
+        width: ;
+    }
+   
+    img.mainImage {
+        height:390px ;
+        width:390px ;
+    }
+    .contentCellSize {
+        width: 750px;
+        height: ;
+        background-color: pink;
+    }
+    p.textDescript{
+        color:#555;
+        font-size:;
+    }
+
+}
+
+@media only screen and (min-width:1025px) and (max-width: 1440px) {
+    .contentA {
+        width: ;
+        background-color: pink;
+    }
+    .contentb {
+        width: ;
+        background-color: skyblue;
+    }
+    img.mainImage {
+        height: ;
+        width: ;
+    }
+    .barrelImg {
+        height: 10px;
+        width: 10px;
+    }
+    .barrelContentHolder {
+        height: ;
+        width: ;
+    }
+    .barrelSpecsHolder {
+        height: ;
+        width: ;
+    }
+ 
+    img.mainImage {
+        height: 500px;
+        width: 500px;
+    }
+    .contentCellSize {
+        width: 750px;
+        height: ;
+    }
+    p.textDescript{
+        color:#555;
+        font-size:;
+    }
+}
+
+@media only screen and (min-width:1441px) and (max-width: 2560px) {
+    .container {
+        width: 768px;
+    }
+    .contentA {
+        width: ;
+        background-color: pink;
+    }
+    .contentb {
+        width: ;
+        background-color: skyblue;
+    }
+    img.mainImage {
+        height: ;
+        width: ;
+    }
+    .barrelImg {
+        height: 10px;
+        width: 10px;
+    }
+    .barrelContentHolder {
+        height: ;
+        width: ;
+    }
+    .barrelSpecsHolder {
+        height: ;
+        width: ;
+    }
+
+    img.mainImage {
+        height: 600px;
+        width: 600px;
+    }
+    .contentCellSize {
+        width: 750px;
+        height: ;
+    }
+    p.textDescript{
+        color:#555;
+        font-size:;
+    }
+}
+       
+    @media only screen and (min-height:813px) and (max-height:1024px) {
 
         .contentA {
             width: 400px;
             width: ;
             background-color: purple;
         } 
-
+    
         .contentB {
             width: 400px;
             width: ;
             background-color: green;
         }
     
-        .mainImage{
-        height:365px;
-        width:365px;
-    }
-
-    .shippingImg{
-        height:175px;
-        width:325px;
-    }
-
-    .freshnessImg{
-        height:260px;
-        width:320px;
-    }
-
-}
-
-@media only screen and (min-height:813px) and (max-height:1024px) {
-
-    .contentA {
-        width: 400px;
-        width: ;
-        background-color: purple;
-    } 
-
-    .contentB {
-        width: 400px;
-        width: ;
-        background-color: green;
-    }
-
-    .mainImage{
-    height:600px;
-    width:600px;
-    }
-
-    .shippingImg{
-        height:175px;
-        width:325px;
-    }
-
-    .freshnessImg{
-        height:260px;
-        width:320px;
-    }
-
-}
-    @media only screen and (min-width:601px) and (max-width: 768px) {
-        .container {}
-        .contentA {
-            width: ;
-            background-color: pink;
+        img.mainImage
+{
+        height:600px;
+        width:600px;
         }
-        .contentb {
-            width: ;
-            background-color: skyblue;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .barrelImg {
-            height: 10px;
-            width: 10px;
-        }
+    
         .shippingImg{
-            width: 450px;
-            height: 300px;                   
+            height:175px;
+            width:325px;
         }
-        .barrelContentHolder {
-            height: ;
-            width: ;
-        }
-        .barrelSpecsHolder {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .contentCellSize {
-            width: 600px;
-            height: ;
-            background-color: skyblue;
-        }
-    }
     
-    @media only screen and (min-width:769px) and (max-width: 1024px) {
-        .container {}
-        .contentA {
-            width: ;
-            background-color: pink;
+        img.freshnessImg{
+            height:260px;
+            width:320px;
         }
-        .contentb {
-            width: ;
-            background-color: skyblue;
+        h1.welcomeTitle{
+            font-size:60px;
         }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .barrelImg {
-            height: 10px;
-            width: 10px;
-        }
-        .barrelContentHolder {
-            height: ;
-            width: ;
-        }
-        .barrelSpecsHolder {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .contentCellSize {
-            width: 750px;
-            height: ;
-            background-color: pink;
-        }
-    }
     
-    @media only screen and (min-width:1025px) and (max-width: 1440px) {
-        .container {}
-        .contentA {
-            width: ;
-            background-color: pink;
-        }
-        .contentb {
-            width: ;
-            background-color: skyblue;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .barrelImg {
-            height: 10px;
-            width: 10px;
-        }
-        .barrelContentHolder {
-            height: ;
-            width: ;
-        }
-        .barrelSpecsHolder {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .mainImage {
-            height: ;
-            width: ;
-        }
-        .contentCellSize {
-            width: 750px;
-            height: ;
-        }
     }
-    
-    @media only screen and (min-width:1441px) and (max-width: 2560px) {
-        .container {
-            width: 768px;
-        }
+    @media only screen and (min-height:1024px) and (max-height:1280px) {
+
         .contentA {
+            width: 400px;
             width: ;
-            background-color: pink;
-        }
-        .contentb {
+            background-color: purple;
+        } 
+    
+        .contentB {
+            width: 400px;
             width: ;
-            background-color: skyblue;
+            background-color: green;
         }
-        .mainImage {
-            height: ;
+    
+        img.mainImage{
+        height:650px;
+        width:600px;
+        }
+    
+        .shippingImg{
+            height:175px;
+            width:325px;
+        }
+    
+        img.freshnessImg{
+            height:260px;
+            width:320px;
+        }
+        h1.welcomeTitle{
+            font-size:70px;
+        }
+        button.viewProducts{
+            font-size:35px;
+        }
+        .span.subT{
+            font-size:;
+            color:;
+        }
+    
+    }
+
+    @media only screen and (min-height:1081px) and (max-height:1440px) {
+
+        .contentA {
+            width: 400px;
             width: ;
-        }
-        .barrelImg {
-            height: 10px;
-            width: 10px;
-        }
-        .barrelContentHolder {
-            height: ;
+            background-color: purple;
+        } 
+    
+        .contentB {
+            width: 400px;
             width: ;
+            background-color: green;
         }
-        .barrelSpecsHolder {
-            height: ;
+    
+        img.mainImage{
+        height:600px;
+        width:600px;
+        }
+    
+        .shippingImg{
+            height:175px;
+            width:325px;
+        }
+    
+        img.freshnessImg{
+            height:260px;
+            width:320px;
+        }
+
+        h1.welcomeTitle{
+            font-size:60px;
+        }
+    
+    }
+
+    @media only screen and (min-height:1441px) and (max-height:2160px) {
+
+        .contentA {
+            width: 400px;
             width: ;
-        }
-        .mainImage {
-            height: ;
+            background-color: purple;
+        } 
+    
+        .contentB {
+            width: 400px;
             width: ;
+            background-color: green;
         }
-        .mainImage {
-            height: ;
-            width: ;
+    
+        img.mainImage{
+        height:1400px;
+        width:1200px;
         }
-        .contentCellSize {
-            width: 750px;
-            height: ;
+    
+        img.shippingImg{
+            height:200px;
+            width:350px;
         }
+    
+        img.freshnessImg{
+            height:260px;
+            width:320px;
+        }
+
+        h1.welcomeTitle{
+            font-size:140px;
+        }
+
+       button.viewProducts{
+        font-size:80px;
+        border:6px solid red;
+        }
+        span.subT{
+            font-size:64px;
+        }
+    
     }
