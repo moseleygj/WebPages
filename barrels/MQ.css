@@ -42,17 +42,17 @@
 
 
     .rmPadding {
-    
         padding-top: 23px;
         margin-top: 0px;
         top: 50%;
         transform: translateY(-50%);
-        position: relative;
-    
+        position: relative;  
     }
+
     h2.headLineTitle{
         color:#434343;
     }
+    
     p.textDescript{
         color:#555;
         font-size:;
