@@ -1,14 +1,19 @@
-/*Another Fortune Button*/
 
-
-/*let fortune = document.getElementById("fortuneText");*/
-
-function newFortune(){
 let numberz = document.querySelector("#luckyNumbers");
 let fortune = document.querySelector("#fortuneTextContent");
-  console.log("Nothing here yet...");
-
-  numberz.innerHTML="1,5,2,6,19,5";
- /* fortune.innerHTML="1,45,2,6,19,5";*/
-
+let randomNumArray=[];
+function newFortune(){
+     randomNumArray.length=0; //empty the array
+     console.log("hi. from the random number function!");
+ 
+    for (num = 0;num < 6; num++){
+    randomNumArray.push(Math.floor(Math.random()*49)+1);
+    }
+    numberz.innerHTML="";
+        for (i = 0; i < randomNumArray.length; i++){
+        numberz.innerHTML += randomNumArray[i]+",";
+    }
+    //find and remove the last comma
+    numberz.innerHTML = numberz.innerHTML.slice(0,-1);
+        console.log(numberz.innerHTML);
 }
