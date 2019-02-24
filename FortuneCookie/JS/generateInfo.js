@@ -1,7 +1,30 @@
-
 let numberz = document.querySelector("#luckyNumbers");
 let fortune = document.querySelector("#fortuneTextContent");
+let button = document.querySelector("#fortuneBtn");
+let fortunePaper = document.getElementById("fc1");
+let fortunePaper2 = document.getElementById("fc2");
+
 let randomNumArray=[];
+let ran = 0;
+
+function firstRun()
+{
+    //Trigger the counter so  function runs only once. 1=true,0=false
+if (ran == 1 ){
+    console.log("if clause ran");
+    newFortune();
+} 
+else{
+    //fortunePaper.style.display="block";
+  //  fortunePaper2.style.display="block";
+    button.innerHTML="Another fortune?";
+    ran=1;
+    //console.log("else clause  ran");
+   newFortune();
+}
+    
+}
+
 function newFortune(){
      randomNumArray.length=0; //EMPTY ARRAY
       
@@ -45,7 +68,7 @@ http_request.onreadystatechange = function(){
         var jsonObj = JSON.parse(http_request.responseText);    //JS function JSON.parse to parse JSON data
         //jsonObj varibale now contains the data structre and can
         //be accessed as jsonObj.name and jsonObj.country.
-       let rand=Math.floor(Math.random()*254)+1;
+       let rand=Math.floor(Math.random() * 254 ) + 1;
         document.getElementById("fortuneTextContent").innerHTML = jsonObj[rand];
     }
 }
@@ -53,3 +76,10 @@ http_request.onreadystatechange = function(){
 http_request.open("GET", data_file, true);
 http_request.send();
 }
+$(document).ready(function(){
+    $(button).click(function(){
+        alert("Hello World!");
+        $("#fc1").fadeIn(2000);
+        $("#fc2").fadeIn(700);
+    });
+});
