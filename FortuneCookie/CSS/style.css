@@ -12,10 +12,11 @@ body{
   height:60px;
   width:300px;
   background:url('/IMG/fortuneBG.jpg');
+  background-color:white;
   border:1px solid grey;
   margin:0 auto 0;
   justify-content:center;
-  display:flex;
+  display:none;
   margin-bottom:10px;
   margin-top:20px;
   box-shadow: 0 8px 6px -6px black;
@@ -28,8 +29,8 @@ body{
 
 
 .fortuneText{
-  height:80%;
-  width:80%;
+  height:45px;
+  width:285px;
   text-align:center;
   justify-content:center;
   color:#434343;
@@ -37,6 +38,7 @@ body{
   font-weight:600;
   font-family:Arial, Helvetica, sans-serif;
   font-size:13px; 
+  padding:8px;
 }
 
 .fortuneTextLuckyNumbers{
