@@ -71,7 +71,8 @@ http_request.onreadystatechange = function(){
         let maxJSONElements = jsonObj.length - 1;
        console.log(maxJSONElements);
        let rand=Math.floor(Math.random() * maxJSONElements ) + 1; 
-        document.getElementById("fortuneTextContent").innerHTML = jsonObj[rand];
+      //check length of text amd dictate size by length
+       document.getElementById("fortuneTextContent").innerHTML = jsonObj[rand];
     }
 }
 
@@ -83,8 +84,6 @@ $(document).ready(function(){
     $(button).click(function(){      
         $("#fc1").fadeIn(900);
         $("#fc2").fadeIn(1000);
-        $(".fortuneText").fadeOut(10).fadeIn(1000);
-
-        //$(".fortuneCookieImg").fadeOut(165).fadeIn();
+        $(".fortuneText").fadeOut(10).fadeIn(1000);     
     });
 });
