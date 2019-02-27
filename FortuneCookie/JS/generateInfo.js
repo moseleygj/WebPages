@@ -71,7 +71,9 @@ http_request.onreadystatechange = function(){
         let maxJSONElements = jsonObj.length - 1;
        console.log(maxJSONElements);
        let rand=Math.floor(Math.random() * maxJSONElements ) + 1; 
-      //check length of text amd dictate size by length
+      //check length of text and dictate size by length
+      console.log(jsonObj[rand].length);
+        
        document.getElementById("fortuneTextContent").innerHTML = jsonObj[rand];
     }
 }
