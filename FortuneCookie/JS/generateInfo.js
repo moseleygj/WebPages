@@ -74,18 +74,20 @@ http_request.onreadystatechange = function(){
       //check length of text and dictate size by length
       console.log(jsonObj[rand].length);
         
-       document.getElementById("fortuneTextContent").innerHTML = jsonObj[rand];
+       fortune.innerHTML = jsonObj[rand];
     }
 }
 
 http_request.open("GET", data_file, true);
 http_request.send();
 }
-
+let runOnce=0;
 $(document).ready(function(){
+   
     $(button).click(function(){      
         $("#fc1").fadeIn(900);
         $("#fc2").fadeIn(1000);
         $(".fortuneText").fadeOut(10).fadeIn(1000);     
     });
+
 });
