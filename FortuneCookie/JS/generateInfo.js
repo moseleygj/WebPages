@@ -4,12 +4,12 @@ let button = document.querySelector("#fortuneBtn");
 let fortunePaper = document.getElementById("fc1");
 let fortunePaper2 = document.getElementById("fc2");
 
-let randomNumArray=[];
+let randomNumArray = [];
 let ran = 0;
 
 function firstRun()
 {
-    //Trigger the counter so  function runs only once. 1=true,0=false
+    //Trigger the counter function to run once. 1=true, 0=false
 if (ran == 1 ){
     console.log("if clause ran");
     newFortune();
@@ -17,14 +17,14 @@ if (ran == 1 ){
 else{
 
     button.innerHTML="Another fortune?";
-    ran=1;
+    ran = 1;
    newFortune();    
     }
     
 }
 
 function newFortune(){
-     randomNumArray.length=0; //EMPTY THE ARRAY
+     randomNumArray.length = 0;
       
     for (num = 0; num < 6; num++){
         randomNumArray.push(Math.floor(Math.random() * 49) + 1);
@@ -77,13 +77,20 @@ http_request.onreadystatechange = function(){
 http_request.open("GET", data_file, true);
 http_request.send();
 }
-let runOnce=0;
+   let runOnce = 0;
 $(document).ready(function(){
-   
-    $(button).click(function(){      
+    
+    $(button).click(function(){
+        //run code once to fade content in     
+        if(runOnce == 0){
         $("#fc1").fadeIn(900);
         $("#fc2").fadeIn(1000);
-        $(".fortuneText").fadeOut(10).fadeIn(1000);     
+        runOnce = 1; 
+     }
+else{
+        //fade new content in
+        $(".fortuneText").fadeOut(10).fadeIn(1000); 
+}
     });
 
 });
