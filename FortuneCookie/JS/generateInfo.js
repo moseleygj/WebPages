@@ -15,18 +15,16 @@ if (ran == 1 ){
     newFortune();
     } 
 else{
-    //fortunePaper.style.display="block";
-  //  fortunePaper2.style.display="block";
+
     button.innerHTML="Another fortune?";
     ran=1;
-    //console.log("else clause  ran");
    newFortune();    
     }
     
 }
 
 function newFortune(){
-     randomNumArray.length=0; //EMPTY ARRAY
+     randomNumArray.length=0; //EMPTY THE ARRAY
       
     for (num = 0; num < 6; num++){
         randomNumArray.push(Math.floor(Math.random() * 49) + 1);
@@ -67,13 +65,11 @@ http_request.onreadystatechange = function(){
     if (http_request.readyState == 4){
         var jsonObj = JSON.parse(http_request.responseText);    //JS function JSON.parse to parse JSON data
         //jsonObj varibale now contains the data structre and can
-        //be accessed as jsonObj.name and jsonObj.country.
+        //be accessed as jsonObj. ...
         let maxJSONElements = jsonObj.length - 1;
        console.log(maxJSONElements);
        let rand=Math.floor(Math.random() * maxJSONElements ) + 1; 
-      //check length of text and dictate size by length
-      console.log(jsonObj[rand].length);
-        
+         
        fortune.innerHTML = jsonObj[rand];
     }
 }
