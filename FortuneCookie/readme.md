@@ -1,9 +1,9 @@
 
-# :large_orange_diamond: Fortune Cookie 
-## Generates a random fortune with each click using AJAX/JSON.
+#  :cookie: Fortune Cookie 
+#### Generates a random fortune with each click using AJAX & JSON.
 
 - [ ] Incomplete
-- [*] Complete
+- [x] Complete
 
 ![screenshot](https://github.com/moseleygj/WebPages/blob/master/FortuneCookie/Screenshot1.png);
 ![screenshot](https://github.com/moseleygj/WebPages/blob/master/FortuneCookie/Screenshot2.png);
