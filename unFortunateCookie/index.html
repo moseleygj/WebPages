@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="CSS/style.css" rel="stylesheet">
+  <link href="IMG/icon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Fortune Cookie</title>
+ 
+</head>
+<body>
+<div class="logoHolder">
+  <div class="logoMain">Fortune Cookie</div>
+  <div class="logoSub">GENERATOR</div>
+</div>
+
+<div class="centerFortuneContents">
+    <img src="IMG/fortune-cookie-hi.png" class="fortuneCookieImg" alt="Fortune Cookie Picture">
+
+    <div class="fortuneCookie" id="fc1">
+      <div class="fortuneText" id="fortuneTextContent">...</div>
+    </div>
+
+    <div class="fortuneCookie" id="fc2">
+      <div class="fortuneText" style="line-height:50px;width:90%;">Lucky Numbers: <div id="luckyNumbers" style="display:inline-block;color:red;">0, 0, 0, 0, 0</div></div>
+    </div>
+
+      <button onClick = "firstRun()" tabindex="0" id="fortuneBtn" >Generate fortune?</button>
+</div>
+
+  <footer>2019 &copy; Gordon Moseley, Inc. All rights reserved.</footer>
+  <script src="JS/generateInfo.js"></script>
+
+</body>
+  
+</html>
