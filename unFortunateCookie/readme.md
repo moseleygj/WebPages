@@ -3,18 +3,18 @@
 ==============
 ***Project status:***
 ==============
-<!--:white_check_mark: Complete -->
-- [ ] Pending       :hourglass:
+:white_check_mark: Complete 
+<!-- - [ ] Pending       :hourglass:
 <!-- - [ ] Incomplete     :x: -->
 
-Generates a random fortune with each click using AJAX & JSON.
+Generates an random unFortune cookie with each click using AJAX & JSON.
 
 Screenshots
 ===========
 
-<img src="" alt="screenshot2" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/unFortunateCookie/Screenshot1.png" alt="screenshot2" width="300px"/>
 
-<img src="" alt="screenshot1" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/unFortunateCookie/Screenshot2.png" alt="screenshot1" width="300px"/>
 
 
  :unlock:License:
