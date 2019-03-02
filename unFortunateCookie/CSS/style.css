@@ -1,5 +1,9 @@
+html{
+  height:100%;
+  width:100%;
+}
 body{
-  background:#665c4e;
+  background:linear-gradient(black,#8f0000);
   padding:0;
   margin:0;
   height:100%;
@@ -24,7 +28,7 @@ body{
 }
 
 .fortuneCookie:hover{
-    border:1.5px solid red;
+    border:1.5px solid purple;
 }
 
 
@@ -60,36 +64,36 @@ button{
   width:300px;
   text-align:center;
   margin-top:40px;
-  background:#86a756;
-  color:#fefefd;
+  background:#1f201f;
+  color:#fff34e;
   font-weight:600;
   font-size:18px;
-  border:1px solid #665c4e;
+  border:1px solid #fefefd;
   line-height:50px;
   border-radius:5px;
   display:block;
-  border:1px solid transparent;
-  text-shadow: 1px 1px 1px #565656;
+  border:1px solid #fefefd;
   transition: all 0.2s ease;
 }
 
 button:hover{
-  border:1px solid #fefefd;
-  background:#7c9e4c;
+  border:1px solid #1f201f;
+  background:#fff34e;
   box-shadow:0 8px 6px -6px black;
+  color:#1f201f;
 }
 
 .logoMain{
   font-family: 'Kaushan Script', cursive;
-  color:#8eac5b;
-  font-size:50px;
+  color:white;
+  font-size:30px;
   margin :0 auto 0;
   display:flex;
   justify-content:center;
 }
 
 .logoSub{
-  color:#8eac5b;
+  color:#c2c2c2;;
   font-size:34px;
   margin :0 auto 0;
   font-weight:300;
