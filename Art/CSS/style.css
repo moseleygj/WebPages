@@ -156,11 +156,11 @@ ul{list-style-type: none;}
     text-shadow:1px 1px 1px black;
     opacity:0.9;
 }
-#btn:hover .container{
+#btn:hover {
     box-shadow:1px 1px 1px black;
     opacity:0.9;
     text-shadow:0px;
-    margin-top: 20px;
+    color:#57aadd;
 }
 img{
     border:1px solid  transparent;
