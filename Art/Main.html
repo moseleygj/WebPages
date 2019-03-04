@@ -11,13 +11,12 @@
 <script>
 $(document).ready(function(){
     $("img").click(function(){
-//alert("You clicked an image.");
 $("#container").css("filter","blur(15px)");
 $(".hold").css("display","flex");
 $(this).css("filter","blur(0px)").fadeTo(1500);
-$("#bigPic").fadeIn(1200);var me = $(this).attr('src');console.log(me);
+$("#bigPic").fadeIn(1200);
+var me = $(this).attr('src');
 $("#showTime").attr("src",me);
-//$("img").not(this).css("filter","blur(1px)");
     });
 });
 </script>
