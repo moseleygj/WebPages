@@ -160,7 +160,7 @@ ul{list-style-type: none;}
     box-shadow:1px 1px 1px black;
     opacity:0.9;
     text-shadow:0px;
-    color:#57aadd;
+    background:#57aadd;
 }
 img{
     border:1px solid  transparent;
