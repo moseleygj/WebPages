@@ -3,34 +3,24 @@
 <head>
 <meta charset="utf-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="JS/pictures.js"></script>
 <link rel="icon" href="palette.png">
 <link rel="stylesheet" href="CSS/style.css" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Inside the Mind of a Monster: Main</title>
-<script>
-$(document).ready(function(){
-    $("img").click(function(){
-    $("#container").css("filter","blur(15px)");
-    $(".hold").css("display","flex");
-    $(this).css("filter","blur(0px)").fadeTo(1500);
-    $("#bigPic").fadeIn(1200);
-    var me = $(this).attr('src');
-    $("#showTime").attr("src",me);
-    });
-});
-</script>
 </head>
 
 <body>
-    <div class="hold"><div id="bigPic"><img src="#" id="showTime"></div></div>
+    <div class="hold">
+        <div id="bigPic"><img src="#" id="showTime"></div>
+    </div>
 
 <div id="container">
 <a id="btn" href="mailto:moseleygj@gmail.com" target="_blank"/>Contact Artist</a>
 <div></div>
 <div ><h1 class="title"><p class="home" href="#">INSIDE THE MIND OF GORDON</p></h2></div>
 <div id="quote">"Every child is an artist. The problem is how to remain and artist once we grown up" -Pablo Picasso</div>
-<div id="nav">
+<nav>
 <ul>
 <li><a href="#"class="link" alt="submit"><del>SUBMIT</del></a></li>
 <li><a href="#"class="link" alt="submit">ARCHIVE</a></del></li>
@@ -39,9 +29,10 @@ $(document).ready(function(){
 <li><a href="#"class="link" alt="submit"><del>SUBMIT</del></a></li>
 <li><a href="#"class="link" alt="submit"><del>SEARCH</del></a></li>
 </ul>
+</nav>
 </div><br>
 <!-- Photo Grid-->
-<div class="row">
+<div class="row" >
     <div class="column">
         <img style="width:100%" src="004.jpg" alt="photo">
         <img style="width:100%" src="027.jpg" alt="photo">
