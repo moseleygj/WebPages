@@ -38,6 +38,7 @@
             text-decoration: none;
             color: grey;
             text-align: ;
+            font-size: 22px;
         }
         
         a:hoover {
@@ -49,6 +50,11 @@
             color: orange;
             text-align: ;
             background-color: ;
+            font-size: 18px;
+        }
+        
+        #search:hover {
+            text-decoration: underline;
         }
         
         label {
@@ -107,7 +113,7 @@
         }
         
         .btn {
-            background-color: blue;
+            background-color: #009cd6;
             color: white;
             padding: 12px 28px;
             font-size: 15px;
@@ -118,9 +124,9 @@
         }
         
         .btn:hover {
-            background-color: green;
+            background-color: #5abb43;
             color: white;
-            border: 1px solid grey;
+            border: 1px solid transparent;
         }
     </style>
 </head>
@@ -143,7 +149,7 @@
 
         <form name="q" method="get" action="">
             <p id="ct">
-                <input name="q" type="search" title="Mp3 Search" placeholder="MP3 Search" autofocus required>
+                <input name="q" type="search" title="MP3 Search..." placeholder="MP3 Search" autofocus required>
 
             </p>
             <p id="ct">
