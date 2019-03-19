@@ -1,5 +1,5 @@
 
-:art: My personal Art  website
+:art: My personal art  website
 ==============
 ***Project status:***
 ==============
