@@ -16,7 +16,7 @@ This is my personal minimalistic art website I created to showcase my illustrati
 Screenshots
 ===========
 
-<img src="https://github.com/moseleygj/WebPages/blob/master/" alt="screenshot2" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/Art/Screenshot.png" alt="screenshot2" width="300px"/>
 
 <img src="https://github.com/moseleygj/WebPages/blob/master/" alt="screenshot1" width="300px"/>
 
