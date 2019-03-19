@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("img").click(function(){
+    $("img.artImg").click(function(){
     $("#container").css("filter","blur(15px)");
     $(".hold").css("display","flex");
     //$(this).css("filter","blur(0px)").fadeTo(3500);

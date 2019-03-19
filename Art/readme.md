@@ -3,9 +3,13 @@
 ==============
 ***Project status:***
 ==============
-:white_check_mark: Complete 
-<!-- - [ ] Pending       :hourglass:
+<!--:white_check_mark: Complete -->
+- [ ] Pending       :hourglass:
 <!-- - [ ] Incomplete     :x: -->
+
+
+Description
+===========
 
 This is my personal minimalistic art website I created to showcase my illustrations. This site was created using CSS(flexbox), JavaScript, jQuery, AJAX/JSON and a little creativity.
 
