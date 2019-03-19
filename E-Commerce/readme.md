@@ -4,7 +4,7 @@ E-Commerce UI
 
 
 
-![screenshot](https://github.com/moseleygj/WebPages/blob/master/E-Commerce/Screenshiot.png)
+![screenshot](https://github.com/moseleygj/WebPages/blob/master/E-Commerce/Screenshot.png)
 
 
 #### :unlock:License:
