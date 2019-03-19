@@ -266,7 +266,7 @@ body {
 }
 
 .layer2 {
-	height: 348px;
+	height: 336px;
 	width: 100%;
 	background: white;
 	border-top: 1px solid lightgray;
@@ -421,3 +421,9 @@ body {
 	position: relative;
 }
 
+#viewAsColumn{
+background:url("Icons/001-two-rows-layoutDGrey.png");
+}
+#viewAsColumn:hover{
+background:url("Icons/014-menuDBlue.png");
+}
