@@ -300,6 +300,7 @@ body {
     font-size: 16px;
     line-height: 50px;
     float: right;
+    position: relative;
 }
 
 .profileIcon {
@@ -445,6 +446,22 @@ body {
 }
 
 #refreshIcon {
+    background: url(/Icons/015-reload-1BDGrey.png);
     background-size: 20px 20px;
-    background: url("/Icons/015-reload-1BDGrey.png");
+    text-align: center;
+    margin: 0 auto 0;
+    display: inline-block;
+    position: absolute;
+}
+
+#refreshIcon:hover {
+    background: url(/Icons/015-reload-1Blue.png);
+    background-size: 20px 20px;
+    text-align: center;
+    margin: 0 auto 0;
+    display: inline-block;
+    position: absolute;
+}
+
+
 }
