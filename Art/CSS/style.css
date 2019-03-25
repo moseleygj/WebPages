@@ -83,7 +83,7 @@ h1 {
 }
 
 body {
-    font: 12px/20px Georgia, "Times New Roman", Times, serif;
+    font: 14px/20px Georgia, "Times New Roman", Times, serif;
     text-align: center;
 }
 
@@ -194,7 +194,6 @@ ul {
     font-size: 13px;
     color: white;
     border-radius: 2px;
-    border: 1px #529ecc;
     position: absolute;
     top: 0;
     right: 0;
@@ -207,7 +206,6 @@ ul {
 #btn:hover {
     box-shadow: 1px 1px 1px black;
     opacity: 0.9;
-    text-shadow: 0px;
     background: #57aadd;
     text-shadow: 1px 1px 1px black;
 }
@@ -342,7 +340,6 @@ body {
 .contanctinfo {
     height: 35px;
     width: 100%;
-    background: ;
     text-align: center;
     color: #434343;
     padding: 0;
@@ -452,6 +449,7 @@ body {
     margin: 0 auto 0;
     display: inline-block;
     position: absolute;
+    transition: all 5s ease;
 }
 
 #refreshIcon:hover {
