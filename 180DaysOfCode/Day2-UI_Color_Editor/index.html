@@ -5,14 +5,80 @@
 </head>
 
 <body>
-    <div class="title1" id="title1"></div>
-    <div class="title2" id="title2"></div>
-    <div class="mainSection" id="mainSection"></div>
-    <footer>
+    <div class="title1" id="title1">Title1</div>
+    <div class="title2" id="title2">Title2
+
+
+    </div>
+    <div class="mainSection" id="mainSection">
+        <button class="btn1" id="btn1">Primary</button>
+        <button class="btn2" id="btn2">Secondary</button>
+        <button class="btn3" id="btn3">Inactive</button>
+        <div class="buttons">
+            <table>
+                <tr>
+                    <th>Button Primary</th>
+                    <th><input type="text" id="pbtn1" placeholder="Color of HEX#" onkeyup="refreshStats()"></th>
+                </tr>
+                <tr>
+                    <th>Button secondary</th>
+                    <th><input type="text" id="sbtn2" placeholder="Color of HEX#" onkeyup="refreshStats()"></th>
+                </tr>
+                <tr>
+                    <th>Button Inactive</th>
+                    <th><input type="text" id="ibtn" placeholder="Color of HEX#" onkeyup="refreshStats()"></th>
+                </tr>
+                <tr>
+                    <th>Title1</th>
+                    <th><input type="text" id="sTitle1" placeholder="Color of HEX#" onkeyup="refreshStats()"></th>
+                </tr>
+                <tr>
+                    <th>Title2</th>
+                    <th><input type="text" id="sTitle2" placeholder="Color of HEX#" onkeyup="refreshStats()"></th>
+                </tr>
+                <tr>
+                    <th>Main Section</th>
+                    <th><input type="text" id="sMainSect" placeholder="Color of HEX#" onkeyup="refreshStats()"></th>
+                </tr>
+                <tr>
+                    <th>Footer Section</th>
+                    <th><input type="text" id="sFooter" placeholder="Color of HEX#" onkeyup="refreshStats()"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer id="ebtn2">
         someName
     </footer>
     <script>
-        document.getElementById("title1")
+        //textboxes
+        var title1 = document.getElementById("title1");
+        var title2 = document.getElementById("title2");
+        var mainSec = document.getElementById("mainSection");
+        var btn_1 = document.getElementById("pbtn1");
+        var btn2 = document.getElementById("sbtn2");
+        var btn3 = document.getElementById("ibtn");
+        var tfooter = document.getElementById("sFooter");
+        //actual elements
+        var Etitle1 = document.getElementById("sTitle1");
+        var Etitle2 = document.getElementById("sTitle2");
+        var EmainSec = document.getElementById("sMainSect");
+        var Ebtn1 = document.getElementById("btn1");
+        var Ebtn2 = document.getElementById("btn2");
+        var Ebtn3 = document.getElementById("btn3");
+        var Efooter = document.getElementById("ebtn2");
+
+
+        function refreshStats() {
+            title1.style.backgroundColor = Etitle1.value;
+            title2.style.backgroundColor = Etitle2.value;
+            mainSec.style.backgroundColor = EmainSec.value;
+            btn_1.style.backgroundColor = Ebtn1.value;
+            btn2.style.backgroundColor = Ebtn2.value;
+            btn3.style.backgroundColor = Ebtn3.value;
+            tfooter.style.backgroundColor = Efooter.value;
+        }
     </script>
 </body>
 
