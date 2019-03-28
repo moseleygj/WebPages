@@ -1,0 +1,63 @@
+        body,
+        html {
+            margin: 0;
+        }
+        
+        .title1 {
+            height: 40px;
+            width: 100%;
+            position: ;
+            background: rgb(97, 0, 0);
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        .title2 {
+            height: 20px;
+            width: 100%;
+            position: ;
+            background: red;
+            color: white;
+            text-align: center;
+        }
+        
+        .mainSection {
+            height: 100%;
+            width: 100%;
+            position: ;
+            background: pink;
+            color: navy;
+        }
+        
+        footer {
+            height: 40px;
+            width: 100%;
+            position: ;
+            background: rgb(97, 0, 0);
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        #btn1 {
+            padding: 10px;
+            margin: 10px auto;
+            display: inline-block;
+            position: relative;
+            border: 10px;
+        }
+        
+        #btn2 {
+            padding: 10px;
+            margin: 10px auto;
+            display: inline-block;
+            border: 10px
+        }
+        
+        #btn3 {
+            padding: 10px;
+            margin: 10px auto;
+            display: inline-block;
+            border: 10px;
+        }
