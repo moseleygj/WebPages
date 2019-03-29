@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <style>
+        body,
+        html {
+            background: #691A99;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        input[type="text"] {
+            background: #68EFAD;
+            display: block;
+            margin: 10px 0px;
+            border-radius: 5px;
+            font-weight: bolder;
+            color: black;
+            width: 160px;
+            height: 40px;
+            font-size: 35px;
+        }
+        
+        button {
+            background-color: #9b26AF;
+            padding: 5px;
+            color: white;
+            border: 1px solid white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            font-size: 25px;
+            border: 1px solid green;
+        }
+        
+        select {
+            background: ;
+        }
+        
+        .container {
+            width: 320px;
+            background: #7A1EA1;
+            border-radius: 20px;
+            height: 310px;
+            position: relative;
+            top: 50%;
+            margin: auto;
+            transform: translateY(-50%);
+        }
+        
+        table {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>AMOUNT:</th>
+                <th><input type="text" id="price" placeholder="00.00">
+                </th>
+            </tr>
+            <tr>
+                <th>TAX %:</th>
+                <th><input type="text" id="tax" placeholder="0.08875">
+                </th>
+            </tr>
+            <tr>
+                <th>TIP %:</th>
+                <th><select id="tip">
+                 <option value="0.10">10%</option>
+                 <option value="0.15">15%</option>
+                 <option value="0.20">20%</option>
+               </select>
+                </th>
+            </tr>
+            <tr>
+                <th>TOTAL OWED</th>
+                <th><input type="text" id="total" placeholder="">
+                </th>
+            </tr>
+            <tr>
+                <th><button onClick="doMagic(price,tax,total)"> Total</button>
+                </th>
+                <th>
+                    <p id="demo"></p>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var numbers = /[0-9.$]/g;
+
+        function doMagic(price, tax, total) {
+            var result = price.value.match(numbers);
+
+            //check if text-box is empty
+            if (result == null) {
+                alert("Non-numeric results: Please enter only numbers!");
+                document.getElementById("price").value = "";
+            }
+            //check if text-box has valid characters
+            else if (result !== null) {
+                // alert("Textbox isn't empty");
+                checkChars(result, price);
+                checkEmpty(price);
+                calculateTip(price, tax, total);
+            }
+
+        }
+
+
+        function checkChars(result, price) {
+            for (i = 0; i < result.length; i++) {
+                // alert("i="+result[i]);
+                if (result[i] == "$") {
+                    //alert("Looks like a Dollar-sign($) was found!");
+                    exit //extract the dollar sign and proceed.
+                    //call calculateTip(price);
+                } else {
+                    //alert("Not a Dollar-sign");//continue with math
+                    calculateTip(price, tax, total);
+                }
+            } //end of for loop
+        }
+
+        function calculateTip(price, tax, total) {
+            //Calculate Tax
+            var Tax = parseFloat(tax.value) * parseFloat(price.value);
+            //calculate Tip
+            var Tip = parseFloat(tip.value) * parseFloat(price.value);
+            //calculate total
+            // alert("Tip: $" + Tip.toFixed(2));
+            var n = parseFloat(parseFloat(Tax) + parseFloat(Tip) + parseFloat(price.value));
+            total.value = n.toFixed(2);
+            document.getElementById("demo").innerHTML = "$" + Tip.toFixed(2);
+
+        }
+
+        function checkEmpty(price) {
+            if (price.value == 0 || price.value == "0.0" || price.value == "0.00" || price.value == "00") {
+                alert("You can't start from zero");
+                document.getElementById("price").value = "";
+                exit;
+
+            }
+        }
+    </script>
+</body>
+
+</html>
