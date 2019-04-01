@@ -1,0 +1,88 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    </head>
+<style>
+body,html{
+  background:#691A99;
+  margin:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.container{
+  width:320px;
+  background:rgba(0, 0, 0, 0.75);
+  border-radius:20px;
+  height:310px;
+  position:relative;
+  top:50%;
+  margin:auto;
+  transform: translateY(-50%);
+  border:8px solid black;
+}
+
+
+p{
+  color:white;
+  font-size:38px;
+  font-weight:bold;
+  top:50%;
+  transform: translateY(-50%);
+  text-align:center;
+  position:relative;
+}
+</style>
+  <body onLoad="doMagic()">
+<div class="container">
+     <p id="demo"></p>
+</div>
+<script>
+var t = new Date();
+let bd = document.querySelector("body");
+bd.style.background="red";
+function doMagic(){ 
+var Hour=t.getHours();
+var Min=t.getMinutes();  document.getElementById("demo").innerHTML = t.getUTCHours();
+console.log(Hour + " : " + Min );
+                   
+                
+     //returns 0-23  
+     //0=12am, 23=11pm
+if( Hour <= 11 ){
+  document.getElementById("demo").innerHTML = "Good Morning!";
+  console.log("Good Morning!") ;
+  bd.style.background="url('http://media1.santabanta.com/full1/Miscellaneous/Good%20Morning/good-morning-71a.jpg') ";
+   bd.style.backgroundSize="cover";
+
+}
+ else if(( Hour >= 12 &&  Min > 1 ) && Hour <= 17 ){
+   document.getElementById("demo").innerHTML = "Good Afternoon";
+   console.log("Good Afternoon");
+       bd.style.background="url('http://2.bp.blogspot.com/-YI_W4ZKkLyE/U7sLL5p4pEI/AAAAAAAAMgs/3Qo2PiplUJE/s1600/Good+Afternoon+Pictures,+Images+and++Gallery+Collection.jpg')";
+     bd.style.backgroundSize="cover";
+}
+  
+else if( Hour >= 17 && Hour < 20 ){
+  document.getElementById("demo").innerHTML = "Good Evening";
+  console.log("Good Evening");
+    bd.style.background="url('https://1.bp.blogspot.com/-C2zYeX6SEzk/WlCVKQbf1ZI/AAAAAAAAHKA/Sy8S1gCaVlQuCf0nLfveilnKCYRMowbXACLcBGAs/s1600/33.jpg')";
+    bd.style.backgroundSize="cover";
+
+}
+  else if( Hour >= 20 && Hour <= 23 ) {
+  document.getElementById("demo").innerHTML = "Good Night";
+  console.log("Good Night");
+    bd.style.background="url('http://www.sarkarinaukrisearch.in/wp-content/uploads/2019/01/best-good-night-images1-19.jpg')";
+    bd.style.backgroundSize="cover";
+
+}
+else{
+  console.log("error");
+}
+                   
+}
+</script>
+  </body>
+</html>
