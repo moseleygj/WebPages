@@ -1,0 +1,69 @@
+#containerRes{background-image:url('white-paper-texture.jpg');background-size:100% 100%;background-repeat:no-repeat; height:960px;width:637px;box-shadow: 0 5px 35px rgba(0,0,0,.65);background-color:white;margin:0 auto 0;margin-top: 20px;}
+body{background-color:#222;font-family: "Helvetica Neue";}
+
+#name{font-size:26px;font-weight:bolder ;color:#000;text-align:center;margin-top:5px;text-shadow: 1px 2px 1px lightgrey}
+
+#phone{color:#7b7b7b;font-size:18px;text-align:center; font-weight:bold ;text-align:center;margin-top:5px;}
+#photo{height:;width:;border:;}
+#photo:hover{}
+#date{color:#8f8f8f;font-size:;text-align: ;font-weight: ;}
+.contract{color:#368536; font-size: 14px;text-align: center;}
+#website{color:#2379d2;font-size:12px;text-align:center ;font-weight:bold;text-decoration: none;}
+#webTitle{font-size:14px;text-align: center;margin-top:5px;font-weight: bold;}
+
+.CompanyN{color:#373737;font-size:14px;text-align: left;font-weight:bold ;clear:both;margin-left:20px;margin-bottom:5px}
+.jobDescript{color:#000;font-size:12px;text-align: ;font-weight: ;margin-bottom:5px;margin-left: 40px;margin-right: 15px;}
+.job{width:100%;clear:both; height:auto;}
+
+.space{margin-bottom:8px ;margin-top: 5px;}
+.headings{color:#000;font-size:16;text-align:left ;font-weight:bolder;margin-left:20px;margin-bottom:5px ;margin-top: 5px;clear:both; }
+.horzL{height:1px; width:93%;background-color:grey;margin:0 auto 0;margin-bottom:5px ;margin-top: 5px}
+.horzL1{height:2px; width:80%;background-color:black;margin:0 auto 0;}
+.horzL2{height:3px; width:80%;background-color:black;margin:0 auto 0;}
+#summaryB{width:100%;height:auto;clear: both;}
+#summaryC{width:100%;height:auto;clear: both;}
+
+#objective{color:#000;font-size:14px; ;margin-left:40px;margin-bottom:12px ;margin-top: 5px;margin-right:10px}
+#webB{height:70px ;width:200px;float:left;position: relative;margin-left:10px;}
+#NameandNumB{height:70px ;width:240px;float:left;}
+#AddressB{height:70px; width:175px; float:left; text-align:center; font-weight: bold;}
+#address{color:;font-size:;font-weight:;margin-top:5px}
+#Email{color:#2379d2;font-size:12px;font-weight: bold;}
+#workExprHead{width:100%;height:50px;font-size:16px;font-weight:bolder;margin-left:10px}
+#workExprB{width:100%;height: auto;}
+ul{padding:0;margin-top:-5px;}
+#toon{position: absolute;height:200px;width:100px;top:-20px;right:-10%;clear:both;float:right;}
+#tape{position: absolute;height:120px;width:50px;top:8px;left:197px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";}
+        #imgStick{height:auto;width:637px;position: absolute;}
+#clip{position: absolute;height:121px;width:157px;top:-18px;left:3%;clear:both;float:right;}
+*{vis}
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #333333;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  border: solid #f7f7f7 2px;
+  text-decoration: none;
+  background:skyblue;
+  width:180px;
+    box-shadow: 1px 1px 1px lightgray;
+    margin-right:5px;    margin-left:5px;
+        margin-bottom:10px;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+  text-decoration: none;
+  box-shadow: 1px 2px 1px lightgray;
+  background-color:#f0f0f0;
+}
