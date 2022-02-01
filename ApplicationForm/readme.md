@@ -1,2 +1,21 @@
+
+:computer: Application Form
+==============
+***Project status:***
+==============
+:white_check_mark: Complete 
+<!-- - [ ] Pending       :hourglass:
+<!-- - [ ] Incomplete     :x: -->
+
+Simple application form using JS and CSS.
+
+
+Screenshots
+===========
 ![Alt text](https://github.com/moseleygj/WebPages/blob/master/ApplicationForm/Screenshot%20from%202017-08-28%2018-21-45.png)
+
+
 ![Alt text](https://github.com/moseleygj/WebPages/blob/master/ApplicationForm/Screenshot%20from%202017-08-28%2018-22-57.png)
+
+ :unlock:License:
+GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
