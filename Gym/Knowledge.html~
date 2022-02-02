@@ -1,0 +1,157 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<link href="Gym.css" style="text/css" rel="stylesheet"/>
+<title>KNOWLEDGE</title>
+<!--<link href="round.css" style="text/css" rel="stylesheet"/>-->
+</head>
+
+<body>
+<div id="container">
+<header id="header">
+<div id="banner"><center><img src="House-of-Strength-Logo-PNG.png" alt="mainLogo"/></center></div><br>
+<div id="menu">
+<nav>
+<ul>
+<li><a class="MenuLink" href="Gym.html" title="Homepage">Main</a></li>
+<li><a class="MenuLink" href="Knowledge.html" title="Did You know?"style="background-color:white;color:#434343;">Fitness Knowledge </a></li>
+<li><a class="MenuLink" href="Nutrition.html" title="What should I eat?">Nutrition</a></li>
+<li><a class="MenuLink" href="Calculator.html" title="">Calculators</a></li>
+<li><a class="MenuLink" href="Logout.html" title="">workouts</a></li>
+<li><a class="MenuLink" href="WOD.html" title="Crossfit:Workout of the day">WOD</a></li></ul>
+</nav></div>
+
+</header>
+</div>
+
+
+<div id="belowheader"></div>
+
+<div id="container">
+
+
+<div id="main">
+<h2>Knowledge base</h2>
+<div id="containBox">
+<div id="space">
+
+<div id="info"><img src="https://s-media-cache-ak0.pinimg.com/originals/05/d1/0c/05d10c698691d774579658b9c05ca7b5.jpg" class="articleImg"><div id="vert"></div>
+<h2 id="title">Can We All Be As Big As Arnold? Bodybuilding Genetics Explained!
+</h2>
+&nbsp&nbspI'm sure you've all heard something about genetic potential in the bodybuilding game.
+<div>
+<a href="http://www.musclehack.com/can-we-all-be-as-big-as-arnold-bodybuilding-genetics-explained/"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="alcohol-weight-loss-1.jpg" ><div id="vert"></div>
+<h2 id="title">Bodybuilding & Alcohol: Do They Mix? 
+</h2>
+&nbsp&nbspThis article is not intended to dissuade people from using alcohol moderately, for recreational purposes, but will point out, from an athlete and a researcher's point of view, its significant shortcomings.
+<div>
+<a href="http://www.bodybuilding.com/fun/drobson11.htm
+"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="marine-night-pullup.jpg" ><div id="vert"></div>
+<h2 id="title">Armstrong Pull-up Program
+</h2>
+&nbsp&nbspArmstrong Pull-up Program
+This program was used by Major Charles Lewis Armstrong, USMC to prepare himself to attempt to set a world record in number of pull-ups completed in a single exercise session.
+<div>
+<a href="http://armstrongpullupprogram.com/
+"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="blood-drop-TcZwkM-clipart.jpg" ><div id="vert"></div>
+<h2 id="title">The Blood Type Diet®</h2>
+&nbsp&nbspThe Most popular Personalized diet system in the world
+
+<div>
+<a href=" http://www.dadamo.com/"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="AdonisGoldenRatio.jpg" ><div id="vert"></div>
+<h2 id="title">What Is The Adonis Ratio And Why Is It Important?
+</h2>
+&nbsp&nbspAnd, of course, one of the answers to that question is simply “it depends”. (Read about the golden ratio here.)
+<div>
+<a href="http://www.bodybuildingweightprogram.com/golden-ratio/
+"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+
+<div id="info"><img class="articleImg" src="myostatin.jpg" ><div id="vert"></div>
+<h2 id="title">Myostatin
+</h2>
+&nbsp&nbspMyostatin (also known as growth differentiation factor 8, abbreviated GDF-8) is a myokine, a protein produced and released by myocytes that acts on muscle cells' autocrine function to inhibit myogenesis: muscle cell growth and differentiation. 
+<div>
+<a href="https://en.wikipedia.org/wiki/Myostatin
+"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="c9872b027fc617611557a72a79443547.jpg" ><div id="vert"></div>
+<h2 id="title">The Muscle Fiber Test</h2>
+&nbsp&nbspTake our test to find out if you're slow- or fast-twitch dominant (and how to maximize your training.)
+<div>
+<a href="http://www.mensfitness.com/training/build-muscle/muscle-fiber-test"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="musclememory.jpg" ><div id="vert"></div>
+<h2 id="title">Returning to BodyBuilding: Muscle Memory</h2>
+&nbsp&nbspyour amazing body may be closer than you think. Returning to bodybuilding may seem scary, but muscle memory will be there to help.
+<div>
+<a href="http://www.bodyflux.com/106/muscle-memory.html"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="muscle1.jpg" ><div id="vert"></div>
+<h2 id="title">How Muscles Work</h2>
+&nbsp&nbspLearn the basic Science behind the Muscles.
+<div>
+<a href="http://health.howstuffworks.com/human-body/systems/musculoskeletal/muscle.htm/printable"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="time-under-tension.jpg" ><div id="vert"></div>
+<h2 id="title">How to Gain Muscle Faster With 'Time Under Tension' Training
+</h2>
+&nbsp&nbspFeeling stuck at the gym? Try this muscle-pumping method to stimulate new growth
+<div>
+<a href="http://www.mensfitness.com/training/build-muscle/gain-big-with-time-under-tension-training"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+
+<div id="info"><img class="articleImg" src="tumblr_mns6f7ETi31snacfho1_1280.jpg" ><div id="vert"></div>
+<h2 id="title">High Intensity Versus High Volume
+</h2>
+&nbsp&nbspIn the red corner, we have high intensity. In the blue corner, we have high volume.
+<div>
+<a href="https://www.t-nation.com/training/high-intensity-versus-high-volume"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="hqdefault.jpg" ><div id="vert"></div>
+<h2 id="title">The Alpha M Diet Plan </h2>
+&nbsp&nbspThe Alpha M Diet Plan: Lose Body Fat and Gain Muscle 
+<div>
+<a href="https://www.iamalpham.com/index.php/topics/the-alpha-m-diet-plan/"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<!-- START
+<div id="info"><img class="articleImg" src="" ><div id="vert"></div>
+<h2 id="title">Some more...</h2>
+&nbsp&nbspLorem ipsum dolor sit amet, consectetur adipiscing elit. . Lorem ipsum dolor sit amet, consectetur adipiscing elit
+<div>
+<a href=""><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+END-->
+
+</div><br>
+
+</div>
+</div>
+<div id="footer">&nbsp&nbsp2016 House of strength LLC.&copy</div>
+
+</div>
+
+</body>
+
+</html>

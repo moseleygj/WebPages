@@ -1,0 +1,37 @@
+BMI Categories:
+Underweight = <18.5
+Normal weight = 18.5–24.9
+Overweight = 25–29.9
+Obesity = BMI of 30 or greater 
+
+
+
+Bodyweight in kilograms divided by height in meters squared
+           or
+BMI = x KG / (y M * y M)
+
+Where:
+
+    x=bodyweight in KG
+    y=height in m
+
+Example for 175 cm height und 70 kg weight:
+
+    BMI = 70 / (1.75 * 1.75) = 22.86
+    
+    
+    
+    
+    
+    
+    
+    Reference- calorie calculator
+------------------
+This Calorie Calculator is based on the Mifflin - St Jeor equation. With this equation, the Basal Metabolic Rate (BMR) is calculated by using the following formula:
+
+    BMR = 10 * weight(kg) + 6.25 * height(cm) - 5 * age(y) + 5         (man)
+    BMR = 10 * weight(kg) + 6.25 * height(cm) - 5 * age(y) - 161     (woman) 
+
+The calories needed to maintain your weight equal to the BMR value, multiplied by an activity factor. To loss 1 pound, or 0.5kg per week, you will need to shave 500 calories from your daily menu.
+
+The best way to lose weight is through proper diet and exercise. Try not to lower your calorie intake by more than 1,000 calories per day, and try to lower your calorie intake gradually. Also, try to maintain your level of fiber intake and balance your other nutritional needs.

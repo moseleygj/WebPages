@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<link href="Gym.css" style="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="container">
+<header id="header">
+<div id="banner"><center><img src="House-of-Strength-Logo-PNG.png" alt="mainLogo"/></center></div><br>
+<div id="menu">
+<nav>
+<ul>
+<li><a class="MenuLink" href="Gym.html" title="">Workouts</a></li>
+<li><a class="MenuLink" href="Knowledge.html" title="">Knowledge Center</a></li>
+<li><a class="MenuLink" href="Nutrition.html" title="What should I eat?">Nutrition</a></li>
+<li><a class="MenuLink" href="Calculator.html" title="">Calculators</a></li>
+<li><a class="MenuLink" href="Logout.html" title="">Logout</a></li>
+<li><a class="MenuLink" href="WOD.html" title="Crossfit:Workout of the day">WOD</a></li>
+</ul>
+</nav></div>
+
+</header>
+</div>
+
+
+<div id="belowheader"></div>
+
+<div id="container">
+
+
+<div id="main">
+<h2>Some text goes here</h2>
+<div id="containBox">
+<div id="space">
+
+123
+</div><br>
+
+
+123
+<div id="footer">&nbsp&nbsp2016 House of strength LLC.&copy</div>
+
+</div>
+
+</body>
+
+</html>

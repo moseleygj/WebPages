@@ -1,0 +1,171 @@
+<html>
+
+<head>
+<link href="Gym.css" style="text/css" rel="stylesheet"/>
+<meta charset="utf-8">
+<title>WORKOUTS</title>
+</head>
+
+<body>
+<div id="container">
+<header id="header">
+<div id="banner"><center><img src="House-of-Strength-Logo-PNG.png" alt="mainLogo"/></center></div><br>
+<div id="menu">
+<nav>
+<ul>
+<li><a class="MenuLink" href="Gym.html" title="Homepage">Main</a></li>
+<li><a class="MenuLink" href="Knowledge.html" title="Did You know?">Fitness Knowledge </a></li>
+<li><a class="MenuLink" href="Nutrition.html" title="What should I eat?">Nutrition</a></li>
+<li><a class="MenuLink" href="Calculator.html" title="">Calculators</a></li>
+<li><a class="MenuLink" href="workouts.html" title="" style="background-color:white;color:#434343;">WORKOUTS</a></li>
+<li><a class="MenuLink" href="WOD.html" title="Crossfit:Workout of the day">WOD</a></li></ul>
+</nav></div>
+
+</header>
+</div>
+
+
+<div id="belowheader"></div>
+
+<div id="container">
+
+
+<div id="main">
+<h2>workouts</h2>
+<div id="containBox">
+<div id="space"></div>
+
+
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/ZiDrFSdI3yg" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">100 Burpees Workout Challenge </div><br><br>
+<div class="fitDescript">Note: All information provided by Fitness Blender is of a general nature and is furnished only for educational/entertainment purposes only. No information is to be taken as medical or other health advice pertaining to any individual specific health or medical condition. You agree that use of this information is at your own risk and hold Fitness Blender harmless from any and all losses, liabilities, injuries or damages resulting from any and all claims.</div>
+
+
+</div>
+<div class="HLine"></div>
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/jxwXUQiIw-8" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">225lbs for 210 reps: Mike Rashid ft. CT Fletcher </div><br><br>
+<div class="fitDescript">225lbs for 210 reps: Mike Rashid ft. CT Fletcher </div>
+
+
+</div>
+<div class="HLine"><d/iv>
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/iecApM3fyAw" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">Big Booty Building Home Workout!
+ </div><br><br>
+<div class="fitDescript">Bikini Model Viktoria Kay (@Viktoria_Kay) is showing you a great home workout to build and lift your butt using just squats and hip thrusts. Hip Thrust isolate the Butt muscles while squats workout your legs and butt. Give this workout a try.</div>
+
+
+</div>
+<div class="HLine"></div>
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/nVaU1krWW_c" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">Big BUTT Squat Workout Challange!!
+ </div><br><br>
+<div class="fitDescript">Bikini Model Diana Levy does her Squat Sponge (SquatSponge.com) workout challenge in the gym. She's doing some of her fav barbell exercises to build up her butt and legs </div>
+</div>
+
+<div class="HLine"></div>
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/hh7Z7nPKPUo" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">
+Leg and Booty Gains Workout
+ </div><br><br>
+<div class="fitDescript"> This video is for leg/booty gains. My booty workout video will be back up soon. I had to take it down because of a copywriter</div>
+
+
+</div>
+<div class="HLine"></div>
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/G6ugYWzcItQ" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">
+ The TITAN vs SUPERMAN !
+</div><br><br>
+<div class="fitDescript">Watch this EPIC battle against the SUPERMAN from COMPTON and The TITAN, Mike O'Hearn, go neck to neck in a monster workout of ARMS at the Original Iron Addicts Gym , located in Long Beach,CA. Who dares to enter the valley of the BEAST?!  </div>
+
+
+</div>
+<div class="HLine"></div>
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/HoV001Zk7AY" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">
+I'm The One ft. CT Fletcher
+
+ </div><br><br>
+<div class="fitDescript">Female squats non-stop! </div>
+</div>
+
+<div class="HLine"></div>
+
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/PLeQrwfOhjE" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">
+Johnnie O. Jackson’s ULTIMATE DELT DAY
+
+ </div><br><br>
+<div class="fitDescript">Johnnie O. Jackson has some of the best shoulders in the business, and in ULTIMATE DELT DAY he’s 2 weeks out from his 12th Mr. Olympia appearance. In this video shot in stunning 4K cinema-quality you’ll see every detail, every fiber, and every cut. National Geographic meets bodybuilding in our highest-quality training content yet! </div>
+</div>
+
+<div class="HLine"></div>
+
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/1919eTCoESo" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">
+ 10 Min Abs Workout - Abdominal and Oblique Exercises 
+
+ </div><br><br>
+<div class="fitDescript">At Home Abdominal and Oblique Exercises  </div>
+</div>
+
+<div class="HLine"></div>
+
+<div class="fitBox">
+<div class="imgSize"><iframe width="300" height="250" src="https://www.youtube.com/embed/kzYQxZPZtNM" frameborder="0" allowfullscreen></iframe></div>
+<div class="FitTitle">
+MY GYM ROUTINE | 6 PACK ABS WORKOUT
+
+ </div><br><br>
+<div class="fitDescript">My Gym Routine for gorgeous 6 Pack Abs in time for Summer! You guys have been asking me to film this for SO long and as I recently changed and improved my routine I wanted to share with you my Ab workout which has NO Ab crunches! </div>
+</div>
+
+<div class="HLine"></div>
+
+
+
+
+<div class="fitBox">
+<div ><img src="german-volume-training.jpg" class="imgSize">
+<div class="FitTitle">
+German Volume Training(GVT)
+ </div><br><br>
+<div class="fitDescript">Do your select exercises as you normally.Your sets and reps will be 10 sets of 10-reps. every minute on the minute<br>
+<br>Exercise-1 : 10x10
+<br>Exercise-2 : 10x10
+<br>Exercise-3 : 10x10
+<br>Exercise-4 : 10x10
+
+</div>
+<div class="HLine"></div>
+</div>
+</div>
+</div></div>
+</div>
+<div id="footer">&nbsp&nbsp2016 House of strength LLC.&copy</div>
+
+</div>
+
+</body>
+
+</html>
+

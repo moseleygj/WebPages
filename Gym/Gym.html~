@@ -1,0 +1,150 @@
+<html>
+
+<head>
+<link href="Gym.css" style="text/css" rel="stylesheet"/>
+</head>
+<link rel="icon" href="db.png">
+<title>HOME</title>
+<body>
+
+<div id="container">
+<header id="header">
+<div id="banner"><center><img src="House-of-Strength-Logo-PNG.png" alt="mainLogo"/></center></div><br>
+<div id="menu">
+<nav>
+<ul>
+<li><a class="MenuLink" href="Gym.html" title="Homepage"style="background-color:white;color:#434343;">Main</a></li>
+<li><a class="MenuLink" href="Knowledge.html" title="Did You know?">Fitness Knowledge </a></li>
+<li><a class="MenuLink" href="Nutrition.html" title="What should I eat?">Nutrition</a></li>
+<li><a class="MenuLink" href="Calculator.html" title="Fitness calculators">Calculators</a></li>
+<li><a class="MenuLink" href="workouts.html" title="various workouts to try">workouts</a></li>
+<li><a class="MenuLink" href="WOD.html" title="Crossfit:Workout of the day">WOD</a></li></ul>
+</nav></div>
+
+</header>
+</div>
+
+
+<div id="belowheader"></div>
+
+<div id="container">
+
+
+<div id="main">
+<h2>Welcome to House of Strength!</h2>
+<div id="slideshow">
+
+
+<img class="mySlides" src="goldenEra/arnold-blueprint_day18_graphics-1.jpg" title="">
+<img class="mySlides" src="goldenEra/2.jpg" title="">
+
+<img class="mySlides" src="goldenEra/hqdefault.jpg" title="">
+<img class="mySlides" src="goldenEra/bodybuilding-facts-every-lifter-needs-to-know-652x400-3-1466492245.jpg" title="">
+<img class="mySlides" src="goldenEra/goldenEra.jpg" title="">
+<img class="mySlides" src="goldenEra/frank-zane-and-arnold-schwarzenegger.jpg" title="">
+<img class="mySlides" src="goldenEra/Arnold-Schwarzenegger-bodybuilding-2.jpg" title="">
+
+<img class="mySlides" src="goldenEra/c21ca792b73c1a24c3a5ff256630dd85.jpg" title="">
+<img class="mySlides" src="goldenEra/arnold-schwarzeneggers-mammoth-chest-and-back-workout_06.jpg" title="">
+<img class="mySlides" src="goldenEra/25.jpg" title="">
+<img class="mySlides" src="goldenEra/arnold-blueprint-mass-day-3-graphics.jpg" title="">
+
+<img class="mySlides" src="goldenEra/2ee349fcc251b49583227dbc3fa894ff.jpg" title="">
+<img class="mySlides" src="goldenEra/mike-heavy-duty.jpg" title="">
+<img class="mySlides" src="goldenEra/old_school_bodybuilding-9.jpg" title="">
+<img class="mySlides" src="goldenEra/O92y7o-f0-54680.jpg" title="">
+
+
+
+ </div><br/>	
+
+<div id="containBox">
+
+<article id="box">
+<h2>Do more Pull Ups</h2>
+<h5>Do More Pull Ups: Major Lewis Armstrong pull up program</h5>
+<div id="slideShow">
+<center><iframe width="200" height="150" src="https://www.youtube.com/embed/NnN8ksvVRIQ" frameborder="0" allowfullscreen></iframe></center><br/>
+</div>
+<div class="description">
+This program was developed by Major Charles Lewis Armstrong to help him prepare to break the world record in pull ups in one set. Ed is doing a video demonstration of the routine. Following this program with consistency you will see a huge jump in your pull ups with 6-8 weeks
+ </div>
+</article>
+
+ 
+<article id="box">
+<h2>Muscle & Strength</h2>
+<h5>100lb Dumbbell Challenge: Mike Rashid vs. Marc Lobliner</h5>
+<div id="slideShow">
+<center><iframe width="200" height="150" src="https://www.youtube.com/embed/hYULower2a4" frameborder="0" allowfullscreen></iframe></center><br/>
+</div>
+<div class="description">
+Muscle & Strength presents the 100lb. Dumbbell Bench Press challenge! Mike Rashid vs. Marc Lobliner. 100lbs dumbbells, 100 reps, as fast as possible!
+ </div>
+</article>
+
+<article id="box">
+<h2>Bodybuilding.com</h2>
+<h5>Arnold Schwarzenegger's Blueprint Training Program </h5>
+<div id="slideShow">
+<center><iframe width="200" height="150" src="https://www.youtube.com/embed/o9zCgPtsups" frameborder="0" allowfullscreen></iframe></center><br/>
+</div>
+<div class="description">
+Learn some of Arnold Schwarzenegger's favorite classic bodybuilding exercises and preferred training techniques for building muscle. Get the knowledge you need to train for mass! </div>
+</article>
+<div id="spacer"></div>
+<!-- end of content box-->
+
+
+<div><div id="info"><img src="detox-your-body-with-physical-activity.jpg" ><div id="vert"></div>
+<h2 id="title">Some stupid Title Goes here</h2>
+&nbsp&nbspLorem ipsum dolor sit amet, consectetur adipiscing elit. . Lorem ipsum dolor sit amet, consectetur adipiscing elit
+<div>
+<input type="submit" name="readMore" value="Read more!"></div></div>
+<br>
+
+<div id="info"><img src="detox-your-body-with-physical-activity.jpg" ><div id="vert"></div>
+<h2 id="title">Some more...</h2>
+&nbsp&nbspLorem ipsum dolor sit amet, consectetur adipiscing elit. . Lorem ipsum dolor sit amet, consectetur adipiscing elit
+<div>
+<input type="submit" name="readMore" value="Read more!"></div></div>
+<br>
+
+<div id="info"><img src="detox-your-body-with-physical-activity.jpg" ><div id="vert"></div>
+<h2 id="title">Some more...</h2>
+&nbsp&nbspLorem ipsum dolor sit amet, consectetur adipiscing elit. . Lorem ipsum dolor sit amet, consectetur adipiscing elit
+<div>
+<input type="submit" name="readMore" value="Read more!"></div></div>
+<br>
+
+
+</div>
+</div>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+</div>
+<div id="footer">&nbsp&nbsp2016 House of strength LLC.&copy</div>
+</div>
+</body>
+
+</html>
