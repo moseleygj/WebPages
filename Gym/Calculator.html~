@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<title>
+CALCULATOR
+</title>
+<link href="Gym.css" style="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="container">
+<header id="header">
+<div id="banner"><center><img src="House-of-Strength-Logo-PNG.png" alt="mainLogo"/></center></div><br>
+<div id="menu">
+<nav>
+<ul>
+<li><a class="MenuLink" href="Gym.html" title="Homepage">Main</a></li>
+<li><a class="MenuLink" href="Knowledge.html" title="Did You know?">Fitness Knowledge </a></li>
+<li><a class="MenuLink" href="Nutrition.html" title="What should I eat?">Nutrition</a></li>
+<li><a class="MenuLink" href="Calculator.html" title=""style="background-color:white;color:#434343;">Calculators</a></li>
+<li><a class="MenuLink" href="workouts.html" title="">WORKOUTS</a></li>
+<li><a class="MenuLink" href="WOD.html" title="Crossfit:Workout of the day">WOD</a></li></ul>
+</nav></div>
+
+</header>
+</div>
+
+
+<div id="belowheader"></div>
+
+<div id="container">
+
+<div id="main">
+<h2>Calculators</h2>
+<div id="containBox">
+<div id="space"></div>
+
+<div id="info"><img class="articleImg" src="iifym.png" ><div id="vert"></div>
+<h2 id="title">IIFYM(If It Fits Your Macros)
+</h2>
+&nbsp&nbsp Eat your favorite food as long as it fits into your daily calorie macro intake.
+<div>
+<a href="http://www.iifym.com/iifym-calculator/
+" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="2678786eb2b4b26c31a63025e41d12f1.jpg" ><div id="vert"></div>
+<h2 id="title">Lose the weight forever
+</h2>
+&nbsp&nbspCalorieKing has the weight control tools most recommended by health professionals.
+
+<a href="http://www.calorieking.com/
+
+" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="1RM-300x222.jpg" >
+<div id="vert"></div>
+<h2 id="title">Calculate Your One-Rep Max (1RM)</h2>
+&nbsp&nbspLearn how to compute your one-rep max (1RM) using these calculation methods. 
+
+<a href="http://www.bodybuilding.com/fun/other7.htm" value="Read more!">
+<input type="submit" name="readMore" value="Read more!"></a></div>
+<br>
+
+
+
+
+<div id="info"><img class="articleImg" src="20_muscle_strong-512.png" ><div id="vert"></div>
+<h2 id="title">Weightlifting Strength Standards</h2>
+&nbsp&nbsp The strength standards on this page grade your one-rep max performance against other adult lifters at your bodyweight
+<div><a href="http://strengthlevel.com/strength-standards" value="Read more!">
+<input type="submit" name="readMore" value="Read more!"></a></div></div>
+
+</div>
+<div id="space"></div>
+<div id="footer">&nbsp&nbsp2016 House of strength LLC.&copy</div>
+
+</div>
+
+</body>
+
+</html>

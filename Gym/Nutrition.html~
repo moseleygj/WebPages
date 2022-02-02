@@ -1,0 +1,140 @@
+<html>
+
+<head>
+<link href="Gym.css" style="text/css" rel="stylesheet"/>
+<meta charset="utf-8">
+<title>NUTRITION</title>
+</head>
+
+<body>
+<div id="container">
+<header id="header">
+<div id="banner"><center><img src="House-of-Strength-Logo-PNG.png" alt="mainLogo"/></center></div><br>
+<div id="menu">
+<nav>
+<ul>
+<li><a class="MenuLink" href="Gym.html" title="Homepage">Main</a></li>
+<li><a class="MenuLink" href="Knowledge.html" title="Did You know?">Fitness Knowledge </a></li>
+<li><a class="MenuLink" href="Nutrition.html" title="What should I eat?"style="background-color:white;color:#434343">NUTRITION</a></li>
+<li><a class="MenuLink" href="Calculator.html" title="">Calculators</a></li>
+<li><a class="MenuLink" href="workouts.html" title="">workouts</a></li>
+<li><a class="MenuLink" href="WOD.html" title="Crossfit:Workout of the day">WOD</a></li></ul>
+</nav></div>
+
+</header>
+</div>
+
+
+<div id="belowheader"></div>
+
+<div id="container">
+
+
+<div id="main">
+<h2>Nutrition</h2>
+<div id="containBox">
+<div id="space">
+
+<div id="info"><img class="articleImg" src="gluten.jpg" ><div id="vert"></div>
+<h2 id="title">The Dangers Of Gluten
+</h2>
+&nbsp&nbspThe Dangers Of Gluten And Why You Need To Stop Eating It. by Dr. Doni Wilson
+
+<div>
+<a href="http://inspiyr.com/dangers-of-eating-gluten/" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="http://fcfitness.com.au/wp-content/uploads/2014/12/nopig.jpg" ><div id="vert"></div>
+<h2 id="title">    Why You Should Avoid Pork </h2>
+&nbsp&nbspThe first reason has to do with the digestive system of a pig. A pig digests whatever it eats rather quickly, in up to about four hours. ... This leaves more toxins in the pig's body.
+<div>
+<a href="https://draxe.com/why-you-should-avoid-pork/
+" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="carb-cycling-magic-diet.jpg" ><div id="vert"></div>
+<h2 id="title">Carb Cycling For Fat Loss 
+</h2>
+&nbsp&nbspCarbohydrates are used as energy by the body; they fuel our workouts, and provide ample fuel over the course of any day. Learn what carb cycling is and why it's not the evil thing people say! 
+<div>
+<a href="http://www.bodybuilding.com/fun/wescott4.htm
+" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="whey-protein-benefits-5.jpg" ><div id="vert"></div>
+<h2 id="title"> Whey Protein: What You Need to Know 
+</h2>
+&nbsp&nbsp This document teaches you about whey-proteins.
+<div>
+<a href="http://health.howstuffworks.com/wellness/natural-medicine/alternative/whey-protein.htm/printable" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+
+
+<div id="info"><img class="articleImg" src="Protein_Absorption.gif" ><div id="vert"></div>
+<h2 id="title">How Much Protein Can the Body Absorb?
+
+</h2>
+&nbsp&nbsp Is there a limit to how much protein your body can absorb at one sitting? Nutrition Diva weighs in on this widespread rumor.
+<div>
+<a href="http://www.quickanddirtytips.com/health-fitness/healthy-eating/know-your-nutrients/how-much-protein-can-the-body-absorb
+" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="good-carbs-bad-carbs-article.jpg" ><div id="vert"></div>
+<h2 id="title">Good vs. Bad Carbohydrates 
+
+</h2>
+&nbsp&nbsp Carbohydrates are an important part of your diet, but that doesn't mean you're free to load up on cakes and cookies to get your daily amount. Here, we explain the difference between good and bad carbohydrates.
+<div>
+<a href="http://www.everydayhealth.com/diet-nutrition/101/nutrition-basics/good-carbs-bad-carbs.aspx" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+
+<div id="info"><img class="articleImg" src="portioning-by-meal_576x768-e1458143091827.jpg" ><div id="vert"></div>
+<h2 id="title">Why You Should Be Planning Your Meals</h2>
+&nbsp&nbspThink about walking into a gym and randomly doing a few sets here, a few sets there… a wandering sheep without a shepherd. We’ve all been there. Do we REALLY expect to make huge progress without knowing what we’re doing? 
+<div>
+<a href="https://www.nerdfitness.com/blog/why-you-should-be-planning-your-meals/"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+
+<div id="info"><img class="articleImg" src="IMG_1619_1024x768-e1458142733354-713x535.jpg" ><div id="vert"></div>
+<h2 id="title">A Step-By-Step Guide to Meal Planning and Prep</h2>
+&nbsp&nbspThis is an article by NF Team Member Staci. This is part two in a two part series. 
+<div>
+<a href="https://www.nerdfitness.com/blog/a-step-by-step-guide-to-meal-planning-and-prep/"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+<div id="info"><img class="articleImg" src="4e838c77fbda1aab70aecacb5f2574c0.jpg" ><div id="vert"></div>
+<h2 id="title">48 Delicious Protein Shake Recipes </h2>
+&nbsp&nbspTired of drinking the same boring, bland tasting proteins shakes? Try these superb shakes and mix things up with fresh ingredients and a variety of supplements. 
+<div>
+<a href="http://www.bodybuilding.com/fun/proteinshakes.htm"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+
+
+
+
+
+
+
+<!--START
+<div id="info"><img class="articleImg" src="muscle1.jpg" ><div id="vert"></div>
+<h2 id="title">How Muscles Work</h2>
+&nbsp&nbspLearn the basic Science behind the Muscles.
+<div>
+<a href="http://health.howstuffworks.com/human-body/systems/musculoskeletal/muscle.htm/printable"><input type="submit" name="readMore" value="Read more!"><input type="submit" name="readMore" value="Read more!"></a></div></div>
+<br>
+END-->
+
+</div>
+</div>
+</div>
+<div id="footer">&nbsp&nbsp2016 House of strength LLC.&copy</div>
+
+</div>
+
+</body>
+
+</html>
