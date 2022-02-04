@@ -3,8 +3,7 @@
 ==============
 ***Project status:***
 ==============
-<!--:white_check_mark: Complete -->
-- [ ] Pending       :hourglass:
+- :white_check_mark: Complete 
 <!-- - [ ] Incomplete     :x: -->
 
 
