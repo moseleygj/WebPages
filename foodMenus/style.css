@@ -72,7 +72,8 @@ body {
     font-size: 23px;
     color: #dac05b;
     font-weight: bold;
-    color: skyblue
+    color: skyblue;
+    Text-align:center;
 }
 
 .foodItemName {
