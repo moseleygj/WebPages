@@ -1,11 +1,41 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <title>Church Music</title>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="CSS/style.css"
+  <title>Church Music 1.0</title>
+  <link rel="icon" type="image/icon" href="IMG/cross.png">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <meta charset="UTF-8">
 </head>
-<body>
 
+<body>
+  <div class="content">
+    <div class="banner">
+      <img src="IMG/ChurchImage.jpg" class="bannerImg" alt="Banner Imager">
+    </div>
+    <div class="name">CHURCH TUNES</div>
+      <fieldset>
+          <lengend>Praise Music</legend>
+            <br/>
+              <audio id="clap">
+                  <source src="app-5.mp3" type="audio/wav">
+              </audio>
+
+              <audio id="song1">
+                <source="JESUS by Preye Orok-wZ4V4T_1OJg.mp3" type="audio/mpeg">
+              </audio>
+              <button onClick="document.getElementById('clap').play()">Clapping 1</button>
+              <button onClick="document.getElementById('clap').pause()">II</button>
+      </fieldset>      </fieldset>
+
+      <fieldset>
+        <legend>Sound FX</legend>
+        <button onClick="document.getElementById('song1').play()">phraseSong 1</button>
+        <button onClick="document.getElementById('song1').pause()">pause</button>
+
+
+      </fieldset>
+  </div> <!-- EOF ->
 
 </body>
 </html>
