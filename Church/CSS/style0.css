@@ -291,8 +291,8 @@ font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Aria
 top:50%;
 transform:translateY(-50%);
 position:relative;
-height:55px;
-width:55px;
+height:50px;
+width:50px;
 background-color:none;
 padding-left:7px;
 }
