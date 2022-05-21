@@ -134,8 +134,8 @@ li.dropdown {
 .card1:hover {
     color: black;
     padding-block: 0;
-    border: 1px solid #3d3d3d;
-    box-shadow: 0 5px 15px yellow;
+    border: 1px solid #5ac8fa;
+    box-shadow: 0 5px 15px #6E6E73;
 }
 
 .card2 {
@@ -216,13 +216,13 @@ li.dropdown {
 
 #addressCopy {
     border-radius: 980px;
-    border: 1px solid white;
+    border: 1px solid #858585;
     width: 358px;
     text-align: center;
-    color: black;
+    color: grey;
     margin: 0 auto 0;
     padding: 12px 22px;
-    background-color: white;
+    background-color: #545454;
 }
 
 #addressCopy:hover {
@@ -268,4 +268,80 @@ info1 {
 @font-face {
     font-family: SF;
     src: url(SFMono-Semibold.otf);
+}
+#gotoSite{
+  text-decoration: none;
+color:white;
+position: relative;
+/*transform: translateY(-50%);
+top: 50%;*/
+text-align: left;
+font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.Ccard{
+  border:2px solid #434343;border-radius:20px;background-color:;height:250px;width:450px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin: 100px auto 0;
+}
+.Ccard:hover
+{
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.iconContactLogo{
+top:50%;
+transform:translateY(-50%);
+position:relative;
+height:55px;
+width:55px;
+background-color:none;
+padding-left:7px;
+}
+
+.iconTitleHolder{
+float:left;
+height:62.5px;
+width:170px;
+background-color:;
+}
+.centerMe{
+      top:50%;
+transform:translateY(-50%);
+text-align:center;
+position:relative;
+
+}
+.emailContent{
+      top:50%;
+transform:translateY(-50%);
+text-align:center;
+position:relative;
+
+}
+
+.iconContent{
+  float:left;
+  height:62.5px;
+  width:217px;
+  background-color:;
+}
+
+.emailTitle{
+    top:50%;
+transform:translateY(-50%);
+text-align:center;
+position:relative;
+  font-size:20px;
+  font-weight:bold;
+  color:;
+  font-family:;
+
+}
+.contactHeader{
+width:100%;
+background-color:;
+height:62.5px;
+text-align:center;
+  border-radius:20px 20px 0px 0px;
+  background-color:;
+font-weight:bolder
 }
