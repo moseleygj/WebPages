@@ -346,3 +346,77 @@ text-align:center;
   background-color:;
 font-weight:bolder
 }
+
+
+
+
+.multi-media{
+  width: 450px;
+  height:480px;
+  border:1px solid #434343;
+  background-color:black;
+  border-radius:7px;
+  background: linear-gradient(180deg, #434343 0%, #000 100%);
+margin-top:50px;
+margin:0 auto 0;}
+
+.videoHolder{
+  height:250px;
+  width:450px;
+  border:;
+
+}
+.videoTitle{
+  height:40px;
+  width:450px;
+    border:;
+  border:;text-align:center;font-weight:bolder;font-size:18px;color:white;HEIGHT:30PX
+}
+
+.videoDate{
+  height:22px;
+  width:450px;
+  border: ;
+}
+.videoDescript{
+  height:80px;
+  width:450px;
+  border:;
+}
+
+.videoDL{
+  height:25x;
+  width:450px;
+  border:;
+  color:grey;
+
+}
+.videoDLLinks{
+  height:55px;
+  width:450px;
+  border:;
+}
+
+.DLLinks:hover{
+    border:1px solid white;
+text-indent:1px sold red;
+
+color:white;
+  }
+.DLLinks{
+  text-decoration:none;
+  color:white;
+  border:;
+  border-radius:10%;
+  font-weight:bolder;
+  height:;
+  width:auto;
+  padding:3px 6px;
+  background:red;
+}
+
+.videoTitleHead{
+  color:#434343;
+  font-weight:bolder;
+  float:left
+}
