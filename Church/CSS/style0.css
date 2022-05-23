@@ -129,6 +129,7 @@ li.dropdown {
     margin-top: 20px;
     margin-bottom: 60px;
     opacity: 95%;
+    background-image: linear-gradient(180deg,#000,transparent);
 }
 
 .card1:hover {
