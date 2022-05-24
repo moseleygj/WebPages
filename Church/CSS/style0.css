@@ -427,7 +427,7 @@ color:white;
 }
 hr {
     border: none;
-    border-top: 3px double #5ac8fa;
+    border-top: 3px double #30363d;
     color: grey;
     overflow: visible;
     text-align: center;
@@ -441,4 +441,5 @@ hr:after {
     padding: 0 4px;
     position: relative;
     top: -13px;
+    color:#8b949e;
 }
