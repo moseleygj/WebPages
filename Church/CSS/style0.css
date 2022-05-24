@@ -425,3 +425,20 @@ color:white;
   font-weight:bolder;
   float:left
 }
+hr {
+    border: none;
+    border-top: 3px double #5ac8fa;
+    color: grey;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  font-size:18px;
+}
+
+hr:after {
+    background: black;
+    content: 'UPCOMING EVENTS';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
