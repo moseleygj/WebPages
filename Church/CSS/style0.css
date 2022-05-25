@@ -8,6 +8,7 @@ body {
     background-color: #1d1e22;
     margin: 0;
     padding: 0;
+    height:100%;
 }
 
 #container {
@@ -274,7 +275,7 @@ info1 {
     src: url(SFMono-Semibold.otf);
 }
 #gotoSite{
-  text-decoration: none;
+text-decoration: none;
 color:white;
 position: relative;
 /*transform: translateY(-50%);
@@ -282,15 +283,18 @@ top: 50%;*/
 text-align: left;
 font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
+
 .Ccard{
   border:2px solid #434343;border-radius:20px;background-color:;height:250px;width:627px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   margin: 100px auto 45px;
 }
+
 .Ccard:hover
 {
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
 .iconContactLogo{
 top:50%;
 transform:translateY(-50%);
@@ -307,13 +311,14 @@ height:62.5px;
 width:170px;
 background-color:;
 }
+
 .centerMe{
-      top:50%;
+top:50%;
 transform:translateY(-50%);
 text-align:center;
 position:relative;
-
 }
+
 .emailContent{
       top:50%;
 transform:translateY(-50%);
@@ -353,11 +358,9 @@ font-weight:bolder
 }
 
 
-
-
 .multi-media{
   width: 450px;
-  height:480px;
+  height:504px;
   border:1px solid #434343;
   background-color:black;
   border-radius:7px;
@@ -372,10 +375,15 @@ margin:0 auto 0;}
 
 }
 .videoTitle{
-  height:40px;
+  height:47px;
   width:450px;
-    border:;
-  border:;text-align:center;font-weight:bolder;font-size:18px;color:white;HEIGHT:30PX
+  border:;
+  border:;
+  text-align:center;
+  font-weight:bolder;
+  font-size:20px;
+  color:white;
+  height:47px;
 }
 
 .videoDate{
@@ -403,7 +411,7 @@ margin:0 auto 0;}
 }
 
 .DLLinks:hover{
-    border:1px solid white;
+border:1px solid white;
 text-indent:1px sold red;
 
 color:white;
