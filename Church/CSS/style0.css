@@ -451,3 +451,121 @@ hr:after {
     top: -13px;
     color:#8b949e;
 }
+
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: black;
+  padding: 5px;
+  width: 800px;
+  height: 450px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding:0px 0px;
+}
+
+.who-are-we-topic{
+  font-size:20px;
+  color:purple;
+  padding:0;
+  height:50px;
+}
+
+.who-are-we-header{
+font-size:40px;
+  color:white;
+    height:45px;
+  width:100%;
+    padding-bottom:25px;
+}
+.who-are-we-content{
+  color:#434343;
+  height:300px;
+  width:90%;
+  margin: 0 auto 0;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: black;
+  padding: 5px;
+  width: 800px;
+  height: 450px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding:0px 0px;
+}
+
+.who-are-we-topic{
+  font-size:20px;
+  color:purple;
+  padding:0;
+  height:72px;
+}
+
+.who-are-we-header{
+font-size:40px;
+  color:white;
+    height:45px;
+  width:100%;
+    padding-bottom:0px;
+  padding-top:20px;
+  text-decoration:;
+}
+.who-are-we-content{
+  color:#878787;
+  height:300px;
+  width:87%;
+  margin: 0 auto 0;
+  transform:translateY(40%);
+  top:-60%;
+  position:relative;
+}
+.give-me-space{
+height:100px;width:100%;
+
+}
