@@ -1,5 +1,5 @@
 
-:Church: Church Website
+⛪ Church Website
 ==============
 ***Project status:***
 ==============
