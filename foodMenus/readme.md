@@ -1,5 +1,5 @@
 
-:cookie: Food Menu
+🥗 Food Menu
 ==============
 ***Project status:***
 ==============
@@ -12,7 +12,7 @@ Food Menu UI built for Vegans
 Screenshots
 ===========
 
-<img src="" alt="screenshot 1" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/foodMenus/Screenshot%20from%202022-06-05%2021-49-21.png" alt="screenshot 1" width="800px" height="400px">
 
 
 
