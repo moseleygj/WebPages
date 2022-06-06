@@ -7,7 +7,7 @@
 <!-- - [ ] Pending       :hourglass:
 <!-- - [ ] Incomplete     :x: -->
 
-DESCRIPTION OF PROJECT AND TECHNOLOGY USED HERE.
+UI of a coupon 
 
 Screenshots
 ===========
