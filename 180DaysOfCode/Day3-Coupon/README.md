@@ -7,12 +7,12 @@
 <!-- - [ ] Pending       :hourglass:
 <!-- - [ ] Incomplete     :x: -->
 
-DESCRIPTION OF PROJECT AND TECHNOLOGY USED HERE.
+UI of a coupon 
 
 Screenshots
 ===========
 
-<img src="" alt="screenshot2" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/180DaysOfCode/Day3-Coupon/screenshot.png" alt="screenshot2" width="300px"/>
 
 
 
