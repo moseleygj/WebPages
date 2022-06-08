@@ -12,7 +12,7 @@ MP3 Website UI
 Screenshots
 ===========
 
-<img src="https://github.com/moseleygj/WebPages/blob/master/MP3/Screenshot%202022-02-03%20at%2019-12-46%20Mp3Site%20-%20Free%20Mp3%20Download.png" alt="screenshot2" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/MP3_UI_1/Screenshot%202022-02-03%20at%2019-12-46%20Mp3Site%20-%20Free%20Mp3%20Download.png" alt="screenshot2" width="300px"/>
 
 
 
