@@ -12,7 +12,7 @@ Robinhoon Audio UI.
 Screenshots
 ===========
 
-<img src="https://github.com/moseleygj/WebPages/blob/master/PROJECT_NAME/.png" alt="screenshot2" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/MP3_UI/screenshot.png" width="800px" height="500px"/>
 
 
 
