@@ -7,14 +7,14 @@
 <!-- - [ ] Pending       :hourglass:
 <!-- - [ ] Incomplete     :x: -->
 
-This is a MacOS/iOS color copier. It's function is to help ease the UI design process. It allows you to gopy color in a single click to the clipboard using either RGB or HEX. JS, CSS and HTML was used.
+This is a MacOS/iOS color copier. It's function is to help ease the UI design process. It allows you to copy colors in a single-click to the clipboard in RGB or HEX. JS, CSS and HTML was used.
 
 Screenshots
 ===========
 
-<img src="" alt="screenshot2" width="300px"/>
+<img src="" alt="https://github.com/moseleygj/WebPages/blob/master/iOS%20Copy%20swatch%20copier/screenshot.png" width="300px"/>
 
-<img src="" alt="screenshot1" width="300px"/>
+<img src="" alt="https://github.com/moseleygj/WebPages/blob/master/iOS%20Copy%20swatch%20copier/screenshot2.png" width="300px"/>
 
 
  :unlock:License:
