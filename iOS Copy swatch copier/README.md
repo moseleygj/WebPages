@@ -12,9 +12,9 @@ This is a MacOS/iOS color copier. It's function is to help ease the UI design pr
 Screenshots
 ===========
 
-<img src="" alt="https://github.com/moseleygj/WebPages/blob/master/iOS%20Copy%20swatch%20copier/screenshot.png" width="300px"/>
+<img alt="screenshot" src="https://github.com/moseleygj/WebPages/blob/master/iOS%20Copy%20swatch%20copier/screenshot.png" width="1000px"/>
 
-<img src="" alt="https://github.com/moseleygj/WebPages/blob/master/iOS%20Copy%20swatch%20copier/screenshot2.png" width="300px"/>
+<img alt="screenshot" src="https://github.com/moseleygj/WebPages/blob/master/iOS%20Copy%20swatch%20copier/screenshot2.png" width="1000px"/>
 
 
  :unlock:License:
