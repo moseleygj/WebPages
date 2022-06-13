@@ -8,6 +8,7 @@
 <!-- - [ ] Incomplete     :x: -->
 
 Military theme Page UI
+-The page was intentionally left blank, as a template.
 
 Screenshots
 ===========
