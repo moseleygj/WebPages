@@ -12,7 +12,8 @@ Food Menu UI built for Vegans
 Screenshots
 ===========
 
-<img src="https://github.com/moseleygj/WebPages/blob/master/foodMenus/Screenshot%20from%202022-06-05%2021-49-21.png" alt="screenshot 1" width="800px" height="400px">
+<img src="https://user-images.githubusercontent.com/17459164/173680529-62e871b6-176c-475f-8d35-aeadfb1857a6.png"
+ alt="screenshot 1" width="800px" height="">
 
 
 
