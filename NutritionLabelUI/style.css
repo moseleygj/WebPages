@@ -1,7 +1,7 @@
 
 
 
-body{background:lightgrey}
+body{background:lightgrey;}
 #contents{
   height:600px;
   width:400px;
@@ -18,13 +18,18 @@ body{background:lightgrey}
   transform:translateY(-50%);
   position:relative;
 }
-
+@font-face{
+  font-family: nutr;
+  src:url("helvetica_black1.ttf");
+}
 #mainTitle{
   width:100%;
-  height:44px;
+  height:53px;
   border: ;
   color:black; font-size:44px;font-weight:bolder;
   border-bottom: 1px solid lightgrey;
+  font-family:nutr;
+
 }
 
 #mainTitle2{
