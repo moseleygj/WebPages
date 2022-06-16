@@ -23,7 +23,7 @@ body{background:grey}
   width:100%;
   height:44px;
   border: ;
-  color:black; font-size:55px;font-weight:bolder;
+  color:black; font-size:44px;font-weight:bolder;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -100,19 +100,21 @@ body{background:grey}
   min-width:80px;
   max-width:250px;
   float:left;
-  border:1px solid red;
+  border:;
 }
 .grams{
   height:;
   width:;
   float:left;
-  border:1px solid red;
+  border:;
+  text-align: right;
+padding-left: 8px;
 }
 .DV{
   height:;
   width:;
   font-weight:bolder;
-  border:1px solid red;
+  border:;
   float:right;}
 
 #legend{
