@@ -5,7 +5,7 @@ body{background:lightgrey;}
 #contents{
   height:600px;
   width:400px;
-  background:white;
+  background:url(paper.jpg);
   border:3px solid black;
 }
 
@@ -65,25 +65,26 @@ body{background:lightgrey;}
     border:;
   margin-top:10px;
   position:relative;
-    color:black;font-weight:bolder;
+  color:black;font-weight:bolder;
 }
+
 #Calories{
    height:26px;
-  width:50%;
-    border:;
-    position:relative;
-    color:black;font-weight:bolder;font-size:28px;
-  float:left;
+   width:50%;
+   border:;
+   position:relative;
+   color:black;font-weight:bolder;font-size:28px;
+   float:left;
 }
 
 #CaloriesNum{
    height:24px;
-  width:50%;
-    border:;
-    position:relative;
-    color:black;font-weight:bolder;font-size:28px;
-  float:right;
-  text-align:right
+   width:50%;
+   border:;
+   position:relative;
+   color:black;font-weight:bolder;font-size:28px;
+   float:right;
+   text-align:right
 }
 
 .rowMain{
@@ -93,6 +94,7 @@ body{background:lightgrey;}
   font-weight:bolder;
   border-bottom:1px solid black;
 }
+
 .rowSub{
   height:19px;
   width:100%;
@@ -100,6 +102,7 @@ body{background:lightgrey;}
   text-indent:25px;
   border-bottom:1px solid black;
 }
+
 .title{
   height:;
   min-width:80px;
@@ -107,26 +110,27 @@ body{background:lightgrey;}
   float:left;
   border:;
 }
+
 .grams{
   height:;
   width:;
   float:left;
   border:;
   text-align: right;
-padding-left: 8px;
+  padding-left: 8px;
 }
 .DV{
   height:;
   width:;
   font-weight:bolder;
   border:;
-  float:right;}
+  float:right;
+}
 
 #legend{
   height:64px;
   width:100%;
   font-weight:bolder;
-
 }
 
 #rightLegend{
@@ -137,8 +141,7 @@ padding-left: 8px;
 font-size:12px;
 }
 #leftLegend{
-  width:2%;height:100%;
-    float:left;
-
-
+  width:2%;
+  height:100%;
+  float:left;
 }
