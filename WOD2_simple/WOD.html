@@ -6,20 +6,16 @@
 
 	  <script >
 		$(document).ready(function () {
-		    $("#ckbCheckAll").click(function () {
-		        $(".checkBoxClass").prop('checked', $(this).prop('checked'));
-		    });
-		    
-		    $(".checkBoxClass").change(function(){
-		        if (!$(this).prop("checked")){
-		            $("#ckbCheckAll").prop("checked",false);
-		        }
-		    });
+
+
+				$("#ckbCheckAll").click(function(){
+		     $('input:checkbox').not(this).prop('checked', this.checked);
+   				});
 		});
 	  </script>
 
 	</head>
-	
+
 	<style type="text/css">
 
 body{
@@ -127,9 +123,9 @@ background-color: pink;
 
 		<!--blue #4285f4;-->
 <div class="container">
-<div class="title">Workout Of the Day (W.O.D.)</div> 
+<div class="title">Workout Of the Day (W.O.D.)</div>
 	<div class="main-img">
-	<div class="title" style="color:#ff5252;"">Sample workout</div> 
+	<div class="title" style="color:#ff5252;"">Sample workout</div>
 <!--begining of text area -->
 	<div class="main-img-txt">
 
@@ -155,7 +151,7 @@ background-color: pink;
 <div class="reps">20*,10-12,8,6,6</div>
 <div class="exercise">Tricep Pushdown</div>
 <div class="notes">3sec down,1sec up</div>
-<div class="check">	
+<div class="check">
 <input type="checkbox" id="c2" class="checkBoxClass" name="cb" onclick="cb('c2','h2')"></div></div>
 <!--start of line -->
 <div class="exercise-holder" id="h3" style="font-size:12px;border">
@@ -278,4 +274,4 @@ if( checkboxes[i].checked == true)
 }
 </script>
 /*write js to select all divs that have been checked*/
-</html> 
+</html>
