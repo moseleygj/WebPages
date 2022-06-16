@@ -6,7 +6,7 @@
 <!-- - [ ] Pending       :hourglass:
 <!-- - [ ] Incomplete     :x: -->
 
-VARIOUS WEBPAGES
+VARIOUS WEBPAGES & UI's
 
 Screenshots
 ===========
