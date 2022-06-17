@@ -25,8 +25,8 @@ h1 {
 
 iframe {
     border-radius: 5%;
-    border: dodgerblue 5px solid;
-    margin: 0 auto 0;
+    border: #434343 2px solid;
+    margin: 10px auto 35px;
     display: block;
 }
 
