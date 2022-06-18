@@ -7,9 +7,15 @@
 <style type="text/css">
 .container{height:400px;width:300px;float:;}
 .mainImg{height:300px;width:300px;float:;}
+
 .sub-img-a{height:100px;width:100px;float:left;}
+
+
 .sub-img-b{height:100px;width:100px;float:left;border:5px;}
+
+
 .sub-img-c{height:100px;width:100px;float:left;border:5px;}
+
 a:hover{border-radius: 1px solid black;}
 </style>
 
@@ -17,7 +23,7 @@ a:hover{border-radius: 1px solid black;}
 
 <div class="container">
 
-<a href=""><div class="mainImg"><img src="profile-placeholder.png" class="mainImg" id="big" alt="Main Picture"></div></a>
+<a href=""><div class="mainImg"><img src="loading-buffering.gif" class="mainImg" id="big" alt="Main Picture"></div></a>
 <a href="#" onclick="a();"><div class="sub-img-a"><img src="bert.jpg" id="a" class="sub-img-a" alt=""></div></a>
 <a href="#" onclick="b();"><div class="sub-img-b"><img src="count.jpg" id="b" class="sub-img-b" alt=""></div></a>
 <a href="#" onclick="c();"><div class="sub-img-c"><img src="ernie.png" id="c" class="sub-img-c" alt=""></div></a>
@@ -25,21 +31,31 @@ a:hover{border-radius: 1px solid black;}
 </div>
 
 <script type="text/javascript" >
-function big() {
 
-	
-}
+let ImgTarget=document.getElementById("big");
+let ImgTargetA=document.getElementById("a");
+let ImgTargetB=document.getElementById("b");
+let ImgTargetC=document.getElementById("c");
 
 function a() {
-	document.getElementById("big").src = document.getElementById("a").src;
+	ImgTarget.src = document.getElementById("a").src;
+	ImgTargetA.style.borderBottom="5px solid red"
+	ImgTargetB.style.borderBottom="5px solid transparent"
+	ImgTargetC.style.borderBottom="5px solid transparent"
 }
 
 function b() {
-		document.getElementById("big").src = document.getElementById("b").src;
+		ImgTarget.src = document.getElementById("b").src;
+		ImgTargetA.style.borderBottom="5px solid transparent"
+		ImgTargetB.style.borderBottom= "5px solid red"
+		ImgTargetC.style.borderBottom="5px solid transparent"
 }
 
 function c() {
-		document.getElementById("big").src = document.getElementById("c").src;
+		ImgTarget.src = document.getElementById("c").src;
+		ImgTargetA.style.borderBottom="5px solid transparent"
+		ImgTargetB.style.borderBottom="5px solid transparent"
+		ImgTargetC.style.borderBottom="5px solid red"
 }
 </script>
 
