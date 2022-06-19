@@ -26,7 +26,7 @@ h1 {
 iframe {
     border-radius: 5%;
     border: #434343 2px solid;
-    margin: 10px auto 35px;
+    margin:0px auto 35px;
     display: block;
 }
 
@@ -271,9 +271,10 @@ info1 {
 }
 
 @font-face {
-    font-family: SF;
-    src: url(SFMono-Semibold.otf);
+    font-family:"SF";
+    src: url(../SFMono-Semibold.otf);
 }
+
 #gotoSite{
 text-decoration: none;
 color:white;
