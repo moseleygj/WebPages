@@ -1,22 +1,88 @@
-html{
-padding:0;
-margin:0;
-background:;
-height:;
-width:;
-}
-
-body{
-padding:0;
-margin:0;
-height:;
-width:;
+body, html{
+  padding:0;
+  margin:0;
+  width:100%;
+height:100%;
 }
 
 #container{
-padding:0;
-margin:0;
-height:;
-width:;
+width:100%;
+height:100%;
+background:lightgrey;
+}
+
+#card{
+ /* height:450px;
+  width:800px;*/
+   height:450px;
+  width:100%;
+  border:;
+  border-radius:21px;
+  color:;
+  background:white;
+  position:;
+  font-weight:;
+  margin:0 auto 0;
+}
+#card1{
+ /* height:450px;
+  width:800px;*/
+   height:100%;
+  width:100%;
+  border:;
+  border-radius:21px;
+  color:;
+  background:lightgrey;
+  position:;
+  font-weight:;
+  margin:0 auto 0;
+}
+#title{
 
 }
+.tiers{
+  height:410px;
+  width:300px;
+  background-color:white;
+  border:1px solid grey;
+  border-radius:5px;
+  margin:10px;
+  float:left;
+}
+.tiers:hover{border:1px solid black;}
+.tierTitle{
+   height:55px;
+  width:300px;
+  background-color:#848489;
+  border:0px solid grey;
+  border-radius:5px 5px 0px 0px;
+  color:white;
+  text-align:center;
+}
+
+.tierH{
+  text-align:center;
+  font-weight:bold; color:white;
+     height:55px;
+  width:300px;
+  font-size:28px;
+    text-shadow: 1px 1px 2px  #C0BFC0;
+
+}
+.item-cell{
+  width:100%;
+  height:40px;
+  border:1px solid red;
+}
+.itemIcon{height:40px;width:40px;border:1px solid red;float:right}
+.itemDescription{height:246x;width:255px;border:1px solid red;float:left;color:#434343;font-size:24px;  position:relative;
+  transform:translateY(-50%);  top:50%;
+}
+.icn{
+  height:30px;
+  width:30px;
+  top:50%;
+  position:relative;
+  transform:translateY(-50%);
+}
+/*https://codepen.io/moseleygj/pen/abqrRWX*/
