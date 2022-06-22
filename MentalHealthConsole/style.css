@@ -14,12 +14,12 @@ background:lightgrey;
 #card{
  /* height:450px;
   width:800px;*/
-   height:450px;
+   height:100%;
   width:100%;
   border:;
-  border-radius:21px;
+  border-radius:;
   color:;
-  background:white;
+  background:#335477;
   position:;
   font-weight:;
   margin:0 auto 0;
@@ -30,7 +30,7 @@ background:lightgrey;
    height:100%;
   width:100%;
   border:;
-  border-radius:21px;
+  border-radius:;
   color:;
   background:lightgrey;
   position:;
@@ -41,13 +41,14 @@ background:lightgrey;
 
 }
 .tiers{
-  height:410px;
+  height:520px;
   width:300px;
   background-color:white;
   border:1px solid grey;
   border-radius:5px;
   margin:10px;
   float:left;
+  text-align:center;
 }
 .tiers:hover{border:1px solid black;}
 .tierTitle{
@@ -72,11 +73,16 @@ background:lightgrey;
 .item-cell{
   width:100%;
   height:40px;
-  border:1px solid red;
+  border:none;
 }
-.itemIcon{height:40px;width:40px;border:1px solid red;float:right}
-.itemDescription{height:246x;width:255px;border:1px solid red;float:left;color:#434343;font-size:24px;  position:relative;
+.itemIcon{height:40px;width:40px;border:none;float:right}
+
+.itemDescription{height:246x;width:255px;border:none;float:left;color:#434343;font-size:18px;
+  font-weight:bold;position:relative;
   transform:translateY(-50%);  top:50%;
+  text-align:left;
+  text-indent:11px;
+  font-family:"Open Sans";
 }
 .icn{
   height:30px;
@@ -85,4 +91,52 @@ background:lightgrey;
   position:relative;
   transform:translateY(-50%);
 }
-/*https://codepen.io/moseleygj/pen/abqrRWX*/
+
+#provider{
+  height:550px;
+  width:550px;
+  top:50%;
+  position:relative;
+  transform:translateY(-50%);
+  border:;
+  margin:0 auto 0;
+}
+
+#provider-photo-Holder{
+  height:419px;width:100%;
+  border:;
+
+}
+#providerPhoto{
+  height:395px;width:395px;
+  border:3px solid limegreen;
+  border-radius:50%;
+  margin: 0 auto 0;
+  position:relative;
+}
+
+#provider-sub-title{
+ height:50px;
+ border:1px solid blue;
+}
+#provider-title{
+  height:75px;
+  border:1px solid red;
+}
+
+#provider-title{
+  height:75px;
+  text-align:center;
+  font-size:  50px;
+  color:white;
+  font-family:;
+
+}
+
+#centerTiers{
+  text-align:center;
+  width:1300px;
+  height:100%;
+  border: 1px solid red;
+  margin: 0 auto 0;
+}
