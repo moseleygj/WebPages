@@ -8,7 +8,7 @@ height:100%;
 #container{
 width:100%;
 height:100%;
-background:lightgrey;
+background:#ffffff;
 }
 
 #card{
@@ -32,7 +32,7 @@ background:lightgrey;
   border:;
   border-radius:;
   color:;
-  background:lightgrey;
+  background:#ffffff;
   position:;
   font-weight:;
   margin:0 auto 0;
@@ -109,7 +109,7 @@ background:lightgrey;
 }
 #providerPhoto{
   height:395px;width:395px;
-  border:3px solid limegreen;
+  border:3px solid #268db8;
   border-radius:50%;
   margin: 0 auto 0;
   position:relative;
@@ -117,17 +117,20 @@ background:lightgrey;
 
 #provider-sub-title{
  height:50px;
- border:1px solid blue;
+ border:;
+  color:lightgrey;
+
+
 }
 #provider-title{
   height:75px;
-  border:1px solid red;
+  border:;
 }
 
 #provider-title{
   height:75px;
   text-align:center;
-  font-size:  50px;
+  font-size:  52px;
   color:white;
   font-family:;
 
@@ -139,4 +142,25 @@ background:lightgrey;
   height:100%;
   border: 1px solid red;
   margin: 0 auto 0;
+}
+
+/*perks*/
+/*     <link rel="stylesheet" href="style.css">
+*/
+
+.textDescript{
+ height:142px;width:;text-align:;border:;color:grey;padding-top:10px;font-size:20px
+
+}
+.headTitle{
+  height:30px;width:;text-align:;border:;font-weight:bold;font-size:26px;
+    color:#434343;
+}
+
+.cardPerks{
+ width:400px;height:auto;border:;float:left;padding-left:30px
+}
+
+.cardPic{
+  height:50px;width:100%;text-align:;border:;
 }
