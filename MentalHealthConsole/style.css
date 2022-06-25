@@ -84,6 +84,12 @@ background:#ffffff;
   text-indent:11px;
   font-family:"Open Sans";
 }
+
+@font-face {
+  font-family: quotes;
+  src: url(PassionOne-Black.ttf);
+}
+
 .icn{
   height:30px;
   width:30px;
