@@ -170,3 +170,14 @@ background:#ffffff;
 .cardPic{
   height:50px;width:100%;text-align:;border:;
 }
+/*<!-- Austims section -->*/
+#container-autism{
+  height:2000px;
+  width:100%;
+  background:white;
+  top:;
+  position:;
+}
+
+.chkbox{color:#278eb9;font-size: 30px;float:left;padding-right:5px}
+.specialty{color:#434343;font-size: 40px;float:left;line-height:0.8em}
