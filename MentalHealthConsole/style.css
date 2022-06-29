@@ -11,7 +11,7 @@ height:100%;
 background:#ffffff;
 }
 
-#card{
+.card{
  /* height:450px;
   width:800px;*/
    height:100%;
@@ -24,7 +24,7 @@ background:#ffffff;
   font-weight:;
   margin:0 auto 0;
 }
-#card1{
+.card1{
  /* height:450px;
   width:800px;*/
    height:100%;
@@ -37,20 +37,28 @@ background:#ffffff;
   font-weight:;
   margin:0 auto 0;
 }
-
+/*
 @media only screen and (max-width: 600px) {
   #card1 {
     background-color: lightblue;
   }
   #mentalHealthEasy{
-    font-size:30px;
+    font-size:37px;
   }
   #card{
     height:700px;
-    background-color:pink;  
+    background-color:pink;
   }
 }
+*/
 
+@media only screen and (min-width:450px) and (max-width: 588px) {
+#MH-EASY{font-size:36px;}
+.card{background-color:red;}
+}
+
+#MH-EASY{height:120px;width:100%;font-size:50px;padding-top:10px;text-indent:20px;}
+/*
 @media only screen and (min-width:px) and (max-width:px){
 #card{
 height:700px;
@@ -60,7 +68,7 @@ background-color:pink;
 @media only screen and (min-width:px) and (max-width:px){  }
 @media only screen and (min-width:px) and (max-width:px){  }
 @media only screen and (min-width:px) and (max-width:px){  }
-
+*/
 
 
 #title{
