@@ -58,32 +58,40 @@ html {
 
 @media only screen and (max-width: 588px) {
     #MH-EASY {
-        font-size: 24px;
+        font-size: 30px;
         margin-top: 20px;
         margin-bottom: 20px;
         font-weight: bolder;
         color: red;
+        height: 1900px;
     }
     .card {
         background-color: red;
     }
 }
 
-
-/*#MH-EASY{height:120px;width:100%;font-size:50px;padding-top:10px;text-indent:20px;}
-/*
-@media only screen and (min-width:px) and (max-width:px){
-#card{
-height:700px;
-background-color:pink;
-  }
+#MH-EASY {
+    height: 120px;
+    width: 100%;
+    font-size: 2em;
+    padding-top: 10px;
+    text-indent: 20px;
 }
-@media only screen and (min-width:px) and (max-width:px){  }
-@media only screen and (min-width:px) and (max-width:px){  }
-@media only screen and (min-width:px) and (max-width:px){  }
-*/
 
-#title {}
+@media only screen and (min-width:px) and (max-width:px) {
+    #card {
+        height: 700px;
+        background-color: pink;
+    }
+}
+
+@media only screen and (min-width:px) and (max-width:px) {}
+
+@media only screen and (min-width:px) and (max-width:px) {}
+
+@media only screen and (min-width:px) and (max-width:px) {}
+
+*/ #title {}
 
 .tiers {
     height: 520px;
