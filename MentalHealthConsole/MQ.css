@@ -1,0 +1,65 @@
+@media only screen and (max-width: 588px) {
+    #MH-EASY {
+        font-size: 34px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+        color: purple;
+        /* height: 3900px;*/
+        /*  font-family: quotes;*/
+    }
+    .card {
+        background-color: red;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1350px;
+    }
+    #provider-div {
+        background-color: pink;
+    }
+}
+
+@media only screen and (min-width:589px) and (max-width: 858px) {
+    #card1-MH {
+        height: 1600px;
+    }
+    .card {
+        background-color: ;
+        height: 160px;
+    }
+    #provider-div {
+        height: 930px;
+    }
+    #patient-rev {
+        height: 1350px;
+    }
+}
+
+@media only screen and (min-width:858px)and (max-width:1245px) {
+    #patient-rev {
+        height: 1100px;
+        background-color: ;
+    }
+    #provider-sub-title {
+        width: 286px;
+        padding: 2px;
+    }
+}
+
+
+/*
+@media only screen and (max-width: 849px) {
+    #card1-MH {
+        height: 1610px;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    #card1-MH {
+        height: 1130px;
+    }
+}
+*/

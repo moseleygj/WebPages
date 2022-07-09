@@ -56,45 +56,6 @@ html {
 }
 */
 
-@media only screen and (max-width: 588px) {
-    #MH-EASY {
-        font-size: 30px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-weight: bolder;
-        color: red;
-        height: 3900px;
-        font-family: quotes;
-    }
-    .card {
-        background-color: red;
-    }
-    #card1-MH {
-        height: 1610px;
-    }
-    #patient-rev {
-        height: 19000px;
-    }
-}
-
-@media only screen and (max-width: 849px) {
-    #card1-MH {
-        height: 1610px;
-    }
-}
-
-@media only screen and (max-width: 849px) {
-    #card1-MH {
-        height: 1610px;
-    }
-}
-
-@media only screen and (max-width: 945px) {
-    #card1-MH {
-        height: 1130px;
-    }
-}
-
 #MH-EASY {
     height: 120px;
     width: 100%;
@@ -172,7 +133,7 @@ html {
     border: none;
     float: left;
     color: #434343;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
     transform: translateY(-50%);
@@ -180,6 +141,15 @@ html {
     text-align: left;
     text-indent: 11px;
     font-family: "Open Sans";
+}
+
+#providerButton {
+    text-align: center;
+    background: #589957;
+    border-radius: 20px;
+    width: ;
+    font-size: 20px;
+    padding: 2px;
 }
 
 @font-face {
@@ -309,7 +279,7 @@ html {
 
 .specialty {
     color: #434343;
-    font-size: 40px;
+    font-size: 36px;
     float: left;
     line-height: 0.8em
 }
