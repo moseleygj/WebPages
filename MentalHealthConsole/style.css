@@ -40,6 +40,11 @@ html {
     margin: 0 auto 0;
 }
 
+.clientReviewDiv{
+    border:;height:260px;padding-bottom:15px;width:400px;float:left;margin-right:22px;
+
+}
+
 
 /*
 @media only screen and (max-width: 600px) {
@@ -282,4 +287,8 @@ html {
     font-size: 36px;
     float: left;
     line-height: 0.8em
+}
+
+#childFooter{
+    height:500px;width:700px;float:left;top:-420px;position:relative;
 }
