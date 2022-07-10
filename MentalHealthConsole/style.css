@@ -40,9 +40,13 @@ html {
     margin: 0 auto 0;
 }
 
-.clientReviewDiv{
-    border:;height:260px;padding-bottom:15px;width:400px;float:left;margin-right:22px;
-
+.clientReviewDiv {
+    border: ;
+    height: 260px;
+    padding-bottom: 15px;
+    width: 400px;
+    float: left;
+    margin-right: 22px;
 }
 
 
@@ -88,7 +92,7 @@ html {
     height: 520px;
     width: 300px;
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     border-radius: 5px;
     margin: 10px;
     float: left;
@@ -218,7 +222,7 @@ html {
     text-align: center;
     width: auto;
     height: 100%;
-    border: 1px solid red;
+    border: none;
     margin: 0 auto 0;
 }
 
@@ -228,6 +232,14 @@ html {
 
 /*     <link rel="stylesheet" href="style.css">
 */
+
+#service-checkB {
+    height: 450px;
+    padding-left: 30px;
+    background: ;
+    width: 320px;
+    float: left;
+}
 
 .textDescript {
     height: 142px;
@@ -289,6 +301,10 @@ html {
     line-height: 0.8em
 }
 
-#childFooter{
-    height:500px;width:700px;float:left;top:-420px;position:relative;
+#childFooter {
+    height: 500px;
+    width: 700px;
+    float: left;
+    top: -420px;
+    position: relative;
 }
