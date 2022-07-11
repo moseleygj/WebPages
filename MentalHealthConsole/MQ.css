@@ -135,29 +135,40 @@
 
 /* Mobile M */
 
-@media only screen and(min-width:321px)and (max-width: 375px) {}
-
-
-/* Mobile L */
-
-@media only screen and(min-width:376px)and (max-width: 425px) {
+@media only screen and (min-width:321px)and (max-width: 375px) {
+    .card {
+        width: 100%;
+        background: green;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 28px
+    }
     #childFooter {
-        width: 390px;
-        top: -272px;
+        width: 319px;
+        top: -252px;
         height: 300px;
     }
     .clientReviewDiv {
-        width: 385px
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 286px
     }
     #providerPhoto {
-        height: 350px;
-        width: 350px;
+        height: 225px;
+        width: 225px;
     }
     #provider {
-        width: 390px
+        width: 320px
     }
     #provider-title {
-        font-size: 42px
+        font-size: 30px;
+        width: 320px;
     }
     #providerButton {
         margin: 0 auto 0;
@@ -165,7 +176,7 @@
         width: 232px
     }
     #MH-EASY {
-        font-size: 30px;
+        font-size: 22px;
         text-align: CENTER;
         font-weight: bold;
     }
@@ -179,17 +190,202 @@
         background-color: ;
     }
     .textDescript {
-        width: 350px
+        width: 294px;
+        height: 174px;
+        font-size: 18px
     }
     #centerTiers {
         height: 2170px;
+    }
+    .cardPerks {
+        width: 342px;
+    }
+    .headTitle {
+        font-size: 18px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1680px
+    }
+    #service-CheckB {
+        padding-left: 0px;
+        width: 100%;
+    }
+}
+
+
+/* Mobile L */
+
+@media only screen and (min-width:376px)and (max-width: 425px) {
+    .card {
+        width: 100%;
+        background: orange;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 34px;
+    }
+    #childFooter {
+        width: 375px;
+        top: -252px;
+        height: 300px;
+    }
+    .clientReviewDiv {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 286px
+    }
+    #providerPhoto {
+        height: 225px;
+        width: 225px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 4px;
+        width: 232px
+    }
+    #MH-EASY {
+        font-size: 22px;
+        text-align: CENTER;
+        font-weight: bold;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1350px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 330px;
+        height: 174px;
+        font-size: 18px
+    }
+    #centerTiers {
+        height: 2170px;
+    }
+    .cardPerks {
+        width: 341px;
+    }
+    .headTitle {
+        font-size: 18px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1680px
+    }
+    #service-CheckB {
+        padding-left: 0px;
+        width: 100%;
     }
 }
 
 
 /* Tablet */
 
-@media only screen and(min-width:426px)and (max-width:768px) {}
+@media only screen and (min-width:426px) and (max-width:768px) {
+    .card {
+        width: 100%;
+        background: powderblue;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 34px;
+    }
+    #childFooter {
+        width: 424px;
+        top: -252px;
+        height: 300px;
+    }
+    .clientReviewDiv {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 312px
+    }
+    #providerPhoto {
+        height: 250px;
+        width: 250px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 4px;
+        width: 232px
+    }
+    #MH-EASY {
+        font-size: 22px;
+        text-align: CENTER;
+        font-weight: bold;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1350px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 330px;
+        height: 174px;
+        font-size: 18px
+    }
+    #centerTiers {
+        height: 2170px;
+    }
+    .cardPerks {
+        width: 341px;
+    }
+    .headTitle {
+        font-size: 18px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1680px
+    }
+    #service-CheckB {
+        padding-left: 0px;
+        width: 100%;
+    }
+}
 
 
 /* Laptop */
@@ -206,6 +402,8 @@
 
 @media only screen and(min-width:1441px)and (max-width: 2560px) {}
 
+
+/*
 @media only screen and (min-width:391px) and (max-width: 588px) {
     #MH-EASY {
         font-size: 34px;
@@ -214,7 +412,12 @@
         font-weight: bolder;
         color: purple;
         /* height: 3900px;*/
-        /*  font-family: quotes;*/
+
+
+/*  font-family: quotes;*/
+
+
+/*
     }
     .card {
         background-color: red;
@@ -229,6 +432,7 @@
         background-color: pink;
     }
 }
+*/
 
 @media only screen and (min-width:589px) and (max-width: 858px) {
     #card1-MH {
