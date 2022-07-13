@@ -89,8 +89,8 @@
     }
     #providerButton {
         margin: 0 auto 0;
-        padding: 4px;
-        width: 232px
+        padding: 6px;
+        width: 258px
     }
     #MH-EASY {
         font-size: 18px;
@@ -129,10 +129,13 @@
         height: 1680px
     }
     #service-CheckB {
-        padding-left: 19%;
-        width:237px;
+        padding-left: 9%;
+        width:284px;
     }
     .cont{width:50%;padding-left:26%}
+    #our-staff{
+        height:2213px;;
+    }
 
 }
 
@@ -183,8 +186,8 @@
     }
     #providerButton {
         margin: 0 auto 0;
-        padding: 4px;
-        width: 232px
+        padding: 6px;
+        width: 258px
     }
     #MH-EASY {
         font-size: 22px;
@@ -224,9 +227,12 @@
     }
     #service-CheckB {
         padding-left: 22px;
-        width: 88%;
+        width: 96%;
     }
     .cont{width:50%;padding-left:26%}
+    #our-staff{
+        height:2236px;
+    }
 
 }
 
@@ -271,8 +277,8 @@
     }
     #providerButton {
         margin: 0 auto 0;
-        padding: 4px;
-        width: 232px
+        padding: 6px;
+        width: 258px
     }
     #MH-EASY {
         font-size: 22px;
@@ -311,11 +317,13 @@
         height: 1680px
     }
     #service-CheckB {
-        padding-left: 32px;
-        width: 88%;
+        padding-left: 28px;
+        width: 98%;
     }
     .cont{width:48%;padding-left:2%}
-
+    #our-staff{
+        height:2236px;
+    }
 }
 
 
@@ -360,9 +368,9 @@
     }
     #providerButton {
         margin: 0 auto 0;
-        padding: 4px;
-        width: 232px
-    }
+        padding: 6px;
+        width: 260px
+    };
     #MH-EASY {
         font-size: 22px;
         text-align: CENTER;
@@ -408,7 +416,10 @@
     }
     .client-feedback{padding-left:20px}
     .cont{width:48%;padding-left:2%}
-
+    #our-staff{
+        height:2216px;
+    }
+    .staff-Card{padding-right:0px;}
 }
 
 
@@ -453,8 +464,8 @@
 }
 #providerButton {
     margin: 0 auto 0;
-    padding: 4px;
-    width: 232px
+    padding: 6px;
+    width: 260px;
 }
 #MH-EASY {
     font-size: 32px;
@@ -500,7 +511,9 @@
 }
 .client-feedback{padding-left:20px}
 .cont{width:;padding-left:2%}
-
+#our-staff{
+    height:1368px;
+}
 }
 
 /* Laptop L */
@@ -540,13 +553,13 @@
     width: 320px
 }
 #provider-title {
-    font-size: 36px;
+    font-size: 30px;
     width: 320px;
 }
 #providerButton {
     margin: 0 auto 0;
-    padding: 4px;
-    width: 232px
+    padding: 6px;
+    width: 260px
 }
 #MH-EASY {
     font-size: 36px;
@@ -592,6 +605,10 @@
 }
 .client-feedback{padding-left:20px;}
 .cont{width:;}
+#our-staff{
+    height:px;
+}
+
 
 }
 
