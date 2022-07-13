@@ -392,10 +392,10 @@ html {
     transform:translate-Y(-50%);*/
     padding-top:20px;
   }
-  .staff-name{  width:250px;;height:40px;font-size:32px;
+  .staff-name{  width:250px;;height:40px;font-size:29px;
     text-align:center;
   }
-  .staff-title{  width:250px;width:250px;;height:30px;font-size:24px;font-weight:bolder;
+  .staff-title{  width:250px;width:250px;;height:30px;font-size:22px;font-weight:bolder;
     text-align:center;
   }
   .social-links{  width:250px;height:30px;text-align:center;
