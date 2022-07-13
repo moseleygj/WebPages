@@ -368,7 +368,7 @@ html {
     width:250px;
     border:1px solid grey;
     border-radius:20px;
-    margin-right:40px;
+    margin-right:0px;
     margin-bottom:40px;
     margin-top:40px;
     margin-left:40px;
@@ -392,10 +392,10 @@ html {
     transform:translate-Y(-50%);*/
     padding-top:20px;
   }
-  .staff-name{  width:250px;;height:40px;font-size:29px;
+  .staff-name{  width:250px;;height:40px;font-size:24px;
     text-align:center;
   }
-  .staff-title{  width:250px;width:250px;;height:30px;font-size:22px;font-weight:bolder;
+  .staff-title{  width:250px;width:250px;;height:30px;font-size:16px;font-weight:bolder;
     text-align:center;
   }
   .social-links{  width:250px;height:30px;text-align:center;
