@@ -61,7 +61,7 @@
         width: 320px
     }
     .specialty {
-        font-size: 22px
+        font-size: 26px;
     }
     #childFooter {
         width: 320px;
@@ -84,7 +84,7 @@
         width: 320px
     }
     #provider-title {
-        font-size: 21px;
+        font-size: 28px;
         width: 320px;
     }
     #providerButton {
@@ -129,10 +129,19 @@
         height: 1680px
     }
     #service-CheckB {
-        padding-left: 0px;
+        padding-left: 19%;
+        width:237px;
     }
+    .cont{width:50%;padding-left:26%}
+
 }
 
+/*test
+@media only screen and (min-height:550px) and (max-width: 768px) {
+    .cont{width:50%;padding-left:0px;background:red;padding:0px;}
+
+}
+/*test*/
 
 /* Mobile M */
 
@@ -214,16 +223,18 @@
         height: 1680px
     }
     #service-CheckB {
-        padding-left: 0px;
-        width: 100%;
+        padding-left: 22px;
+        width: 88%;
     }
+    .cont{width:50%;padding-left:26%}
+
 }
 
 
 /* Mobile L */
 
 @media only screen and (min-width:376px)and (max-width: 425px) {
-    .subCard{height:700px;}
+    .subCard{height:700px; height:450px}
     .card {
         width: 100%;
         background: ;
@@ -300,16 +311,19 @@
         height: 1680px
     }
     #service-CheckB {
-        padding-left: 0px;
-        width: 100%;
+        padding-left: 32px;
+        width: 88%;
     }
+    .cont{width:48%;padding-left:2%}
+
 }
 
 
 /* Tablet */
 
 @media only screen and (min-width:426px) and (max-width:768px) {
-    .subCard{max-height:680px;}
+    .subCard{max-height:680px;
+    height:450px}
     .card {
         width: 100%;
         background: ;
@@ -341,7 +355,7 @@
         width: 320px
     }
     #provider-title {
-        font-size: 30px;
+        font-size: 36px;
         width: 320px;
     }
     #providerButton {
@@ -367,7 +381,7 @@
     .textDescript {
         width: 330px;
         height: 174px;
-        font-size: 18px;
+        font-size: 20px;
 
     }
     #centerTiers {
@@ -375,10 +389,10 @@
     }
     .cardPerks {
        /* width: 341px;*/
-       width:396px;
+       width:330px;
     }
     .headTitle {
-        font-size: 20px
+        font-size: 24px
     }
     .textDesc {
         height: auto;
@@ -389,9 +403,12 @@
         height: 1640px
     }
     #service-CheckB {
-        padding-left: 0px;
-        width: 100%;
+        padding-left: 48px;
+        width: 88%;
     }
+    .client-feedback{padding-left:20px}
+    .cont{width:48%;padding-left:2%}
+
 }
 
 
@@ -431,7 +448,7 @@
     width: 320px
 }
 #provider-title {
-    font-size: 30px;
+    font-size: 36px;
     width: 320px;
 }
 #providerButton {
@@ -440,7 +457,7 @@
     width: 232px
 }
 #MH-EASY {
-    font-size: 22px;
+    font-size: 32px;
     text-align: CENTER;
     font-weight: bold;
 }
@@ -457,7 +474,7 @@
 .textDescript {
     width: 330px;
     height: 174px;
-    font-size: 18px
+    font-size: 22px
 }
 #centerTiers {
     height: 2170px;
@@ -465,8 +482,9 @@
 .cardPerks {
     width: 341px;
 }
+.itemDescription{font-size: 18px;}
 .headTitle {
-    font-size: 18px
+    font-size: 24px
 }
 .textDesc {
     height: auto;
@@ -477,9 +495,13 @@
     height: 1024px
 }
 #service-CheckB {
-    padding-left: 0px;
-    width: 100%;
-}}
+    padding-left: 90px;
+    width: 88%;
+}
+.client-feedback{padding-left:20px}
+.cont{width:;padding-left:2%}
+
+}
 
 /* Laptop L */
 
@@ -518,7 +540,7 @@
     width: 320px
 }
 #provider-title {
-    font-size: 30px;
+    font-size: 36px;
     width: 320px;
 }
 #providerButton {
@@ -527,7 +549,7 @@
     width: 232px
 }
 #MH-EASY {
-    font-size: 28px;
+    font-size: 36px;
     text-align: CENTER;
     font-weight: bold;
     padding-top: 19px;
@@ -545,7 +567,7 @@
 .textDescript {
     width: 330px;
     height: 174px;
-    font-size: 18px
+    font-size: 22px
 }
 #centerTiers {
     height: 2170px;
@@ -554,7 +576,7 @@
     width: 341px;
 }
 .headTitle {
-    font-size: 18px
+    font-size: 26px
 }
 .textDesc {
     height: auto;
@@ -565,9 +587,11 @@
     height: 1024px;
 }
 #service-CheckB {
-    padding-left: 0px;
+    padding-left: 8%;
     width: 100%;
 }
+.client-feedback{padding-left:20px;}
+.cont{width:;}
 
 }
 
