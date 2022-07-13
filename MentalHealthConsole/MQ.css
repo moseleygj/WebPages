@@ -355,7 +355,7 @@
         width: 320px
     }
     #provider-title {
-        font-size: 36px;
+        font-size: 30px;
         width: 320px;
     }
     #providerButton {
@@ -369,7 +369,7 @@
         font-weight: bold;
     }
     #card1-MH {
-        height: 1610px;
+        height: 1658px;
     }
     #patient-rev {
         height: 1400px;
@@ -448,7 +448,7 @@
     width: 320px
 }
 #provider-title {
-    font-size: 36px;
+    font-size: 30px;
     width: 320px;
 }
 #providerButton {
@@ -474,7 +474,7 @@
 .textDescript {
     width: 330px;
     height: 174px;
-    font-size: 22px
+    font-size: 19px
 }
 #centerTiers {
     height: 2170px;
@@ -567,7 +567,7 @@
 .textDescript {
     width: 330px;
     height: 174px;
-    font-size: 22px
+    font-size: 19px
 }
 #centerTiers {
     height: 2170px;
