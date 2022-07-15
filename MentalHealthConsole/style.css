@@ -169,6 +169,10 @@ html {
   font-family:SFR;
   src: url(SF/SFPRODISPLAYREGULAR.OTF);
 }
+@font-face{
+  font-family:NP;
+  src:url(SF/NibPro-Bold.ttf);
+}
 .icn {
     height: 30px;
     width: 30px;
