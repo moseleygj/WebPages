@@ -321,9 +321,9 @@
         width: 98%;
     }
     .cont{width:48%;padding-left:2%}
-    #our-staff{
-        height:2236px;
-    }
+ #our-staff{
+     height:2200px
+ }
 }
 
 
@@ -416,9 +416,7 @@
     }
     .client-feedback{padding-left:20px}
     .cont{width:48%;padding-left:2%}
-    #our-staff{
-        height:2216px;
-    }
+    
     .staff-Card{padding-right:0px;}
 }
 
@@ -511,9 +509,7 @@
 }
 .client-feedback{padding-left:20px}
 .cont{width:;padding-left:2%}
-#our-staff{
-    height:1368px;
-}
+
 }
 
 /* Laptop L */
@@ -605,9 +601,7 @@
 }
 .client-feedback{padding-left:20px;}
 .cont{width:;}
-#our-staff{
-    height:px;
-}
+
 
 
 }
@@ -694,3 +688,77 @@
     }
 }
 */
+/*CENTER TEIRS PRICES */
+@media only screen and (min-width:652px) and (max-width:860px){
+
+    #centerTiers{
+        height:1090px;
+        background:;
+    }
+}
+
+@media only screen and (min-width:860px) and (max-width:1287px){
+
+    #centerTiers{
+        height:1090px;
+        background:;
+    }
+}
+@media only screen and (min-width:1294px) and (max-width:1400px){
+
+    #centerTiers{
+        height:600px;
+        background:;
+    }
+}
+/*CENTER TEIRS PRICES */
+
+/*STAFF*/
+@media only screen and (min-width:625px) and (max-width:875px){
+    #our-staff{
+        height:980px;
+    }
+
+
+    
+}
+@media only screen and (min-width:426px) and (max-width:583px){
+    #our-staff{
+        height:2200px;
+        transition: width 0.5s, height 0.5s;
+
+    }
+      }
+
+      @media only screen and (min-width:584px) and (max-width:890px){
+        #our-staff{
+            height:1350px;
+            transition: width 0.2s, height 0.2;
+
+        }
+          }
+
+          @media only screen and (min-width:876px) and (max-width:1024px){
+            #our-staff{
+                height:980px;
+                transition: width 0.2s, height 0.2s;
+
+            }
+        }
+    @media only screen and (min-width:1025px) and (max-width:1460px){
+         #our-staff{
+            height:980px;
+            transition: width 0.2s, height 0.2s;
+
+           }
+        }
+        @media only screen and (min-width:1460px) and (max-width:1660px){
+            #our-staff{
+               height:480px;
+               transition: width 0.2s, height 0.2s;
+   
+              }
+           }
+/* #our-staff{
+        height:2228px;
+    }*/
