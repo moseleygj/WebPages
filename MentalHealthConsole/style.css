@@ -165,7 +165,10 @@ html {
     font-family: quotes;
     src: url(PassionOne-Black.ttf);
 }
-
+@font-face{
+  font-family:SFR;
+  src: url(SF/SFPRODISPLAYREGULAR.OTF);
+}
 .icn {
     height: 30px;
     width: 30px;
@@ -392,11 +395,11 @@ html {
     transform:translate-Y(-50%);*/
     padding-top:20px;
   }
-  .staff-name{  width:250px;;height:40px;font-size:24px;
-    text-align:center;
+  .staff-name{  width:250px;;height:40px;font-size:22px;font-weight:bolder;
+    text-align:center;font-family:SFR;
   }
-  .staff-title{  width:250px;width:250px;;height:30px;font-size:16px;font-weight:bolder;
-    text-align:center;
+  .staff-title{  width:250px;width:250px;;height:30px;font-size:16px;font-weight:;
+    text-align:center;color:#434343;font-family:SFR;
   }
   .social-links{  width:250px;height:30px;text-align:center;
   }
