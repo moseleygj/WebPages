@@ -68,9 +68,11 @@ html {
 #MH-EASY {
     height: 120px;
     width: 100%;
-    font-size: 2em;
+    font-size: 26px;
     padding-top: 10px;
     text-indent: 20px;
+    font-family: NP;
+    color:#434343;
 }
 
 @media only screen and (min-width:px) and (max-width:px) {
@@ -157,6 +159,7 @@ html {
     background: #589957;
     border-radius: 20px;
     width: ;
+    font-family:IW;
     font-size: 20px;
     padding: 2px;
 }
@@ -172,6 +175,16 @@ html {
 @font-face{
   font-family:NP;
   src:url(SF/NibPro-Bold.ttf);
+}
+
+@font-face{
+  font-family:NPR;
+  src:url(SF/NibPro-Regular.ttf);
+}
+
+@font-face{
+  font-family:IW;
+  src: url(SF/IstokWeb-Regular.ttf)
 }
 .icn {
     height: 30px;
@@ -215,6 +228,7 @@ html {
 #provider-title {
     height: 75px;
     border: ;
+    font-family:NP
 }
 
 #provider-title {
@@ -303,9 +317,10 @@ html {
 
 .specialty {
     color: #434343;
-    font-size: 36px;
+    font-size: 25px;
     float: left;
-    line-height: 0.8em
+    line-height: 0.8em;
+    font-family:NP;
 }
 
 #childFooter {
@@ -364,7 +379,7 @@ html {
 
   .client-feedback{
 
-    height:185px;text-align:center;font-size:1.6em;color:white;padding:3px;font-family: Istok Web,Arial;font-style:italic
+    height:185px;text-align:center;font-size:21px;color:white;padding:3px;font-family: IW,Arial;font-style:italic
   }
 
 
@@ -399,11 +414,11 @@ html {
     transform:translate-Y(-50%);*/
     padding-top:20px;
   }
-  .staff-name{  width:250px;;height:40px;font-size:22px;font-weight:bolder;
-    text-align:center;font-family:SFR;
+  .staff-name{  width:250px;;height:40px;font-size:19px;font-weight:bolder;
+    text-align:center;font-family:NP;
   }
   .staff-title{  width:250px;width:250px;;height:30px;font-size:16px;font-weight:;
-    text-align:center;color:#434343;font-family:SFR;
+    text-align:center;color:#434343;font-family:IW;
   }
   .social-links{  width:250px;height:30px;text-align:center;
   }
