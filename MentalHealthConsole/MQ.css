@@ -53,7 +53,9 @@
 /* Mobile S */
 
 @media only screen and (max-width: 320px) {
-    .subCard{height:700px;}
+    .subCard {
+        height: 700px;
+    }
     .card {
         width: 320px
     }
@@ -130,14 +132,18 @@
     }
     #service-CheckB {
         padding-left: 9%;
-        width:284px;
+        width: 284px;
     }
-    .cont{width:50%;padding-left:26%}
-    #our-staff{
-        height:2213px;;
+    .cont {
+        width: 50%;
+        padding-left: 26%
     }
-
+    #our-staff {
+        height: 2213px;
+        ;
+    }
 }
+
 
 /*test
 @media only screen and (min-height:550px) and (max-width: 768px) {
@@ -146,10 +152,13 @@
 }
 /*test*/
 
+
 /* Mobile M */
 
 @media only screen and (min-width:321px)and (max-width: 375px) {
-    .subCard{height:700px;}
+    .subCard {
+        height: 700px;
+    }
     .card {
         width: 100%;
         background: ;
@@ -229,18 +238,23 @@
         padding-left: 22px;
         width: 96%;
     }
-    .cont{width:50%;padding-left:26%}
-    #our-staff{
-        height:2236px;
+    .cont {
+        width: 50%;
+        padding-left: 26%
     }
-
+    #our-staff {
+        height: 2236px;
+    }
 }
 
 
 /* Mobile L */
 
 @media only screen and (min-width:376px)and (max-width: 425px) {
-    .subCard{height:700px; height:450px}
+    .subCard {
+        height: 700px;
+        height: 450px
+    }
     .card {
         width: 100%;
         background: ;
@@ -320,18 +334,23 @@
         padding-left: 28px;
         width: 98%;
     }
-    .cont{width:48%;padding-left:2%}
- #our-staff{
-     height:2200px
- }
+    .cont {
+        width: 48%;
+        padding-left: 2%
+    }
+    #our-staff {
+        height: 2200px
+    }
 }
 
 
 /* Tablet */
 
 @media only screen and (min-width:426px) and (max-width:768px) {
-    .subCard{max-height:680px;
-    height:450px}
+    .subCard {
+        max-height: 680px;
+        height: 450px
+    }
     .card {
         width: 100%;
         background: ;
@@ -370,7 +389,8 @@
         margin: 0 auto 0;
         padding: 6px;
         width: 260px
-    };
+    }
+    ;
     #MH-EASY {
         font-size: 22px;
         text-align: CENTER;
@@ -382,7 +402,6 @@
     #patient-rev {
         height: 1400px;
     }
-
     #provider-div {
         background-color: ;
     }
@@ -390,14 +409,13 @@
         width: 330px;
         height: 174px;
         font-size: 20px;
-
     }
     #centerTiers {
         height: 2170px;
     }
     .cardPerks {
-       /* width: 341px;*/
-       width:330px;
+        /* width: 341px;*/
+        width: 330px;
     }
     .headTitle {
         font-size: 24px
@@ -414,205 +432,222 @@
         padding-left: 48px;
         width: 88%;
     }
-    .client-feedback{padding-left:20px}
-    .cont{width:48%;padding-left:2%}
-    
-    .staff-Card{padding-right:0px;}
+    .client-feedback {
+        padding-left: 20px
+    }
+    .cont {
+        width: 48%;
+        padding-left: 2%
+    }
+    .staff-Card {
+        padding-right: 0px;
+    }
 }
 
 
 /* Laptop */
 
 @media only screen and (min-width:769px) and (max-width: 1024px) {
-.subCard{max-height:304px;}
+    .subCard {
+        max-height: 304px;
+    }
+    .card {
+        width: 100%;
+        background: ;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 34px;
+    }
+    #childFooter {
+        width: 600;
+        top: -302px;
+        height: 360px;
+    }
+    .clientReviewDiv {
+        width: 98%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 312px
+    }
+    #providerPhoto {
+        height: 250px;
+        width: 250px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 6px;
+        width: 260px;
+    }
+    #MH-EASY {
+        font-size: 32px;
+        text-align: CENTER;
+        font-weight: bold;
+        padding-top: 43px;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1400px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 330px;
+        height: 174px;
+        font-size: 19px
+    }
+    #centerTiers {
+        height: 2170px;
+    }
+    .cardPerks {
+        width: 341px;
+    }
+    .itemDescription {
+        font-size: 18px;
+    }
+    .headTitle {
+        font-size: 24px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1024px
+    }
+    #service-CheckB {
+        padding-left: 90px;
+        width: 88%;
+    }
+    .client-feedback {
+        padding-left: 20px
+    }
+    .cont {
+        width: ;
+        padding-left: 2%
+    }
+}
 
-.card {
-    width: 100%;
-    background: ;
-}
-.card1 {
-    width: 100%
-}
-.specialty {
-    font-size: 34px;
-}
-#childFooter {
-    width: 600;
-    top: -302px;
-    height: 360px;
-}
-.clientReviewDiv {
-    width: 98%;
-    margin-right: 0;
-    padding-bottom: 50px
-}
-#provider-photo-holder {
-    height: 312px
-}
-#providerPhoto {
-    height: 250px;
-    width: 250px;
-}
-#provider {
-    width: 320px
-}
-#provider-title {
-    font-size: 30px;
-    width: 320px;
-}
-#providerButton {
-    margin: 0 auto 0;
-    padding: 6px;
-    width: 260px;
-}
-#MH-EASY {
-    font-size: 32px;
-    text-align: CENTER;
-    font-weight: bold;
-}
-#card1-MH {
-    height: 1610px;
-}
-#patient-rev {
-    height: 1400px;
-}
-
-#provider-div {
-    background-color: ;
-}
-.textDescript {
-    width: 330px;
-    height: 174px;
-    font-size: 19px
-}
-#centerTiers {
-    height: 2170px;
-}
-.cardPerks {
-    width: 341px;
-}
-.itemDescription{font-size: 18px;}
-.headTitle {
-    font-size: 24px
-}
-.textDesc {
-    height: auto;
-    font-size: 20px;
-    padding-bottom: 20px;
-}
-#card1-MH {
-    height: 1024px
-}
-#service-CheckB {
-    padding-left: 90px;
-    width: 88%;
-}
-.client-feedback{padding-left:20px}
-.cont{width:;padding-left:2%}
-
-}
 
 /* Laptop L */
 
 @media only screen and (min-width:1025px) and (max-width: 1440px) {
-    .subCard{max-height:274px;}
-/*.subCard{max-height:304px;}*/
-
-.card {
-    width: 100%;
-    background: ;
-}
-.card1 {
-    width: 100%
-}
-.specialty {
-    font-size: 34px;
-}
-#childFooter {
-    width: 424px;
-    top: -252px;
-    height: 300px;
-}
-.clientReviewDiv {
-    width: 98%;
-    margin-right: 0;
-    padding-bottom: 50px
-}
-#provider-photo-holder {
-    height: 312px
-}
-#providerPhoto {
-    height: 250px;
-    width: 250px;
-}
-#provider {
-    width: 320px
-}
-#provider-title {
-    font-size: 30px;
-    width: 320px;
-}
-#providerButton {
-    margin: 0 auto 0;
-    padding: 6px;
-    width: 260px
-}
-#MH-EASY {
-    font-size: 36px;
-    text-align: CENTER;
-    font-weight: bold;
-    padding-top: 19px;
-}
-#card1-MH {
-    height: 1610px;
-}
-#patient-rev {
-    height: 1400px;
-}
-
-#provider-div {
-    background-color: ;
-}
-.textDescript {
-    width: 330px;
-    height: 174px;
-    font-size: 19px
-}
-#centerTiers {
-    height: 2170px;
-}
-.cardPerks {
-    width: 341px;
-}
-.headTitle {
-    font-size: 26px
-}
-.textDesc {
-    height: auto;
-    font-size: 20px;
-    padding-bottom: 20px;
-}
-#card1-MH {
-    height: 1024px;
-}
-#service-CheckB {
-    padding-left: 8%;
-    width: 100%;
-}
-.client-feedback{padding-left:20px;}
-.cont{width:;}
-
-
-
+    .subCard {
+        max-height: 274px;
+    }
+    /*.subCard{max-height:304px;}*/
+    .card {
+        width: 100%;
+        background: ;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 34px;
+    }
+    #childFooter {
+        width: 424px;
+        top: -252px;
+        height: 300px;
+    }
+    .clientReviewDiv {
+        width: 98%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 312px
+    }
+    #providerPhoto {
+        height: 250px;
+        width: 250px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 6px;
+        width: 260px
+    }
+    #MH-EASY {
+        font-size: 36px;
+        text-align: CENTER;
+        font-weight: bold;
+        padding-top: 19px;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1400px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 330px;
+        height: 174px;
+        font-size: 19px
+    }
+    #centerTiers {
+        height: 2170px;
+    }
+    .cardPerks {
+        width: 341px;
+    }
+    .headTitle {
+        font-size: 26px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1024px;
+    }
+    #service-CheckB {
+        padding-left: 8%;
+        width: 100%;
+    }
+    .client-feedback {
+        padding-left: 20px;
+    }
+    .cont {
+        width: %;
+        padding-left: 2%
+    }
 }
 
 
 /* Laptop 4k */
 
 @media only screen and (min-width:1441px) and (max-width: 2560px) {
-    .subCard{max-height:100px;padding-top: 10px;}
-
-
+    .subCard {
+        max-height: 100px;
+        padding-top: 10px;
+    }
 }
 
 
@@ -662,6 +697,8 @@
         height: 1350px;
     }
 }
+
+
 /*
 @media only screen and (min-width:858px)and (max-width:1245px) {
     #patient-rev {
@@ -674,6 +711,7 @@
     }
 }
 */
+
 
 /*
 @media only screen and (max-width: 849px) {
@@ -688,77 +726,79 @@
     }
 }
 */
+
+
 /*CENTER TEIRS PRICES */
-@media only screen and (min-width:652px) and (max-width:860px){
 
-    #centerTiers{
-        height:1090px;
-        background:;
+@media only screen and (min-width:652px) and (max-width:860px) {
+    #centerTiers {
+        height: 1090px;
+        background: ;
     }
 }
 
-@media only screen and (min-width:860px) and (max-width:1287px){
-
-    #centerTiers{
-        height:1090px;
-        background:;
+@media only screen and (min-width:860px) and (max-width:1287px) {
+    #centerTiers {
+        height: 1090px;
+        background: ;
     }
 }
-@media only screen and (min-width:1294px) and (max-width:1400px){
 
-    #centerTiers{
-        height:600px;
-        background:;
+@media only screen and (min-width:1294px) and (max-width:1400px) {
+    #centerTiers {
+        height: 600px;
+        background: ;
     }
 }
+
+
 /*CENTER TEIRS PRICES */
+
 
 /*STAFF*/
-@media only screen and (min-width:625px) and (max-width:875px){
-    #our-staff{
-        height:980px;
+
+@media only screen and (min-width:625px) and (max-width:875px) {
+    #our-staff {
+        height: 980px;
     }
-
-
-    
 }
-@media only screen and (min-width:426px) and (max-width:583px){
-    #our-staff{
-        height:2200px;
+
+@media only screen and (min-width:426px) and (max-width:583px) {
+    #our-staff {
+        height: 2200px;
         transition: width 0.5s, height 0.5s;
-
     }
-      }
+}
 
-      @media only screen and (min-width:584px) and (max-width:890px){
-        #our-staff{
-            height:1350px;
-            transition: width 0.2s, height 0.2;
+@media only screen and (min-width:584px) and (max-width:890px) {
+    #our-staff {
+        height: 1350px;
+        transition: width 0.2s, height 0.2;
+    }
+}
 
-        }
-          }
+@media only screen and (min-width:876px) and (max-width:1024px) {
+    #our-staff {
+        height: 980px;
+        transition: width 0.2s, height 0.2s;
+    }
+}
 
-          @media only screen and (min-width:876px) and (max-width:1024px){
-            #our-staff{
-                height:980px;
-                transition: width 0.2s, height 0.2s;
+@media only screen and (min-width:1025px) and (max-width:1460px) {
+    #our-staff {
+        height: 980px;
+        transition: width 0.2s, height 0.2s;
+    }
+}
 
-            }
-        }
-    @media only screen and (min-width:1025px) and (max-width:1460px){
-         #our-staff{
-            height:980px;
-            transition: width 0.2s, height 0.2s;
+@media only screen and (min-width:1460px) and (max-width:1660px) {
+    #our-staff {
+        height: 480px;
+        transition: width 0.2s, height 0.2s;
+    }
+}
 
-           }
-        }
-        @media only screen and (min-width:1460px) and (max-width:1660px){
-            #our-staff{
-               height:480px;
-               transition: width 0.2s, height 0.2s;
-   
-              }
-           }
+
 /* #our-staff{
         height:2228px;
     }*/
