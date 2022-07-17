@@ -72,7 +72,7 @@ html {
     padding-top: 10px;
     text-indent: 20px;
     font-family: NP;
-    color:#434343;
+    color: #434343;
 }
 
 @media only screen and (min-width:px) and (max-width:px) {
@@ -159,7 +159,7 @@ html {
     background: #589957;
     border-radius: 20px;
     width: ;
-    font-family:IW;
+    font-family: IW;
     font-size: 20px;
     padding: 2px;
 }
@@ -168,24 +168,27 @@ html {
     font-family: quotes;
     src: url(PassionOne-Black.ttf);
 }
-@font-face{
-  font-family:SFR;
-  src: url(SF/SFPRODISPLAYREGULAR.OTF);
-}
-@font-face{
-  font-family:NP;
-  src:url(SF/NibPro-Bold.ttf);
+
+@font-face {
+    font-family: SFR;
+    src: url(SF/SFPRODISPLAYREGULAR.OTF);
 }
 
-@font-face{
-  font-family:NPR;
-  src:url(SF/NibPro-Regular.ttf);
+@font-face {
+    font-family: NP;
+    src: url(SF/NibPro-Bold.ttf);
 }
 
-@font-face{
-  font-family:IW;
-  src: url(SF/IstokWeb-Regular.ttf)
+@font-face {
+    font-family: NPR;
+    src: url(SF/NibPro-Regular.ttf);
 }
+
+@font-face {
+    font-family: IW;
+    src: url(SF/IstokWeb-Regular.ttf)
+}
+
 .icn {
     height: 30px;
     width: 30px;
@@ -228,7 +231,7 @@ html {
 #provider-title {
     height: 75px;
     border: ;
-    font-family:NP
+    font-family: NP
 }
 
 #provider-title {
@@ -320,7 +323,7 @@ html {
     font-size: 25px;
     float: left;
     line-height: 0.8em;
-    font-family:NP;
+    font-family: NP;
 }
 
 #childFooter {
@@ -331,115 +334,148 @@ html {
     position: relative;
 }
 
-.subCard{
-    min-height:190px;
-    height:100%;
-    color:white;
-    background:#278eb9;
-    width:auto;
-    position:relative;
-    max-height:700px;
-  }
-  
-  #sub-center-insurance{
-    border:;
-    height:100%;
-    width:auto;
-    margin:0 auto 0;
-  }
-  
-  .bann{
-    width:100%;
-    height:30px;
-    font-size:1.6em;
-    font-family:Nib Pro,Times New Roman,Arial;
-    margin:0 auto 0;;
-    padding-bottom:32px;
-    font-weight:;
-    padding-top: 10px;
-  }
-  
-  .cont{
-    height:100px;
-    width:216px;
-    float:left;
-    display:block;
-    position:relative;
-  }
-  
-  .imgCntr{
-    height:auto;width:160px;
-    margin:;
-    text-align:center;
-    top:50%;
-    border:;
-    position:relative;      
-    transform:translateY(-50%);
-  }
+.subCard {
+    min-height: 190px;
+    height: 100%;
+    color: white;
+    background: #278eb9;
+    width: auto;
+    position: relative;
+    max-height: 700px;
+}
 
-  .client-feedback{
+#sub-center-insurance {
+    border: ;
+    height: 100%;
+    width: auto;
+    margin: 0 auto 0;
+}
 
-    height:185px;text-align:center;font-size:21px;color:white;padding:3px;font-family: IW,Arial;font-style:italic
-  }
+.bann {
+    width: 100%;
+    height: 30px;
+    font-size: 1.6em;
+    font-family: NP, Times New Roman, Arial;
+    margin: 0 auto 0;
+    ;
+    padding-bottom: 32px;
+    font-weight: ;
+    padding-top: 15px;
+}
 
+.cont {
+    height: 100px;
+    width: 216px;
+    float: left;
+    display: block;
+    position: relative;
+}
 
-  /* */
-  .staff-Card{
-  background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 100%);
-    height:350px;
-    width:250px;
-    border:1px solid grey;
-    border-radius:20px;
-    margin-right:0px;
-    margin-bottom:40px;
-    margin-top:40px;
-    margin-left:40px;
+.imgCntr {
+    height: auto;
+    width: 160px;
+    margin: ;
+    text-align: center;
+    top: 50%;
+    border: ;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.client-feedback {
+    height: 185px;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    padding: 3px;
+    font-family: IW, Arial;
+    font-style: italic
+}
 
 
-    float:left;
-  }
-  .staff-Photo-holder{
-    height:200px;
-    width:250px;
-    border-radius:20px;
-    text-align:center;
-  }
-  
-  .staff-Photo{
-    height:150px;
-    width:150px;
-    border-radius:50%;
-    position:relative;
+/* */
+
+.staff-Card {
+    background: linear-gradient(172deg, rgba(255, 255, 255, 1) 0%, rgba(231, 231, 231, 1) 100%);
+    height: 350px;
+    width: 250px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    float: left;
+}
+
+.staff-Photo-holder {
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.staff-Photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
     /*top: 50%;
     transform:translate-Y(-50%);*/
-    padding-top:20px;
-  }
-  .staff-name{  width:250px;;height:40px;font-size:19px;font-weight:bolder;
-    text-align:center;font-family:NP;
-  }
-  .staff-title{  width:250px;width:250px;;height:30px;font-size:16px;font-weight:;
-    text-align:center;color:#434343;font-family:IW;
-  }
-  .social-links{  width:250px;height:30px;text-align:center;
-  }
-  
-  .socialIcon{height:26px;width:26px;margin-right:26px;}
-  
-  .borderSplitH{
-    width:100%;
-    height:5px;
-    text-align:center;
-    
-  }
-  .borderSplit{
+    padding-top: 20px;
+}
+
+.staff-name {
+    width: 250px;
+    ;
+    height: 40px;
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: NP;
+}
+
+.staff-title {
+    width: 250px;
+    width: 250px;
+    ;
+    height: 30px;
+    font-size: 16px;
+    font-weight: ;
+    text-align: center;
+    color: #434343;
+    font-family: IW;
+}
+
+.social-links {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+}
+
+.socialIcon {
+    height: 26px;
+    width: 26px;
+    margin-right: 26px;
+}
+
+.borderSplitH {
+    width: 100%;
+    height: 5px;
+    text-align: center;
+}
+
+.borderSplit {
     margin: 0 auto 0;
-    width:90%;
-    height:px;
-    border:1px solid grey;
-  }
-  /* */
-  .staff-Card-Holder{
-      width:100%;
-      height:auto;
-      
-  }
+    width: 90%;
+    height: px;
+    border: 1px solid grey;
+}
+
+
+/* */
+
+.staff-Card-Holder {
+    width: 100%;
+    height: auto;
+}
