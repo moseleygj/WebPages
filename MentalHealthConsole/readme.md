@@ -12,7 +12,7 @@ Description
 Screenshots
 ===========
 
-<img src="" alt="screenshot2" width="800px" height="600"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/MentalHealthConsole/127-0-0-1-5500-index-html.png" alt="screenshot2" width="800px" height="600"/>
 
 
 
