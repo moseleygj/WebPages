@@ -114,7 +114,7 @@
         font-size: 18px
     }
     #centerTiers {
-        height: 2170px;
+        height: 1680px;
     }
     .cardPerks {
         width: 255px;
@@ -141,6 +141,15 @@
     #our-staff {
         height: 2213px;
         
+    }
+    #teleHMsg{
+        font-size:30px;
+        background:white;
+                margin-top: 38px;
+                padding-left: 20px;
+                height: 340px;
+                font-size: 30px;
+                font-family:Arial, Helvetica, sans-serif;
     }
     #teleH{
         width:300px;
@@ -227,7 +236,7 @@
         font-size: 18px
     }
     #centerTiers {
-        height: 2170px;
+        height: 1680px;
     }
     .cardPerks {
         width: 305px;
@@ -256,6 +265,15 @@
     }
     #teleH{
         width:300px;
+    }
+    #teleHMsg{
+        font-size:30px;
+        background:white;
+                margin-top: 38px;
+                padding-left: 20px;
+                height: 340px;
+                font-size: 30px;
+                font-family:Arial, Helvetica, sans-serif;
     }
     .dates-holder-time{
         font-size:22px;
@@ -362,6 +380,15 @@
     #teleH{
         width:300px;
     }
+    #teleHMsg{
+        font-size:30px;
+        background:white;
+                margin-top: 38px;
+                padding-left: 20px;
+                height: 340px;
+                font-size: 30px;
+                font-family:Arial, Helvetica, sans-serif;
+    }
 }
 
 
@@ -432,7 +459,7 @@
         font-size: 20px;
     }
     #centerTiers {
-        height: 2170px;
+        height: 1680px;
     }
     .cardPerks {
         /* width: 341px;*/
@@ -454,11 +481,11 @@
         width: 88%;
     }
     .client-feedback {
-        padding-left: 20px
+        padding-left: 20px;
     }
     .cont {
         width: 48%;
-        padding-left: 2%
+        padding-left: 2%;
     }
     .staff-Card {
         padding-right: 0px;
@@ -471,6 +498,15 @@
     }
     #teleH{
         width:300px;
+    }
+    #teleHMsg{
+        font-size:30px;
+        background:white;
+                margin-top: 38px;
+                padding-left: 20px;
+                height: 340px;
+                font-size: 30px;
+                font-family:Arial, Helvetica, sans-serif;
     }
 }
 
@@ -571,6 +607,15 @@
         width: ;
         padding-left: 2%
     }
+    #teleHMsg{
+        font-size:30px;
+        background:white;
+                margin-top: 38px;
+                padding-left: 20px;
+                height: 340px;
+                font-size: 30px;
+                font-family:Arial, Helvetica, sans-serif;
+    }
 }
 
 
@@ -668,6 +713,15 @@
         width: %;
         padding-left: 2%
     }
+    #teleHMsg{
+        font-size:30px;
+        background:white;
+                margin-top: 38px;
+                padding-left: 20px;
+                height: 340px;
+                font-size: 30px;
+                font-family:Arial, Helvetica, sans-serif;
+    }
 }
 
 
@@ -677,6 +731,15 @@
     .subCard {
         max-height: 100px;
         padding-top: 10px;
+    }
+    #teleHMsg{
+        font-size:30px;
+        background:white;
+                margin-top: 38px;
+                padding-left: 20px;
+                height: 340px;
+                font-size: 30px;
+                font-family:IW,Arial, Helvetica, sans-serif;
     }
 }
 
