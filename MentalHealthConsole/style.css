@@ -476,3 +476,43 @@ html {
     width: 100%;
     height: auto;
 }
+/*location*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+#Dir-Hours{
+    height:358px;
+    width:504px;
+    background:none;
+    border:;
+    float:left;
+    padding-top:25px;
+    margin-left:;
+   position:relative;}
+
+#headerTime{
+height:30px;
+Width:100%;
+font-size:32px;
+color:#ffffff;
+font-weight:bolder;
+text-decoration:  ;
+text-align:center;
+font-family: ariel;
+font-family: 'Dancing Script', cursive;
+LINE-HEIGHT:2PX;
+}
+
+
+.dates{
+      border:;
+      margin-top:20px;
+palsm 73:26
+}
+.dates-holder{height:40px;width:100%;border:;}
+
+.dates-holder-day{height:40px;width:55%;border:;float:left;
+font-size:28px;color:#ffffff;text-indent:22px;FONT-WEIGHT:;}
+
+.dates-holder-time{height:40px;width:44%;border:;float:left;font-size:28px;color:#ffffff;text-align:;}
+/*location*/
