@@ -140,7 +140,16 @@
     }
     #our-staff {
         height: 2213px;
-        ;
+        
+    }
+    #teleH{
+        width:300px;
+    }
+    .dates-holder-time{
+        font-size:22px;
+    }
+    .dates-holder-day{
+        font-size:22px;
     }
 }
 
@@ -245,6 +254,15 @@
     #our-staff {
         height: 2236px;
     }
+    #teleH{
+        width:300px;
+    }
+    .dates-holder-time{
+        font-size:22px;
+    }
+    .dates-holder-day{
+        font-size:22px;
+    }
 }
 
 
@@ -340,6 +358,9 @@
     }
     #our-staff {
         height: 2200px
+    }
+    #teleH{
+        width:300px;
     }
 }
 
@@ -441,6 +462,15 @@
     }
     .staff-Card {
         padding-right: 0px;
+    }
+    .dates-holder-time{
+        font-size:24px;
+    }
+    .dates-holder-day{
+        font-size:24px;
+    }
+    #teleH{
+        width:300px;
     }
 }
 
