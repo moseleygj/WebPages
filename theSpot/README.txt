@@ -12,9 +12,7 @@ The Spot is A video/Media platform created with JS, CSS, HTML5, and FlexBox.
 Screenshots
 ===========
 
-<img src="https://github.com/moseleygj/WebPages/blob/master/PROJECT_NAME/.png" alt="screenshot2" width="300px"/>
-
-<img src="https://github.com/moseleygj/WebPages/blob/master/PROJECT_NAME/.png" alt="screenshot1" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/theSpot/TheSpot.png?raw=true" alt="screenshot2" width="300px"/>
 
 
  :unlock:License:
