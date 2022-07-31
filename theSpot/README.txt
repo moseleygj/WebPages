@@ -1,5 +1,5 @@
 
-:movie: The Spot
+:film_projector:	 The Spot
 ==============
 ***Project status:***
 ==============
