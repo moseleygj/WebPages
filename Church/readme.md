@@ -6,7 +6,7 @@
 :white_check_mark: Complete 
 
 
-WEBSITE MADE FOR CHURCH FROM SCRATCH.
+A Church website made for Azar Ministries International(Brooklyn, NY). Using JS, CSS abnd HTML5
 
 Screenshots
 ===========
