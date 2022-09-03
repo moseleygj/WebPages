@@ -1,0 +1,674 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    min-width: 320px;
+}
+
+.card {
+    /* height:450px;
+  width:800px;*/
+    height: 100%;
+    width: 100%;
+    border: ;
+    border-radius: ;
+    color: ;
+    background: #335477;
+    position: ;
+    font-weight: ;
+    margin: 0 auto 0;
+}
+
+.card1 {
+    /* height:450px;
+  width:800px;*/
+    height: auto;
+    width: 100%;
+    border: ;
+    border-radius: ;
+    color: ;
+    background: #ffffff;
+    position: ;
+    font-weight: ;
+    margin: 0 auto 0;
+}
+
+.clientReviewDiv {
+    border: ;
+    height: 260px;
+    padding-bottom: 15px;
+    width: 400px;
+    float: left;
+    margin-right: 22px;
+}
+
+
+/*
+@media only screen and (max-width: 600px) {
+  #card1 {
+    background-color: lightblue;
+  }
+  #mentalHealthEasy{
+    font-size:37px;
+  }
+  #card{
+    height:700px;
+    background-color:pink;
+  }
+}
+*/
+
+#MH-EASY {
+    height: 120px;
+    width: 100%;
+    font-size: 26px;
+    padding-top: 10px;
+    text-indent: 20px;
+    font-family: NP;
+    color: #434343;
+}
+
+@media only screen and (min-width:px) and (max-width:px) {
+    #card {
+        height: 700px;
+        background-color: pink;
+    }
+}
+
+@media only screen and (min-width:px) and (max-width:px) {}
+
+@media only screen and (min-width:px) and (max-width:px) {}
+
+@media only screen and (min-width:px) and (max-width:px) {}
+
+*/ #title {}
+
+.tiers {
+    height: 470px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+}
+
+.tiers:hover {
+    border: 1px solid black;
+}
+
+.tierTitle {
+    height: 55px;
+    width: 300px;
+    background-color: #848489;
+    border: 0px solid grey;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    text-align: center;
+}
+
+.tierH {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    height: 55px;
+    width: 300px;
+    font-size: 28px;
+    text-shadow: 1px 1px 2px #C0BFC0;
+    padding-top: 10px;
+}
+
+.item-cell {
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+.itemIcon {
+    height: 40px;
+    width: 40px;
+    border: none;
+    float: right
+}
+
+.itemDescription {
+    height: 246x;
+    width: 255px;
+    border: none;
+    float: left;
+    color: #434343;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: left;
+    text-indent: 11px;
+    font-family: "Open Sans";
+}
+
+.itemDescriptionT {
+    height: 246x;
+    width: 255px;
+    border: none;
+    float: left;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: left;
+    text-indent: 11px;
+    font-family: "Open Sans";
+}
+
+#providerButton {
+    text-align: center;
+    background: #589957;
+    border-radius: 20px;
+    width: ;
+    font-family: IW;
+    font-size: 20px;
+    padding: 2px;
+}
+
+@font-face {
+    font-family: quotes;
+    src: url(PassionOne-Black.ttf);
+}
+
+@font-face {
+    font-family: SFR;
+    src: url(SF/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: NP;
+    src: url(SF/NibPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: NPR;
+    src: url(SF/NibPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: IW;
+    src: url(SF/IstokWeb-Regular.ttf)
+}
+
+.icn {
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+#provider {
+    height: 550px;
+    width: 550px;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    border: ;
+    margin: 0 auto 0;
+}
+
+#provider-photo-Holder {
+    height: 419px;
+    width: 100%;
+    border: ;
+}
+
+#providerPhoto {
+    height: 395px;
+    width: 395px;
+    border: 3px solid #268db8;
+    border-radius: 50%;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+#provider-sub-title {
+    height: 50px;
+    border: ;
+    color: white;
+}
+
+#provider-title {
+    height: 75px;
+    border: ;
+    font-family: NP
+}
+
+#provider-title {
+    height: 75px;
+    text-align: center;
+    font-size: 52px;
+    color: white;
+    font-family: ;
+}
+
+#centerTiers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/*perks*/
+
+
+/*     <link rel="stylesheet" href="style.css">
+*/
+
+#service-checkB {
+    height: 450px;
+    padding-left: 30px;
+    background: ;
+    width: 320px;
+    float: left;
+}
+
+.textDescript {
+    height: 142px;
+    width: ;
+    text-align: ;
+    border: ;
+    color: grey;
+    padding-top: 10px;
+    font-size: 20px
+}
+
+.headTitle {
+    height: 30px;
+    width: ;
+    text-align: ;
+    border: ;
+    font-weight: bold;
+    font-size: 26px;
+    color: #434343;
+}
+
+.cardPerks {
+    width: 400px;
+    height: auto;
+    border: ;
+    float: left;
+    padding-left: 30px
+}
+
+.cardPic {
+    height: 50px;
+    width: 100%;
+    text-align: ;
+    border: ;
+}
+
+
+/*<!-- Austims section -->*/
+
+#container-autism {
+    height: 2000px;
+    width: 100%;
+    background: white;
+    top: ;
+    position: ;
+}
+
+.chkbox {
+    color: #278eb9;
+    font-size: 30px;
+    float: left;
+    padding-right: 5px
+}
+
+.specialty {
+    color: #434343;
+    font-size: 25px;
+    float: left;
+    line-height: 0.8em;
+    font-family: NP;
+}
+
+#childFooter {
+    height: 500px;
+    width: 700px;
+    float: left;
+    top: -420px;
+    position: relative;
+}
+
+.subCard {
+    min-height: 190px;
+    height: auto;
+    color: white;
+    background: #278eb9;
+    width: auto;
+    position: relative;
+}
+
+#sub-center-insurance {
+    height: auto;
+    width: auto;
+    margin: 0 auto 0;
+}
+
+.bann {
+    width: 100%;
+    height: 30px;
+    font-size: 1.6em;
+    font-family: NP, Times New Roman, Arial;
+    margin: 0 auto 0;
+    padding: 70px 0px 70px 0px;
+}
+
+.cont {
+    height: 100px;
+    width: 216px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.imgCntr {
+    height: auto;
+    width: 160px;
+    margin: ;
+    text-align: center;
+    top: 50%;
+    border: ;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.client-feedback {
+    height: 185px;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    padding: 3px;
+    font-family: IW, Arial;
+    font-style: italic
+}
+
+
+/* */
+
+.staff-Card {
+    background: linear-gradient(172deg, rgba(255, 255, 255, 1) 0%, rgba(231, 231, 231, 1) 100%);
+    height: 350px;
+    width: 250px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    float: left;
+}
+
+.staff-Photo-holder {
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.staff-Photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    /*top: 50%;
+    transform:translate-Y(-50%);*/
+    padding-top: 20px;
+}
+
+.staff-name {
+    width: 250px;
+    ;
+    height: 40px;
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: NP;
+}
+
+.staff-title {
+    width: 250px;
+    width: 250px;
+    ;
+    height: 30px;
+    font-size: 16px;
+    font-weight: ;
+    text-align: center;
+    color: #434343;
+    font-family: IW;
+}
+
+.social-links {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+}
+
+.socialIcon {
+    height: 26px;
+    width: 26px;
+    margin-right: 26px;
+}
+
+.borderSplitH {
+    width: 100%;
+    height: 5px;
+    text-align: center;
+}
+
+.borderSplit {
+    margin: 0 auto 0;
+    width: 90%;
+    height: px;
+    border: 1px solid grey;
+}
+
+
+/* */
+
+.staff-Card-Holder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*location*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+#Dir-Hours {
+    height: 358px;
+    width: 504px;
+    background: none;
+    border: ;
+    float: left;
+    padding-top: 25px;
+    margin-left: ;
+    position: relative;
+}
+
+#headerTime {
+    height: 30px;
+    Width: 100%;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: ;
+    text-align: center;
+    font-family: ariel;
+    font-family: 'Dancing Script', cursive;
+    LINE-HEIGHT: 2PX;
+}
+
+.dates {
+    border: ;
+    margin-top: 20px;
+    palsm 73: 26
+}
+
+.dates-holder {
+    height: 40px;
+    width: 100%;
+    border: ;
+}
+
+.dates-holder-day {
+    height: 40px;
+    width: 55%;
+    border: ;
+    float: left;
+    font-size: 28px;
+    color: #ffffff;
+    text-indent: 22px;
+    FONT-WEIGHT: ;
+}
+
+.dates-holder-time {
+    height: 40px;
+    width: 44%;
+    border: ;
+    float: left;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: ;
+}
+
+
+/*location*/
+
+
+/*patient Reviews*/
+
+body {
+    background: #335477;
+}
+
+.patRevHead {
+    height: 40px;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.clientReviewDiv {
+    height: 260px;
+    padding-right: 50px;
+}
+
+.quoteMark {
+    height: 60px;
+    width: 60;
+    text-align: center;
+    font-size: 4.5em;
+    color: #3facd9;
+    margin: 0 auto 0;
+    font-family: quotes;
+}
+
+.previewText {
+    width: 100%
+}
+
+.reviewTextContain {
+    border: ;
+    height: 300px;
+    width: 300px
+}
+
+.PatientReview {
+    height: 185px;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    padding: 3px;
+    font-family: IW, Arial;
+    font-style: italic;
+}
+
+.commentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    padding-bottom: 60px
+}
+
+
+/*Patient Reviews end */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

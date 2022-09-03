@@ -1,0 +1,709 @@
+/* Mobile S */
+
+@media only screen and (max-width: 320px) {
+    .subCard {
+        height: auto;
+    }
+    .card {
+        width: 320px
+    }
+    .card1 {
+        width: 320px
+    }
+    .specialty {
+        font-size: 26px;
+    }
+    #childFooter {
+        width: 320px;
+        top: -272px;
+        height: 300px;
+    }
+    .clientReviewDiv {
+        width: 320px;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 286px
+    }
+    #providerPhoto {
+        height: 219px;
+        width: 219px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 28px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 6px;
+        width: 258px
+    }
+    #MH-EASY {
+        font-size: 18px;
+        text-align: CENTER;
+        font-weight: bold;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1350px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 290px;
+        height: 174px;
+        font-size: 18px
+    }
+    #centerTiers {
+        height: 1680px;
+    }
+    .cardPerks {
+        width: 255px;
+    }
+    .headTitle {
+        font-size: 18px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1680px
+    }
+    #service-CheckB {
+        padding-left: 9%;
+        width: 284px;
+    }
+    .cont {
+        width: 50%;
+        padding-left: 26%
+    }
+    #our-staff {
+        height: 2213px;
+    }
+    #teleHMsg {
+        font-size: 30px;
+        background: white;
+        margin-top: 38px;
+        padding-left: 20px;
+        height: 340px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #teleH {
+        width: 300px;
+    }
+    .dates-holder-time {
+        font-size: 22px;
+    }
+    .dates-holder-day {
+        font-size: 22px;
+    }
+}
+
+
+/* Mobile M */
+
+@media only screen and (min-width:321px)and (max-width: 375px) {
+    .subCard {
+        height: auto;
+    }
+    .card {
+        width: 100%;
+        background: ;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 28px
+    }
+    #childFooter {
+        width: 319px;
+        top: -252px;
+        height: 300px;
+    }
+    .clientReviewDiv {
+        width: 98%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 286px
+    }
+    #providerPhoto {
+        height: 225px;
+        width: 225px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 6px;
+        width: 258px
+    }
+    #MH-EASY {
+        font-size: 22px;
+        text-align: CENTER;
+        font-weight: bold;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1350px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 294px;
+        height: 174px;
+        font-size: 18px
+    }
+    #centerTiers {
+        height: 1680px;
+    }
+    .cardPerks {
+        width: 305px;
+    }
+    .headTitle {
+        font-size: 18px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1680px
+    }
+    #service-CheckB {
+        padding-left: 22px;
+        width: 96%;
+    }
+    .cont {
+        width: 50%;
+        padding-left: 26%
+    }
+    #our-staff {
+        height: 2236px;
+    }
+    #teleH {
+        width: 300px;
+    }
+    #teleHMsg {
+        font-size: 30px;
+        background: white;
+        margin-top: 38px;
+        padding-left: 20px;
+        height: 340px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .dates-holder-time {
+        font-size: 22px;
+    }
+    .dates-holder-day {
+        font-size: 22px;
+    }
+}
+
+
+/* Mobile L */
+
+@media only screen and (min-width:376px)and (max-width: 425px) {
+    .subCard {
+        height: 700px;
+        height: 450px
+    }
+    .card {
+        width: 100%;
+        background: ;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 34px;
+    }
+    #childFooter {
+        width: 375px;
+        top: -252px;
+        height: 300px;
+    }
+    .clientReviewDiv {
+        width: 98%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 286px
+    }
+    #providerPhoto {
+        height: 225px;
+        width: 225px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 6px;
+        width: 258px
+    }
+    #MH-EASY {
+        font-size: 22px;
+        text-align: CENTER;
+        font-weight: bold;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1350px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 330px;
+        height: 174px;
+        font-size: 18px
+    }
+    #centerTiers {
+        height: 2170px;
+    }
+    .cardPerks {
+        width: 341px;
+    }
+    .headTitle {
+        font-size: 18px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1680px
+    }
+    #service-CheckB {
+        padding-left: 28px;
+        width: 98%;
+    }
+    .cont {
+        width: 48%;
+        padding-left: 2%
+    }
+    #our-staff {
+        height: 2200px
+    }
+    #teleH {
+        width: 300px;
+    }
+    #teleHMsg {
+        font-size: 30px;
+        background: white;
+        margin-top: 38px;
+        padding-left: 20px;
+        height: 340px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width:426px) and (max-width:768px) {
+    .subCard {
+        height: auto;
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        background: ;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 34px;
+    }
+    #childFooter {
+        width: 424px;
+        top: -252px;
+        height: 300px;
+    }
+    .clientReviewDiv {
+        width: 98%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 312px
+    }
+    #providerPhoto {
+        height: 265px;
+        width: 265px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 6px;
+        width: 260px
+    }
+    ;
+    #MH-EASY {
+        font-size: 22px;
+        text-align: CENTER;
+        font-weight: bold;
+    }
+    #card1-MH {
+        height: 1658px;
+    }
+    #patient-rev {
+        height: 1400px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 330px;
+        height: 174px;
+        font-size: 20px;
+    }
+    #centerTiers {
+        height: 1680px;
+    }
+    .cardPerks {
+        /* width: 341px;*/
+        width: 330px;
+    }
+    .headTitle {
+        font-size: 24px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1668px
+    }
+    #service-CheckB {
+        padding-left: 48px;
+        width: 88%;
+    }
+    .client-feedback {
+        padding-left: 20px;
+    }
+    .cont {
+        width: 48%;
+        padding-left: 2%;
+    }
+    .staff-Card {
+        padding-right: 0px;
+    }
+    .dates-holder-time {
+        font-size: 24px;
+    }
+    .dates-holder-day {
+        font-size: 24px;
+    }
+    #teleH {
+        width: 300px;
+    }
+    #teleHMsg {
+        font-size: 30px;
+        background: white;
+        margin-top: 38px;
+        padding-left: 20px;
+        height: 340px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/* end of Tablet 768px */
+
+
+/* Laptop  1024px */
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    .subCard {
+        height: auto;
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        background: ;
+    }
+    .card1 {}
+    .specialty {
+        font-size: 34px;
+    }
+    #childFooter {
+        width: 600;
+        top: -302px;
+        height: 360px;
+    }
+    .clientReviewDiv {
+        width: 98%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 312px
+    }
+    #providerPhoto {
+        height: 285px;
+        width: 285px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 6px;
+        width: 260px;
+    }
+    #MH-EASY {
+        font-size: 32px;
+        text-align: CENTER;
+        font-weight: bold;
+        padding: 90px 0px 20px 0px;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1400px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 330px;
+        height: 174px;
+        font-size: 19px
+    }
+    #centerTiers {
+        height: 2170px;
+    }
+    .cardPerks {
+        width: 341px;
+    }
+    .itemDescription {
+        font-size: 18px;
+    }
+    .headTitle {
+        font-size: 24px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1024px
+    }
+    #service-CheckB {
+        padding-left: 90px;
+        width: 88%;
+    }
+    .client-feedback {
+        padding-left: 20px
+    }
+    .cont {
+        width: ;
+        padding-left: 2%
+    }
+    #teleHMsg {
+        font-size: 30px;
+        background: white;
+        margin-top: 38px;
+        padding-left: 20px;
+        height: 340px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/* End of 1024px */
+
+
+/* Laptop L, 2k */
+
+@media only screen and (min-width:1025px) and (max-width: 1440px) {
+    .subCard {
+        height: auto;
+    }
+    /*.subCard{max-height:304px;}*/
+    .card {
+        width: 100%;
+        background: ;
+    }
+    .card1 {
+        width: 100%
+    }
+    .specialty {
+        font-size: 34px;
+    }
+    #childFooter {
+        width: 424px;
+        top: -252px;
+        height: 300px;
+    }
+    .clientReviewDiv {
+        width: 98%;
+        margin-right: 0;
+        padding-bottom: 50px
+    }
+    #provider-photo-holder {
+        height: 312px
+    }
+    #providerPhoto {
+        height: 290px;
+        width: 290px;
+    }
+    #provider {
+        width: 320px
+    }
+    #provider-title {
+        font-size: 30px;
+        width: 320px;
+    }
+    #providerButton {
+        margin: 0 auto 0;
+        padding: 6px;
+        width: 260px
+    }
+    #MH-EASY {
+        font-size: 36px;
+        text-align: CENTER;
+        font-weight: bold;
+        padding: 90px 0px 20px 0px;
+    }
+    #card1-MH {
+        height: 1610px;
+    }
+    #patient-rev {
+        height: 1400px;
+    }
+    #provider-div {
+        background-color: ;
+    }
+    .textDescript {
+        width: 330px;
+        height: 174px;
+        font-size: 19px
+    }
+    #centerTiers {
+        height: 2170px;
+    }
+    .cardPerks {
+        width: 341px;
+    }
+    .headTitle {
+        font-size: 26px
+    }
+    .textDesc {
+        height: auto;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    #card1-MH {
+        height: 1024px;
+    }
+    #service-CheckB {
+        padding-left: 8%;
+        width: 100%;
+    }
+    .client-feedback {
+        padding-left: 20px;
+    }
+    .cont {
+        width: %;
+        padding-left: 2%
+    }
+    #teleHMsg {
+        font-size: 30px;
+        background: white;
+        margin-top: 38px;
+        padding-left: 20px;
+        height: 340px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/* End of 2k */
+
+
+/* Laptop 4k */
+
+@media only screen and (min-width:1441px) and (max-width: 2560px) {
+    .subCard {
+        height: auto;
+    }
+    #teleHMsg {
+        font-size: 30px;
+        background: white;
+        margin-top: 38px;
+        padding-left: 20px;
+        height: 340px;
+        font-size: 30px;
+        font-family: IW, Arial, Helvetica, sans-serif;
+    }
+}
+
+@media only screen and (min-width:589px) and (max-width: 858px) {
+    #card1-MH {
+        height: 1680px;
+    }
+    .card {
+        background-color: ;
+        height: ;
+    }
+    #provider-div {
+        height: 930px;
+    }
+    #patient-rev {
+        height: 1350px;
+    }
+}
+
+
+/* End of 4k section */
