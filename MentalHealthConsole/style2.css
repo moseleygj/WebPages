@@ -672,3 +672,11 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+#myFoot {
+    height: 200px;
+    width: 100%;
+    background: #335477;
+    color: white;
+    font-size: 32px;
+}
