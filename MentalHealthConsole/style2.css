@@ -33,12 +33,7 @@ body {
   width:800px;*/
     height: 100%;
     width: 100%;
-    border: ;
-    border-radius: ;
-    color: ;
     background: #335477;
-    position: ;
-    font-weight: ;
     margin: 0 auto 0;
 }
 
@@ -47,39 +42,17 @@ body {
   width:800px;*/
     height: auto;
     width: 100%;
-    border: ;
-    border-radius: ;
-    color: ;
     background: #ffffff;
-    position: ;
-    font-weight: ;
     margin: 0 auto 0;
 }
 
 .clientReviewDiv {
-    border: ;
     height: 260px;
     padding-bottom: 15px;
     width: 400px;
     float: left;
     margin-right: 22px;
 }
-
-
-/*
-@media only screen and (max-width: 600px) {
-  #card1 {
-    background-color: lightblue;
-  }
-  #mentalHealthEasy{
-    font-size:37px;
-  }
-  #card{
-    height:700px;
-    background-color:pink;
-  }
-}
-*/
 
 #MH-EASY {
     height: 120px;
@@ -103,8 +76,6 @@ body {
 @media only screen and (min-width:px) and (max-width:px) {}
 
 @media only screen and (min-width:px) and (max-width:px) {}
-
-*/ #title {}
 
 .tiers {
     height: 470px;
@@ -236,14 +207,12 @@ body {
     top: 50%;
     position: relative;
     transform: translateY(-50%);
-    border: ;
     margin: 0 auto 0;
 }
 
 #provider-photo-Holder {
     height: 419px;
     width: 100%;
-    border: ;
 }
 
 #providerPhoto {
@@ -257,13 +226,11 @@ body {
 
 #provider-sub-title {
     height: 50px;
-    border: ;
     color: white;
 }
 
 #provider-title {
     height: 75px;
-    border: ;
     font-family: NP
 }
 
@@ -272,7 +239,6 @@ body {
     text-align: center;
     font-size: 52px;
     color: white;
-    font-family: ;
 }
 
 #centerTiers {
@@ -293,16 +259,12 @@ body {
 #service-checkB {
     height: 450px;
     padding-left: 30px;
-    background: ;
     width: 320px;
     float: left;
 }
 
 .textDescript {
     height: 142px;
-    width: ;
-    text-align: ;
-    border: ;
     color: grey;
     padding-top: 10px;
     font-size: 20px
@@ -310,9 +272,6 @@ body {
 
 .headTitle {
     height: 30px;
-    width: ;
-    text-align: ;
-    border: ;
     font-weight: bold;
     font-size: 26px;
     color: #434343;
@@ -321,7 +280,6 @@ body {
 .cardPerks {
     width: 400px;
     height: auto;
-    border: ;
     float: left;
     padding-left: 30px
 }
@@ -329,8 +287,6 @@ body {
 .cardPic {
     height: 50px;
     width: 100%;
-    text-align: ;
-    border: ;
 }
 
 
@@ -340,8 +296,6 @@ body {
     height: 2000px;
     width: 100%;
     background: white;
-    top: ;
-    position: ;
 }
 
 .chkbox {
@@ -402,10 +356,8 @@ body {
 .imgCntr {
     height: auto;
     width: 160px;
-    margin: ;
     text-align: center;
     top: 50%;
-    border: ;
     position: relative;
     transform: translateY(-50%);
 }
@@ -469,7 +421,6 @@ body {
     ;
     height: 30px;
     font-size: 16px;
-    font-weight: ;
     text-align: center;
     color: #434343;
     font-family: IW;
@@ -519,10 +470,8 @@ body {
     height: 358px;
     width: 504px;
     background: none;
-    border: ;
     float: left;
     padding-top: 25px;
-    margin-left: ;
     position: relative;
 }
 
@@ -532,44 +481,36 @@ body {
     font-size: 32px;
     color: #ffffff;
     font-weight: bolder;
-    text-decoration: ;
     text-align: center;
     font-family: ariel;
     font-family: 'Dancing Script', cursive;
-    LINE-HEIGHT: 2PX;
+    line-height: 2px;
 }
 
 .dates {
-    border: ;
     margin-top: 20px;
-    palsm 73: 26
 }
 
 .dates-holder {
     height: 40px;
     width: 100%;
-    border: ;
 }
 
 .dates-holder-day {
     height: 40px;
     width: 55%;
-    border: ;
     float: left;
     font-size: 28px;
     color: #ffffff;
     text-indent: 22px;
-    FONT-WEIGHT: ;
 }
 
 .dates-holder-time {
     height: 40px;
     width: 44%;
-    border: ;
     float: left;
     font-size: 28px;
     color: #ffffff;
-    text-align: ;
 }
 
 
@@ -612,7 +553,6 @@ body {
 }
 
 .reviewTextContain {
-    border: ;
     height: 300px;
     width: 300px
 }
