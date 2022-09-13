@@ -73,10 +73,6 @@ body {
 
 @media only screen and (min-width:px) and (max-width:px) {}
 
-@media only screen and (min-width:px) and (max-width:px) {}
-
-@media only screen and (min-width:px) and (max-width:px) {}
-
 .tiers {
     height: 470px;
     width: 300px;
@@ -162,7 +158,6 @@ body {
     text-align: center;
     background: #589957;
     border-radius: 20px;
-    width: ;
     font-family: IW;
     font-size: 20px;
     padding: 2px;

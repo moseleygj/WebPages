@@ -1,272 +1,358 @@
 #container {
-  background: skyblue;
-  height: 100%;
-  width: 100%;
-  min-width: 320px;
+    background: skyblue;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
 }
 
 body,
 html {
-  height: 100%;
-  width: 100%;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  min-width: 320px;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 320px;
 }
 
 #topH {
-  height: 80px;
-  width: 100%;
-  background-color: #00bcd4;
-  border: ;
+    height: 80px;
+    width: 100%;
+    background-color: #00bcd4;
+    border: ;
 }
 
 #btn-social {
-  border: ;
-  height: 80px;
-  width: 150px;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  gap: 20px;
-  float: left;
-  background: none;
-  margin-left: 15px;
+    border: ;
+    height: 80px;
+    width: 150px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    float: left;
+    background: none;
+    margin-left: 15px;
 }
 
 #btn-contact-me {
-  border: ;
-  height: 80px;
-  width: 270px;
-  float: right;
-  font-size: 30px;
-  display: relative;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
+    height: 80px;
+    width: 270px;
+    float: right;
+    font-size: 30px;
+    display: relative;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
+
 button {
-  background: #008fa1;
-  padding: 12px;
-  margin-right: 0px;
-  font-weight: bold;
-  border-radius: 4px;
-  box-shadow: ;
-  font-family: arial;
-  color: white;
-  display: inline-block;
-  border: none;
-  font-size: 14px;
+    background: #008fa1;
+    padding: 12px;
+    margin-right: 0px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: ;
+    font-family: arial;
+    color: white;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
 }
+
 button:hover {
-  background: #008fa1;
-  padding: 12px;
-  margin-right: 0px;
-  font-weight: bold;
-  border-radius: 4px;
-  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-  color: white;
-  display: inline-block;
-  border: ;
-  transition: 0.5s ease;
+    background: #008fa1;
+    padding: 12px;
+    margin-right: 0px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    color: white;
+    display: inline-block;
+    border: ;
+    transition: 0.5s ease;
 }
 
 .linkBtns {
-  height: 50px;
-  width: 50px;
-  float: left;
+    height: 50px;
+    width: 50px;
+    float: left;
 }
+
 .linkBtns:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 #topPortion {
-  background-color: #00bcd4;
-  height: 25%;
-  position: relative;
+    background-color: #00bcd4;
+    height: 25%;
+    position: relative;
 }
+
 #middlePortion {
-  background-color: #00a5bb;
-  min-height: 865px;
-  height: 60%;
-  width: 100%;
+    background-color: #00a5bb;
+    min-height: 865px;
+    height: auto;
+    width: 100%;
 }
+
 #profilePic {
-  margin: 0 auto 0;
-  border: 4px solid orange;
-  border-radius: 50%;
-  background: white;
-  bottom: -75px;
-  width: 130px;
-  height: 130px;
-  position: relative;
+    margin: 0 auto 0;
+    border: 4px solid orange;
+    border-radius: 50%;
+    background: white;
+    bottom: -75px;
+    width: 130px;
+    height: 130px;
+    position: relative;
 }
 
 #bottomContact {
-  width: 100%;
-  height: 7.5%;
-  background-color: #008fa1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 7.5%;
+    background-color: #008fa1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #bottomLinks {
-  width: 100%;
-  height: 7.5%;
-  background-color: #007888;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+    width: 100%;
+    height: 7.5%;
+    background-color: #007888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
 #middleBio {
-  height: auto;
-  min-width: 320px;
-  width: 80%;
-  margin: 0 auto 0;
-  position: relative;
-  top: 90px;
+    height: auto;
+    min-width: 320px;
+    width: 80%;
+    margin: 0 auto 0;
+    position: relative;
+    top: 90px;
 }
+
+ul li {
+    padding-bottom: 5px;
+}
+
 #myName {
-  width: 100%;
-  height: auto;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 6px;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 6px;
+    padding-top: 30px;
 }
+
 #myTitle {
-  width: 100%;
-  height: auto;
-  color: #f7f8f9;
-  font-size: 30px;
-  font-weight: ;
-  text-align: center;
-  padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+    color: #f7f8f9;
+    font-size: 30px;
+    font-weight: ;
+    text-align: center;
+    padding-bottom: 20px;
 }
+
 #myStory {
-  width: 100%;
-  height: 100%;
-  color: white;
-  font-size: 18px;
-  font-weight: normal;
-  text-align: center;
-  overflow: visible;
-  font-family: "Times New Roman";
-  position: absolute;
-  display: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    overflow: visible;
+    font-family: "Times New Roman";
+    position: absolute;
+    display: none;
 }
+
 #phoneN {
-  color: white;
-  padding-right: 20px;
-  width: auto;
+    color: white;
+    padding-right: 20px;
+    width: auto;
 }
+
 #eMail {
-  color: white;
-  padding-right: 20px;
-  witdth: auto;
+    color: white;
+    padding-right: 20px;
+    witdth: auto;
 }
+
 .bottomPageLinks {
-  color: #f7f8f9;
-  text-decoration: none;
-  font-size: 14px;
-  border-bottom: 1px solid transparent;
+    color: #f7f8f9;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid transparent;
 }
+
 .bottomPageLinks:hover {
-  color: white;
-  text-decoration: none;
-  border-bottom: ;
-  font-weight: ;
-  border-radius: ;
-  font-size: 14px;
-  border-bottom: 3px solid orange;
+    color: white;
+    text-decoration: none;
+    border-bottom: ;
+    font-weight: ;
+    border-radius: ;
+    font-size: 14px;
+    border-bottom: 3px solid orange;
 }
 
 #myName:hover {
-  text-shadow: 1px 2px 2px orange;
+    text-shadow: 1px 2px 2px orange;
 }
 
 i:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #myStory1 {
-  height: 100%;
-  width: 100%;
-  display: none;
-  background: pink;
-  position: absolute;
-  color: white;
+    height: 100%;
+    width: 100%;
+    /*display: none;*/
+    background: ;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    transition: 1s ease;
+    opacity: 0;
 }
+
 #myStory2 {
-  height: 100%;
-  width: 100%;
-  background: pink;
-  position: absolute;
-  display: none;
-  color: white;
-  font-weight: ;
-  font-family: ;
-  font-size: 20px;
+    height: 100%;
+    width: 100%;
+    background: ;
+    position: absolute;
+    /*display: none;*/
+    color: white;
+    font-weight: ;
+    font-family: ;
+    font-size: 20px;
+    transition: 1s ease;
+    opacity: 0;
 }
+
 #myStory3 {
-  height: 100%;
-  width: 100%;
-  background: pink;
-  position: absolute;
-  display: none;
-  color: white;
+    height: 100%;
+    width: 100%;
+    background: ;
+    position: absolute;
+    /*display: none;*/
+    color: white;
+    opacity: 0;
+    transition: 1s ease;
 }
+
 #myStory4 {
-  height: 100%;
-  width: 100%;
-  background: pink;
-  position: absolute;
-  display: none;
-  color: white;
+    height: 100%;
+    width: 100%;
+    background: ;
+    position: absolute;
+    /*display: none;*/
+    color: white;
+    opacity: 0;
+    transition: 1s ease;
 }
+
 #myStory0 {
-  height: 100%;
-  width: 100%;
-  background: pink;
-  position: absolute;
-  display: block;
-  color: white;
-  font-size: 20px;
-  font-weight: ;
-  font-family: Arial;
-  transition: 1s ease-in-out;
+    height: 100%;
+    width: 100%;
+    background: ;
+    position: absolute;
+    /*display: block;*/
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    font-weight: ;
+    font-family: Arial;
+    transition: 1s ease-in-out;
 }
+
 #storyHold {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  margin-top: 32px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 32px;
 }
 
 .skills {
-  border: 2px solid white;
-  border-radius: 20px;
-  width: auto;
-  padding: 7px;
-  font-weight: bold;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: auto;
+    padding: 7px;
+    font-weight: bold;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .bottomLinkStyle {
-  color: white;
-  cursor: pointer;
+    color: white;
+    cursor: pointer;
 }
 
 .bottomLinkStyle:hover {
-  color: orange;
+    color: orange;
 }
 
 .skills:hover {
-  color: orange;
-  transition: 0.2s ease;
+    color: white;
+    transition: 0.2s ease;
+    background: skyblue;
+}
+
+.expHolder {
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px
+}
+
+.expComp {
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: ;
+    font-weight: bolder;
+    width: auto;
+    color: ;
+}
+
+.expTitle {
+    float: ;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: ;
+    font-weight: ;
+    width: auto;
+    color: yellow;
+}
+
+.expDate {
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: ;
+    font-weight: ;
+    color: red;
+}
+
+.expExp {
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: ;
+    font-weight: ;
+    color: red;
+}
+
+.expSub {
+    height: auto;
+    margin-top: 0px;
+    padding: 0;
+    color: white;
 }
