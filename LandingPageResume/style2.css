@@ -95,6 +95,7 @@ button:hover {
     min-height: 865px;
     height: auto;
     width: 100%;
+    padding-bottom: 1px;
 }
 
 #profilePic {
@@ -133,7 +134,7 @@ button:hover {
     width: 80%;
     margin: 0 auto 0;
     position: relative;
-    top: 90px;
+    padding-top: 90px;
 }
 
 ul li {
@@ -171,7 +172,8 @@ ul li {
     overflow: visible;
     font-family: "Times New Roman";
     position: absolute;
-    display: none;
+    /*display: none;*/
+    opacity: 1;
 }
 
 #phoneN {
@@ -212,23 +214,22 @@ i:hover {
 }
 
 #myStory1 {
-    height: 100%;
+    height: auto;
     width: 100%;
-    /*display: none;*/
-    background: ;
-    position: absolute;
+    display: none;
+    position: relative;
     color: white;
     font-size: 20px;
     transition: 1s ease;
-    opacity: 0;
+    opacity: 1;
 }
 
 #myStory2 {
-    height: 100%;
+    height: auto;
     width: 100%;
     background: ;
     position: absolute;
-    /*display: none;*/
+    display: none;
     color: white;
     font-weight: ;
     font-family: ;
@@ -238,18 +239,19 @@ i:hover {
 }
 
 #myStory3 {
-    height: 100%;
+    height: auto;
     width: 100%;
     background: ;
     position: absolute;
     /*display: none;*/
+    display: none;
     color: white;
     opacity: 0;
     transition: 1s ease;
 }
 
 #myStory4 {
-    height: 100%;
+    height: auto;
     width: 100%;
     background: ;
     position: absolute;
@@ -260,11 +262,11 @@ i:hover {
 }
 
 #myStory0 {
-    height: 100%;
+    height: auto;
     width: 100%;
     background: ;
     position: absolute;
-    /*display: block;*/
+    display: block;
     opacity: 1;
     color: white;
     font-size: 20px;
@@ -274,7 +276,7 @@ i:hover {
 }
 
 #storyHold {
-    height: 100%;
+    height: auto;
     width: 100%;
     position: relative;
     margin-top: 32px;
@@ -309,7 +311,7 @@ i:hover {
 .expHolder {
     height: auto;
     width: 100%;
-    margin-bottom: 40px
+    /*margin-bottom: 40px*/
 }
 
 .expComp {
@@ -319,7 +321,7 @@ i:hover {
     font-family: ;
     font-weight: bolder;
     width: auto;
-    color: ;
+    color: lightyellow;
 }
 
 .expTitle {
@@ -329,7 +331,7 @@ i:hover {
     font-family: ;
     font-weight: ;
     width: auto;
-    color: yellow;
+    color: #efef8f;
 }
 
 .expDate {
