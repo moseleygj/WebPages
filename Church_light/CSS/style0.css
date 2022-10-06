@@ -24,7 +24,7 @@ h1 {
 }
 
 iframe {
-    border-radius: 5%;
+    /* border-radius: 5%;*/
     border: #434343 2px solid;
     margin: 90px auto 35px;
     display: block;
