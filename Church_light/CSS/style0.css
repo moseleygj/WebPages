@@ -53,6 +53,7 @@ li a,
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 5%;
+    right: 24px;
 }
 
 li a:hover,
@@ -62,6 +63,7 @@ li a:hover,
     border-bottom: 3px solid dodgerblue;
     transition: 0.5;
     opacity: 100%;
+    right: 24px;
 }
 
 li.dropdown {
@@ -72,7 +74,7 @@ li.dropdown {
     display: none;
     position: absolute;
     background-color: #494949;
-    min-width: 160px;
+    min-width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-bottom: 1px solid black;
@@ -287,12 +289,31 @@ top: 50%;*/
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+.Ccard1 {
+    border: 2px solid #434343;
+    border: 1px solid #434343;
+    display: flex;
+    justify-content: center;
+    background: white;
+    /*border-radius: 20px;*/
+    background-color: ;
+    height: 260px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    margin: 100px auto 45px;
+}
+
 .Ccard {
     border: 2px solid #434343;
-    border-radius: 20px;
+    border: 1px solid #434343;
+    display: flex;
+    justify-content: center;
+    background: white;
+    /*border-radius: 20px;*/
     background-color: ;
-    height: 250px;
-    width: 627px;
+    height: 260px;
+    width: 100%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     margin: 100px auto 45px;
@@ -385,7 +406,6 @@ top: 50%;*/
 .videoTitle {
     height: 47px;
     width: 450px;
-    border: ;
     border: ;
     text-align: center;
     font-weight: bolder;
@@ -682,3 +702,475 @@ body {
 
 
 /*books end*/
+
+
+/* contactUs banner */
+
+.contactUsHeader {
+    color: white;
+    font-size: 48px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.contactUsSub {
+    color: #434343;
+    font-size: 32px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.contactUsInfo {
+    font-size: 27.2px;
+    color: grey;
+    text-indent: 25px;
+    margin-top: 30px;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    font-family: poppins;
+    text-align: center;
+}
+
+.contactInfoDetail {
+    color: GREY;
+    font-size: 20px;
+    font-family: MONTSERRAT, sans-serif;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-align: left;
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    height: 110px;
+}
+
+.contactUsTime {}
+
+.horizRule {
+    height: 2px;
+    /*background: deepskyblue;*/
+    background: linear-gradient(to right, #82e6ff, #20c4ea);
+    width: 97%;
+    text-align: center;
+    margin: 0 auto 0;
+}
+
+.contactUsTimeLoc {
+    font-size: 27.2px;
+    font-size: 27.2px;
+    color: grey;
+    margin-top: 30px;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    font-family: poppins;
+    text-align: center;
+}
+
+.contactUsServDetail {
+    color: GREY;
+    font-size: 20px;
+    font-family: MONTSERRAT, sans-serif;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-align: left;
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    height: 110px;
+}
+
+.contactInfoSec {
+    background: none;
+    border: ;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 320px;
+    gap: 30px;
+}
+
+.contact-item {
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    border: ;
+    text-indent: 10px;
+    color: #adaaaa;
+}
+
+
+/*contact Us banner End */
+
+
+/*ContactInfo*/
+
+.cellAddress {
+    max-height: 494px;
+    width: 594px;
+    border: 3px solid #333;
+    float: left;
+    background: white;
+}
+
+.contactAddress {
+    width: 100%;
+    float: left;
+    height: auto;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+}
+
+.cellAddressContent {
+    background: ;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+    padding: 0px 0px 20px;
+}
+
+.cellAddressInnerContent {
+    height: 95%;
+    width: 95%;
+    background: ;
+    margin: 0 auto 0;
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+}
+
+.learnMoreButton {
+    background-color: #f44336;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    trnasition: ease 0.4s;
+    border: 1px solid red;
+}
+
+.learnMoreButton:hover {
+    background: white;
+    color: red;
+    border: 1px solid red;
+    transition: ease 0.5s;
+}
+
+
+/*ContactInfo*/
+
+
+/* PICS*/
+
+.photoGallerycontainer {
+    min-height: 100%;
+    min-width: 100%;
+    border: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 20px;
+    position: relative;
+    padding-top: 60px;
+}
+
+.imgItem {
+    border: 1px solid lightgrey;
+    height: 270px;
+    width: 270px;
+    border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+}
+
+.imgItem:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.picPreview {
+    display: block;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+
+#showPic {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: -1;
+    display: none;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: ease;
+    filter: ;
+}
+
+#closePic {
+    right: 0;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    text-shadow: 2px 3px 3px grey;
+    width: 12px;
+    height: 12px;
+}
+
+#closePic:hover {
+    cursor: pointer;
+}
+
+#bigPicShow {
+    height: 80%;
+    width: 60%;
+    margin: 0 auto 0;
+    border: 1px solid grey;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/*sermons*/
+
+.kaboom {
+    z-index: 2;
+    position: absolute;
+    border: ;
+    background: ;
+    height: 560px;
+    width: 999.8px;
+    opacity: 1;
+    transition: ease-in-out 2s;
+    border-radius: 20px;
+}
+
+.kaboom:hover {
+    filter: brightness(100%);
+    /*transform: scale(1.02);*/
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+    opacity: 0.5;
+    display: none;
+}
+
+#hmeImg {
+    filter: brightness(70%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*sermons*/
+
+.kaboom {
+    z-index: 2;
+    position: absolute;
+    border: ;
+    background: ;
+    height: 560px;
+    width: 996.8px;
+    opacity: 1;
+    transition: ease-in 1s;
+    border-radius: 20px;
+}
+
+.kaboom:hover {
+    filter: brightness(100%);
+    /*transform: scale(1.02);*/
+    cursor: pointer;
+    transition: ease-out 0.7s;
+    opacity: 0.5;
+    display: none;
+}
+
+#hmeImg {
+    filter: brightness(70%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imannoyed {
+    margin-left: 50px;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    font-family: montserrat, sans-serif;
+    margin: 7px 0px 0px;
+    background: ;
+    position: absolute;
+    left: 15px;
+    text-shadow: 1px 2px 2px black;
+}
+
+.latestSermon {
+    font-size: 18px;
+    font-family: "Open Sans";
+    background: #f4f5f780;
+    color: #fff;
+    padding: 3px 7px;
+    width: 140px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+    bottom: 90px;
+    position: absolute;
+    text-shadow: 1px 2px 2px grey;
+}
+
+.centerDiv {
+    font-size: 100px;
+    color: white;
+    margin: 0 auto 0;
+    position: absolute;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    background: none;
+}
+
+.labelTitle {
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-shadow: 1px 2px 2px grey;
+    color: #212529;
+}
+
+
+/*sermons*/
+
+
+.small-movie-sec {
+    min-width: ;
+    width: 78%;
+    min-height: ;
+    height: 300px;
+    background: none;
+    display: block;
+    clear: both;
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 50px;
+  }
+  
+  .small-movie-pic {
+    min-width: ;
+    width: auto;
+    min-height: ;
+    height: 80%;
+    background: grey;
+    border-radius: 20px;
+    margin-bottom: 0px;
+  }
+  .small-movie-title {
+    min-width: ;
+    width: 100%;
+    min-height: ;
+    height: 11%;
+    background: none;
+    font-weight: 600;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-family: "AvenirLTStd-Book";
+    font-size: 16px;
+    transition: ease-in-out 1.5s;
+    font-weight: 600;
+    line-height: 1.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 1.5em;
+  }
+  
+  .small-movie-date {
+    min-width: ;
+    width: 100%;
+    min-height: ;
+    height: 10%;
+    background: none;
+    transition: ease-in-out 1.5s;
+    opacity: 0.5;
+    line-height: 1.3em;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.9em;
+    font-weight: 400;
+    max-width: 100%;
+    display: inline-block;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 1.3em;
+  }
+  .small-movie-pic:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+  }
+  
+  #mainSermonHold:hover {
+      background:;
+      
+
+  }
+  #hmeImg:hover{
+      
+    background:red;
+opacity: 0;
+
+  }
+
+  #mainVid1{
+    border-radius:20px;
+    position:relative;
+    clear:both;
+  }
+  #mainVidContainer{
+    flex-wrap:wrap;
+    justify-content:center;
+    display:flex;
+    background:#f5f5f5;
+    height:auto;
+    width:1080px;
+    margin:0 auto 0;
+    position:relative;
+  padding-bottom:140px;
+  }
+
+  .sermonTitle{
+    font-size: 60px;           
+    text-shadow: 1px 2px 2px grey;
+    color: #212529;
+    text-indent: 50px;
+  }
