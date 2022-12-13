@@ -244,8 +244,8 @@ li.dropdown {
 #bannerMain {
     height: 400px;
     height: 400px;
-    /*background: url('../WALL/wallpaperflare.com_wallpaper(9).jpg') no-repeat fixed;*/
-    background: url('https://theonlinetherapist.blog/wp-content/uploads/2012/02/wallpaper-clouds-sky-rainbow-desktop-wallpaper.jpg') no-repeat fixed;
+    background: url('../WALL/wallpaperflare.com_wallpaper(9).jpg') no-repeat fixed;
+    /*background: url('https://theonlinetherapist.blog/wp-content/uploads/2012/02/wallpaper-clouds-sky-rainbow-desktop-wallpaper.jpg') no-repeat fixed;*/
     background-size: cover;
     background-position-y: -349px;
 }
@@ -263,6 +263,7 @@ info1 {
     position: relative;
     transform: translateY(-50%);
     top: 50%;
+    color: #434343;
 }
 
 .mainIcon {
@@ -1063,7 +1064,6 @@ body {
 
 /*sermons*/
 
-
 .small-movie-sec {
     min-width: ;
     width: 78%;
@@ -1075,9 +1075,9 @@ body {
     float: left;
     margin-bottom: 15px;
     margin-left: 50px;
-  }
-  
-  .small-movie-pic {
+}
+
+.small-movie-pic {
     min-width: ;
     width: auto;
     min-height: ;
@@ -1085,8 +1085,9 @@ body {
     background: grey;
     border-radius: 20px;
     margin-bottom: 0px;
-  }
-  .small-movie-title {
+}
+
+.small-movie-title {
     min-width: ;
     width: 100%;
     min-height: ;
@@ -1110,9 +1111,9 @@ body {
     text-align: left;
     text-indent: 10px;
     font-size: 1.5em;
-  }
-  
-  .small-movie-date {
+}
+
+.small-movie-date {
     min-width: ;
     width: 100%;
     min-height: ;
@@ -1132,45 +1133,265 @@ body {
     text-align: left;
     text-indent: 10px;
     font-size: 1.3em;
-  }
-  .small-movie-pic:hover {
+}
+
+.small-movie-pic:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: ease-in-out 0.5s;
     cursor: pointer;
-  }
-  
-  #mainSermonHold:hover {
-      background:;
-      
+}
 
-  }
-  #hmeImg:hover{
-      
-    background:red;
-opacity: 0;
+#mainSermonHold:hover {
+    background: ;
+}
 
-  }
+#hmeImg:hover {
+    background: red;
+    opacity: 0;
+}
 
-  #mainVid1{
-    border-radius:20px;
-    position:relative;
-    clear:both;
-  }
-  #mainVidContainer{
-    flex-wrap:wrap;
-    justify-content:center;
-    display:flex;
-    background:#f5f5f5;
-    height:auto;
-    width:1080px;
-    margin:0 auto 0;
-    position:relative;
-  padding-bottom:140px;
-  }
+#mainVid1 {
+    border-radius: 20px;
+    position: relative;
+    clear: both;
+}
 
-  .sermonTitle{
-    font-size: 60px;           
+#mainVidContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    background: #f5f5f5;
+    height: auto;
+    width: 1080px;
+    margin: 0 auto 0;
+    position: relative;
+    /*padding-bottom: 140px;*/
+}
+
+.sermonTitle {
+    font-size: 60px;
     text-shadow: 1px 2px 2px grey;
     color: #212529;
     text-indent: 50px;
-  }
+}
+
+
+/*mini videos */
+
+.boxHoldParent {
+    height: auto;
+    border-radius: 8px;
+    /*border:2px solid lightgrey;*/
+    /* width: 100%;*/
+    width: 1080px;
+    font-size: 60px;
+    text-shadow: 1px 2px 2px grey;
+    color: #212529;
+    text-indent: 50px;
+    font-weight: 900;
+}
+
+.boxHoldParent:hover {
+    background: linear-gradient(to bottom, #F5f5f5, white 80px);
+}
+
+.boxHold {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    transition: 2s ease-in;
+}
+
+.testFadeIn {
+    opacity: 1;
+    transition: 1s ease;
+    display: flex;
+}
+
+.testFadeOut {
+    opacity: 0;
+    transition: 1s ease;
+    display: flex;
+}
+
+#otherServices {
+    display: flex;
+}
+
+.miniSermonsPastHold {
+    height: 85px;
+    width: 442px;
+    background: none;
+    transition: ease 1s;
+    border-radius: 5px;
+    margin: 10px;
+    float: left;
+}
+
+.miniSermonsPastHold:hover {
+    transform: scale(102%);
+    background: none;
+    transition: ease 0.5s;
+}
+
+.miniSermonsLeftPane {
+    float: left;
+    height: 100%;
+    width: calc((100% - 40px) / 3);
+    margin-right: 1ex;
+}
+
+.miniSermonsRightPane {
+    float: left;
+    height: ;
+    width: ;
+}
+
+.minSermonTitle {
+    font-weight: 700;
+    font-family: montserrat, sans-serif;
+    font-size: 1em;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 2px;
+    height: 50%;
+    line-height: 2;
+    text-shadow: none;
+    color: #434343;
+}
+
+.minSermonSubTitle {
+    font-weight: 700;
+    height: 50%;
+    line-height: 2;
+    font-family: montserrat, sans-serif;
+    font-size: 1em;
+    font-size: 12px;
+    color: grey;
+    padding: 2px;
+    text-overflow: ellipsis;
+    text-shadow: none;
+}
+
+.miniSermonsPic {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 10%);
+}
+
+
+/*miniVideo End */
+
+
+/*
+Chior Main Video
+*/
+
+.ytMainHolder {
+    width: 996px;
+    height: 535px;
+    background: black;
+    border-radius: 25px;
+    margin: 90px auto 0;
+    filter: brightness(0.9);
+    transition: 900ms ease;
+}
+
+.ytMainHolder:hover {
+    filter: brightness(1.0);
+}
+
+.ytMainHolder-overlay {
+    border-radius: 25px;
+    width: 996px;
+    height: 535px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ytMainHolder-play-Logo {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    text-shadow: 1px 3px 3px grey;
+    filter: brightness(0.9);
+    z-index: 1;
+}
+
+.pastorShortDescription {}
+
+
+/*footer*/
+
+.socialIcon {
+    font-size: 36px;
+    color: #434343;
+    padding: 0px 30px
+}
+
+.socialIcon:hover {
+    cursor: pointer;
+}
+
+.designedWithCaption {
+    width: 100%;
+    float: left;
+    text-align: center
+}
+
+.copyRightCaption {
+    color: #434343
+}
+
+#myFoot {
+    height: 200px;
+    width: 100%;
+    background: #efefef;
+    color: #434343;
+    font-size: 32px;
+    min-width: 345px;
+}
+
+
+/*beat */
+
+.fa-beat {
+    animation: fa-beat 5s ease infinite;
+}
+
+@keyframes fa-beat {
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        transform: scale(1.25);
+    }
+    20% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1);
+    }
+    35% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1);
+    }
+    55% {
+        transform: scale(1.25);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+
+
+/*footer end */
