@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+#mainImg {
+  height: 80%;
+  width: 80%;
+  margin:0 auto 0;
+  background: url("https://i.ibb.co/NsBQYW9/7gRx.gif") no-repeat center center fixed;
+  background-size: cover;
+    background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+#mainContentHolder {
+  margin: 0 auto 0;
+  top: -50%;
+  transform: translateY(50%);
+  height: 600px;
+  width: 600px;
+}
+#mainTitleDescription {
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2.7em;
+}
+.ImgStyle {
+  background-size: 100% 100%;
+    background-repeat: no-repeat;
+  background: no-repeat center center fixed;
+}
