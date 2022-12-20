@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+#mainImg {
+  min-height:100%;
+  width: 100%;
+  margin:0 auto 0;
+  background: url("https://i.ibb.co/NsBQYW9/7gRx.gif") no-repeat center center fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+#mainContentHolder {
+  margin: 0 auto 0;
+  top: -50%;
+  transform: translateY(50%);
+  height: 100%;
+  width: 100%;
+}
+
+.ImgStyle {
+  background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
