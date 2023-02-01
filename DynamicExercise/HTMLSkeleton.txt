@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Page Title</title>
+<link rel="icon" type="image/x-icon" href="">
+</head>
+<body>
+
+<button onclick="getRandomExercise()">NEXT EXERCISE</button>
+</script>
+function getRandomExercise() {
+  randomNumber = Math.floor(Math.random() * 12) + 1;
+  switch (randomNumber) {
+    case 1:
+      console.log("20 PUSHUPS");
+      break;
+
+    case 2:
+      console.log("20 TRICEP DIPS");
+      break;
+
+    case 3:
+      console.log("30 BICYCLE CRUNCHES");
+      break;
+
+    case 4:
+      console.log("15 JUMP TUCKS");
+      break;
+
+    case 5:
+      console.log("30 RUSSUAN TWIST");
+      break;
+
+    case 6:
+      console.log("1 MIN WALL SIT");
+      break;
+
+    case 7:
+      console.log("15 JUMP SQUATS");
+      break;
+
+    case 8:
+      console.log("30 SEC SIDE PLANK X2");
+      break;
+
+    case 9:
+      console.log("15 JUMP LUNGES");
+      break;
+
+    case 10:
+      console.log("30 MOUNTIN CLIMBERS");
+      break;
+
+    case 11:
+      console.log("WATER BREAK");
+      break;
+
+    case 12:
+      console.log("20 BURPEES");
+      break;
+
+    default:
+      console.log("Your Kung-fu no good!");
+  }
+}
+
+//*add coundown timer
+//pause timer
+//restart
+</script>
+<style>
+body,
+html {
+  background: black;
+  color: green;
+}
+
+</style>
+</body>
+</html> 
