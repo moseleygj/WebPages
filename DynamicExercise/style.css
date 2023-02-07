@@ -6,10 +6,12 @@ html {
     width: 100%;
     transition: 1s ease;
     opacity: 0.9;
+    min-width: 400px;
 }
 
 #container {
     width: 100%;
+    min-width: 400px;
     height: 100vh;
     border: 1px solid red;
 }
