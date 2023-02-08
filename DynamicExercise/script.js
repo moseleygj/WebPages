@@ -120,7 +120,8 @@ function getRandomExercise() {
 }
 
 //*add coundown timer
-//pause timer
+//add pause timer
+//add water-break bar
 //restart
 
 //*add coundown timer
