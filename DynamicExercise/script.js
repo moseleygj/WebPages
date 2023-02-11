@@ -8,7 +8,7 @@ let jumpTucks =
 let russainTwist =
     'url("https://www.gymguider.com/wp-content/uploads/2020/03/russian-twist.gif")';
 let wallSit =
-    'url("https://th.bing.com/th/id/OIP.dDleqGehjKO5DdJAsm5aXAHaEK?pid=ImgDet&rs=1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")';
+    'url("https://cdn.mos.cms.futurecdn.net/npUVwgYvTLKPjnTcGpRLJH.jpg")';
 let jumpSquat =
     'url("https://www.forhealthylifestyle.com/wp-content/uploads/2020/06/1-3.gif")';
 let sidePlank =
