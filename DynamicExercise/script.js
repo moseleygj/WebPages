@@ -119,9 +119,11 @@ function getRandomExercise() {
     }
 }
 
-//*add coundown timer
+//*add countdown timer
 //add pause timer
-//add water-break bar
+//add water-break bar to the top
+//add confetti
+//fix button placement
 //restart
 
 //*add coundown timer
