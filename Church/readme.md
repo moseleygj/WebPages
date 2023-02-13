@@ -8,7 +8,7 @@
 
 A Church website made for Azar Ministries International(Brooklyn, NY). Using JS, CSS abnd HTML5
 
-Screenshots
+Screenshot(s
 ===========
 
 <img src="https://github.com/moseleygj/WebPages/blob/master/Church/Screenshots/Screenshot%20from%202022-05-27%2021-13-26.png" alt="screenshot2" width="600px"/>
