@@ -1,0 +1,3 @@
+Make minialist resume page
+Make sure MQ are intact
+Make sure it's Accessibility compatible
