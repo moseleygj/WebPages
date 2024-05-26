@@ -1,0 +1,1357 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: ;
+}
+
+h1 {
+    color: white;
+}
+
+iframe {
+    /* border-radius: 5%;*/
+    border: #434343 2px solid;
+    margin: 90px auto 35px;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 1px solid lightgrey;
+}
+
+li {
+    float: left;
+    font-size: 25;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: #434343;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5%;
+    right: 24px;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: ;
+    color: #05c3de;
+    border-bottom: 3px solid dodgerblue;
+    transition: 0.5;
+    opacity: 100%;
+    right: 24px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #494949;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.noBottomBorder {
+    border-bottom: none;
+}
+
+.card {
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    padding-inline-start: 52px;
+    padding-inline-end: 10px;
+    padding-block: 0;
+    width: 70%;
+    min-width: 390px;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 0 auto 0;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 95%;
+}
+
+.card1 {
+    background: white;
+    padding-block: 0;
+    width: 70%;
+    min-width: 390px;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: 1.2px solid #3d3d3d;
+    border-radius: 8px;
+    margin: 0 auto 0;
+    height: 236px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    opacity: 95%;
+    /*background-image: linear-gradient(180deg, WHITE, transparent);*/
+}
+
+.card1:hover {
+    color: black;
+    padding-block: 0;
+    border: 1px solid #5ac8fa;
+    box-shadow: 0 5px 15px #6E6E73;
+}
+
+.card2 {
+    background: linear-gradient(133deg, #50b6f1, #49a6f0 60%, #449bef 99%);
+    padding-block: 0;
+    width: 70%;
+    min-width: 390px;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: ;
+    border-radius: 8px;
+    margin: 0 auto 0;
+    height: 236px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 95%;
+}
+
+.card:hover {
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+#operationHR {
+    font-weight: bold;
+    color: #05c3de;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: poppins, 'Oswald', sans-serif;
+    FONT-SIZE: 30PX;
+}
+
+#operationHR1 {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-bottom: 43px;
+    font-family: 'Oswald', sans-serif;
+    height: 24px;
+    width: 100%;
+}
+
+#contactBorder {
+    height: 220px;
+    background: url('../WALL/undefined\ -\ Imgur.gif');
+    background-position: center;
+    background-size: 100% auto;
+    padding: 0;
+    margin: 0;
+}
+
+.msgTitleBarTop {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.msgIconLeft {
+    position: relative;
+    height: 80%;
+    width: 30%;
+    float: left;
+}
+
+.msgContentRight {
+    position: relative;
+    height: 188.8px;
+    width: 70%;
+    float: left;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #434343;
+}
+
+#addressCopy {
+    border-radius: 980px;
+    border: 1px solid #858585;
+    width: 358px;
+    text-align: center;
+    color: grey;
+    margin: 0 auto 0;
+    padding: 12px 22px;
+    background-color: #545454;
+}
+
+#addressCopy:hover {
+    border: 1px solid white;
+    width: 358px;
+    text-align: center;
+    color: white;
+    margin: 0 auto 0;
+    background-color: black;
+}
+
+#bannerMain {
+    height: 400px;
+    height: 400px;
+   /* background: url('../WALL/wallpaperflare.com_wallpaper(9).jpg') no-repeat fixed;*/
+    /*background: url('https://theonlinetherapist.blog/wp-content/uploads/2012/02/wallpaper-clouds-sky-rainbow-desktop-wallpaper.jpg') no-repeat fixed;*/
+    background-size: cover;
+    background-position-y: -349px;
+}
+
+#info {
+    position: relative;
+    /*transform: translateY(-50%);
+    top: 50%;*/
+    color: grey;
+    text-align: left;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+info1 {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #434343;
+}
+
+.mainIcon {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    height: 95px;
+}
+
+@font-face {
+    font-family: "SF";
+    src: url(../SFMono-Semibold.otf);
+}
+
+#gotoSite {
+    text-decoration: none;
+    color: grey;
+    position: relative;
+    /*transform: translateY(-50%);
+top: 50%;*/
+    text-align: left;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.Ccard1 {
+    border: 2px solid #434343;
+    border: 1px solid #434343;
+    display: flex;
+    justify-content: center;
+    background: white;
+    /*border-radius: 20px;*/
+    background-color: ;
+    height: 260px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    margin: 100px auto 45px;
+}
+
+.Ccard {
+    border: 2px solid #434343;
+    border: 1px solid #434343;
+    display: flex;
+    justify-content: center;
+    background: white;
+    /*border-radius: 20px;*/
+    background-color: ;
+    height: 260px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    margin: 100px auto 45px;
+}
+
+.Ccard:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.iconContactLogo {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: none;
+    padding-left: 7px;
+}
+
+.iconTitleHolder {
+    float: left;
+    height: 62.5px;
+    width: 170px;
+    background-color: ;
+}
+
+.centerMe {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    position: relative;
+}
+
+.emailContent {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    position: relative;
+    color: #434343;
+    font-size: 20px;
+    padding-left: 190px;
+}
+
+.iconContent {
+    float: left;
+    height: 62.5px;
+    width: 394px;
+    background-color: ;
+}
+
+.emailTitle {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    font-family: ;
+}
+
+.contactHeader {
+    width: 100%;
+    background-color: ;
+    height: 62.5px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    background-color: ;
+    font-weight: bolder
+}
+
+.multi-media {
+    width: 450px;
+    height: 504px;
+    border: 1px solid #434343;
+    background-color: black;
+    border-radius: 7px;
+    background: linear-gradient(180deg, #434343 0%, #000 100%);
+    margin-top: 50px;
+    margin: 0 auto 0;
+}
+
+.videoHolder {
+    height: 250px;
+    width: 450px;
+    border: ;
+    object-fit: fill;
+}
+
+.videoTitle {
+    height: 47px;
+    width: 450px;
+    border: ;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    height: 47px;
+}
+
+.videoDate {
+    height: 22px;
+    width: 450px;
+    border: ;
+}
+
+.videoDescript {
+    height: 80px;
+    width: 450px;
+    border: ;
+}
+
+.videoDL {
+    height: 25x;
+    width: 450px;
+    border: ;
+    color: grey;
+}
+
+.videoDLLinks {
+    height: 55px;
+    width: 450px;
+    border: ;
+}
+
+.DLLinks:hover {
+    border: 1px solid white;
+    text-indent: 1px sold red;
+    color: white;
+}
+
+.DLLinks {
+    text-decoration: none;
+    color: white;
+    border: ;
+    border-radius: 10%;
+    font-weight: bolder;
+    height: ;
+    width: auto;
+    padding: 3px 6px;
+    background: red;
+}
+
+.videoTitleHead {
+    color: #434343;
+    font-weight: bolder;
+    float: left
+}
+
+hr {
+    border: none;
+    border-top: 3px double #4343;
+    color: grey;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    font-size: 18px;
+}
+
+hr:after {
+    background: #f5f5f5;
+    content: 'UPCOMING EVENTS';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    color: #8b949e;
+}
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+    flex-flow: row wrap;
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-item {
+    background: #f5f5f5;
+    padding: 5px;
+    width: 800px;
+    height: 450px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+.who-are-we-topic {
+    font-size: 20px;
+    color: purple;
+    padding: 0;
+    height: 50px;
+}
+
+.who-are-we-header {
+    font-size: 40px;
+    color: white;
+    height: 45px;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.who-are-we-content {
+    color: #434343;
+    height: 300px;
+    width: 90%;
+    margin: 0 auto 0;
+
+    font-size:23px;text-indent:20px;color:#434343;font-family: Poppins, sans-serif;
+}
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+    flex-flow: row wrap;
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/*.flex-item {
+    background: black;
+    padding: 5px;
+    width: 800px;
+    height: 450px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 0px;
+}*/
+
+.who-are-we-topic {
+    font-size: 20px;
+    color: purple;
+    padding: 0;
+    height: 72px;
+}
+
+.who-are-we-header {
+    font-size: 40px;
+    color: white;
+    height: 45px;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    text-decoration: ;
+}
+
+.who-are-we-content {
+    color: #878787;
+    height: 300px;
+    width: 87%;
+    margin: 0 auto 0;
+    transform: translateY(40%);
+    top: -60%;
+    position: relative;
+    line-height: 1.7em;
+}
+
+.give-me-space {
+    height: 100px;
+    width: 100%;
+}
+
+
+/*books */
+
+#bookContainMain {
+    border: ;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.bookHold {
+    height: 390px;
+    width: 371px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+}
+
+.bookPic {
+    border: 0px solid red;
+    height: 200px;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.bookTitle {
+    font-size: 20px;
+    border: ;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    width: ;
+    font-weight: bold;
+    text-decoration: ;
+    color: #434343;
+    margin-bottom: 7px;
+}
+
+.bookAuthor {
+    border: 0px solid red;
+    height: ;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 7px;
+    /*color: #49AFD0;*/
+    color:#434343;
+
+    text-align: center;
+}
+
+.bookRating {
+    border: 0px solid red;
+    height: ;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.bookFileType {
+    border: ;
+    height: ;
+    width: ;
+    color: ;
+    padding-left: 10px;
+    background: white;
+    margin-bottom: 5px;
+}
+
+.bookDownload {
+    background: ;
+    font-family: 'Stolzl Book', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+  }
+.fileType {
+    background: white;
+    color: limegreen;
+    width: 32px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid skyblue;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.btn:hover {
+    border: 5px solid red;
+    cursor: pointer
+}
+
+
+/*books end*/
+
+
+/* contactUs banner */
+
+.contactUsHeader {
+    color: white;
+    font-size: 48px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.contactUsSub {
+    color: #434343;
+    font-size: 32px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.contactUsInfo {
+    font-size: 27.2px;
+    color: grey;
+    text-indent: 25px;
+    margin-top: 30px;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    font-family: poppins;
+    text-align: center;
+}
+
+.contactInfoDetail {
+    color: GREY;
+    font-size: 20px;
+    font-family: MONTSERRAT, sans-serif;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-align: left;
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    height: 110px;
+}
+
+.contactUsTime {}
+
+.horizRule {
+    height: 2px;
+    /*background: deepskyblue;*/
+    background: linear-gradient(to right, #82e6ff, #20c4ea);
+    width: 97%;
+    text-align: center;
+    margin: 0 auto 0;
+}
+
+.contactUsTimeLoc {
+    font-size: 27.2px;
+    font-size: 27.2px;
+    color: grey;
+    margin-top: 30px;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    font-family: poppins;
+    text-align: center;
+}
+
+.contactUsServDetail {
+    color: GREY;
+    font-size: 20px;
+    font-family: MONTSERRAT, sans-serif;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-align: left;
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    height: 110px;
+}
+
+.contactInfoSec {
+    background: none;
+    border: ;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 320px;
+    gap: 30px;
+}
+
+.contact-item {
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    border: ;
+    text-indent: 10px;
+    color: #adaaaa;
+}
+
+
+/*contact Us banner End */
+
+
+/*ContactInfo*/
+
+.cellAddress {
+    max-height: 494px;
+    width: 594px;
+    border: 3px solid #333;
+    float: left;
+    background: white;
+    border-radius:5%;
+}
+
+.contactAddress {
+    width: 100%;
+    float: left;
+    height: auto;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+}
+
+.cellAddressContent {
+    background: ;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+    padding: 0px 0px 20px;
+    -webkit-border-radius:0.5px;
+    -moz-border-radius:0.5px;
+    -ms-border-radius:0.5px;
+    -o-border-radius:0.5px;
+}
+
+.cellAddressInnerContent {
+    height: 95%;
+    width: 95%;
+    background: ;
+    margin: 0 auto 0;
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+}
+
+.learnMoreButton {
+    background-color: #f44336;
+    /*Green*/border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: ease 0.4s;
+    border: 1px solid red;
+    border-radius:5%;
+    -webkit-border-radius:5%;
+    -moz-border-radius:5%;
+    -ms-border-radius:5%;
+    -o-border-radius:5%;
+}
+
+.learnMoreButton:hover {
+    background: white;
+    color: red;
+    border: 1px solid red;
+    transition: ease 0.5s;
+}
+
+
+/*ContactInfo*/
+
+
+/* PICS*/
+
+.photoGallerycontainer {
+    min-height: 100%;
+    min-width: 100%;
+    border: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 20px;
+    position: relative;
+    padding-top: 60px;
+}
+
+.imgItem {
+    border: 1px solid lightgrey;
+    height: 270px;
+    width: 270px;
+    border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+}
+
+.imgItem:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.picPreview {
+    display: block;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+
+#showPic {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: -1;
+    display: none;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: ease;
+    filter: ;
+}
+
+#closePic {
+    right: 0;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    text-shadow: 2px 3px 3px grey;
+    width: 12px;
+    height: 12px;
+}
+
+#closePic:hover {
+    cursor: pointer;
+}
+
+#bigPicShow {
+    height: 80%;
+    width: 60%;
+    margin: 0 auto 0;
+    border: 1px solid grey;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/*sermons*/
+
+.kaboom {
+    z-index: 2;
+    position: absolute;
+    border: ;
+    background: ;
+    height: 560px;
+    width: 999.8px;
+    opacity: 1;
+    transition: ease-in-out 2s;
+    border-radius: 20px;
+}
+
+.kaboom:hover {
+    filter: brightness(100%);
+    /*transform: scale(1.02);*/
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+    opacity: 0.5;
+    display: none;
+}
+
+#hmeImg {
+    filter: brightness(70%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*sermons*/
+
+.kaboom {
+    z-index: 2;
+    position: absolute;
+    border: ;
+    background: ;
+    height: 560px;
+    width: 996.8px;
+    opacity: 1;
+    transition: ease-in 1s;
+    border-radius: 20px;
+}
+
+.kaboom:hover {
+    filter: brightness(100%);
+    /*transform: scale(1.02);*/
+    cursor: pointer;
+    transition: ease-out 0.7s;
+    opacity: 0.5;
+    display: none;
+}
+
+#hmeImg {
+    filter: brightness(70%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imannoyed {
+    margin-left: 50px;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    font-family: montserrat, sans-serif;
+    margin: 7px 0px 0px;
+    background: ;
+    position: absolute;
+    left: 15px;
+    text-shadow: 1px 2px 2px black;
+}
+
+.latestSermon {
+    font-size: 18px;
+    font-family: "Open Sans";
+    background: #f4f5f780;
+    color: #fff;
+    padding: 3px 7px;
+    width: 140px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+    bottom: 90px;
+    position: absolute;
+    text-shadow: 1px 2px 2px grey;
+}
+
+.centerDiv {
+    font-size: 100px;
+    color: white;
+    margin: 0 auto 0;
+    position: absolute;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    background: none;
+}
+
+.labelTitle {
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-shadow: 1px 2px 2px grey;
+    color: #212529;
+}
+
+
+/*sermons*/
+
+.small-movie-sec {
+    min-width: ;
+    width: 78%;
+    min-height: ;
+    height: 300px;
+    background: none;
+    display: block;
+    clear: both;
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.small-movie-pic {
+    min-width: ;
+    width: auto;
+    min-height: ;
+    height: 80%;
+    background: grey;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+.small-movie-title {
+    min-width: ;
+    width: 100%;
+    min-height: ;
+    height: 11%;
+    background: none;
+    font-weight: 600;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-family: "AvenirLTStd-Book";
+    font-size: 16px;
+    transition: ease-in-out 1.5s;
+    font-weight: 600;
+    line-height: 1.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 1.5em;
+}
+
+.small-movie-date {
+    min-width: ;
+    width: 100%;
+    min-height: ;
+    height: 10%;
+    background: none;
+    transition: ease-in-out 1.5s;
+    opacity: 0.5;
+    line-height: 1.3em;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.9em;
+    font-weight: 400;
+    max-width: 100%;
+    display: inline-block;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 1.3em;
+}
+
+.small-movie-pic:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#mainSermonHold:hover {
+    background: ;
+}
+
+#hmeImg:hover {
+    background: red;
+    opacity: 0;
+}
+
+#mainVid1 {
+    border-radius: 20px;
+    position: relative;
+    clear: both;
+}
+
+#mainVidContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    background: #f5f5f5;
+    height: auto;
+    width: 1080px;
+    margin: 0 auto 0;
+    position: relative;
+    /*padding-bottom: 140px;*/
+}
+
+.sermonTitle {
+    font-size: 60px;
+    text-shadow: 1px 2px 2px grey;
+    color: #212529;
+    text-indent: 50px;
+}
+
+
+/*mini videos */
+
+.boxHoldParent {
+    height: auto;
+    border-radius: 8px;
+    /*border:2px solid lightgrey;*/
+    /* width: 100%;*/
+    width: 1080px;
+    font-size: 60px;
+    text-shadow: 1px 2px 2px grey;
+    color: #212529;
+    text-indent: 50px;
+    font-weight: 900;
+}
+
+.boxHoldParent:hover {
+    background: linear-gradient(to bottom, #F5f5f5, white 80px);
+}
+
+.boxHold {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    transition: 2s ease-in;
+}
+
+.testFadeIn {
+    opacity: 1;
+    transition: 1s ease;
+    display: flex;
+}
+
+.testFadeOut {
+    opacity: 0;
+    transition: 1s ease;
+    display: flex;
+}
+
+#otherServices {
+    display: flex;
+}
+
+.miniSermonsPastHold {
+    height: 85px;
+    width: 442px;
+    background: none;
+    transition: ease 1s;
+    border-radius: 5px;
+    margin: 10px;
+    float: left;
+}
+
+.miniSermonsPastHold:hover {
+    transform: scale(102%);
+    background: none;
+    transition: ease 0.5s;
+}
+
+.miniSermonsLeftPane {
+    float: left;
+    height: 100%;
+    width: calc((100% - 40px) / 3);
+    margin-right: 1ex;
+}
+
+.miniSermonsRightPane {
+    float: left;
+    height: ;
+    width: ;
+}
+
+.minSermonTitle {
+    font-weight: 700;
+    font-family: montserrat, sans-serif;
+    font-size: 1em;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 2px;
+    height: 50%;
+    line-height: 2;
+    text-shadow: none;
+    color: #434343;
+}
+
+.minSermonSubTitle {
+    font-weight: 700;
+    height: 50%;
+    line-height: 2;
+    font-family: montserrat, sans-serif;
+    font-size: 1em;
+    font-size: 12px;
+    color: grey;
+    padding: 2px;
+    text-overflow: ellipsis;
+    text-shadow: none;
+}
+
+.miniSermonsPic {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 10%);
+}
+
+
+/*miniVideo End */
+
+
+/*Meet Pastors */
+#MeetPastorTitle{
+    margin-top:128px;height:128px;width:100%;color:#434343;font-size:89px;text-align:center;font-weight:bold;line-height:1.4;text-shadow:1px 2px 2px grey;
+}
+
+/*counsel*/
+.leftCounselHolder{width:100%;background-color:;height:62.5px}
+.bookImage{
+    height:200px;
+    width:150px;
+    filter: drop-shadow(-3px 1px 5px #b3b3b3);
+    border-radius:2.5%;
+    -webkit-border-radius:2.5%;
+    -moz-border-radius:2.5%;
+    -ms-border-radius:2.5%;
+    -o-border-radius:2.5%;
+}
+.dumbButton{
+    background:black;
+    color:white;
+    height:34px;
+    padding: 6px 17px;
+    margin-top:5px;
+    margin-left:10px;
+    border:1px solid #434343;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+.dumbButton:hover{
+    background:white;
+    color:black;
+    height:34px;
+    padding: 6px 17px;
+    margin-top:5px;
+    margin-left:10px;
+    border:1px solid #434343;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}

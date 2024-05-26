@@ -1,0 +1,101 @@
+@media only screen and (max-width: 320px) {
+
+    #pastorShortDescription{
+        color:red;
+        font-size:12px;
+    }
+    #MeetPastorTitle{font-size:20px}
+    .who-we-are-header{font-size:12px}
+    .who-we-are-content{font-size:1px}
+  /*This is for the Counsel area resize*/
+  .emailContent{padding-left:45px}
+  .leftCounselHolder{
+    width:50%;
+  }
+  .iconContent{
+    width:62px;
+  }
+  /*This is for the Counsel area resize*/
+}
+
+@media only screen and (min-width:321px)and (max-width: 375px) {
+    #pastorShortDescription{
+        color:red;
+        font-size:14px;
+    }
+    #MeetPastorTitle{font-size:40px}
+      /*This is for the Counsel area resize*/
+  .emailContent{padding-left:45px}
+  .leftCounselHolder{
+    width:50%;
+  }
+  .iconContent{
+    width:62px;
+  }
+  /*This is for the Counsel area resize*/
+}
+}
+
+@media only screen and (min-width:376px)and (max-width: 425px) {
+    #pastorShortDescription{
+        color:red;
+    }
+    #MeetPastorTitle{font-size:40px}
+}
+
+@media only screen and (min-width:426px) and (max-width:768px) {
+
+    #pastorShortDescription{
+        color:red;
+      text-indent: 2px;
+        max-width: 1080px;
+        margin: 10px auto 0;
+        font-size:18px;padding:50px;text-indent:20px;color:#434343;font-family: Poppins, sans-serif;
+    }
+    #MeetPastorTitle{font-size:55px}
+    /*This is for the Counsel area resize*/
+    .emailContent{padding-left:14px}
+.iconContent{width:300px;}
+/*drop font sizes and width here */
+.emailContent{font-size:16px}
+.email-title{font-size:14px}
+.iconContent{width:300px;}
+
+
+    /*This is for the Counsel area resize*/
+
+}
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    #pastorShortDescription{
+        color:red;
+      text-indent: 2px;
+        max-width: 1080px;
+        margin: 10px auto 0;
+        font-size:27px;padding:50px;text-indent:20px;color:#434343;font-family: Poppins, sans-serif;
+    }
+    #MeetPastorTitle{font-size:64px}
+    /*This is for the Counsel area resize*/
+    .emailContent{padding-left:45px}
+
+    /*This is for the Counsel area resize*/
+
+}
+
+@media only screen and (min-width:1025px) and (max-width: 1440px) {
+
+    #pastorShortDescription{
+        color:red;
+      text-indent: 2px;
+        max-width: 1080px;
+        margin: 10px auto 0;
+        font-size:27px;padding:50px;text-indent:20px;color:#434343;font-family: Poppins, sans-serif;
+    }
+    #MeetPastorTitle{font-size:64px}
+}
+
+@media only screen and (min-width:1441px) and (max-width: 2560px) {
+
+    #pastorShortDescription{font-size:32px}
+
+}
