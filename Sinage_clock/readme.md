@@ -1,19 +1,17 @@
 # WebPages
-🌐 Sinage
-==============
+## 🌐 Sinage
+
 ***Project status:*** Complete
 ==============
-<!-- - [ ] Pending       :hourglass:
 :white_check_mark: 
-✅ complete     :x: 
+complete
 
-Displays Time in date and a clean, refined format
+Displays time/date in a clean and refined format
 
-Screenshots
+Screenshot
 ===========
 
-<img src="https://github.com/moseleygj/WebPages/blob/master/Sinage_clock/Screenshot.png" alt="screenshot2" width="900px"/>
-
+<img src="https://raw.githubusercontent.com/moseleygj/WebPages/refs/heads/master/Sinage_clock/Screenshot.png" alt="screenshot" width="900px"/>
 
 
  :unlock:License:
