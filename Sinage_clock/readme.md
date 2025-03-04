@@ -1,7 +1,7 @@
 # WebPages
 🌐 Sinage
 ==============
-***Project status:***
+***Project status:*** Complete
 ==============
 <!-- - [ ] Pending       :hourglass:
 :white_check_mark: 
