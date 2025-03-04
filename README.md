@@ -1,5 +1,4 @@
-# WebPages
-🌐 WebPages
+# 🌐WebPages
 ==============
 ***Project status:***
 ==============
