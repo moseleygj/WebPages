@@ -1,0 +1,97 @@
+html,body{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+  }
+  #wp{
+    background-image:url('https://thumbs.wbm.im/pw/medium/d38fb0fffbc49ce2011335562e290b36.avif');
+    height:100%;
+    width:100%;
+    background-size:100% 100%;
+    z-index:1;
+    position:absolute;
+    filter: blur(1px);
+     padding:0;margin:0;border:none;
+    /*-webkit-filter: blur(8px);*/
+  }
+  
+  #wpBlur{  padding:0;margin:0;border:none;height:100%;
+    width:100%;
+    background-size:100% 100%;
+    background-color:black;
+    z-index:2;
+    opacity:0.1;
+    position:absolute;}
+  
+  #overLay{ padding:0;margin:0;border:none;height:100%;
+    width:100%;
+    background-size:100% 100%;
+    z-index:3;
+    color:white;
+  position:absolute;
+  filter:drop-shadow(1px 2px 2px solid black);
+    
+  }
+  
+  #tm{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    top:50%;
+    color:white;
+    font-size:136px;
+    font-weight:;
+  }
+  
+  #dt{
+    color:white;
+    width:auto;
+    height:auto;
+    font-size:32px;
+    padding:5px;
+    text-align:right;
+  }
+  
+  .alata-regular {
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .water-brush-regular {
+    font-family: "Water Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #TodaysDate{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    top:90%;
+    color:white;
+    font-size:36px;
+  }
+  #bigDay{
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    top:50%;
+    color:#f497f4;
+    font-size:120px;
+    filter:drop-shadow(1px 2px 2px black);
+    font-family: 'Water Brush', cursive;
+  }
+
+  #underscore{
+
+  }
