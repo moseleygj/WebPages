@@ -8,6 +8,10 @@
     border-radius:10px;
     color:#f0f6fc;
     background-color:#262c36;
+    max-width:718px;
+    min-width:176px;
+    width: auto;
+    margin-bottom:20px;
   }
   
   .listText{color:#f0f6fc;text-decoration:none;list-style-type: none;}
