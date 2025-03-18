@@ -19,3 +19,33 @@
   .badgesRow{min-height:69px;height:auto;width:;
   }
   .badges{height:64px;width:64px};cursor: pointer
+  html{background:;
+  }
+  .casing{
+    border: 1px solid none;max-width:712px;
+  }
+  
+  .linkage{
+    height:25px;
+    background-color:#0d1117;
+    margin-bottom:4px;
+    line-height:1.5;
+  }
+  
+  .filler{
+    
+  }
+  
+  .imgHeader{height:12px;width:16px;float:left;padding-right:8px;  line-height:1.5;
+    margin-top:1.5px
+  }
+  
+  .textLabel{
+    float:left;
+    text-decoration:none;
+    color:white;
+  }
+  .textLabel:hover{
+    text-decoration:underline;
+    color:skyblue;
+  }
