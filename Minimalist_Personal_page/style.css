@@ -18,7 +18,7 @@
   .border-top{background-color:#3d444d;height:1px ;width:97%;margin: 20px auto}
   .badgesRow{min-height:69px;height:auto;width:;
   }
-  .badges{height:64px;width:64px};cursor: pointer
+  .badges{height:64px;width:64px;;cursor: pointer}
   html{background:;
   }
   .casing{
