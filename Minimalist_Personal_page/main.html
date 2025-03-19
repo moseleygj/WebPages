@@ -6,16 +6,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
-        <body>
+        <body onload="whatsTheTime()">
             <div style="margin:8px 0px 0px;padding:0px 16px">
             <div style="width:100%;height:auto;background:;border-radius:25px;padding-top:50px">
-              <div style="position:relative;"><img src="https://avatars.githubusercontent.com/u/17459164?v=4" style="left:50%;border-radius:50%;border:2px solid grey;height:296px;display:block;margin: 0 auto  0"></div>  
+              <div style="position:relative;"><img src="avatarDefault.png" id="avatarMain"></div>  
               </div>
               
               <p id="fullName">Gordon Moseley<p>
                 <p id="userName">moseleygj<p>
               
-              <center><button type ="button" id="genBtn">Click Me</button></center>
+              <center><button type ="button" onclick="whatsTheTime()" id="genBtn">Turn the lights on</button></center>
             
               
 <!--links to personal stuff-->
@@ -29,7 +29,7 @@
 <i class="fa fa-suitcase" aria-hidden="true" style="color:white;float:left;line-height:1.5;margin-left:5px;margin-right:12px"></i>
 <div ><a href="" class="textLabel">moseleygj.github.io</a></div>
 </div>-->
-    <div class="linkage">
+    <div class="linkage"> 
 <i class="fa fa-building-o linkageFontTheme" aria-hidden="true" class="linkageFontTheme"></i>
 <div ><a href="" class="textLabel">Princeton University</a></div>
 </div>
@@ -41,36 +41,26 @@
 
       <div class="linkage">
 <i class="fa fa-clock-o linkageFontTheme" aria-hidden="true" class=""></i>
-<div ><a href="" class="textLabel"> - EST</a></div>
+<div ><a href="" id="timeNow" class="textLabel"> </a></div>
 </div>
+
 
 <div class="linkage">
 <i class="fa fa-link linkageFontTheme" aria-hidden="true" class=""></i>
 <div ><a href="moseleygj.github.io" class="textLabel">moseleygj.github.io</a></div>
 </div>
-
-
-
-
-
-
-
    
-
 <div class="linkage">
-
-<i class="fa fa-envelope-o" aria-hidden="true" style="color:white;float:left;line-height:1.5;margin-left:5px;margin-right:12px"></i>
-
-
-<div ><a href="" class="textLabel">moseleygj@gmail.com</a></div>
-</div>
+  <i class="fa fa-envelope-o linkageFontTheme" aria-hidden="true" class=""></i>
+  <div ><a href="mailto:moseleygj@gmail.com" onmouseout="revert()" onmouseover="changeImg()" class="textLabel">moseleygj@gmail.com</a></div>
+  </div>
 </div>
 
 
 <!--links to personal stuff-->
 
               <div class="border-top" ></div>
-              <h2 style="color:#f0f6fc">Achievements</h2>
+              <h2 >Achievements</h2>
               <div class="badgesRow">
                 <a href="#" class="badges"><img class="badges" src="arctic-code-vault-contributor-default-df8d74122a06.png"></a>
                 <a href="#" class="badges"><img class="badges" src="pair-extraordinaire-default-579438a20e01.png"></a>
