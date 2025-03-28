@@ -14,11 +14,13 @@ let formattedTime = now.toLocaleTimeString();
 function whatsTheTime() {
     document.getElementById("timeNow").innerHTML = hour + ":" + newMinutes + " - EST";
 }
-
+// fix and compress later
 function changeImg() {
     document.getElementById("avatarMain").src = "avatarWink.png";
 }
-
+function changeImg1() {
+    document.getElementById("avatarMain").src = "avatarSmile.png";
+}
 function revert() {
     document.getElementById("avatarMain").src = "avatarDefault.png";
 }

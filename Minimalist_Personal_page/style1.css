@@ -15,7 +15,7 @@
   }
   #avatarMain{left:50%;border-radius:50%;border:4px solid #dfe0e0;height:296px;display:block;margin: 0 auto  0}
   .listText{color:#f0f6fc;text-decoration:none;list-style-type: none;}
-  .border-top{background-color:#eef1f3;height:1px ;width:97%;margin: 20px auto;}
+  .border-split{background-color:#eef1f3;height:1px ;width:97%;margin: 20px auto;}
   .badgesRow{min-height:69px;height:auto;width:;  }
   .badges{height:64px;width:64px;;cursor: pointer}
 
