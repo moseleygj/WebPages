@@ -12,6 +12,7 @@
     min-width:176px;
     width: auto;
     margin-bottom:20px;
+    margin-top:10px;
   }
   #avatarMain{left:50%;border-radius:50%;border:4px solid grey;height:296px;display:block;margin: 0 auto  0}
 
