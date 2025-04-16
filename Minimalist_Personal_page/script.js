@@ -17,18 +17,20 @@ function whatsTheTime() {
 }
 
 function changeMyStyle(){
-    alert("I've been summoned")
     const linkElement = document.querySelector('#theme-stylesheet');
-    
     const currentHref = linkElement.href.split('/').pop();
 
     if (currentHref === 'style.css') {
       linkElement.href = 'style1.css';
-    } else {
+      document.getElementById("genBtn").textContent="Turn the lights off!";
+    } 
+    else 
+    {
       linkElement.href = 'style.css';
+      document.getElementById("genBtn").textContent="Turn the lights on!";
+
     }
   }
-
 
 // fix and compress later
 function changeImg() {
