@@ -4,6 +4,16 @@
         <script src="script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" id="theme-stylesheet" href="style.css">
+<link rel="stylesheet" id="theme-stylesheet" href="navBar.css">
+<link rel="stylesheet" id="theme-stylesheet" href="tags.css">
+<link rel="stylesheet" id="theme-stylesheet" href="footer.css">
+<link rel="stylesheet" id="theme-stylesheet" href="wave.css">
+<link rel="stylesheet" id="theme-stylesheet" href="toggle.css">
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <link rel="icon" type="image/x-icon" href="icon.ico">
 
     </head>
@@ -16,15 +26,41 @@
  !-->
 
         <body onload="whatsTheTime()">
+          <!--NavBar Start-->
+          <div class="navbar" style="border-bottom:1px solid grey;">
+            <!-- Logo Section (Left side) -->
+            <div class="logo">
+              <img src="https://icons.veryicon.com/png/o/miscellaneous/linear/cpu-12.png" alt="Logo" class="logo-img"> <!-- Replace with your logo image -->
+            </div>
+            
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            
+            <div class="menu-items"  style="" id="menu">
+
+              <a href="#"><i class="fa fa-user,menuItem"></i>&nbsp About</a>
+              <a href="#"><i class="fa fa-envelope,menuItem"></i>&nbsp Contact</a>
+              <a href="#"><i class="fa fa-file-text,menuItem"></i>&nbsp Resume</a>
+            </div>
+            
+            <!-- Star icon, visible only on large screens -->
+            <div class="random-icon">
+              <label class="switch">
+                <input type="checkbox" id="genBtn" onclick="changeMyStyle()">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <!--start of page beneath mainTitleBar-->
             <div style="margin:8px 0px 0px;padding:0px 16px">
             <div style="width:100%;height:auto;border-radius:25px;padding-top:50px">
               <div style="position:relative;"><img src="avatarDefault.png" id="avatarMain" alt="main avatar image"></div>  
               </div>
               
               <p id="fullName">Gordon Moseley</p>
-                <p id="userName">moseleygj</p>
+                <p id="userName" style="min-width:320px;max-width:855px;width:100%;margin:12px auto 78px"><span class="waving-hand">👋</span>Hi, I’m <b>Gordon</b> – an IT specialist, CyberSecurity enthusiast, and software developer focused on innovative solutions.</p>
               
-              <center><button type ="button" onclick="changeMyStyle()" id="genBtn">Turn the lights off<i class="fa-regular fa-lightbulb"></i></button></center>
+             <!-- <center><button type ="button" onclick="changeMyStyle()" id="genBtn">Turn the lights off<i class="fa-regular fa-lightbulb"></i></button></center>-->
                         
 <!--links to personal stuff-->
 <div class="casing">
@@ -51,12 +87,12 @@
 <i class="fa fa-clock-o linkageFontTheme" aria-hidden="true" class=""></i>
 <div ><a href="" id="timeNow" class="textLabel"> </a></div>
 </div>
-
+<!--
 <div class="linkage">
 <i class="fa fa-link linkageFontTheme" aria-hidden="true" class=""></i>
 <div ><a href="https://moseleygj.github.io" onmouseout="revert()" onmouseover="changeImg1()" class="textLabel">moseleygj.github.io</a></div>
 </div>
-   
+-->
 <div class="linkage">
   <i class="fa fa-envelope-o linkageFontTheme" aria-hidden="true" class=""></i>
   <div ><a href="mailto:moseleygj@gmail.com" onmouseout="revert()" onmouseover="changeImg()" class="textLabel">moseleygj@gmail.com</a></div>
@@ -79,24 +115,124 @@
 
 
 
-              <h2 >Secondary</h2>
+              <h2 >Résumé</h2>
               <div class="badgesRow">
-                spaceholder
-              </div>
-              <div class="border-split" ></div>
+<!--this is a test-->
 
-              <h2 >Triary</h2>
-              <div class="badgesRow">
-            spaceholder
-              </div>
-              <div class="border-split" ></div>
-              <h2 >Quadary</h2>
-              <div class="badgesRow">
-            spaceholder
-              </div>
-              <div class="border-split" ></div>
+<div class="section-wrapper">
+  <!-- Resume Download Section -->
+  <section class="card-section">
+    <h2>Download Résumé</h2>
+    <p class="subtitle">Available in multiple formats</p>
+    <div class="download-buttons">
+      <a href="/files/resume.pdf" class="btn">Download PDF</a>
+      <a href="/files/resume.docx" class="btn">Download Word</a>
+      <button class="btn secondary" onclick="showHash()">Show File Hash</button>
+    </div>
+    <p id="hash-value" class="hash-output" hidden></p>
+  </section>
 
+  <!-- Barcode Section -->
+  <section class="card-section">
+    <h2>Scan Me</h2>
+    <p class="subtitle">View on mobile</p>
+    <div class="barcode-wrapper">
+      <img src="qr-code-dark.png" alt="Barcode" class="barcode-img">
+    </div>
+  </section>
+</div>
+
+
+
+<!--end of test-->
+                <p class="contentDescriptionText">spaceholder</p>
+              </div>
+              <div class="border-split" ></div>
+<!---
+              <h2 >Tertiary</h2>
+              <div class="badgesRow">
+                <p class="contentDescriptionText">spaceHolder</p>
+              </div>-->
+         
+              <h2 >🌱 I'm Learning</h2>
+              <div class="badgesRow" style="min-height:100px">
+               <!-- <p class="contentDescriptionText">spaceholder</p>-->
+<!--tag start-->
+<div class="basicTag" style="background:#32ade6">
+  <i class="fa fa-android" aria-hidden="true"></i>&nbspAI/ML
+</div>
+<!--tag end-->
+<!--tag start-->
+<div class="basicTag" style="background:#34c759">
+  <i class="fa fa-github" aria-hidden="true"></i>&nbspRHCSA
+</div>
+<!--tag end-->
+<!--tag start-->
+<div class="basicTag" style="background:#af52de">
+  <i class="fa fa-lock" aria-hidden="true"></i>&nbspCISSP
+</div>
+<!--tag end-->
+<!--tag start-->
+<div class="basicTag" style="background:#f58b00">
+  <i class="fa fa-cloud " aria-hidden="true"></i>&nbspCLOUD
+</div>
+<!--tag end-->
+<!--tag start-->
+<!--tag end-->
+
+
+              </div>
+              <div class="border-split" ></div>
+              <h2 >⚡ Random Fact</h2>
+              <div class="badgesRow">
+            <p class="contentDescriptionText">I wear way too many hats and shift focus based on the need.</p>
+
+
+<!--test zone-->
+<h2 style="margin-top:80px">⚙️ Projects</h2>
+<div class="badgesRow">
+<p class="contentDescriptionText">Some random things I'm into.</p>
+
+<!--testing zone-->
+<!--test zone 2 start-->
+<div id="dataCell" style=" height:300px;
+width:200px;
+border:1px solid grey;
+border-radius:20px;background: lightgrey;margin-bottom:50px;"></div>
+<!--test zone 3 start-->
+              </div>
               <div></div>
+
+
+<!--test footer-->
+
+
+
+
+            </div>
+            <div id="myFoot">
+              <div style="height:100%;width:50%;float:left; display:flex;
+              justify-content:center;
+              items-align:center;
+              align-items:center;">
+                <div style="">Copyright &copy; 2022 - 2025</div>
+              </div>
+            
+              <div style="height:100%;width:49%;float:left;  display:flex;
+              justify-content:center;
+              items-align:center;
+              align-items:center;flex-wrap:wrap">
+                <div class="designedWithCaption">Designed with <i class="fa fa-heart fa-beat" style="color:red" aria-hidden="true"></i>
+                  by <a href="" style="color:#434343;">Gordon</a>
+                  <div style="width:100%;text-align:center;height:auto;margin-top:10px">
+                    <!--<i class="fa fa-linkedin socialIcon" onClick="window.open('https://www.linkedin.com/in/gordon-moseley-07773818/')"></i>-->
+                    <!--<i class="fa fa-github socialIcon" onClick="window.open('https://github.com/moseleygj')"></i>-->
+            
+                    <!--<a href="mailto:moseleygj@gmail.com" style="color:#434343"><i class="fa fa-thin fa-envelope socialIcon"></i></a>-->
+                  </div>
+                </div>
+            
+              </div>
             </div>
             </body>
     <!--

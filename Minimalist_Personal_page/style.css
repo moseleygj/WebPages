@@ -1,3 +1,4 @@
+/*Dark theme*/
 #genBtn{
     padding:5px 16px;
     border:1.5px solid #3d444d;
@@ -18,7 +19,7 @@
 
   .listText{color:#f0f6fc;text-decoration:none;list-style-type: none;}
   .border-split{background-color:#3d444d;height:1px ;width:97%;margin: 20px auto;}
-  .badgesRow{min-height:69px;height:auto;width:;  }
+  .badgesRow{min-height:69px;height:auto; }
   .badges{height:64px;width:64px;;cursor: pointer}
 
   body{background-color:#0d1117;}
@@ -49,10 +50,134 @@
     color:white;
   }
   .textLabel:hover{
-    text-decoration:underline;
-    color:skyblue;
+    text-decoration:none;
+    color:orange;
   }
 
   #fullName{color:#F0F6FC;font-size:34px;text-align:center;line-height: 1.25;margin-bottom:0;padding:0px 0px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}
-  #userName{color:#9198a1;font-size:24px;text-align:center;line-height: 1.25;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}
-  .linkageFontTheme{color:white;float:left;line-height:1.5;margin-left:5px;margin-right:12px}
+  #userName{color:#9198a1;font-size:24px;text-align:center;line-height: 1.25;;width:855px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}
+  .linkageFontTheme{
+    color:white;
+    float:left;
+   /* line-height:1.5;*/
+    /*margin-left:5px;*/
+    padding-left:5px;
+    margin-right:12px;
+  }
+  
+  
+  h2{
+    color:#FFF;
+  }
+  .contentDescriptionText{
+    color:#989899;
+    font-size:22px;
+  }
+
+  /*this is for resume section*/
+  :root {
+    --bg-color: #1c1c1e;
+    --card-color: #2c2c2e;
+    --text-color: #f2f2f7;
+    --subtext-color: #8e8e93;
+    --button-primary-bg: #0a84ff;
+    --button-primary-hover: #0060df;
+    --button-secondary-bg: #3a3a3c;
+    --button-secondary-hover: #505053;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*background-color: var(--bg-color);*/
+    color: var(--text-color);
+    margin: 0;
+    /*padding: 2rem;*/
+  }
+  
+  /* Layout Wrapper */
+  .section-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Shared Card Style */
+  .card-section {
+    background: var(--card-color);
+    width: 400px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .subtitle {
+    color: var(--subtext-color);
+    margin-bottom: 2rem;
+  }
+  
+  .download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .btn {
+    background-color: var(--button-primary-bg);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--button-primary-hover);
+  }
+  
+  .btn.secondary {
+    background-color: var(--button-secondary-bg);
+    color: white;
+  }
+  
+  .btn.secondary:hover {
+    background-color: var(--button-secondary-hover);
+  }
+  
+  .hash-output {
+    margin-top: 1rem;
+    font-family: monospace;
+    font-size: 11px;
+    word-break: break-word;
+    color: var(--subtext-color);
+  }
+  
+  /* Barcode Styling */
+  .barcode-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .barcode-img {
+    width: 160px;
+    height: auto;
+    max-height: 200px;
+    /*filter: brightness(0) invert(1);*/
+  }
+    
+  /*resume end*/
