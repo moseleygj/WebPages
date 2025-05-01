@@ -2,19 +2,30 @@ function switchCSS() {
     // Add functionality here if needed.
 }
 
-let now = new Date();
-let hour = now.getHours();
-let minute = now.getMinutes();
-let newMinutes = minute < 10 ? '0' + minute : minute;
-
-console.log(hour + ":" + newMinutes);
-
-let formattedTime = now.toLocaleTimeString();
-
 function whatsTheTime() {
-   document.getElementById("timeNow").innerHTML = hour + ":" + newMinutes + " - EST";
- 
+  const now = new Date();
+  let hour = now.getHours();
+  const minute = now.getMinutes();
+  const ampm = hour >= 12 ? 'PM' : 'AM';
+
+  // Convert 24-hour format to 12-hour format
+  hour = hour % 12;
+  hour = hour ? hour : 12; // Handle midnight (0 hour) as 12
+
+  const newMinutes = minute < 10 ? '0' + minute : minute;
+
+  document.getElementById("timeNow").innerHTML = hour + ":" + newMinutes + " " + ampm + " EST";
 }
+
+// You can also use toLocaleTimeString for a more localized approach:
+function whatsTheTimeLocalized() {
+  const now = new Date();
+  const formattedTime = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+  document.getElementById("timeNow").innerHTML = formattedTime + " EST";
+}
+
+// Call one of these functions to update the time on your page
+whatsTheTime(); // Or whatsTheTimeLocalized();
 
 function changeMyStyle(){
     const linkElement = document.querySelector('#theme-stylesheet');
