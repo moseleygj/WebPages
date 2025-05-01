@@ -45,6 +45,9 @@
     float:left;
     text-decoration:none;
     color:hsl(216deg 12.82% 15.29%);
+
+    width:250px;
+    font-size:20px;
   }
   .textLabel:hover{
     text-decoration:none;
@@ -54,7 +57,8 @@
   #fullName{color:#33383e;font-size:34px;text-align:center;line-height: 1.25;margin-bottom:0;padding:0px 0px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}
   #userName{color:#59636e;font-size:24px;text-align:center;line-height: 1.25;;width:855px;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}
 
-  .linkageFontTheme{color:#59636e;float:left;line-height:1.5;margin-left:5px;margin-right:12px}
+  .linkageFontTheme{color:#59636e;float:left;line-height:1.5;margin-left:5px;margin-right:12px; line-height: 1.5;
+    font:20px;}
   h2{
     color:#1f2328;
   }
