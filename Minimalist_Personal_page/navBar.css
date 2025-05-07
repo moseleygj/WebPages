@@ -21,6 +21,14 @@ body {
   
 }
 
+.currentLink {
+  margin-left: auto;
+  padding-right: 15px;
+  display:none;
+  transition: opacity 0.3s ease;
+}
+
+
 /* Logo styling */
 .logo {
   display: flex;
@@ -85,11 +93,27 @@ body {
 
 /* Mobile menu (when screen size is smaller than 768px) */
 @media (max-width: 768px) {
+
+/* Show .currentLink when hovering over the <a> tag */
+a:hover .currentLink {
+  /*opacity: 1;*/
+  display:block;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
   /* Hide menu links and set them to stack vertically */
   .menu-items {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 93%;
     background-color: rgb(66 66 69/99.9%);
     font-weight:600;
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
