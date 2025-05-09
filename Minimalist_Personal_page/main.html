@@ -1,26 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Gordon Moseley - Main</title>
-        <script src="script.js"></script>
+<script src="script.js"></script>
+<link rel="icon" type="image/x-icon" href="icon.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" id="theme-stylesheet" href="style.css">
-<link rel="stylesheet" id="theme-stylesheet" href="navBar.css">
-<link rel="stylesheet" id="theme-stylesheet" href="tags.css">
-<link rel="stylesheet" id="theme-stylesheet" href="footer.css">
-<link rel="stylesheet" id="theme-stylesheet" href="wave.css">
-<link rel="stylesheet" id="theme-stylesheet" href="toggle.css">
-<link rel="stylesheet" id="theme-stylesheet" href="projectContainer.css">
-<link rel="stylesheet" id="theme-stylesheet" href="projectPreviewBrowser.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
 
-<link rel="icon" type="image/x-icon" href="icon.ico">
+<link rel="stylesheet"  id="theme-stylesheet" href="style-dark.css">
+<link rel="stylesheet"  id="theme-stylesheet" href="navBar.css">
+<link rel="stylesheet"  href="tags.css">
+<link rel="stylesheet"  href="footer.css">
+<link rel="stylesheet"  href="wave.css">
+<link rel="stylesheet"  id="theme-stylesheet" href="toggle.css">
+<link rel="stylesheet"  href="projectContainer.css">
+<link rel="stylesheet"  href="projectPreviewBrowser.css">
 
-    </head>
+</head>
 
 <!-- *************************************************
 
@@ -34,17 +34,17 @@
           <div class="navbar" style="border-bottom:1px solid grey;">
             <!-- Logo Section (Left side) -->
             <div class="logo" >
-              <img  src="https://static.vecteezy.com/system/resources/thumbnails/009/383/731/small/computer-chip-clipart-design-illustration-free-png.png" alt="Logo" class="logo-img"> <!-- Replace with your logo image -->
+              <img  src="computer-chip-clipart.png" alt="Logo" class="logo-img"> <!--logo image -->
             </div>
             
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             
-            <div class="menu-items"  style="" id="menu">
+            <div class="menu-items"   id="menu">
 
-              <a href="#linkAbout"><i class="fa fa-user,menuItem"></i>&nbsp About<span class="currentLink">•</span></a>
-              <a href="#linkResume"><i class="fa fa-file-text,menuItem"></i>&nbsp Resume<span class="currentLink">•</span></a>
-              <a href="#linkProjects"><i class="fa fa-file-text,menuItem"></i>&nbsp Projects<span class="currentLink">•</span></a>
-              <a href="#"><i class="fa fa-envelope,menuItem"></i>&nbsp Contact<span class="currentLink">•</span></a>
+              <a href="#linkAbout"><i class="fa fa-user,menuItem"></i>&nbsp; About<span class="currentLink">•</span></a>
+              <a href="#linkResume"><i class="fa fa-file-text,menuItem"></i>&nbsp; Resume<span class="currentLink">•</span></a>
+              <a href="#linkProjects"><i class="fa fa-file-text,menuItem"></i>&nbsp; Projects<span class="currentLink">•</span></a>
+              <a href="#linkContact"><i class="fa fa-envelope,menuItem"></i>&nbsp; Contact<span class="currentLink">•</span></a>
 
             </div>
             
@@ -66,7 +66,7 @@
               <!-- <p id="fullName">Gordon Moseley</p> -->
 <!--                <p id="userName" style="min-width:320px;max-width:855px;width:100%;margin:12px auto 78px"><span class="waving-hand">👋</span>Hi, I’m <b>Gordon</b> – an IT specialist, CyberSecurity enthusiast, and software developer focused on innovative solutions.</p>-->
               
-                <p id="userName" style="min-width:320px;max-width:855px;width:100%;margin:64px auto 78px"><span class="waving-hand">👋&nbsp;</span>Hi, I’m <i style='color:white;font-family:"Zeyada";font-size:44px;font-weight:400px;color:white;bold'>Gordon Moseley</i> – an IT specialist, CyberSecurity enthusiast, and part-time Developer dedicated to creating innovative solutions.</p>
+                <p id="userName" style="min-width:320px;max-width:855px;width:100%;margin:64px auto 78px"><span class="waving-hand">👋&nbsp;</span>Hi, I’m <i id="myName">Gordon Moseley</i> – an IT specialist, CyberSecurity enthusiast, and part-time Developer dedicated to creating innovative solutions.</p>
 
              <!-- <center><button type ="button" onclick="changeMyStyle()" id="genBtn">Turn the lights off<i class="fa-regular fa-lightbulb"></i></button></center>-->
                         
@@ -90,30 +90,30 @@
 </div>
 
       <div class="linkage">
-<i class="fa fa-clock-o linkageFontTheme" aria-hidden="true" class=""></i>
+<i class="fa fa-clock-o linkageFontTheme" aria-hidden="true" ></i>
 <div ><a href="" id="timeNow" class="textLabel"> </a></div>
 </div>
 
 
 <div class="linkage">
-<i class="fa fa-github linkageFontTheme" aria-hidden="true" class=""></i>
+<i class="fa fa-github linkageFontTheme" aria-hidden="true" ></i>
 <div ><a href="https://moseleygj.github.io" onmouseout="revert()" onmouseover="changeImg1()" class="textLabel">GitHub</a></div>
 </div>
 
 
 <div class="linkage">
-  <i class="fa fa-linkedin linkageFontTheme" aria-hidden="true" class=""></i>
+  <i class="fa fa-linkedin linkageFontTheme" aria-hidden="true" ></i>
   <div ><a href="https://www.linkedin.com/in/gordon-moseley-07773818/" onmouseout="revert()" onmouseover="changeImg1()" class="textLabel">LinkedIn</a></div>
   </div>
 
 <!--
 <div class="linkage">
-<i class="fa fa-link linkageFontTheme" aria-hidden="true" class=""></i>
+<i class="fa fa-link linkageFontTheme" aria-hidden="true" ></i>
 <div ><a href="https://moseleygj.github.io" onmouseout="revert()" onmouseover="changeImg1()" class="textLabel">moseleygj.github.io</a></div>
 </div>-->
 
 <div class="linkage">
-  <i class="fa fa-envelope-o linkageFontTheme" aria-hidden="true" class=""></i>
+  <i class="fa fa-envelope-o linkageFontTheme" aria-hidden="true" ></i>
   <div ><a href="mailto:moseleygj@gmail.com" onmouseout="revert()" onmouseover="changeImg()" class="textLabel">moseleygj@gmail.com</a></div>
   </div>
 </div>
@@ -187,22 +187,22 @@
                <!-- <p class="contentDescriptionText">spaceholder</p>-->
 <!--tag start-->
 <div class="basicTag" style="background:#32ade6">
-  <i class="fa fa-android" aria-hidden="true"></i>&nbspAI/ML
+  <i class="fa fa-android" aria-hidden="true"></i>&nbsp;AI/ML
 </div>
 <!--tag end-->
 <!--tag start-->
 <div class="basicTag" style="background:#34c759">
-  <i class="fa fa-github" aria-hidden="true"></i>&nbspRHCSA
+  <i class="fa fa-github" aria-hidden="true"></i>&nbsp;RHCSA
 </div>
 <!--tag end-->
 <!--tag start-->
 <div class="basicTag" style="background:#af52de">
-  <i class="fa fa-lock" aria-hidden="true"></i>&nbspCISSP
+  <i class="fa fa-lock" aria-hidden="true"></i>&nbsp;CISSP
 </div>
 <!--tag end-->
 <!--tag start-->
 <div class="basicTag" style="background:#f58b00">
-  <i class="fa fa-cloud " aria-hidden="true"></i>&nbspCLOUD
+  <i class="fa fa-cloud " aria-hidden="true"></i>&nbsp;CLOUD
 </div>
 <!--tag end-->
 <!--tag start-->
@@ -214,7 +214,7 @@
               <h2 >⚡Random Fact</h2>
               <div class="badgesRow">
             <p class="contentDescriptionText">I wear way too many hats and shift focus based on the need.</p>
-
+</div>
 
 <!--test zone-->
 <h2 id="linkProjects" style="margin-top:80px">⚙️ Projects</h2>
@@ -235,7 +235,7 @@
       <div class="proj-preview-urlbar">My Clone of NetFlix</div>
   </div>
   <div class="proj-preview-imgwrap" style="max-width: 500px; max-height: 300px;">
-      <img class="proj-preview-img" src="https://github.com/moseleygj/WebPages/blob/master/theSpot/TheSpot.gif?raw=true" alt="Placeholder Image">
+      <img class="proj-preview-img" src="TheSpot.gif" alt="Placeholder Image">
   </div>
 </div>
 
@@ -251,7 +251,7 @@
             <div class="proj-preview-urlbar">Music Artist Website</div>
         </div>
         <div class="proj-preview-imgwrap" style="max-width: 500px; max-height: 300px;">
-            <img class="proj-preview-img" src="https://github.com/moseleygj/WebPages/blob/master/MusicArtistPromotionalSite/musicArtist.gif?raw=true" alt="Placeholder Image">
+            <img class="proj-preview-img" src="musicArtist.gif" alt="Placeholder Image">
         </div>
     </div>
 
@@ -265,7 +265,7 @@
             <div class="proj-preview-urlbar">Azar Ministries - Church</div>
         </div>
         <div class="proj-preview-imgwrap" style="max-width: 500px; max-height: 300px;">
-            <img class="proj-preview-img" src="https://github.com/moseleygj/WebPages/blob/master/Church_light/Screenshots/azar-light.gif?raw=true" alt="Placeholder Image">
+            <img class="proj-preview-img" src="azar-light.gif" alt="Placeholder Image">
         </div>
     </div>
 
@@ -279,7 +279,7 @@
           <div class="proj-preview-urlbar">Art Profile</div>
       </div>
       <div class="proj-preview-imgwrap" style="max-width: 500px; max-height: 300px;">
-          <img class="proj-preview-img" src="https://github.com/moseleygj/WebPages/blob/master/Art/art.gif?raw=true" alt="Placeholder Image">
+          <img class="proj-preview-img" src="art.gif" alt="Placeholder Image">
       </div>
   </div>
 
@@ -365,7 +365,7 @@
 
 
 
-<div class="border-split" style="margin-top:100px" ></div>
+<div class="border-split" style="margin-top:100px; " ></div>
 <!---
               <h2 >Tertiary</h2>
               <div class="badgesRow">
@@ -373,47 +373,160 @@
               </div>-->
          
               <h2 >🪄 Skills</h2>
-              <div class="badgesRow" style="min-height:100px">
+              <div class="badgesRow" style="min-height:100px;height:auto;overflow-y: auto;">
                <!-- <p class="contentDescriptionText">spaceholder</p>-->
-<!--tag start-->
-<div class="basicTag" style="background:#32ade6">
-  <i class="fa fa-android" aria-hidden="true"></i>&nbspLINUX
+
+
+
+
+               
+<!-- <div class="basicTag" style="background:#32ade6">
+  <i class="fa fa-android" aria-hidden="true"></i>&nbsp;LINUX
 </div>
-<!--tag end-->
-<!--tag start-->
+
 <div class="basicTag" style="background:#34c759">
-  <i class="fa fa-github" aria-hidden="true"></i>&nbspBASH
+  <i class="fa fa-github" aria-hidden="true"></i>&nbsp;BASH
 </div>
-<!--tag end-->
-<!--tag start-->
+
 <div class="basicTag" style="background:#af52de">
-  <i class="fa fa-lock" aria-hidden="true"></i>&nbspJAVASCRIPT
-</div>
-<!--tag end-->
-<!--tag start-->
-<div class="basicTag" style="border:2px solid #f58b00;border-radius:985px;color:grey">
-  <i class="fa fa-cloud "  style="color:#f58b00"aria-hidden="true"></i>&nbspCLOUD
+  <i class="fa fa-lock" aria-hidden="true"></i>&nbsp;JAVASCRIPT
 </div>
 
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i class="fa fa-cloud "  style="color:white" aria-hidden="true"></i>&nbsp;CSS
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i class="fa fa-cloud "  style="color:white" aria-hidden="true"></i>&nbsp;JS
+</div>
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i class="fa fa-cloud "  style="color:white" aria-hidden="true"></i>&nbsp;LINUX
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i class="fa fa-cloud "  style="color:white" aria-hidden="true"></i>&nbsp;LINUX
+</div> -->
+
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;LINUX
+</div>
+
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;HTML
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;CSS
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;PYTHON
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;PHP
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;BASH
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;GIT
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;MacOS
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;Automation
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;Cryptography
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;System Hardening
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;Incident Response
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;Risk Identfication
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;Risk Analysis
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;Access Control
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;CLI
+</div>
+
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;Network Analyzers
+</div>
+
+<div class="basicTag" style="border:2px solid grey;border-radius:985px;color:grey">
+  <i   style="color:white" aria-hidden="true"></i>&nbsp;Vulnerability Assessment
+</div>
+</div>
+
+
+<div class="border-split" style="margin-top:100px" ></div>
+<!---
+              <h2 >Tertiary</h2>
+              <div class="badgesRow">
+                <p class="contentDescriptionText">spaceHolder</p>
+              </div>-->
+         
+              <h2 >🕵️ Stalk Me</h2>
+              <div class="badgesRow" style="min-height:100px"></div>
+              <div class="linkage">
+  <i class="fa fa-envelope-o linkageFontTheme" aria-hidden="true" ></i>
+  <div ><a href="mailto:moseleygj@gmail.com" onmouseout="revert()" onmouseover="changeImg()" class="textLabel">moseleygj@gmail.com</a></div>
+  </div>
+</div>
 
 
 
 
 
 
+
+
+
+
+
+
+              
 
             </div>
+            <div style="height:200px;width:400px;"></div>
+
+            
             <div id="myFoot">
               <div style="height:100%;width:50%;float:left; display:flex;
               justify-content:center;
-              items-align:center;
+              
               align-items:center;">
-                <div style="">Copyright &copy; 2022 - 2025</div>
+                <div >Copyright &copy; 2022 - 2025</div>
               </div>
             
               <div style="height:100%;width:49%;float:left;  display:flex;
               justify-content:center;
-              items-align:center;
+              
               align-items:center;flex-wrap:wrap">
                 <div class="designedWithCaption">Designed with <i class="fa fa-heart fa-beat" style="color:red" aria-hidden="true"></i>
                   by <a href="" style="color:#434343;">Gordon</a>

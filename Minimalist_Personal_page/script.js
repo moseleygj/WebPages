@@ -31,13 +31,13 @@ function changeMyStyle(){
     const linkElement = document.querySelector('#theme-stylesheet');
     const currentHref = linkElement.href.split('/').pop();
 
-    if (currentHref === 'style.css') {
-      linkElement.href = 'style1.css';
+    if (currentHref === 'style-dark.css') {
+      linkElement.href = 'style-light.css';
       document.getElementById("genBtn").textContent="Turn the lights off!";
     } 
     else 
     {
-      linkElement.href = 'style.css';
+      linkElement.href = 'style-dark.css';
       document.getElementById("genBtn").textContent="Turn the lights on!";
 
     }
