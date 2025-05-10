@@ -1,3 +1,13 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
 /* Basic reset and layout */
 body {
   margin: 0;
@@ -69,7 +79,6 @@ body {
 
 /* Hover effect for links */
 .menu-items a:hover {
-  background-color: ;
   color:whitesmoke;
 }
 
@@ -105,6 +114,12 @@ a:hover .currentLink {
   display: flex;
   align-items: center;
 }
+
+
+
+
+
+
 
 
 
@@ -166,3 +181,16 @@ a:hover .currentLink {
     display: flex; /* Show the logo on large screens */
   }
 }
+
+
+
+@media (min-width: 769px) {
+  body{
+  
+   
+    background: ;
+
+
+  }}
+
+  /* navbar,position=fixed or unset */

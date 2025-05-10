@@ -30,7 +30,7 @@
   
   .linkage{
     height:25px;
-    background-color:#0d1117;
+    background-color:none;
     margin-bottom:4px;
     line-height:1.5;
   }
@@ -191,3 +191,11 @@
 #myName{
   color:white;font-family:"Zeyada";font-size:44px;font-weight:400px;
 }
+
+
+
+
+
+
+
+
