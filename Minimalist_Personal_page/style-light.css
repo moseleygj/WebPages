@@ -81,7 +81,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
- /* background-color: var(--bg-color);*/
+  background-color: var(--bg-color);*/
   color: var(--text-color);
   margin: 0;
   /*padding: 2rem;*/
