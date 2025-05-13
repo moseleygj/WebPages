@@ -76,3 +76,4 @@ function revert() {
     hashElement.innerHTML = `${hashPart1}<br>${hashPart2}`;  // Adding <br> to break the line
     hashElement.hidden = false;
   }
+  console.log(" I see you taking a look at the recipe... ;-) ");

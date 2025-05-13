@@ -78,7 +78,9 @@
   --button-secondary-bg: #f4f4f5; /* Light grey for secondary buttons */
   --button-secondary-hover: #e1e1e6; /* Darker grey for hover */
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: var(--bg-color);*/
