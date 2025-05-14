@@ -69,8 +69,8 @@ function revert() {
   }
   */
   function showHash() {
-    const hashPart1 = 'SHA256(PDF): b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7';
-    const hashPart2 = 'SHA256(DOC): b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7';
+    const hashPart1 = '<b>SHA256(PDF):</b> b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7';
+    const hashPart2 = '<b>SHA256(DOC):</b> 7fefafd784705204f826279195a08f46177ba5f01215804039690e6936b5c606';
     const hashElement = document.getElementById('hash-value');
     
     hashElement.innerHTML = `${hashPart1}<br>${hashPart2}`;  // Adding <br> to break the line
