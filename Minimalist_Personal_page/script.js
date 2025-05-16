@@ -1,4 +1,4 @@
-alert("test1");
+
   const facts = [
     " I enjoy reverse-engineering systems just to see how they tick—even if they weren’t broken.",
     " I’ve worked from hotel rooms, client sites, and server closets—always with my ThinkPad and USB toolkit.",
