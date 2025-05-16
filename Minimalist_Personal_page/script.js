@@ -1,3 +1,20 @@
+alert("test1");
+  const facts = [
+    " I enjoy reverse-engineering systems just to see how they tick—even if they weren’t broken.",
+    " I’ve worked from hotel rooms, client sites, and server closets—always with my ThinkPad and USB toolkit.",
+    "I believe an IBM Thinkpad's keyboard is superior to most.",
+    " I trust my home server more than most cloud services—and yes, I have a backup for my backup.",
+    " If something plugs in, I’ve probably tried to optimize or mod it.",
+    " I prefer minimal UIs, modular setups, and software that doesn’t assume I’m a beginner.",
+    " I learn best by breaking things on purpose—especially in my home lab.",
+    " I run test environments just to see how things break — then document how to fix them.",
+    " I’m always learning — whether it’s a new language, protocol, or system vulnerability.",
+    " If it isn’t essential, it’s archived, compressed, or deleted."
+  ];
+
+  const a = Math.floor(Math.random() * facts.length);
+  document.getElementById("randomFact").textContent = facts[a];
+
 function switchCSS() {
     // Add functionality here if needed.
 }
@@ -15,6 +32,8 @@ function whatsTheTime() {
   const newMinutes = minute < 10 ? '0' + minute : minute;
 
   document.getElementById("timeNow").innerHTML = hour + ":" + newMinutes + " " + ampm + " EST";
+  document.getElementById("randomFact").innerHTML = facts[a];
+
 }
 
 // You can also use toLocaleTimeString for a more localized approach:
@@ -43,7 +62,7 @@ function changeMyStyle(){
     }
   }
 
-// fix and compress later
+// fix and compressed webp version  later
 function changeImg() {
     document.getElementById("avatarMain").src = "avatarWink.png";
 }
@@ -77,3 +96,5 @@ function revert() {
     hashElement.hidden = false;
   }
   console.log(" I see you taking a look at the recipe... ;-) ");
+
+  
