@@ -19,7 +19,7 @@
 
   .listText{color:#f0f6fc;text-decoration:none;list-style-type: none;}
   .border-split{background-color:#3d444d;height:1px ;width:97%;margin: 20px auto;}
-  .badgesRow{min-height:69px;height:auto; }
+  .badgesRow{min-height:69px;height:auto; padding-left: 30px}
   .badges{height:64px;margin-right:6px;width:74px;cursor: pointer}
 html{
   scroll-behavior: smooth;
