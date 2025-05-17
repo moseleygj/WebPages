@@ -20,7 +20,7 @@
   .listText{color:#f0f6fc;text-decoration:none;list-style-type: none;}
   .border-split{background-color:#3d444d;height:1px ;width:97%;margin: 20px auto;}
   .badgesRow{min-height:69px;height:auto; padding-left: 30px}
-  .badges{height:64px;margin-right:6px;width:74px;cursor: pointer}
+  .badges{height:96px;margin-right:6px;width:96px;cursor: pointer}
 html{
   scroll-behavior: smooth;
 }
@@ -129,7 +129,7 @@ html{
   .specialCard{
     flex: 1 1 400px; /* grow if there's space, shrink if needed, base width 200px */
     min-width: 200px;
-    max-width:600px;
+    /*max-width:600px;*/
   }
   
   .card-section h2 {
