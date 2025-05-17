@@ -122,6 +122,14 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*test ino below */
+    flexs:auto;
+  }
+
+  .specialCard{
+    flex: 1 1 400px; /* grow if there's space, shrink if needed, base width 200px */
+    min-width: 200px;
+    max-width:600px;
   }
   
   .card-section h2 {
