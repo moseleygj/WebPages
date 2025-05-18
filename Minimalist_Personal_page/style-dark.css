@@ -145,7 +145,7 @@ html{
   .subtitle {
     color: var(--subtext-color);
     margin-bottom: 2rem;
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
   
   .download-buttons {
