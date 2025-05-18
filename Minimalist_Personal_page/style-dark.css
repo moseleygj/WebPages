@@ -78,10 +78,14 @@ html{
   
   h2{
     color:#FFF;
+    font-size:2.25em;
+
   }
   .contentDescriptionText{
     color:#989899;
     font-size:22px;
+    font-size:1.75em;
+
   }
 
   /*this is for resume section*/
