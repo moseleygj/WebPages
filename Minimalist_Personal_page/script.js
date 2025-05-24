@@ -2,7 +2,7 @@
   const facts = [
     " I enjoy reverse-engineering systems just to see how they tick—even if they weren’t broken.",
     " I’ve worked from hotel rooms, client sites, and server closets—always with my ThinkPad and USB toolkit.",
-    "I believe an IBM Thinkpad's keyboard is superior to most.",
+    " I believe an IBM Thinkpad's keyboard is superior to most.",
     " I trust my home server more than most cloud services—and yes, I have a backup for my backup.",
     " If something plugs in, I’ve probably tried to optimize or mod it.",
     " I prefer minimal UIs, modular setups, and software that doesn’t assume I’m a beginner.",
@@ -16,7 +16,6 @@
   document.getElementById("randomFact").textContent = facts[a];
 
 function switchCSS() {
-    // Add functionality here if needed.
 }
 
 function whatsTheTime() {
@@ -36,14 +35,12 @@ function whatsTheTime() {
 
 }
 
-// You can also use toLocaleTimeString for a more localized approach:
 function whatsTheTimeLocalized() {
   const now = new Date();
   const formattedTime = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
   document.getElementById("timeNow").innerHTML = formattedTime + " EST";
 }
 
-// Call one of these functions to update the time on your page
 whatsTheTime(); // Or whatsTheTimeLocalized();
 
 function changeMyStyle(){
@@ -79,14 +76,7 @@ function revert() {
     document.getElementById('menu').classList.toggle('active');
   }
 
-  //show hash for resume section
-  /*function showHash() {
-    const hash = 'SHA256(PDF): b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9';
-    const hashElement = document.getElementById('hash-value');
-    hashElement.textContent = hash;
-    hashElement.hidden = false;
-  }
-  */
+
   function showHash() {
     const hashPart1 = '<b>SHA256(PDF):</b> b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7';
     const hashPart2 = '<b>SHA256(DOC):</b> 7fefafd784705204f826279195a08f46177ba5f01215804039690e6936b5c606';
