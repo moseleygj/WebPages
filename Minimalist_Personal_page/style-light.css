@@ -125,7 +125,7 @@ body {
 .subtitle {
   color: var(--subtext-color);
   margin-bottom: 2rem;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .download-buttons {
@@ -187,4 +187,11 @@ body {
 
 #myName{
   color:#434343;font-family:"Zeyada";font-size:44px;font-weight:400px;
+}
+
+/*skills section*/
+.basicTag-skills{
+  color:red;
+  border:2px solid grey;
+  background:white;
 }
