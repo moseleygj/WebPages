@@ -46,7 +46,8 @@
     .project-link {
       display: inline-block;
       padding: 10px 16px;
-      background-color: #2d3748;
+     /* background-color: #2d3748;#0a84ff*/
+       background-color: #0a84ff;
       color: #fff;
       font-size: 0.9rem;
       border-radius: 6px;
