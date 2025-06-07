@@ -63,7 +63,7 @@ button{
   background:#86a756;
   color:#fefefd;
   font-weight:600;
-  font-size:18px;
+  font-size:24px;
   border:1px solid #665c4e;
   line-height:50px;
   border-radius:5px;
@@ -101,7 +101,7 @@ button:hover{
 
 .logoHolder{
   color:#8eac5b;
-  margin :0 auto 40px;
+  margin :200px auto 0px;
   font-weight:600;
   width:320px;
 }
