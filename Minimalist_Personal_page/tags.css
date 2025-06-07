@@ -31,3 +31,15 @@
 
   border:2px solid grey;border-radius:985px;/*color:grey*/
 }
+.hashTags{
+   float:left;background:skyblue;color:white;width:auto;border-radius:5px;padding:6px  10px;margin:5px;
+  font-weight:bold;font-size: 0.8em;
+}
+.hashTagHousing
+{
+  width:100%;
+  height: 80px;
+  background: none;
+  margin-top: 10px;
+
+}
