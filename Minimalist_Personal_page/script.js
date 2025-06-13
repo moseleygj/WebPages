@@ -3,12 +3,12 @@
     " I enjoy reverse-engineering systems just to see how they tick—even if they weren’t broken.",
     " Thinkpad Laptops are known to have some of the best keyboards in the world",
     " I believe an IBM Thinkpad's keyboard is superior to most.",
-    " I trust my home server more than most cloud services—and yes, I have a backup for my backup.",
+    " I trust my home server more than most cloud services - and yes, I have a backup for my backup.",
     " If something plugs in, I’ve probably tried to optimize or mod it.",
     " I prefer minimal UIs, modular setups, and software that doesn’t assume I’m a beginner.",
-    " I learn best by breaking things on purpose—especially in my home lab.",
-    " I run test environments just to see how things break — then document how to fix them.",
-    " I’m always learning — whether it’s a new language, protocol, or system vulnerability.",
+    " I learn best by breaking things on purpose - especially in my home lab.",
+    " I run test environments just to see how things break - then document how to fix them.",
+    " I’m always learning - whether it’s a new language, protocol, or system vulnerability.",
     " If it isn’t essential, it’s archived, compressed, or deleted."
   ];
 
@@ -78,7 +78,7 @@ function revert() {
 
 
   function showHash() {
-    const hashPart1 = '<b>SHA256(PDF):</b> b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7';
+    const hashPart1 = '<b>SHA256(PDF):</b> a7f525c7b3455e903a9c4cb6fd908693157d240da8338c1e98339e9c1986485d ';
     const hashPart2 = '<b>SHA256(DOC):</b> 7fefafd784705204f826279195a08f46177ba5f01215804039690e6936b5c606';
     const hashElement = document.getElementById('hash-value');
     

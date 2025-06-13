@@ -4,7 +4,10 @@
       <title>Gordon Moseley - Main</title>
         <script src="script.js"></script>
         <link rel="icon" type="image/x-icon" href="icon.ico">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-jLKHWMZtO8qH3K7R0T+GAQzbnJmEepC8u0xZzt7t27Ahv/jz0MJ6Vpjgi3kA9RSk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+
         <link rel="stylesheet" href="cyberSecProjects.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +15,11 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
 
         <link rel="stylesheet"  id="theme-stylesheet" href="style-dark.css">
-        <link rel="stylesheet"  id="theme-stylesheet" href="navBar.css">
+        <link rel="stylesheet"   href="navBar.css">
         <link rel="stylesheet"  href="tags.css">
         <link rel="stylesheet"  href="footer.css">
         <link rel="stylesheet"  href="wave.css">
-        <link rel="stylesheet"  id="theme-stylesheet" href="toggle.css">
+        <link rel="stylesheet"   href="toggle.css">
         <link rel="stylesheet"  href="projectContainer.css">
         <link rel="stylesheet"  href="projectPreviewBrowser.css">
 </head>
@@ -61,7 +64,9 @@
               </div>
               
               
+               <!--<p id="userName" style="min-width:320px;max-width:855px;width:100%;margin:64px auto 78px"><span class="waving-hand">👋&nbsp;</span>Hi, I’m <i id="myName">Gordon Moseley</i> – an IT specialist, CyberSecurity enthusiast, and part-time Developer dedicated to creating innovative solutions.</p>-->
                 <p id="userName" style="min-width:320px;max-width:855px;width:100%;margin:64px auto 78px"><span class="waving-hand">👋&nbsp;</span>Hi, I’m <i id="myName">Gordon Moseley</i> – an IT specialist, CyberSecurity enthusiast, and part-time Developer dedicated to creating innovative solutions.</p>
+
 
              <!-- <center><button type ="button" onclick="changeMyStyle()" id="genBtn">Turn the lights off<i class="fa-regular fa-lightbulb"></i></button></center>-->
                         
@@ -70,27 +75,27 @@
  
 <div id="linkAbout"></div>
   <div class="linkage"> 
-    <i class="fa fa-building-o linkageFontTheme" aria-hidden="true" class="linkageFontTheme"></i>
-    <div ><a href="" class="textLabel">Princeton University</a></div>
+    <i class="fa-regular fa-building linkageFontTheme" aria-hidden="true" class="linkageFontTheme"></i>
+    <div ><a href="https://www.princeton.edu" class="textLabel" target="_blank">Princeton University</a></div>
   </div>
 
   <div class="linkage">
-    <i class="fa fa-map-marker linkageFontTheme" aria-hidden="true" class="linkageFontTheme"></i>
+    <i class="fa-solid fa-location-dot linkageFontTheme" aria-hidden="true" class="linkageFontTheme"></i>
     <div ><a href="#" style="text-decoration: none" class="textLabel">NYC</a></div>
   </div>
 
   <div class="linkage">
-    <i class="fa fa-clock-o linkageFontTheme" aria-hidden="true" ></i>
+    <i class="fa-regular fa-clock linkageFontTheme" aria-hidden="true" ></i>
     <div ><a href="" id="timeNow" class="textLabel"> </a></div>
   </div>
 
   <div class="linkage">
-    <i class="fa fa-github linkageFontTheme" aria-hidden="true" ></i>
+    <i class="fa-brands fa-github linkageFontTheme" aria-hidden="true" ></i>
     <div ><a href="https://moseleygj.github.io" onmouseout="revert()" onmouseover="changeImg1()" class="textLabel">GitHub</a></div>
   </div>
 
   <div class="linkage">
-    <i class="fa fa-linkedin linkageFontTheme" aria-hidden="true" ></i>
+    <i class="fa-brands fa-linkedin-in linkageFontTheme" aria-hidden="true" ></i>
     <div ><a href="https://www.linkedin.com/in/gordon-moseley-07773818/" onmouseout="revert()" onmouseover="changeImg1()" class="textLabel">LinkedIn</a></div>
   </div>
 
@@ -121,8 +126,8 @@ border-radius: 20px;"></a>
             <h2>Résumé</h2>
             <p class="subtitle">Available in multiple formats</p>
             <div class="download-buttons">
-              <a href="" class="btn">PDF</a>
-              <a href="" class="btn">Word</a>
+              <a href="Gordon Moseley_RESUME_2024.pdf" class="btn">PDF</a>
+              <a href="Gordon Moseley_RESUME_2024.docx" class="btn">Word</a>
               <button class="btn secondary" onclick="showHash()">Show File Hash</button>
             </div>
             <p id="hash-value" class="hash-output" hidden></p>
@@ -146,11 +151,11 @@ border-radius: 20px;"></a>
 <div class="badgesRow" style="min-height:100px">
 
     <div class="basicTag" style="background:#32ade6">
-      <i class="fa fa-android" aria-hidden="true"></i>&nbsp;AI/ML
+      <i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;AI/ML
     </div>
 
     <div class="basicTag" style="background:#34c759">
-      <i class="fa fa-github" aria-hidden="true"></i>&nbsp;RHCSA
+      <i class="fab fa-redhat" aria-hidden="true"></i>&nbsp;RHCSA
     </div>
 
     <div class="basicTag" style="background:#af52de">
@@ -277,13 +282,15 @@ border-radius: 20px;"></a>
     <div class="project-content">
       <div class="project-title">SSH Security Monitoring & IP Blocking Tool</div>
 
-            <div class="project-description">        A <b>Python</b> CLI utility that parses SSH logs to track failed and successful login attempts, summarizes failed login IP counts by day, and enables blocking suspicious IPs via iptables. It also integrates Fail2Ban status checks for enhanced SSH protection.
-<div class="hashTagHousing"><div class="hashTags" style="background:#00CA4E">PYTHON</div>
-        <div class="hashTags" style="background:#f58b00">Bash</div>
-        <div class="hashTags" style="background:purple">CLI</div></div>
+            <div class="project-description">        A <b>Python</b> CLI utility that parses SSH logs to track failed and successful login attempts, summarizes failed login IP counts by day, and enables blocking suspicious IPs via iptables. It also integrates Fail2Ban status checks for enhanced SSH protection.<br/><br/>
+<div class="hashTagHousing"><div class="hashTags" style="background:#00CA4E"><i class="fa-brands fa-python"></i>&nbsp PYTHON</div>
+        <div class="hashTags" style="background:#f58b00"><i class="fa-solid fa-hashtag"></i>&nbspBash</div>
+        <div class="hashTags" style="background:purple"><i class="fa-solid fa-terminal"></i>&nbspCLI</div>
+        <div class="hashTags" style="background:#FF605C"><i class="fa-brands fa-linux"></i>&nbspLinux</div>
+      </div>
         
 </div>
-      <a href="SecLogParse.py" class="project-link" target="_blank"><i class="fa fa-github"></i> View Source Code</a>
+      <a href="SecLogParse.py" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> View Source Code</a>
     </div>
   </div>
 <!--div of sec project-->
@@ -292,15 +299,19 @@ border-radius: 20px;"></a>
     <div class="project-content">
       <div class="project-title">Stylized Nmap Scanner</div>
       <div class="project-description">
-        Scans a network using Nmap, cleans and parses the output, and enhances readability with icons, color-coding, and bold formatting to improve situational awareness and help identify vulnerabilities.<br/><br/>
+        Scans a network using Nmap, cleans and parses the output, and enhances readability with icons, color-coding, and bold formatting to improve situational awareness and help identify vulnerabilities.<br/><br/><br/>
         <div class="hashTagHousing">
         <div class="hashTags" style="background:#006ef5">NMAP</div>
-        <div class="hashTags" style="background:#f58b00">Bash</div>
-        <div class="hashTags" style="background:purple">CLI</div>
+        <div class="hashTags" style="background:#f58b00"><i class="fa-solid fa-hashtag"></i>&nbspBash</div>
+                <div class="hashTags" style="background:#FF605C"><i class="fa-brands fa-linux"></i>&nbspLinux</div>
+
+
+        <div class="hashTags" style="background:purple"><i class="fa-solid fa-terminal"></i>&nbspCLI</div>
+
         
 </div>
       </div>
-      <a href="parseNMap.sh" class="project-link" target="_blank"><i class="fa fa-github"></i> View Source Code</a>
+      <a href="parseNMap.sh" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> View Source Code</a>
     </div>
   </div>
     <div class="project-card">
@@ -310,12 +321,15 @@ border-radius: 20px;"></a>
       <div class="project-description">
 A Python CLI tool using a Bash script to hash critical Linux files, create a secure baseline, and detect changes. It supports system hardening and tamper detection for compliance and threat response.
    <div class="hashTagHousing">
-        <div class="hashTags" style="background:#00CA4E">PYTHON</div>
-        <div class="hashTags" style="background:#f58b00">Bash</div>
-        <div class="hashTags" style="background:purple">CLI</div>
+        <div class="hashTags" style="background:#00CA4E"><i class="fa-brands fa-python"></i>&nbsp PYTHON</div>
+        <div class="hashTags" style="background:#f58b00"><i class="fa-solid fa-hashtag"></i>&nbspBash</div>
+        <div class="hashTags" style="background:#FF605C"><i class="fa-brands fa-linux"></i>&nbspLinux</div>
+
+
+        <div class="hashTags" style="background:purple"><i class="fa-solid fa-terminal"></i>&nbspCLI</div>
 </div>
 </div>
-      <a href="checksumSecurity.zip" class="project-link" target="_blank"><i class="fa fa-github"></i> View Source Code</a>
+      <a href="checksumSecurity.zip" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> View Source Code</a>
     </div>
   </div>
 
@@ -446,7 +460,7 @@ A Python CLI tool using a Bash script to hash critical Linux files, create a sec
 justify-content: center;gap: 2rem;flex-wrap: wrap;">
 <!--section content start-->
   <section id="linkContact" class="card-section specialCard">
-    <i class="fa fa-envelope-o" aria-hidden="true" style="font-size:60px;color:#0a84e1"></i>
+    <i class="fa-solid fa-envelope" aria-hidden="true" style="font-size:60px;color:#32ade6"></i>
     <h2>Mail</h2>
     <p class="subtitle">Send me a message</p>
     <div class="barcode-wrapper">
@@ -457,7 +471,7 @@ justify-content: center;gap: 2rem;flex-wrap: wrap;">
   </section>
 
   <section id="linkContact" class="card-section specialCard">
-    <i class="fa fa-phone" aria-hidden="true" style="font-size:60px;color:#0a84e1"></i>
+    <i class="fa-solid fa-phone" aria-hidden="true" style="font-size:60px;color:#32ade6"></i>
     <h2>Phone</h2>
     <p class="subtitle">(347) 670 3223</p>
     <div class="barcode-wrapper">
@@ -467,7 +481,7 @@ justify-content: center;gap: 2rem;flex-wrap: wrap;">
   </section>
 
   <section id="linkContact" class="card-section specialCard" >
-    <i class="fa fa-question-circle-o" aria-hidden="true" style="font-size:60px;color:#0a84e1"></i>
+    <i class="fa-solid fa-circle-question" aria-hidden="true" style="font-size:60px;color:#32ade6"></i>
     <h2>FAQs</h2>
     <p class="subtitle" style="margin-bottom: 0;"><b>CITIZENSHIP:</b> U.S.</p>
     <p class="subtitle" style="margin-bottom: 0;"><b>RELOCATION:</b> Open</p>
