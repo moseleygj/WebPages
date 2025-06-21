@@ -1,8 +1,7 @@
 
   const facts = [
     " I enjoy reverse-engineering systems just to see how they tick—even if they weren’t broken.",
-    " Thinkpad Laptops are known to have some of the best keyboards in the world",
-    " I believe an IBM Thinkpad's keyboard is superior to most.",
+    " IBM Thinkpad Laptops are known to have some of the best keyboards in the world",
     " I trust my home server more than most cloud services - and yes, I have a backup for my backup.",
     " If something plugs in, I’ve probably tried to optimize or mod it.",
     " I prefer minimal UIs, modular setups, and software that doesn’t assume I’m a beginner.",
