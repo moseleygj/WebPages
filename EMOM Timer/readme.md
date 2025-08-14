@@ -1,10 +1,10 @@
 
-:cookie: NAME OF PROJECT 
+:clock: EMOM Timer
 ==============
 ***Project status:***
 ==============
 :white_check_mark: Complete 
-<!-- - [ ] Pending       :hourglass:
+<!-- - [ ] Pending       :hourglass:-->
  - [ ] Incomplete     :x: 
 
 EMOM Exercise Timer.
