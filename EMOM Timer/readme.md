@@ -5,7 +5,7 @@
 ==============
 :white_check_mark: Complete 
 <!-- - [ ] Pending       :hourglass:-->
- - [ ] Incomplete     :x: 
+
 
 EMOM Exercise Timer.
 
