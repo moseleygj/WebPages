@@ -1,5 +1,5 @@
 
-:clock: EMOM Timer
+:hourglass: EMOM Timer
 ==============
 ***Project status:***
 ==============
