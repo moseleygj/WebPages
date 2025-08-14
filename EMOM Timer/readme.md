@@ -12,7 +12,7 @@ EMOM Exercise Timer.
 Screenshots
 ===========
 
-<img src="https://github.com/moseleygj/WebPages/blob/master/EMOM%20Timer/Screenshot.png" width="300px"/>
+<img src="https://github.com/moseleygj/WebPages/blob/master/EMOM%20Timer/Screenshot.png" width="600px"/>
 
 
 
