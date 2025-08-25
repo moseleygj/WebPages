@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>EMOM Timer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.overall-progress {
+  width: 90%;
+  height: 5vw;
+  max-height: 25px;
+  background-color: #444;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+#overallBar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  transition: width 0.5s linear;
+}
+
+.set-dots {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 400px;
+  margin-top: 10vw;
+}
+.set-dots .dot {
+  width: 4vw;
+  height: 4vw;
+  max-width: 15px;
+  max-height: 15px;
+  border-radius: 50%;
+  background-color: #555;
+  transition: background-color 0.3s;
+}
+.set-dots .dot.completed { background-color: #4caf50; }
+.set-dots .dot.current { background-color: #ffeb3b; }
+
+.time-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 400px;
+  margin-top: 5vw;
+  font-size: 4vw;
+}
+.time-container .total-time,
+.time-container .current-time { font-size: 4vw; }
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 350px;
+  margin-top: 5vw;
+}
+canvas { width: 100%; height: auto; }
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 10vw;
+  gap: 4vw;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+.input-group label { font-weight: bold; font-size: 4vw; }
+.controls input[type=number] {
+  width: 20vw;
+  font-size: 4vw;
+  padding: 1vw;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+}
+.controls button {
+  font-size: 6vw;
+  font-weight:bold;
+  padding: 2vw 5vw;
+  width: 60%;
+  max-width: 250px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+#startStopBtn { background-color: #4caf50; }
+#startStopBtn.stop { background-color: #f44336; }
+#pauseBtn { background-color: #ff9800; }
+#pauseBtn:disabled { background-color: #777; cursor: default; }
+</style>
+</head>
+<body>
+
+<div class="overall-progress">
+  <div id="overallBar"></div>
+</div>
+
+<div class="set-dots" id="setDots"></div>
+
+<div class="time-container">
+  <div class="total-time" id="totalTime">00:00:00</div>
+  <div class="current-time" id="timeRemaining">00:00:00</div>
+</div>
+
+<div class="container">
+  <canvas id="currentGauge" width="350" height="350"></canvas>
+</div>
+
+<div class="controls">
+  <div class="input-group">
+    <label for="roundsInput">SETS</label>
+    <input type="number" id="roundsInput" min="1" max="99" value="5" />
+  </div>
+  <button id="startStopBtn">▶ START</button>
+  <button id="pauseBtn" disabled>⏸PAUSE</button>
+</div>
+
+<script>
+const roundTime = 60; 
+let totalRounds = 5;
+let currentRound = 0;
+let timeLeft = roundTime;
+let running = false;
+let paused = false;
+let timer;
+
+const canvas = document.getElementById("currentGauge");
+const ctx = canvas.getContext("2d");
+const overallBar = document.getElementById("overallBar");
+const roundsInput = document.getElementById("roundsInput");
+const startStopBtn = document.getElementById("startStopBtn");
+const pauseBtn = document.getElementById("pauseBtn");
+const setDots = document.getElementById("setDots");
+const timeRemaining = document.getElementById("timeRemaining");
+const totalTime = document.getElementById("totalTime");
+
+let displayedPercent = 0;
+let targetPercent = 0;
+
+function resizeCanvas() {
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width;
+  canvas.height = rect.width;
+}
+window.addEventListener('resize', () => drawGauge(displayedPercent));
+resizeCanvas();
+
+function drawGauge(percent = 0) {
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const radius = canvas.width / 2 - 35;
+
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  ctx.beginPath();
+  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+  ctx.fillStyle = "#333";
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(centerX, centerY);
+  ctx.fillStyle = "#4caf50";
+  ctx.arc(centerX, centerY, radius, -Math.PI/2, -Math.PI/2 + percent*2*Math.PI, false);
+  ctx.lineTo(centerX, centerY);
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.arc(centerX, centerY, radius-35, 0, 2*Math.PI);
+  ctx.fillStyle = "#000";
+  ctx.fill();
+
+  ctx.fillStyle = "#fff";
+  ctx.font = `${canvas.width/5}px Arial`;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(`${Math.round(percent*100)}%`, centerX, centerY);
+}
+
+function updateOverallProgressBar(percent) {
+  overallBar.style.width = (percent*100)+"%";
+}
+
+function updateSetDots() {
+  setDots.innerHTML = "";
+  for(let i=0;i<totalRounds;i++){
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+    if(i < currentRound) dot.classList.add("completed");
+    else if(i === currentRound) dot.classList.add("current");
+    setDots.appendChild(dot);
+  }
+}
+
+function playBeep(freq=1000,duration=150){
+  try{
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const oscillator = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+    oscillator.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+    oscillator.type='sine';
+    oscillator.frequency.value=freq;
+    oscillator.start();
+    gainNode.gain.setValueAtTime(1,audioCtx.currentTime);
+    gainNode.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+duration/1000);
+    oscillator.stop(audioCtx.currentTime+duration/1000);
+  }catch(e){console.warn("Audio not supported", e);}
+}
+
+function formatTime(sec){
+  const h = Math.floor(sec/3600);
+  const m = Math.floor((sec%3600)/60);
+  const s = sec%60;
+  return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+
+function tick(){
+  if(!paused && running){
+    timeLeft--;
+    if(timeLeft<0){
+      currentRound++;
+      if(currentRound>=totalRounds){
+        playBeep(800,500);
+        stopTimer();
+        return;
+      } else {
+        playBeep(600,300);
+      }
+      timeLeft=roundTime;
+    }
+
+    targetPercent = (roundTime - timeLeft)/roundTime;
+    updateSetDots();
+
+    let overallPercent = currentRound / totalRounds;
+    updateOverallProgressBar(overallPercent);
+
+    timeRemaining.textContent = formatTime(timeLeft);
+    const totalLeft = (totalRounds - currentRound - (timeLeft/roundTime)) * roundTime + timeLeft;
+    totalTime.textContent = formatTime(Math.ceil(totalLeft));
+  }
+}
+
+// Smooth gauge animation
+function animateGauge() {
+  if (Math.abs(displayedPercent - targetPercent) > 0.001) {
+    displayedPercent += (targetPercent - displayedPercent) * 0.1;
+    drawGauge(displayedPercent);
+  } else {
+    drawGauge(targetPercent);
+  }
+  requestAnimationFrame(animateGauge);
+}
+animateGauge();
+
+function startTimer(){
+  totalRounds = parseInt(roundsInput.value)||1;
+  if(totalRounds<1) totalRounds=1;
+  currentRound=0;
+  timeLeft=roundTime;
+  running=true;
+  paused=false;
+
+  drawGauge(0);
+  updateOverallProgressBar(0);
+  updateSetDots();
+  timeRemaining.textContent = formatTime(timeLeft);
+  totalTime.textContent = formatTime(totalRounds*roundTime);
+
+  startStopBtn.textContent="■ STOP";
+  startStopBtn.classList.add("stop");
+  pauseBtn.disabled=false;
+  pauseBtn.textContent="⏸ PAUSE";
+
+  timer=setInterval(tick,1000);
+}
+
+function stopTimer(){
+  clearInterval(timer);
+  running=false;
+  paused=false;
+  currentRound=0;
+  timeLeft=roundTime;
+
+  drawGauge(0);
+  updateOverallProgressBar(0);
+  updateSetDots();
+  timeRemaining.textContent=formatTime(0);
+  totalTime.textContent=formatTime(0);
+
+  startStopBtn.textContent="▶ START";
+  startStopBtn.classList.remove("■ stop");
+  pauseBtn.disabled=true;
+  pauseBtn.textContent="⏸ Pause";
+}
+
+function togglePause(){
+  if(!running) return;
+  paused=!paused;
+  pauseBtn.textContent = paused?"▶RESUME":"⏸PAUSE";
+}
+
+startStopBtn.addEventListener("click",()=>running?stopTimer():startTimer());
+pauseBtn.addEventListener("click",togglePause);
+
+drawGauge(0);
+updateOverallProgressBar(0);
+updateSetDots();
+timeRemaining.textContent=formatTime(0);
+totalTime.textContent=formatTime(0);
+</script>
+</body>
+</html>

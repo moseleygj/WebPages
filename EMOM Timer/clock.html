@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Flip Clock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  font-family: 'Alata', sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container fills viewport */
+#holster {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: #cecece;
+  overflow: hidden;
+}
+
+/* Weather panel (left) */
+#leftWeather {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #171717;
+  color: white;
+  overflow: hidden;
+}
+
+#weather img {
+  max-height: 40%;
+  width: auto;
+}
+
+#weather p {
+  margin: 0.5vh 0;
+  text-align: center;
+}
+
+#weather p strong {
+  font-size: 8vw;
+}
+
+.weather-desc {
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+/* Clock panel (right) */
+#rightTime {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Main clock wrapper */
+#mainTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+/* Flip digits */
+#hod, #mod {
+  font-size: calc(min(40vh, 25vw));
+  padding: 0.5vh 1vw;
+  text-align: center;
+  transform: scaleY(1.5);
+  transform-origin: center;
+  background:#181818;
+  border-radius:5%;
+}
+
+/* Red center bar */
+.centerBar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.98vh;
+  background: black;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+/* Responsive adjustments for tablets (iPad) */
+@media (max-width: 1024px) {
+  #hod, #mod {
+    font-size: calc(min(35vh, 30vw));
+  }
+  
+  #weather p strong {
+    font-size: 12vw;
+  }
+  
+  .weather-desc {
+    font-size: 4vw;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  #holster {
+    flex-direction: column;
+  }
+  
+  #rightTime {
+    flex: none;
+    width: 100%;
+    height: 50%;
+  }
+  
+  #leftWeather {
+    flex: none;
+    width: 100%;
+    height: 50%;
+    border-right: none;
+    border-bottom: 1px solid #171717;
+    padding: 2vh 0;
+  }
+  
+  #hod, #mod {
+    font-size: 18vh;
+    padding: 0.5vh 1vw;
+  }
+  
+  #weather p strong {
+    font-size: 15vw;
+  }
+  
+  .weather-desc {
+    font-size: 4vw;
+  }
+}
+</style>
+<script>
+function myTime(){
+  const d = new Date();
+  let hour = d.getHours();
+  let min = d.getMinutes();
+
+  let am_pm = hour >= 12 ? "PM" : "AM";
+  hour = hour > 12 ? hour - 12 : (hour === 0 ? 12 : hour);
+
+  if(min < 10){
+    min = "0" + min;
+  }
+
+  document.getElementById("hod").textContent = hour;
+  document.getElementById("mod").textContent = min;
+}
+
+async function getWeather() {
+  const city = "New+York";
+  const apiKey = "f23c1402a5ab30b4be4811194cc4c2be"; 
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (response.ok) {
+      const temp = data.main.temp;
+      const desc = data.weather[0].description;
+      const icon = data.weather[0].icon;
+
+      document.getElementById("weather").innerHTML = `
+        <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" />
+        <p><strong>${Math.round(temp)}°</strong></p>
+        <p class="weather-desc">${desc.charAt(0).toUpperCase() + desc.slice(1)}</p>
+      `;
+    } else {
+      document.getElementById("weather").innerHTML = `<p>Error: ${data.message}</p>`;
+    }
+  } catch (error) {
+    document.getElementById("weather").innerHTML = "<p>Network error. Try again later.</p>";
+    console.error(error);
+  }
+}
+
+// Run once page is ready
+window.addEventListener("DOMContentLoaded", () => {
+  myTime();
+  setInterval(myTime, 1000);
+
+  getWeather();
+  setInterval(getWeather, 60000);
+});
+</script>
+</head>
+<body>
+<div id="holster">
+  <div id="leftWeather">
+    <div id="weather"></div>
+  </div>
+
+  <div id="rightTime">
+    <div id="mainTime">
+      <div class="centerBar"></div>
+      <div id="hod">00</div>
+      <div id="mod">00</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

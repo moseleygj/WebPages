@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tally + Timer</title>
+<style>
+  * { box-sizing: border-box; }
+
+  html, body { margin:0; padding:0; height:100%; font-family:Arial,sans-serif; background:#fff; color:#434343; }
+
+  body { display:flex; flex-direction:column; height:100vh; }
+
+  #status-bar-container { width:90%; max-width:600px; height:10px; background:#eee; border-radius:10px; overflow:hidden; margin:15px auto 5px; }
+  #status-bar { width:100%; height:100%; background:#007BFF; transition: width 0.1s linear; border-radius:10px; }
+
+  #timer-settings { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; align-items:center; margin-top:30px;margin-bottom:10px; }
+  #timer-settings input { width:70px; padding:5px; font-size:1rem; text-align:center; }
+  #timer-settings button { padding:5px 10px; font-size:1rem; cursor:pointer; border:none; border-radius:8px; background-color:#007BFF; color:white; transition: background 0.2s; }
+  #timer-settings button:hover { background-color:#0056b3; }
+  #remaining-time { font-size:1rem; color:#434343; }
+
+  #count-box { width:80%;margin-top: 30px;display:flex; flex-direction:column; align-items:center; gap:5px; border:2px solid #ccc; border-radius:12px; padding:5px 10px; font-size:0.9rem; }
+  #count-box-title { font-weight:bold; }
+  #count-mode { display:flex; gap:10px; align-items:center; }
+
+  #main-container { display:flex; flex-direction:column; flex-grow:1; align-items:center; justify-content:center; width:100%; padding:10px; }
+  #counter { font-size:clamp(12rem,25vw,20rem); line-height:1; text-align:center; margin:20px 0; word-wrap:break-word; }
+
+  .button-container { display:flex; gap:10px; width:90%; max-width:400px; justify-content:center; margin:0 auto 20px; }
+  .button-container button { flex:1; padding:15px; font-size:2rem; cursor:pointer; border:none; border-radius:12px; background-color:#007BFF; color:white; transition:background 0.2s; }
+  .button-container button:hover { background-color:#0056b3; }
+</style>
+</head>
+<body>
+
+<div id="status-bar-container">
+  <div id="status-bar"></div>
+</div>
+
+<div id="timer-settings">
+  <input type="number" id="minutes" placeholder="MM" min="0">
+  <span>:</span>
+  <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+  <button id="start-timer">Start</button>
+  <button id="stop-timer">Stop</button>
+  <span id="remaining-time"></span>
+
+  <div id="count-box">
+    <div id="count-box-title">Count</div>
+    <div id="count-mode">
+      <label><input type="radio" name="mode" value="down" checked> Down</label>
+      <label><input type="radio" name="mode" value="up"> Up</label>
+    </div>
+  </div>
+</div>
+
+<div id="main-container">
+  <div id="counter">0</div>
+</div>
+
+<div class="button-container">
+  <button id="increment">+</button>
+  <button id="decrement">-</button>
+</div>
+
+<script>
+let tally = 0;
+const counter = document.getElementById('counter');
+const incrementBtn = document.getElementById('increment');
+const decrementBtn = document.getElementById('decrement');
+const startTimerBtn = document.getElementById('start-timer');
+const stopTimerBtn = document.getElementById('stop-timer');
+const minutesInput = document.getElementById('minutes');
+const secondsInput = document.getElementById('seconds');
+const statusBar = document.getElementById('status-bar');
+const remainingTimeDisplay = document.getElementById('remaining-time');
+const countModeInputs = document.getElementsByName('mode');
+
+let timerInterval;
+let timerRunning = false;
+let paused = false;
+let mode = 'down';
+let totalSeconds = 0;
+let remainingSeconds = 0;
+
+incrementBtn.addEventListener('click', () => {
+  tally++;
+  counter.textContent = tally;
+});
+
+decrementBtn.addEventListener('click', () => {
+  if(tally>0){ tally--; counter.textContent=tally; }
+});
+
+// Start / Pause toggle
+startTimerBtn.addEventListener('click', () => {
+  if (!timerRunning) {
+    startTimer();
+    startTimerBtn.textContent = 'Pause';
+    timerRunning = true;
+    paused = false;
+  } else if (!paused) {
+    clearInterval(timerInterval);
+    startTimerBtn.textContent = 'Start';
+    paused = true;
+  } else {
+    startTimer();
+    startTimerBtn.textContent = 'Pause';
+    paused = false;
+  }
+});
+
+// Stop button
+stopTimerBtn.addEventListener('click', () => {
+  clearInterval(timerInterval);
+  timerRunning = false;
+  paused = false;
+  startTimerBtn.textContent = 'Start';
+  remainingSeconds = totalSeconds;
+  updateDisplay();
+});
+
+function startTimer() {
+  clearInterval(timerInterval);
+
+  if (!paused) {
+    const mins = parseInt(minutesInput.value) || 0;
+    const secs = parseInt(secondsInput.value) || 0;
+    totalSeconds = mins*60 + secs;
+    remainingSeconds = totalSeconds;
+    mode = Array.from(countModeInputs).find(i=>i.checked)?.value || 'down';
+  }
+
+  if(totalSeconds<=0) return;
+
+  let elapsed = 0;
+
+  timerInterval = setInterval(()=>{
+    if(mode==='down'){
+      remainingSeconds--;
+      updateDisplay(remainingSeconds);
+      if(remainingSeconds<=0){
+        clearInterval(timerInterval);
+        timerRunning=false;
+        startTimerBtn.textContent='Start';
+      }
+    } else {
+      elapsed++;
+      updateDisplay(elapsed);
+      if(elapsed>=totalSeconds){
+        clearInterval(timerInterval);
+        timerRunning=false;
+        startTimerBtn.textContent='Start';
+      }
+    }
+  },1000);
+}
+
+function updateDisplay(val=0){
+  let secondsDisplay = (mode==='down') ? val=remainingSeconds : val;
+  const mins = Math.floor(secondsDisplay/60);
+  const secs = secondsDisplay%60;
+  remainingTimeDisplay.textContent = `${mins.toString().padStart(2,'0')}:${secs.toString().padStart(2,'0')}`;
+
+  const percent = (mode==='down') ? (remainingSeconds/totalSeconds*100) : (val/totalSeconds*100);
+  statusBar.style.width = percent+'%';
+}
+</script>
+</body>
+</html>

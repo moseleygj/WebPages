@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playing Card Viewer</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  flex: 1;
+}
+.controls {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.controls input {
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+.controls button {
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+.controls button:disabled {
+  background-color: #777;
+  cursor: default;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.card {
+  width: 80px;
+  height: 120px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  position: relative;
+}
+.card.red { color: red; }
+.counter {
+  margin-top: 15px;
+  font-size: 18px;
+}
+.total-value {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffeb3b;
+}
+#nextBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  padding: 15px 40px;
+  background-color: orange;
+  color: white;
+  border-radius: 12px;
+  z-index: 100;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="controls">
+    <label>Cards per draw (max 9): 
+      <input type="number" id="numCards" min="1" max="9" value="1">
+    </label>
+    <button id="resetBtn">Reset</button>
+  </div>
+  <div class="controls">
+    <label>A value: <input type="number" id="AVal" value="1"></label>
+    <label>J value: <input type="number" id="JVal" value="11"></label>
+    <label>Q value: <input type="number" id="QVal" value="12"></label>
+    <label>K value: <input type="number" id="KVal" value="13"></label>
+  </div>
+  <div class="cards" id="cardContainer"></div>
+  <div class="counter">
+    Remaining cards: <span id="remaining">52</span>
+  </div>
+  <div class="total-value">
+    Total value: <span id="totalValue">0</span>
+  </div>
+</div>
+
+<button id="nextBtn">Start</button>
+
+<script>
+const suits = ["♠","♥","♦","♣"];
+const ranks = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
+
+let deck = [];
+let currentIndex = 0;
+let totalValue = 0;
+let firstClick = true;
+
+const cardContainer = document.getElementById("cardContainer");
+const remainingSpan = document.getElementById("remaining");
+const totalValueSpan = document.getElementById("totalValue");
+const nextBtn = document.getElementById("nextBtn");
+const resetBtn = document.getElementById("resetBtn");
+const numCardsInput = document.getElementById("numCards");
+const AValInput = document.getElementById("AVal");
+const JValInput = document.getElementById("JVal");
+const QValInput = document.getElementById("QVal");
+const KValInput = document.getElementById("KVal");
+
+// Initialize deck
+function createDeck(){
+  deck = [];
+  totalValue = 0;
+  firstClick = true;
+  nextBtn.textContent = "Start";
+  for(const suit of suits){
+    for(const rank of ranks){
+      deck.push({suit, rank});
+    }
+  }
+  shuffle(deck);
+  currentIndex = 0;
+  updateCounter();
+  updateTotalValue();
+  cardContainer.innerHTML = "";
+}
+
+// Shuffle array
+function shuffle(array){
+  for(let i=array.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [array[i], array[j]]=[array[j], array[i]];
+  }
+}
+
+// Get card numeric value
+function getCardValue(rank){
+  if(rank==="A") return parseInt(AValInput.value)||1;
+  if(rank==="J") return parseInt(JValInput.value)||11;
+  if(rank==="Q") return parseInt(QValInput.value)||12;
+  if(rank==="K") return parseInt(KValInput.value)||13;
+  return parseInt(rank);
+}
+
+// Draw next cards
+function drawCards(){
+  if(firstClick){
+    nextBtn.textContent = "Next";
+    firstClick = false;
+  }
+  cardContainer.innerHTML="";
+  const num = Math.min(parseInt(numCardsInput.value)||1, 9, deck.length-currentIndex);
+  for(let i=0;i<num;i++){
+    const card = deck[currentIndex];
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("card");
+    if(card.suit==="♥"||card.suit==="♦") cardDiv.classList.add("red");
+    cardDiv.textContent=`${card.rank}${card.suit}`;
+    cardContainer.appendChild(cardDiv);
+    totalValue += getCardValue(card.rank);
+    currentIndex++;
+  }
+  updateCounter();
+  updateTotalValue();
+}
+
+// Update counter
+function updateCounter(){
+  const remaining = deck.length - currentIndex;
+  remainingSpan.textContent = remaining;
+  nextBtn.disabled = remaining <= 0;
+}
+
+// Update total value display
+function updateTotalValue(){
+  totalValueSpan.textContent = totalValue;
+}
+
+// Event listeners
+nextBtn.addEventListener("click", drawCards);
+resetBtn.addEventListener("click", createDeck);
+
+// Ensure number inputs are within range
+[AValInput,JValInput,QValInput,KValInput,numCardsInput].forEach(input=>{
+  input.addEventListener("change",()=>{
+    if(input.value==="") input.value=1;
+    if(input===numCardsInput) input.value=Math.max(1,Math.min(9,input.value));
+    else input.value=Math.max(1,Math.min(52,input.value));
+  });
+});
+
+createDeck();
+</script>
+
+</body>
+</html>

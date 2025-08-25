@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CrossFit Workout Generator</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;color-scheme:dark}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial; margin:0; min-height:100vh; background:linear-gradient(180deg,#071025 0%, #07172a 100%); color:#e6eef6; display:flex; align-items:flex-start; justify-content:center; padding:28px}
+    .container{width:980px; max-width:96%;}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:0;color:var(--muted);font-size:13px}
+
+    .card{background:var(--card); padding:18px;border-radius:12px; box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+    .controls{display:grid;grid-template-columns:1fr 320px; gap:14px}
+    .group{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);}
+    label{display:block;font-size:13px;margin-bottom:6px}
+    select,input[type=number]{width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    .exercise-list{max-height:260px;overflow:auto;padding:8px;border-radius:8px;border:1px dashed rgba(255,255,255,0.03);}
+    .exercise-row{display:flex;gap:8px;align-items:center;padding:6px;border-radius:6px}
+    .exercise-row:hover{background:rgba(255,255,255,0.01)}
+    .exercise-name{flex:1}
+    button{cursor:pointer;padding:10px 12px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),#22c1c3);color:#022; font-weight:700}
+    .secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 10px}
+    .output{margin-top:14px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(6,182,212,0.04),transparent)}
+    .workout{font-family:monospace;background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+    .row{display:flex;gap:8px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:12px;color:var(--muted);font-size:12px}
+    @media (max-width:880px){.controls{grid-template-columns:1fr} .card{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>CrossFit Workout Generator</h1>
+        <p class="lead">Quickly generate workouts and omit any exercises with checkboxes or dropdown filters.</p>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="controls">
+        <div class="group">
+          <label for="type">Workout Type</label>
+          <select id="type">
+            <option value="amrap">AMRAP</option>
+            <option value="forTime">For Time</option>
+            <option value="emom">EMOM</option>
+            <option value="chipper">Chipper</option>
+          </select>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px">
+            <div>
+              <label for="rounds">Rounds / Duration</label>
+              <input id="rounds" type="number" min="1" value="5">
+            </div>
+            <div>
+              <label for="movementsCount"># of Movements</label>
+              <input id="movementsCount" type="number" min="1" max="6" value="3">
+            </div>
+          </div>
+
+          <div style="margin-top:10px">
+            <label for="difficulty">Difficulty</label>
+            <select id="difficulty">
+              <option value="scaled">Scaled</option>
+              <option value="standard" selected>Standard</option>
+              <option value="rx">RX</option>
+            </select>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+            <button id="generate">Generate</button>
+            <button id="randomize" class="secondary">Shuffle Exercises</button>
+          </div>
+
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <button id="copy" class="secondary">Copy Workout</button>
+            <button id="download" class="secondary">Download .txt</button>
+          </div>
+
+          <div class="output" id="outputArea">
+            <div class="small">Workout Preview</div>
+            <pre class="workout" id="workoutText">Press Generate to create a workout.</pre>
+          </div>
+        </div>
+
+        <div class="group">
+          <label>Exclude by Category (dropdown)</label>
+          <select id="excludeCategory">
+            <option value="">— No exclusion —</option>
+            <option value="gymnastics">Gymnastics</option>
+            <option value="weightlifting">Weightlifting</option>
+            <option value="monostructural">Monostructural</option>
+            <option value="accessory">Accessory</option>
+          </select>
+
+          <div style="margin-top:12px">
+            <label>Manually Exclude Exercises (checkboxes)</label>
+            <div class="exercise-list" id="exerciseList"></div>
+          </div>
+
+          <div style="margin-top:10px">
+            <label>Quick omit sets</label>
+            <div style="display:flex;gap:6px;margin-top:6px">
+              <select id="quickOmit">
+                <option value="">— none —</option>
+                <option value="noBarbell">No Barbell</option>
+                <option value="noRunning">No Running</option>
+                <option value="noGymnastics">No Gymnastics</option>
+              </select>
+              <button id="applyOmit" class="secondary">Apply</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer>
+        Tip: use the checkboxes to disable exercises you can't or don't want to do. Change difficulty to adjust rep schemes.
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Exercise database
+    const EXERCISES = [
+      {name:'Back Squat', cat:'weightlifting', tags:['barbell']},
+      {name:'Front Squat', cat:'weightlifting', tags:['barbell']},
+      {name:'Deadlift', cat:'weightlifting', tags:['barbell']},
+      {name:'Power Clean', cat:'weightlifting', tags:['barbell']},
+      {name:'Push Press', cat:'weightlifting', tags:['barbell']},
+      {name:'Thrusters', cat:'weightlifting', tags:['barbell']},
+      {name:'Pull-ups', cat:'gymnastics', tags:['bodyweight']},
+      {name:'Chest-to-Bar Pull-ups', cat:'gymnastics', tags:['bodyweight']},
+      {name:'Push-ups', cat:'gymnastics', tags:['bodyweight']},
+      {name:'Handstand Push-ups', cat:'gymnastics', tags:['bodyweight']},
+      {name:'Ring Dips', cat:'gymnastics', tags:['bodyweight']},
+      {name:'Toes-to-Bar', cat:'gymnastics', tags:['bodyweight']},
+      {name:'Kettlebell Swings', cat:'accessory', tags:['kb']},
+      {name:'Box Jumps', cat:'accessory', tags:['plyo']},
+      {name:'Wall Balls', cat:'accessory', tags:['ball']},
+      {name:'Burpees', cat:'accessory', tags:['bodyweight']},
+      {name:'Row (cal)', cat:'monostructural', tags:['row']},
+      {name:'Run (400m)', cat:'monostructural', tags:['run']},
+      {name:'Bike (cal)', cat:'monostructural', tags:['bike']},
+      {name:'Jump Rope (double-unders)', cat:'accessory', tags:['jump']},
+      {name:'Farmer Carry', cat:'accessory', tags:[]},
+      {name:'Sled Push', cat:'accessory', tags:[]},
+      {name:'Lunges', cat:'accessory', tags:[]}
+    ];
+
+    // DOM
+    const exerciseList = document.getElementById('exerciseList');
+    const excludeCategory = document.getElementById('excludeCategory');
+    const quickOmit = document.getElementById('quickOmit');
+    const applyOmit = document.getElementById('applyOmit');
+    const generateBtn = document.getElementById('generate');
+    const randomizeBtn = document.getElementById('randomize');
+    const workoutText = document.getElementById('workoutText');
+    const copyBtn = document.getElementById('copy');
+    const downloadBtn = document.getElementById('download');
+
+    // Populate exercise checkbox list
+    function renderExerciseCheckboxes() {
+      exerciseList.innerHTML = '';
+      for (const ex of EXERCISES) {
+        const row = document.createElement('div');
+        row.className = 'exercise-row';
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.checked = false; // unchecked = included; checked = excluded
+        cb.dataset.name = ex.name;
+        const name = document.createElement('div');
+        name.className = 'exercise-name';
+        name.textContent = ex.name + ' • ' + ex.cat;
+        const note = document.createElement('div');
+        note.className = 'small';
+        note.textContent = '';
+        row.appendChild(cb);
+        row.appendChild(name);
+        row.appendChild(note);
+        exerciseList.appendChild(row);
+      }
+    }
+
+    renderExerciseCheckboxes();
+
+    function getExcludedSet() {
+      const excluded = new Set();
+      // checkboxes
+      for (const cb of exerciseList.querySelectorAll('input[type=checkbox]')) {
+        if (cb.checked) excluded.add(cb.dataset.name);
+      }
+      // dropdown category
+      const cat = excludeCategory.value;
+      if (cat) for (const ex of EXERCISES) if (ex.cat === cat) excluded.add(ex.name);
+      return excluded;
+    }
+
+    applyOmit.addEventListener('click', ()=>{
+      const val = quickOmit.value;
+      if (!val) return;
+      // simple quick omissions
+      const toExclude = {
+        noBarbell: e => e.tags.includes('barbell'),
+        noRunning: e => e.tags.includes('run'),
+        noGymnastics: e => e.cat === 'gymnastics'
+      }[val];
+      for (const cb of exerciseList.querySelectorAll('input[type=checkbox]')) {
+        const name = cb.dataset.name;
+        const ex = EXERCISES.find(x=>x.name===name);
+        cb.checked = toExclude(ex);
+      }
+    });
+
+    function pickRandomExercises(count, excluded) {
+      const pool = EXERCISES.filter(e => !excluded.has(e.name));
+      const picked = [];
+      const copy = pool.slice();
+      while (picked.length < count && copy.length) {
+        const i = Math.floor(Math.random()*copy.length);
+        picked.push(copy.splice(i,1)[0]);
+      }
+      return picked;
+    }
+
+    function adjustRepsByDifficulty(base, difficulty) {
+      if (difficulty === 'scaled') return Math.max(1, Math.floor(base*0.6));
+      if (difficulty === 'rx') return Math.ceil(base*1.2);
+      return base;
+    }
+
+    function generateWorkout() {
+      const type = document.getElementById('type').value;
+      const rounds = Number(document.getElementById('rounds').value) || 1;
+      const movementsCount = Number(document.getElementById('movementsCount').value) || 3;
+      const difficulty = document.getElementById('difficulty').value;
+      const excluded = getExcludedSet();
+      // pick movements
+      const movements = pickRandomExercises(movementsCount, excluded);
+      if (movements.length === 0) { workoutText.textContent = 'No exercises available — adjust exclusions.'; return; }
+
+      // build rep scheme
+      const baseReps = [10,12,15,20,5,8];
+      let scheme = '';
+      if (type === 'amrap') {
+        scheme = `${rounds} min AMRAP — ${movements.map((m,i)=>`${adjustRepsByDifficulty(baseReps[i%baseReps.length], difficulty)} ${m.name}`).join(' , ')}.`;
+      } else if (type === 'forTime') {
+        scheme = `${movements.map((m,i)=>`${adjustRepsByDifficulty(baseReps[i%baseReps.length], difficulty)} ${m.name}`).join(', ')} for time — ${rounds} rounds.`;
+      } else if (type === 'emom') {
+        scheme = `${rounds} minute EMOM — each minute: ${movements.map((m,i)=>`${adjustRepsByDifficulty(baseReps[i%baseReps.length], difficulty)} ${m.name}`).join(' then ')}.`;
+      } else if (type === 'chipper') {
+        scheme = `Chipper: ${movements.map((m,i)=>`${adjustRepsByDifficulty(baseReps[i%baseReps.length], difficulty)} ${m.name}`).join(' then ')} — fastest possible.`;
+      }
+
+      const date = new Date().toLocaleString();
+      const text = `Generated: ${date}\nType: ${type}\nDifficulty: ${difficulty}\n\n${scheme}\n\nExcluded: ${[...excluded].join(', ') || 'none'}`;
+      workoutText.textContent = text;
+    }
+
+    generateBtn.addEventListener('click', generateWorkout);
+
+    randomizeBtn.addEventListener('click', ()=>{
+      // shuffle the EXERCISES array display order
+      EXERCISES.sort(()=>Math.random()-0.5);
+      renderExerciseCheckboxes();
+    });
+
+    copyBtn.addEventListener('click', async ()=>{
+      try {
+        await navigator.clipboard.writeText(workoutText.textContent);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(()=>copyBtn.textContent='Copy Workout',900);
+      } catch(e){ alert('Copy failed — your browser may block clipboard access.'); }
+    });
+
+    downloadBtn.addEventListener('click', ()=>{
+      const blob = new Blob([workoutText.textContent],{type:'text/plain'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'workout.txt';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+
+  </script>
+</body>
+</html>
+
