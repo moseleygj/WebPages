@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 <style>
-    * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,6 +28,7 @@ html, body {
 /* Main container fills viewport */
 #holster {
   display: flex;
+  flex-direction: row; /* Always horizontal */
   width: 100vw;
   height: 100vh;
   background: black;
@@ -42,9 +43,11 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #171717;
+  /*border-right: 1px solid #171717;*/
   color: white;
   overflow: hidden;
+  text-align: center;
+
 }
 
 #weather img {
@@ -96,6 +99,7 @@ html, body {
   transform-origin: center;
   background:#181818;
   border-radius:5%;
+  margin-right:20px;
 }
 
 /* Red center bar */
@@ -110,54 +114,40 @@ html, body {
   z-index: 100;
 }
 
-/* Responsive adjustments for tablets (iPad) */
+/* Responsive adjustments for tablets */
 @media (max-width: 1024px) {
   #hod, #mod {
-    font-size: calc(min(35vh, 30vw));
+    font-size: calc(min(30vh, 22vw));
   }
   
   #weather p strong {
-    font-size: 12vw;
+    font-size: 10vw;
   }
   
   .weather-desc {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 
-/* Small screens (mobile) */
-@media (max-width: 768px) {
-  #holster {
-    flex-direction: column;
-  }
-  
-  #rightTime {
-    flex: none;
-    width: 100%;
-    height: 50%;
-  }
-  
-  #leftWeather {
-    flex: none;
-    width: 100%;
-    height: 50%;
-    border-right: none;
-    border-bottom: 1px solid #171717;
-    padding: 2vh 0;
-  }
-  
-  #hod, #mod {
-    font-size: 18vh;
-    padding: 0.5vh 1vw;
-  }
-  
-  #weather p strong {
-    font-size: 15vw;
-  }
-  
-  .weather-desc {
-    font-size: 4vw;
-  }
+/* Overlay message for vertical orientation */
+#rotateMessage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vw;
+  text-align: center;
+  z-index: 999;
+  padding: 2rem;
+}
+.hidden {
+  display: none !important;
 }
 </style>
 <script>
@@ -173,7 +163,10 @@ function myTime(){
     min = "0" + min;
   }
 
-  document.getElementById("hod").textContent = hour;
+  // Add non-breaking space if hour is single digit
+  let hourDisplay = (hour < 10 ? "&nbsp;&nbsp;" + hour : hour);
+
+  document.getElementById("hod").innerHTML = hourDisplay;
   document.getElementById("mod").textContent = min;
 }
 
@@ -205,6 +198,16 @@ async function getWeather() {
   }
 }
 
+// Detect orientation and show message if in portrait
+function checkOrientation() {
+  const message = document.getElementById("rotateMessage");
+  if (window.innerHeight > window.innerWidth) {
+    message.classList.remove("hidden");
+  } else {
+    message.classList.add("hidden");
+  }
+}
+
 // Run once page is ready
 window.addEventListener("DOMContentLoaded", () => {
   myTime();
@@ -212,10 +215,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
   getWeather();
   setInterval(getWeather, 60000);
+
+  checkOrientation();
+  window.addEventListener("resize", checkOrientation);
 });
 </script>
 </head>
 <body>
+<div id="rotateMessage" class="hidden">
+  Please rotate your device to <br> horizontal (landscape) view.
+</div>
+
 <div id="holster">
   <div id="leftWeather">
     <div id="weather"></div>
