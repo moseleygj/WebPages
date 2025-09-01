@@ -89,6 +89,57 @@ canvas { width: 100%; height: auto; }
   align-items: center;
   gap: 3vw;
 }
+
+
+@media (orientation: landscape) {
+  .controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 10vw;
+  gap: 4vw;
+}
+  body {
+
+    background:}
+
+    #setDots{
+      margin-top: 2vw;
+    }
+
+.controls {
+  display: flex;          /* make children align in a row */
+  justify-content: center; /* center buttons horizontally */
+  gap: 10px;               /* space between buttons */
+  margin-top: 4vw;         /* adjust spacing above */
+}
+
+#startStopBtn, #pauseBtn {
+  flex: 1;                /* make them take equal space */
+  max-width: 350px;       /* optional, keep buttons from getting too wide */
+  font-size: 4vw;         /* keep existing font size */
+  margin-top: 0;          /* remove any negative margin */
+}
+
+    
+    .input-group label {
+  font-weight: bold;
+  font-size: 3vw;
+  }
+.controls input[type="number"] {
+  width: 20vw;
+  font-size: 2vw;
+  padding: 1vw;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+}
+}
+
+
+
 .input-group label { font-weight: bold; font-size: 4vw; }
 .controls input[type=number] {
   width: 20vw;
